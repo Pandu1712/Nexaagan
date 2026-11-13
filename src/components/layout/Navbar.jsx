@@ -19,7 +19,16 @@ import {
   Users, 
   Newspaper,
   PhoneCall,
-  Sparkles
+  Sparkles,
+  ShieldCheck,
+  FileText,
+  HeartHandshake,
+  GraduationCap,
+  ClipboardCheck,
+  Briefcase,
+  Eye,
+  Heart,
+  Files
 } from 'lucide-react';
 import TopBar from './TopBar';
 import SearchModal from './SearchModal';
@@ -367,7 +376,7 @@ export default function Navbar({ showTopBar = true }) {
                               </Link>
 
                               <Link
-                                to="/services#places-we-service"
+                                to="/the-ocs-a-z-of-spaces-and-places"
                                 onClick={() => setActiveDropdown(null)}
                                 className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-orange-50/70 text-brand-orange font-semibold transition-all group"
                               >
@@ -432,32 +441,169 @@ export default function Navbar({ showTopBar = true }) {
                 </NavLink>
 
                 {activeDropdown === 'esg' && (
-                  <div className="absolute top-full -left-10 w-72 pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                    <div className="bg-white rounded-2xl shadow-dropdown border border-slate-100 p-4 space-y-1">
-                      <Link
-                        to="/esg"
-                        className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors"
-                      >
-                        ESG Overview & Net Zero 2035
-                      </Link>
-                      <Link
-                        to="/esg#environmental"
-                        className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                      >
-                        Environmental Responsibility
-                      </Link>
-                      <Link
-                        to="/esg#social"
-                        className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                      >
-                        Social Impact & Community
-                      </Link>
-                      <Link
-                        to="/esg#governance"
-                        className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                      >
-                        Transparent Governance
-                      </Link>
+                  <div className="absolute top-full -left-72 xl:-left-64 w-[780px] xl:w-[840px] pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                    <div className="bg-white rounded-3xl shadow-dropdown border border-slate-100 p-6 overflow-hidden">
+                      <div className="flex items-stretch gap-6">
+                        {/* Left Feature Card (Matching Screenshot) */}
+                        <Link
+                          to="/esg"
+                          onClick={() => setActiveDropdown(null)}
+                          className="w-[260px] flex-shrink-0 bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 flex flex-col justify-between group hover:border-slate-200 hover:shadow-sm transition-all"
+                        >
+                          <div className="relative aspect-[4/3] overflow-hidden">
+                            <img
+                              src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                              alt="ESG - NEXAAGEN Environmental, Social and Governance"
+                              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="p-4 bg-white -mt-3 rounded-2xl relative shadow-sm border border-slate-100/80 mx-2 mb-2">
+                            <div className="flex items-center justify-between">
+                              <h4 className="text-base font-bold text-brand-navy group-hover:text-brand-orange transition-colors">
+                                ESG
+                              </h4>
+                              <div className="w-7 h-7 rounded-full bg-[#D8232A] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <ArrowUpRight className="w-4 h-4" />
+                              </div>
+                            </div>
+                            <p className="text-xs text-slate-500 leading-snug mt-1.5">
+                              Environmental, Social and Governance (ESG) targets and initiatives align to our vision and mission.
+                            </p>
+                          </div>
+                        </Link>
+
+                        {/* Right Area (Header + 2 Columns of 12 Links) */}
+                        <div className="flex-1 flex flex-col justify-center">
+                          {/* Top Heading */}
+                          <div className="mb-3">
+                            <h4 className="text-lg font-heading font-extrabold text-brand-navy">
+                              Doing the right things in the right way - the OCS way
+                            </h4>
+                            <p className="text-xs text-slate-500 mt-1">
+                              Our aim is to make a meaningful and lasting impact for people, planet and purpose.
+                            </p>
+                          </div>
+
+                          <div className="h-px bg-slate-100 my-2" />
+
+                          {/* 2-Column Links Grid */}
+                          <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 pt-1">
+                            {/* Column 1 */}
+                            <div className="space-y-1">
+                              <Link
+                                to="/esg#qhse"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <ShieldCheck className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">QHSE</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#environmental"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Leaf className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Environmental</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#governance"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Building2 className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Governance</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#modern-slavery"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <FileText className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Modern Slavery Statement</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#dei"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <HeartHandshake className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Diversity, Equity and Inclusion</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#learning"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <GraduationCap className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Apprenticeships & Funded Learning</span>
+                              </Link>
+                            </div>
+
+                            {/* Column 2 */}
+                            <div className="space-y-1">
+                              <Link
+                                to="/esg#code-of-conduct"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <ClipboardCheck className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Code of Conduct</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#social"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Users className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Social</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#policies"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Files className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Policies Library</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#foundation"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Heart className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">OCS Foundation</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#people-into-work"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Briefcase className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">People into Work</span>
+                              </Link>
+
+                              <Link
+                                to="/esg#vision-mission"
+                                onClick={() => setActiveDropdown(null)}
+                                className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                              >
+                                <Eye className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                <span className="text-xs sm:text-[13px] font-semibold">Vision & Mission</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -713,7 +859,7 @@ export default function Navbar({ showTopBar = true }) {
                         </Link>
                       </div>
                       <Link
-                        to="/services#places-we-service"
+                        to="/the-ocs-a-z-of-spaces-and-places"
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex items-center space-x-2 px-3 py-2 text-sm font-semibold text-brand-orange hover:text-red-700"
                       >
@@ -762,12 +908,83 @@ export default function Navbar({ showTopBar = true }) {
                   Technology
                 </Link>
 
-                <Link
-                  to="/esg"
-                  className="block px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
-                >
-                  ESG & Sustainability
-                </Link>
+                {/* Mobile ESG Accordion */}
+                <div>
+                  <button
+                    onClick={() => setMobileSubmenu(mobileSubmenu === 'esg' ? null : 'esg')}
+                    className="w-full flex items-center justify-between px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
+                  >
+                    <span>ESG</span>
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${
+                        mobileSubmenu === 'esg' ? 'rotate-180 text-brand-orange' : 'text-slate-400'
+                      }`}
+                    />
+                  </button>
+                  {mobileSubmenu === 'esg' && (
+                    <div className="pl-4 pr-2 py-2 space-y-1 bg-slate-50 rounded-xl my-1">
+                      <div className="flex items-center justify-between px-3 py-1.5 border-b border-slate-200/60 pb-2 mb-1">
+                        <Link
+                          to="/esg"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="text-sm font-semibold text-brand-orange"
+                        >
+                          ESG Overview & Commitments →
+                        </Link>
+                      </div>
+                      <div className="grid grid-cols-1 gap-1 text-xs">
+                        <Link to="/esg#qhse" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <ShieldCheck className="w-3.5 h-3.5 text-slate-400" />
+                          <span>QHSE</span>
+                        </Link>
+                        <Link to="/esg#environmental" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Leaf className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Environmental</span>
+                        </Link>
+                        <Link to="/esg#governance" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Building2 className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Governance</span>
+                        </Link>
+                        <Link to="/esg#modern-slavery" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <FileText className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Modern Slavery Statement</span>
+                        </Link>
+                        <Link to="/esg#dei" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <HeartHandshake className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Diversity, Equity and Inclusion</span>
+                        </Link>
+                        <Link to="/esg#learning" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <GraduationCap className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Apprenticeships & Funded Learning</span>
+                        </Link>
+                        <Link to="/esg#code-of-conduct" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <ClipboardCheck className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Code of Conduct</span>
+                        </Link>
+                        <Link to="/esg#social" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Users className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Social</span>
+                        </Link>
+                        <Link to="/esg#policies" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Files className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Policies Library</span>
+                        </Link>
+                        <Link to="/esg#foundation" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Heart className="w-3.5 h-3.5 text-slate-400" />
+                          <span>OCS Foundation</span>
+                        </Link>
+                        <Link to="/esg#people-into-work" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Briefcase className="w-3.5 h-3.5 text-slate-400" />
+                          <span>People into Work</span>
+                        </Link>
+                        <Link to="/esg#vision-mission" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Eye className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Vision & Mission</span>
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
 
                 <Link
                   to="/about"

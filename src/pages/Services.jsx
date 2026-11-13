@@ -54,9 +54,8 @@ export default function Services() {
           isAnchor: true
         }}
         secondaryCta={{
-          text: "A-Z Places We Service",
-          url: "#places-we-service",
-          isAnchor: true
+          text: "A-Z Spaces & Places",
+          url: "/the-ocs-a-z-of-spaces-and-places"
         }}
       />
 

@@ -19,6 +19,7 @@ import NewsDetail from './pages/NewsDetail';
 import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import SpacesAndPlaces from './pages/SpacesAndPlaces';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -43,6 +44,9 @@ export default function App() {
             <Route path="/news" element={<NewsMedia />} />
             <Route path="/news/:newsId" element={<NewsDetail />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/the-ocs-a-z-of-spaces-and-places" element={<SpacesAndPlaces />} />
+            <Route path="/a-z-of-spaces-and-places" element={<SpacesAndPlaces />} />
+            <Route path="/spaces-and-places" element={<SpacesAndPlaces />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="*" element={<NotFound />} />

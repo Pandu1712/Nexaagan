@@ -12,11 +12,16 @@ import HardServicesContent from '../components/services/HardServicesContent';
 import CarbonEnergyManagementContent from '../components/services/CarbonEnergyManagementContent';
 import LandscapingContent from '../components/services/LandscapingContent';
 import CleaningContent from '../components/services/CleaningContent';
+import PestControlContent from '../components/services/PestControlContent';
+import FrontOfHouseContent from '../components/services/FrontOfHouseContent';
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
 
-  const service = servicesData.find((s) => s.id === serviceId);
+  // Support both slug conventions (with or without 'and')
+  const normalizedId = serviceId === 'front-of-house-and-concierge' ? 'front-of-house-concierge' : serviceId;
+
+  const service = servicesData.find((s) => s.id === normalizedId || s.id === serviceId);
 
   if (!service) {
     return <Navigate to="/services" replace />;
@@ -93,6 +98,36 @@ export default function ServiceDetail() {
           ]}
         />
         <CleaningContent service={service} />
+      </div>
+    );
+  }
+
+  // Specialized view for Pest Control matching all 10 reference sections
+  if (serviceId === 'pest-control') {
+    return (
+      <div className="w-full flex flex-col flex-1">
+        <Breadcrumbs
+          items={[
+            { label: 'Our Services', link: '/services' },
+            { label: service.title },
+          ]}
+        />
+        <PestControlContent service={service} />
+      </div>
+    );
+  }
+
+  // Specialized view for Front of House & Concierge matching all 12 reference sections
+  if (normalizedId === 'front-of-house-concierge') {
+    return (
+      <div className="w-full flex flex-col flex-1">
+        <Breadcrumbs
+          items={[
+            { label: 'Our Services', link: '/services' },
+            { label: service.title },
+          ]}
+        />
+        <FrontOfHouseContent service={service} />
       </div>
     );
   }

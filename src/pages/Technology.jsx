@@ -1,115 +1,413 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
+  ArrowRight, 
+  Plus, 
+  Minus, 
   Cpu, 
-  Bot, 
   Layers, 
   Activity, 
   ShieldCheck, 
-  ArrowRight, 
-  CheckCircle2, 
-  Wifi, 
-  Zap, 
-  LineChart, 
+  CheckCircle2,
+  Sparkles,
+  Server,
   Radio,
-  Server
+  FileCheck2,
+  BarChart3,
+  MessageSquare
 } from 'lucide-react';
-import { techData } from '../data/techData';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
-import PageHero from '../components/layout/PageHero';
-import SectionTitle from '../components/common/SectionTitle';
 import ContactForm from '../components/sections/ContactForm';
 
 export default function Technology() {
-  const [selectedPillar, setSelectedPillar] = useState(0);
+  // State for Solutions Accordion Grid (Image 3)
+  const [openSolution, setOpenSolution] = useState(null);
 
-  const icons = [Cpu, Bot, Layers, Activity];
+  const toggleSolution = (index) => {
+    setOpenSolution(openSolution === index ? null : index);
+  };
+
+  // 12 Solutions matching Screenshot 3
+  const solutions = [
+    {
+      q: 'How does Enhanced Restroom Experiences work?',
+      a: 'IoT footfall sensors and dispenser telemetry monitor real-time restroom usage, dynamically dispatching cleaning teams based on actual occupancy rather than fixed clock times, ensuring supplies never deplete and hygiene remains pristine.'
+    },
+    {
+      q: 'How does Proactive Environmental Monitoring work?',
+      a: 'Continuous indoor environmental quality (IEQ) sensors measure CO2, VOCs, temperature, humidity, and airborne particulate matter, automatically signaling HVAC BMS controls to modulate airflow and protect colleague cognitive health.'
+    },
+    {
+      q: 'How does Proactive Facility Security enhance safety?',
+      a: 'AI computer vision and perimeter sensor grids identify unauthorized intrusions, perimeter anomalies, and tailgating in real time, alerting control center operators and mobile security teams instantly.'
+    },
+    {
+      q: 'What are the Innovative Cleaning Solutions?',
+      a: 'Autonomous robotic scrubbers operating safely around building occupants, chemical-free stabilized aqueous ozone (SAO) generators, and ATP bioluminescence swab assays that objectively verify clinical infection control.'
+    },
+    {
+      q: 'How does Streamlined Asset Maintenance maximise efficiency for businesses?',
+      a: 'Predictive vibration, thermal, and acoustic sensors continuously analyze rotating MEP plant (chillers, air handling units, pumps), identifying mechanical friction and bearing wear weeks before catastrophic failures occur.'
+    },
+    {
+      q: 'How do you manage waste and recycling to ensure compliance with environmental standards?',
+      a: 'Connected sensor-equipped waste compactors monitor volume levels in real time, optimizing waste collection cycles, eliminating unnecessary vehicle emissions, and generating verifiable digital recycling audit trails for ESG reporting.'
+    },
+    {
+      q: 'How do you manage waste and recycling effectively in retail spaces, especially during peak times?',
+      a: 'Dynamic bin level telemetry in high-footfall retail atriums and food courts automatically dispatches cleaning porters just before bins hit 80% capacity, preventing unsightly overflow during weekend and holiday surges.'
+    },
+    {
+      q: 'What features are offered by Intelligent Surveillance and Access Control?',
+      a: 'Frictionless biometric facial verification, smartphone Bluetooth credentials, automated visitor check-in kiosks, and intelligent multi-camera tracking that streamline lobby traffic while securing sensitive tenant floors.'
+    },
+    {
+      q: 'What does Enhanced Security and Efficiency involve?',
+      a: 'Consolidating CCTV video management, access control logs, intrusion alarms, and guard patrol GPS telemetry into a single unified security operations cockpit for zero-latency response.'
+    },
+    {
+      q: 'What is your Energy Efficiency Revolution offer?',
+      a: 'Asset-level sub-metering, algorithmic BMS setpoint calibration, and automated peak-demand shaving that reduce portfolio energy expenditure by 15% to 30% within 12 to 18 months.'
+    },
+    {
+      q: 'How does Workspace Optimisation benefit businesses?',
+      a: 'Passive infrared (PIR) desk occupancy sensors and zone heatmaps provide empirical utilization data, enabling corporate real estate leaders to right-size floorplates, reduce lease overheads, and design agile collaborative spaces.'
+    },
+    {
+      q: 'How does Smart FM monitor restroom usage?',
+      a: 'Non-optical anonymous infrared presence counters track cumulative visitor footfall at entrances, automatically triggering janitorial tickets once predetermined footfall thresholds are reached.'
+    }
+  ];
 
   return (
-    <div className="w-full flex flex-col flex-1">
-      <Breadcrumbs items={[{ label: 'Technology & Innovation' }]} />
+    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
+      <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
-      {/* Signature OCS Enterprise Hero with Premium Photography & Floating Card */}
-      <PageHero
-        badge="Smart Estate Telemetry"
-        badgeLinkText="NEXA-Pulse™ Platform"
-        badgeLinkUrl="#nexa-pulse"
-        title={techData.hero.title}
-        description={techData.hero.subtitle}
-        image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2400&q=85"
-        imageAlt="NEXA-Pulse Smart Building Telemetry & Mission Critical IoT Infrastructure"
-        stats={[
-          { value: "3.2M+", label: "Telemetry Sensors" },
-          { value: "99.98%", label: "System Uptime" },
-          { value: "18.4%", label: "Mean Energy Saved" }
-        ]}
-        primaryCta={{
-          text: "Request NEXA-Pulse™ Walkthrough",
-          url: "#contact-form",
-          isAnchor: true
-        }}
-        secondaryCta={{
-          text: "Explore Services Integration",
-          url: "/services"
-        }}
-      />
+      {/* SECTION 1: HERO HEADER (Screenshot 1) */}
+      <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+          {/* Digital Cyber Data Particle Grid Background */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=85" 
+              alt="Harness technology with OCS Advance" 
+              className="w-full h-full object-cover object-center"
+            />
+            {/* Smooth dark gradient overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent lg:w-3/4" />
+          </div>
 
-      {/* NEXA-Pulse Platform Spotlight */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            {/* Left Content */}
-            <div className="lg:col-span-7 space-y-6">
-              <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
-                Proprietary Telemetry Platform
-              </span>
-
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
-                {techData.platform.name}: Zero-Latency Machine Intelligence
-              </h2>
-
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                {techData.platform.description}
-              </p>
-
-              {/* Stat Counters */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-100">
-                {techData.platform.stats.map((st, idx) => (
-                  <div key={idx} className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div className="text-xl sm:text-2xl font-heading font-bold text-brand-orange">{st.value}</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5 leading-tight">{st.label}</div>
-                  </div>
-                ))}
+          {/* Floating White Card */}
+          <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
+              {/* Badge: "Join our Technology Team OCS Careers ->" */}
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
+                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                  Join our Technology Team
+                </span>
+                <Link to="/about" className="text-xs font-semibold text-slate-800 hover:text-brand-orange transition-colors flex items-center">
+                  <span>OCS Careers</span>
+                  <ArrowRight className="w-3 h-3 ml-1" />
+                </Link>
               </div>
 
-              <div className="pt-2">
+              {/* Title */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+                Harness technology with OCS Advance
+              </h1>
+
+              {/* Description */}
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8">
+                Deliver enhanced facilities services through innovation – driving best practice, productivity, resilience, experience and outcomes for your colleagues, customers and communities.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href="#advance-overview"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                >
+                  <span>Explore OCS Advance</span>
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
                 <a
                   href="#contact-form"
-                  className="btn-gradient text-sm py-3.5 px-7 shadow-md hover:shadow-brand-orange/30"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
                 >
-                  <span>Request Live NEXA-Pulse™ Walkthrough</span>
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <span>Contact Our Team</span>
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Right Platform Mockup Image */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 group aspect-[4/3]">
-                <img
-                  src={techData.platform.image}
-                  alt="NEXA-Pulse Dashboard Cockpit"
-                  className="w-full h-full object-cover card-img-zoom"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/85 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <div className="flex items-center space-x-2 text-xs font-semibold text-emerald-400 mb-1">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                    <span>Real-Time Sensor Telemetry Connected</span>
+      {/* SECTION 2: OCS ADVANCE OVERVIEW (Screenshot 2) */}
+      <section id="advance-overview" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          {/* Left Column: Operations Control Center Technologist */}
+          <div className="lg:col-span-6">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" 
+                alt="OCS Advance Operations Technology Specialist" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Right Column: Content */}
+          <div className="lg:col-span-6 space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+              OCS Advance
+            </h2>
+
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              OCS Advance utilises proven technological tools to enhance customer success and improve the operational experience in facilities services operations. These tools optimise best practice, boost productivity, and help build resilience, delivering the best customer and colleague outcomes.
+            </p>
+
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              We're working to deliver smarter and more efficient environments worldwide, from asset-level energy monitoring and advanced restroom management to proactive environmental sensing and intelligent surveillance.
+            </p>
+
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              Practical solutions like energy monitoring, advanced restroom management, proactive environmental sensing, and intelligent surveillance help businesses excel in all areas, including guest management, facility maintenance, workspace optimisation, and security enhancements.
+            </p>
+
+            {/* CTA Button */}
+            <div className="pt-2">
+              <a
+                href="#contact-form"
+                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
+              >
+                <span>Contact our Technology Team</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: OCS ADVANCE SOLUTIONS FOR CUSTOMERS (Screenshot 3) */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="text-left mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+            OCS Advance solutions for customers
+          </h2>
+          <p className="text-base text-slate-600 max-w-2xl">
+            Explore how our smart facilities management tools deliver measurable operational efficiency and intelligence.
+          </p>
+        </div>
+
+        {/* 2-Column Accordion Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          {solutions.map((item, index) => {
+            const isOpen = openSolution === index;
+            return (
+              <div 
+                key={index}
+                className="bg-slate-50/70 hover:bg-slate-50 rounded-2xl border border-slate-200/70 p-5 sm:p-6 transition-all duration-200 self-start"
+              >
+                <button
+                  onClick={() => toggleSolution(index)}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm sm:text-base font-heading font-bold text-slate-900 group-hover:text-brand-orange transition-colors pr-4">
+                    {item.q}
+                  </span>
+                  <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center flex-shrink-0 text-[#FF5722] group-hover:border-[#FF5722] transition-colors">
+                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
-                  <p className="text-sm font-medium text-white">
-                    Aggregating HVAC, Chiller, Vibration & Air Quality telemetry in 100ms intervals
+                </button>
+                {isOpen && (
+                  <div className="mt-4 pt-4 border-t border-slate-200 text-sm text-slate-600 leading-relaxed animate-in fade-in duration-200">
+                    {item.a}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* SECTION 4: OCS ADVANCE TOOLS INTRO (Screenshot 4) */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-t border-slate-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight mb-6">
+            OCS Advance Tools
+          </h2>
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            We're continually working on and investing in developing technology solutions for the betterment of colleagues and customers. Below are three of our launching technology tools to deliver advanced facilities management: OCS Q, OCS ABi and OCS Live.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 5: TOOL 1 - OCS Q (Screenshot 5) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          {/* Left Column: Description */}
+          <div className="lg:col-span-6 space-y-6">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+              OCS Q – Auditor and job planning app
+            </h3>
+
+            <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p>
+                <strong className="text-slate-900 font-bold">• Function:</strong> OCS Q functions as an auditor and job planning application, streamlining workflow and auditing processes for operational teams.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Benefits:</strong> The tool aids in efficient job allocation and monitoring, allowing for real-time tracking of tasks and providing a platform for auditing activities, ensuring jobs are completed efficiently and to the required standards.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Impact:</strong> By enhancing auditing and job planning processes, OCS Q helps reduce operational inefficiencies, ensuring planned and reactive requirements are met effectively.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Image with OCS Q Badge Overlay */}
+          <div className="lg:col-span-6">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
+                alt="OCS Q Auditor and Job Planning Mobile App" 
+                className="w-full h-full object-cover"
+              />
+              {/* OCS Q Badge Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <div className="w-px h-8 bg-white/40" />
+                  <div className="w-10 h-10 rounded-xl bg-white text-slate-950 flex items-center justify-center font-black text-xl shadow-md">
+                    Q
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6: TOOL 2 - OCS ABI (Screenshot 6) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          {/* Left Column: Data Center Server Corridor with OCS ABi Badge Overlay */}
+          <div className="lg:col-span-6 order-2 lg:order-1">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" 
+                alt="OCS ABi Advanced Building Intelligence Data Hall" 
+                className="w-full h-full object-cover"
+              />
+              {/* OCS ABi Badge Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <div className="w-px h-8 bg-white/40" />
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading text-cyan-400">ABi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Description */}
+          <div className="lg:col-span-6 space-y-6 order-1 lg:order-2">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+              OCS ABi – Advanced Building Intelligence
+            </h3>
+
+            <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p>
+                <strong className="text-slate-900 font-bold">• Function:</strong> OCS ABi harnesses the power of data and artificial intelligence to provide building operators with comprehensive insights, akin to having the benefit of hindsight.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Benefits:</strong> This tool processes large volumes of data to offer actionable insights, aiding in predictive maintenance, operational decision-making, and identifying trends and patterns in facility management.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Impact:</strong> Leveraging data and AI, OCS ABi enhances building operators' capability to preemptively address issues, optimise resources, and improve overall management of facilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7: TOOL 3 - OCS LIVE (Screenshot 7) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          {/* Left Column: Description */}
+          <div className="lg:col-span-6 space-y-6">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+              OCS Live – Real-time customer communication
+            </h3>
+
+            <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p>
+                <strong className="text-slate-900 font-bold">• Function:</strong> OCS Live serves as a real-time communication platform for customer engagement.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Upcoming Features:</strong> Integrated Net Promoter Scoring (NPS), vital for gauging customer satisfaction and service quality.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Benefits:</strong> Direct channel for customers to communicate their needs and feedback, crucial for service improvement.
+              </p>
+              <p>
+                <strong className="text-slate-900 font-bold">• Impact:</strong> OCS Live aims to make customer interactions more effective, fostering a better understanding of client needs and enabling prompt responses to service requests or issues.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Image with OCS Live Badge Overlay */}
+          <div className="lg:col-span-6">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80" 
+                alt="OCS Live Real-Time Customer Communication Platform" 
+                className="w-full h-full object-cover"
+              />
+              {/* OCS Live Badge Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <div className="w-px h-8 bg-white/40" />
+                  <span className="text-2xl sm:text-3xl font-black italic tracking-wider font-heading text-emerald-400">Live</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 8: EXECUTIVE QUOTE BANNER (Screenshot 8) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[440px] sm:min-h-[480px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+          {/* Glass architectural facade & tree canopy photography */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" 
+              alt="OCS Enterprise Technology Innovation Quote" 
+              className="w-full h-full object-cover object-center"
+            />
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent lg:w-3/4" />
+          </div>
+
+          {/* Floating White Quote Card */}
+          <div className="relative z-10 p-6 sm:p-10 lg:p-12 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-6">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/40">
+              <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-medium mb-6 italic">
+                “Technology has an pivotal role to play within facilities services and helping shape the future for OCS customers and colleagues. Our unique proposition of 125 years experience combined with innovation and technology, gives our customers a competitive advantage.”
+              </p>
+
+              <div className="flex items-center space-x-4 border-t border-slate-100 pt-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+                  alt="Ketan Patel - Group Chief Information Officer" 
+                  className="w-12 h-12 rounded-full object-cover border-2 border-brand-orange"
+                />
+                <div>
+                  <h4 className="text-base font-heading font-extrabold text-slate-900">
+                    Ketan Patel
+                  </h4>
+                  <p className="text-xs text-slate-500 font-medium">
+                    Group Chief Information Officer
                   </p>
                 </div>
               </div>
@@ -118,89 +416,46 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* 4 Technology Pillars */}
-      <section className="section-padding bg-slate-50 border-y border-slate-100">
-        <div className="container-custom">
-          <SectionTitle
-            badge="Innovation Framework"
-            title="Four Core Pillars of Digital Transformation"
-            subtitle="Explore how artificial intelligence, autonomous robotics, digital twins, and space analytics converge to optimize operational efficiency."
-            align="center"
+      {/* SECTION 9: JOIN OUR GLOBAL TECHNOLOGY TEAMS BANNER (Screenshot 9) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-8 sm:p-14 lg:p-16 overflow-hidden text-center shadow-2xl">
+          {/* Subtle radial dot matrix pattern */}
+          <div 
+            className="absolute inset-0 opacity-15 pointer-events-none" 
+            style={{
+              backgroundImage: 'radial-gradient(#ffffff 1.2px, transparent 1.2px)',
+              backgroundSize: '22px 22px'
+            }}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {techData.pillars.map((pillar, idx) => {
-              const Icon = icons[idx] || Cpu;
-              return (
-                <div
-                  key={pillar.id}
-                  className="p-7 rounded-3xl bg-white border border-slate-100 hover:border-slate-200 shadow-card-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-2xl bg-brand-navy text-white flex items-center justify-center mb-5 group-hover:bg-gradient-to-br group-hover:from-brand-orange group-hover:to-red-600 transition-all shadow-md">
-                      <Icon className="w-6 h-6" />
-                    </div>
-
-                    <h3 className="text-xl font-heading font-bold text-brand-navy group-hover:text-brand-orange transition-colors mb-3 leading-snug">
-                      {pillar.title}
-                    </h3>
-
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                      {pillar.description}
-                    </p>
-
-                    <div className="space-y-2 border-t border-slate-100 pt-4">
-                      {pillar.points.map((pt, pIdx) => (
-                        <div key={pIdx} className="flex items-start text-xs text-slate-700">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                          <span>{pt}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-4">
+              Join our global technology teams
+            </h2>
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+              Visit our global locations page for your region and search careers today.
+            </p>
+            <Link
+              to="/sectors"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-heading font-bold text-base text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300"
+            >
+              <span>Search our Global Locations</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Enterprise Security & Data Integrity */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <SectionTitle
-            badge="Enterprise Security"
-            title="Bank-Grade Data Security & Regulatory Compliance"
-            subtitle="We adhere to the strictest international cybersecurity frameworks to ensure your telemetry and building control systems remain impenetrable."
-            align="center"
+      {/* SIGNATURE CONTACT FORM */}
+      <section id="contact-form" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
+          <ContactForm 
+            title="Connect With Our Technology & Innovation Specialists"
+            subtitle="Discover how OCS Advance, AI building intelligence, and real-time telemetry can empower your facility operations."
+            defaultService="Smart Buildings, IoT & Telemetry" 
           />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {techData.securityStandards.map((sec, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-2"
-              >
-                <div className="flex items-center space-x-2 text-brand-navy font-bold text-sm">
-                  <ShieldCheck className="w-5 h-5 text-emerald-600" />
-                  <span>{sec.title}</span>
-                </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  {sec.desc}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Contact & IoT Consultation Form */}
-      <ContactForm
-        title="Schedule a NEXA-Pulse™ Demonstration"
-        subtitle="Experience how real-time predictive machine intelligence can transform your commercial or industrial facilities."
-        defaultService="Smart Buildings, IoT & Telemetry"
-      />
     </div>
   );
 }
-

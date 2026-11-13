@@ -120,39 +120,40 @@ export const servicesData = [
     id: "pest-control",
     title: "Pest Control",
     shortTitle: "Pest Control",
-    category: "Environmental Soft Services",
-    tagline: "Integrated Pest Management (IPM), non-toxic eradication, and continuous biological exclusion.",
-    heroImage: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?auto=format&fit=crop&w=1920&q=80",
-    overview: "Uncompromised hygiene requires rigorous, proactive pest exclusion. NEXAAGEN delivers certified Integrated Pest Management (IPM) across pharmaceutical cleanrooms, hospital wards, commercial kitchens, food processing plants, and luxury retail malls. We utilize smart digital rodent traps, non-toxic biological deterrents, and sealed perimeter defenses complying with HACCP, BRC, and AIB standards.",
+    category: "Preventative & Specialist Hygiene",
+    tagline: "Pest control services offer proactive solutions, ensuring your premises are safeguarded against infestations, maintaining a hygienic environment.",
+    heroImage: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=1920&q=80",
+    overview: "Our global facilities services encompass comprehensive pest control solutions meticulously designed to safeguard your premises from pest-related disruptions. Our team designs and delivers bespoke strategies, ensuring a healthy and safe environment for your business operations.",
     benefits: [
-      "100% compliant with HACCP, BRC, FDA, and international food safety standards",
-      "Smart connected IoT rodent monitoring stations with instant alert dispatch",
-      "Eco-friendly, chemical-free thermal treatments and biological exclusion barriers",
-      "Discrete scheduled inspections designed to prevent customer and brand disruption"
+      "124 years experience in technical services, pest exclusion, and innovation",
+      "Over 1,200+ customers rely on our dedicated commercial pest control services",
+      "60% detection rate increase through real-time IoT monitoring and smart trap technology",
+      "95% average reduction in pest-related issues across enterprise estates"
     ],
     features: [
       {
-        title: "Integrated Pest Management (IPM) Audits",
-        desc: "Detailed property surveys mapping potential ingress points, harborage risks, and sanitation vulnerabilities."
+        title: "Proactive Regular Inspections",
+        desc: "Scheduled, discreet surveys identifying ingress vulnerabilities and biological risks before disruptions happen."
       },
       {
-        title: "Digital IoT Trap Networks & Live Alerts",
-        desc: "Connected sensor traps that instantly alert our mobile technicians the moment activity is detected."
+        title: "Customised Treatment Plans",
+        desc: "Bespoke IPM strategies engineered to meet statutory compliance across offices, logistics, healthcare, and manufacturing."
       },
       {
-        title: "HACCP Food Safety & Kitchen Defenses",
-        desc: "Specialized non-toxic gel baits, pheromone traps, and insect light traps (ILTs) certified for commercial kitchens."
+        title: "Pest Control + ESG Stewardship",
+        desc: "Microbial and bio-green products, eliminating harmful aerosols and phosphates to protect colleague well-being and biodiversity."
       },
       {
-        title: "Architectural Bird & Termite Exclusion",
-        desc: "Invisible optical netting, ultrasonic deterrents, and pre/post-construction subterranean termite soil barriers."
+        title: "Smart Monitoring Technology",
+        desc: "IoT sensors, predictive data analytics, and digital traps that notify mobile technicians the moment pest activity occurs."
       }
     ],
     subServices: [
-      "Commercial Integrated Pest Audits",
-      "Digital Rodent & Crawling Pest Eradication",
-      "Architectural Bird Netting & Ultrasonic Systems",
-      "Pre- & Post-Construction Anti-Termite Treatments"
+      "Regular inspections",
+      "Customised treatment plans",
+      "Rodent and insect control",
+      "Emergency response",
+      "Integrated pest management (IPM)"
     ]
   },
   {
@@ -198,39 +199,42 @@ export const servicesData = [
     id: "front-of-house-concierge",
     title: "Front of House & Concierge",
     shortTitle: "Front of House",
-    category: "Workplace Experience",
-    tagline: "Corporate concierge, executive hospitality, and employee-centric workplace services.",
-    heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80",
-    overview: "Inspire your teams and impress your visitors from the moment they step into your building. We combine 5-star hotel-grade reception concierge, audio-visual event management, workplace wellness curation, and corporate hospitality services.",
+    category: "Workplace Experience & Hospitality",
+    tagline: "Our front-of-house teams ensure seamless and efficient operations to enhance every touchpoint throughout your customer's journey.",
+    heroImage: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1920&q=80",
+    overview: "Front of house, concierge and hospitality services that we tailor to suit the specific requirements of your business, brand, environment, guests and visitors. From greeting visitors to managing enquiries, our front-of-house staff are the friendly faces representing your organisation, committed to maintaining the highest standards of customer care and professionalism to create positive, lasting impressions.",
     benefits: [
-      "Trained hospitality ambassadors reflecting your corporate brand identity",
-      "Frictionless guest check-in reducing lobby wait times by 80%",
-      "Complete meeting room and event curation with zero AV glitches",
-      "Employee satisfaction scores averaging above 95%"
+      "124 years experience in front of house guest services and workplace hospitality",
+      "Over 10m+ guests greeted and guided every year across landmark corporate facilities",
+      "85% front of house colleague retention rate ensuring seamless consistency",
+      "2,500+ hospitality trained professionals delivering 5-star visitor care"
     ],
     features: [
       {
-        title: "Executive Front of House Concierge",
-        desc: "Warm, professional hosts providing personalized guest arrivals, secure badge issuance, and luggage assistance."
+        title: "Reception & Visitor Management",
+        desc: "Dedicated hospitality ambassadors managing front-desk arrivals, VIP escort, secure screening, and express badge registration."
       },
       {
-        title: "Corporate Hospitality & Event Support",
-        desc: "Meeting room hospitality, executive dining curation, and specialty coffee management for board meetings and VIP visits."
+        title: "Switchboard & Call Operations",
+        desc: "Professional multi-lingual call routing, message taking, and seamless telephone switchboard administration."
       },
       {
-        title: "Event & Audio-Visual Production",
-        desc: "Full staging and AV support for town halls, hybrid board meetings, investor days, and product launches."
+        title: "Front of House + ESG Stewardship",
+        desc: "Promoting diversity, equity, and inclusion, active community social engagement, and sustainable, zero-waste operations."
       },
       {
-        title: "Workplace Community & Logistics Management",
-        desc: "Organizing wellness initiatives, community engagement drives, and seamless mailroom courier logistics."
+        title: "Advanced Biometric & Digital Telemetry",
+        desc: "Leveraging ABi data analytics, touchless biometric credentials, and smart digital communication platforms."
       }
     ],
     subServices: [
-      "Executive Front-of-House Reception",
-      "VIP Concierge & Corporate Hospitality",
-      "Meeting Room & Audio-Visual Event Management",
-      "Mailroom, Courier & Internal Logistics"
+      "Reception management",
+      "Call handling and switchboard operations",
+      "Security, visitor screening and registration",
+      "Lost and found management",
+      "Mailroom and parcel screening and management",
+      "Transport coordination and executive support",
+      "Emergency services coordination"
     ]
   },
   {

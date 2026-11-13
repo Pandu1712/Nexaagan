@@ -83,14 +83,14 @@ export default function Technology() {
     <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
       <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
-      {/* SECTION 1: HERO HEADER (Screenshot 1) */}
+      {/* SECTION 1: HERO HEADER */}
       <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Digital Cyber Data Particle Grid Background */}
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2400&q=85" 
-              alt="Harness technology with OCS Advance" 
+              alt="Harness technology with NEXAAGEN Advance" 
               className="w-full h-full object-cover object-center"
             />
             {/* Smooth dark gradient overlay for text readability */}
@@ -100,20 +100,20 @@ export default function Technology() {
           {/* Floating White Card */}
           <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
             <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
-              {/* Badge: "Join our Technology Team OCS Careers ->" */}
+              {/* Badge: "Join our Technology Team NEXAAGEN Careers ->" */}
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
                 <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
                   Join our Technology Team
                 </span>
                 <Link to="/about" className="text-xs font-semibold text-slate-800 hover:text-brand-orange transition-colors flex items-center">
-                  <span>OCS Careers</span>
+                  <span>NEXAAGEN Careers</span>
                   <ArrowRight className="w-3 h-3 ml-1" />
                 </Link>
               </div>
 
               {/* Title */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
-                Harness technology with OCS Advance
+                Harness technology with NEXAAGEN Advance
               </h1>
 
               {/* Description */}
@@ -127,7 +127,7 @@ export default function Technology() {
                   href="#advance-overview"
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
                 >
-                  <span>Explore OCS Advance</span>
+                  <span>Explore NEXAAGEN Advance</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
@@ -142,7 +142,7 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 2: OCS ADVANCE OVERVIEW (Screenshot 2) */}
+      {/* SECTION 2: NEXAAGEN ADVANCE OVERVIEW */}
       <section id="advance-overview" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Left Column: Operations Control Center Technologist */}
@@ -150,7 +150,7 @@ export default function Technology() {
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" 
-                alt="OCS Advance Operations Technology Specialist" 
+                alt="NEXAAGEN Advance Operations Technology Specialist" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -159,11 +159,11 @@ export default function Technology() {
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
-              OCS Advance
+              NEXAAGEN Advance
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-              OCS Advance utilises proven technological tools to enhance customer success and improve the operational experience in facilities services operations. These tools optimise best practice, boost productivity, and help build resilience, delivering the best customer and colleague outcomes.
+              NEXAAGEN Advance utilises proven technological tools to enhance customer success and improve the operational experience in facilities services operations. These tools optimise best practice, boost productivity, and help build resilience, delivering the best customer and colleague outcomes.
             </p>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -187,11 +187,11 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 3: OCS ADVANCE SOLUTIONS FOR CUSTOMERS (Screenshot 3) */}
+      {/* SECTION 3: NEXAAGEN ADVANCE SOLUTIONS FOR CUSTOMERS */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
         <div className="text-left mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
-            OCS Advance solutions for customers
+            NEXAAGEN Advance solutions for customers
           </h2>
           <p className="text-base text-slate-600 max-w-2xl">
             Explore how our smart facilities management tools deliver measurable operational efficiency and intelligence.
@@ -229,52 +229,52 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 4: OCS ADVANCE TOOLS INTRO (Screenshot 4) */}
+      {/* SECTION 4: NEXAAGEN ADVANCE TOOLS INTRO */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-t border-slate-100">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight mb-6">
-            OCS Advance Tools
+            NEXAAGEN Advance Tools
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            We're continually working on and investing in developing technology solutions for the betterment of colleagues and customers. Below are three of our launching technology tools to deliver advanced facilities management: OCS Q, OCS ABi and OCS Live.
+            We're continually working on and investing in developing technology solutions for the betterment of colleagues and customers. Below are three of our launching technology tools to deliver advanced facilities management: NEXA-Q, NEXA-ABi and NEXA-Live.
           </p>
         </div>
       </section>
 
-      {/* SECTION 5: TOOL 1 - OCS Q (Screenshot 5) */}
+      {/* SECTION 5: TOOL 1 - NEXA-Q */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
-              OCS Q – Auditor and job planning app
+              NEXA-Q – Auditor and job planning app
             </h3>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
               <p>
-                <strong className="text-slate-900 font-bold">• Function:</strong> OCS Q functions as an auditor and job planning application, streamlining workflow and auditing processes for operational teams.
+                <strong className="text-slate-900 font-bold">• Function:</strong> NEXA-Q functions as an auditor and job planning application, streamlining workflow and auditing processes for operational teams.
               </p>
               <p>
                 <strong className="text-slate-900 font-bold">• Benefits:</strong> The tool aids in efficient job allocation and monitoring, allowing for real-time tracking of tasks and providing a platform for auditing activities, ensuring jobs are completed efficiently and to the required standards.
               </p>
               <p>
-                <strong className="text-slate-900 font-bold">• Impact:</strong> By enhancing auditing and job planning processes, OCS Q helps reduce operational inefficiencies, ensuring planned and reactive requirements are met effectively.
+                <strong className="text-slate-900 font-bold">• Impact:</strong> By enhancing auditing and job planning processes, NEXA-Q helps reduce operational inefficiencies, ensuring planned and reactive requirements are met effectively.
               </p>
             </div>
           </div>
 
-          {/* Right Column: Image with OCS Q Badge Overlay */}
+          {/* Right Column: Image with NEXA-Q Badge Overlay */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
               <img 
                 src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" 
-                alt="OCS Q Auditor and Job Planning Mobile App" 
+                alt="NEXA-Q Auditor and Job Planning Mobile App" 
                 className="w-full h-full object-cover"
               />
-              {/* OCS Q Badge Overlay */}
+              {/* NEXA-Q Badge Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
-                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading text-brand-orange">NEXA</span>
                   <div className="w-px h-8 bg-white/40" />
                   <div className="w-10 h-10 rounded-xl bg-white text-slate-950 flex items-center justify-center font-black text-xl shadow-md">
                     Q
@@ -286,21 +286,21 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 6: TOOL 2 - OCS ABI (Screenshot 6) */}
+      {/* SECTION 6: TOOL 2 - NEXA-ABI */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-          {/* Left Column: Data Center Server Corridor with OCS ABi Badge Overlay */}
+          {/* Left Column: Data Center Server Corridor with NEXA-ABi Badge Overlay */}
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
               <img 
                 src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" 
-                alt="OCS ABi Advanced Building Intelligence Data Hall" 
+                alt="NEXA-ABi Advanced Building Intelligence Data Hall" 
                 className="w-full h-full object-cover"
               />
-              {/* OCS ABi Badge Overlay */}
+              {/* NEXA-ABi Badge Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
-                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading text-brand-orange">NEXA</span>
                   <div className="w-px h-8 bg-white/40" />
                   <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading text-cyan-400">ABi</span>
                 </div>
@@ -311,36 +311,36 @@ export default function Technology() {
           {/* Right Column: Description */}
           <div className="lg:col-span-6 space-y-6 order-1 lg:order-2">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
-              OCS ABi – Advanced Building Intelligence
+              NEXA-ABi – Advanced Building Intelligence
             </h3>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
               <p>
-                <strong className="text-slate-900 font-bold">• Function:</strong> OCS ABi harnesses the power of data and artificial intelligence to provide building operators with comprehensive insights, akin to having the benefit of hindsight.
+                <strong className="text-slate-900 font-bold">• Function:</strong> NEXA-ABi harnesses the power of data and artificial intelligence to provide building operators with comprehensive insights, akin to having the benefit of hindsight.
               </p>
               <p>
                 <strong className="text-slate-900 font-bold">• Benefits:</strong> This tool processes large volumes of data to offer actionable insights, aiding in predictive maintenance, operational decision-making, and identifying trends and patterns in facility management.
               </p>
               <p>
-                <strong className="text-slate-900 font-bold">• Impact:</strong> Leveraging data and AI, OCS ABi enhances building operators' capability to preemptively address issues, optimise resources, and improve overall management of facilities.
+                <strong className="text-slate-900 font-bold">• Impact:</strong> Leveraging data and AI, NEXA-ABi enhances building operators' capability to preemptively address issues, optimise resources, and improve overall management of facilities.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 7: TOOL 3 - OCS LIVE (Screenshot 7) */}
+      {/* SECTION 7: TOOL 3 - NEXA-LIVE */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
-              OCS Live – Real-time customer communication
+              NEXA-Live – Real-time customer communication
             </h3>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
               <p>
-                <strong className="text-slate-900 font-bold">• Function:</strong> OCS Live serves as a real-time communication platform for customer engagement.
+                <strong className="text-slate-900 font-bold">• Function:</strong> NEXA-Live serves as a real-time communication platform for customer engagement.
               </p>
               <p>
                 <strong className="text-slate-900 font-bold">• Upcoming Features:</strong> Integrated Net Promoter Scoring (NPS), vital for gauging customer satisfaction and service quality.
@@ -349,23 +349,23 @@ export default function Technology() {
                 <strong className="text-slate-900 font-bold">• Benefits:</strong> Direct channel for customers to communicate their needs and feedback, crucial for service improvement.
               </p>
               <p>
-                <strong className="text-slate-900 font-bold">• Impact:</strong> OCS Live aims to make customer interactions more effective, fostering a better understanding of client needs and enabling prompt responses to service requests or issues.
+                <strong className="text-slate-900 font-bold">• Impact:</strong> NEXA-Live aims to make customer interactions more effective, fostering a better understanding of client needs and enabling prompt responses to service requests or issues.
               </p>
             </div>
           </div>
 
-          {/* Right Column: Image with OCS Live Badge Overlay */}
+          {/* Right Column: Image with NEXA-Live Badge Overlay */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
               <img 
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80" 
-                alt="OCS Live Real-Time Customer Communication Platform" 
+                alt="NEXA-Live Real-Time Customer Communication Platform" 
                 className="w-full h-full object-cover"
               />
-              {/* OCS Live Badge Overlay */}
+              {/* NEXA-Live Badge Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 flex items-center space-x-3 text-white shadow-2xl">
-                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading">OCS</span>
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight font-heading text-brand-orange">NEXA</span>
                   <div className="w-px h-8 bg-white/40" />
                   <span className="text-2xl sm:text-3xl font-black italic tracking-wider font-heading text-emerald-400">Live</span>
                 </div>
@@ -375,14 +375,14 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 8: EXECUTIVE QUOTE BANNER (Screenshot 8) */}
+      {/* SECTION 8: EXECUTIVE QUOTE BANNER */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[440px] sm:min-h-[480px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Glass architectural facade & tree canopy photography */}
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" 
-              alt="OCS Enterprise Technology Innovation Quote" 
+              alt="NEXAAGEN Enterprise Technology Innovation Quote" 
               className="w-full h-full object-cover object-center"
             />
             {/* Gradient Overlay */}
@@ -393,7 +393,7 @@ export default function Technology() {
           <div className="relative z-10 p-6 sm:p-10 lg:p-12 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-6">
             <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/40">
               <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-medium mb-6 italic">
-                “Technology has an pivotal role to play within facilities services and helping shape the future for OCS customers and colleagues. Our unique proposition of 125 years experience combined with innovation and technology, gives our customers a competitive advantage.”
+                “Technology has an pivotal role to play within facilities services and helping shape the future for NEXAAGEN customers and colleagues. Our unique proposition of 125 years experience combined with innovation and technology, gives our customers a competitive advantage.”
               </p>
 
               <div className="flex items-center space-x-4 border-t border-slate-100 pt-4">
@@ -416,7 +416,7 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* SECTION 9: JOIN OUR GLOBAL TECHNOLOGY TEAMS BANNER (Screenshot 9) */}
+      {/* SECTION 9: JOIN OUR GLOBAL TECHNOLOGY TEAMS BANNER */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-8 sm:p-14 lg:p-16 overflow-hidden text-center shadow-2xl">
           {/* Subtle radial dot matrix pattern */}
@@ -450,7 +450,7 @@ export default function Technology() {
         <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our Technology & Innovation Specialists"
-            subtitle="Discover how OCS Advance, AI building intelligence, and real-time telemetry can empower your facility operations."
+            subtitle="Discover how NEXAAGEN Advance, AI building intelligence, and real-time telemetry can empower your facility operations."
             defaultService="Smart Buildings, IoT & Telemetry" 
           />
         </div>

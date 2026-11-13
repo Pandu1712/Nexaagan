@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Leaf, 
   Users, 
@@ -118,6 +119,30 @@ export default function ESG() {
                         </p>
                       </div>
                     ))}
+
+                    {pillar.id === 'environmental' && (
+                      <div className="pt-2">
+                        <Link
+                          to="/environmental"
+                          className="inline-flex items-center space-x-2 text-sm font-bold text-[#FF5722] hover:text-[#D8232A] group"
+                        >
+                          <span>Explore Environmental (ESG) Commitments & Targets</span>
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </div>
+                    )}
+
+                    {pillar.id === 'governance' && (
+                      <div className="pt-2">
+                        <Link
+                          to="/governance"
+                          className="inline-flex items-center space-x-2 text-sm font-bold text-[#FF5722] hover:text-[#D8232A] group"
+                        >
+                          <span>Explore Governance (ESG) Framework & Code of Conduct</span>
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

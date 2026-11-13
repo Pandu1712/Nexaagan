@@ -1,5 +1,47 @@
 export const newsData = [
   {
+    id: "sixty-years-aviation-services",
+    title: "Sixty Years of Global Aviation Services: One Standard, Unrivalled Reach",
+    excerpt: "Reflecting on six decades of airside engineering, passenger handling, and continuous operational excellence across the world's busiest transport hubs.",
+    category: "Aviation",
+    date: "24 Aug, 2026",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    content: `
+      With sixty years of specialist aviation ground and terminal operations, NEXAAGEN delivers synchronized airside support, PRM assistance, aircraft turnaround sanitization, and baggage logistics across tier-one international gateways.
+    `
+  },
+  {
+    id: "sixty-days-data-centre-life",
+    title: "The 60 Days That Decide a Data Centre’s Life: Why Pre-Commissioning Matters",
+    excerpt: "Why the final 60 days before server load-in dictate operational resilience, PUE efficiency, and cleanroom air cleanliness standards.",
+    category: "Data Centres",
+    date: "16 Jul, 2026",
+    readTime: "6 min read",
+    author: "NEXAAGEN Team",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    content: `
+      During the critical pre-commissioning window, hyperscale data centre facilities must transition from industrial construction zones to sub-micron particle-free operational zones.
+    `
+  },
+  {
+    id: "inside-indias-airport-transformation",
+    title: "Inside India’s Airport Transformation: Why FM is the Secret Engine of Passenger Experience",
+    excerpt: "How modernized facilities management, IoT washrooms, and automated concourse logistics support 100M+ transit passengers annually.",
+    category: "Infrastructure",
+    date: "09 Jul, 2026",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
+    content: `
+      As India's aviation network expands exponentially, NEXAAGEN's integrated facility management powers world-class terminal operations, passenger comfort, and zero-downtime maintenance.
+    `
+  },
+  {
     id: "post-construction-cleaning-data-centres",
     title: "Why Post-Construction Cleaning Is Critical for Data Centre Projects",
     excerpt: "Microscopic particulate control and ISO 14644 air cleanliness certification before critical hyperscale server deployment.",
@@ -11,10 +53,6 @@ export const newsData = [
     image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
     content: `
       Data centre commissioning requires an uncompromising standard of environmental cleanliness. Before delicate optical transceivers and hyperscale GPU clusters are energized, the physical room must be completely cleared of conductive sub-micron construction debris.
-
-      NEXAAGEN's specialized Critical Environment Cleaning team operates under strict ISO 14644-1 Class 8 protocols, utilizing HEPA-filtered vacuum extraction, anti-static microfibre encapsulation, and airborne particulate laser counters to certify zero contamination.
-
-      "A single conductive metal shaving or drywall dust particle can bridge circuit board contacts and cause multi-million dollar catastrophic outages," explains Marcus Vance, Director of Critical Facilities. "Our deep post-construction decontamination methodology guarantees statutory environmental compliance from day one."
     `
   },
   {

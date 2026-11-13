@@ -20,6 +20,9 @@ import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import SpacesAndPlaces from './pages/SpacesAndPlaces';
+import QHSE from './pages/QHSE';
+import Environmental from './pages/Environmental';
+import Governance from './pages/Governance';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -40,6 +43,12 @@ export default function App() {
             <Route path="/services/:serviceId" element={<ServiceDetail />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/esg" element={<ESG />} />
+            <Route path="/qhse" element={<QHSE />} />
+            <Route path="/esg/qhse" element={<QHSE />} />
+            <Route path="/environmental" element={<Environmental />} />
+            <Route path="/esg/environmental" element={<Environmental />} />
+            <Route path="/governance" element={<Governance />} />
+            <Route path="/esg/governance" element={<Governance />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/news" element={<NewsMedia />} />
             <Route path="/news/:newsId" element={<NewsDetail />} />

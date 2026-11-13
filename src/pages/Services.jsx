@@ -55,7 +55,7 @@ export default function Services() {
         }}
         secondaryCta={{
           text: "A-Z Spaces & Places",
-          url: "/the-ocs-a-z-of-spaces-and-places"
+          url: "/a-z-of-spaces-and-places"
         }}
       />
 

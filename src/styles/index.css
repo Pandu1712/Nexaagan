@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+  }
+
+  #root {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    @apply text-slate-700 bg-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  /* Brand Gradient Button */
+  .btn-gradient {
+    @apply inline-flex items-center justify-center font-semibold text-white px-6 py-3.5 rounded-xl
+           bg-gradient-to-r from-brand-orange to-brand-orange-gradientEnd
+           hover:from-brand-orange-hover hover:to-red-600
+           shadow-md hover:shadow-lg transition-all duration-300 ease-out active:scale-[0.98];
+  }
+
+  /* Secondary Navy Button */
+  .btn-navy {
+    @apply inline-flex items-center justify-center font-semibold text-white px-6 py-3.5 rounded-xl
+           bg-brand-navy hover:bg-brand-navy-light
+           shadow-md hover:shadow-lg transition-all duration-300 ease-out active:scale-[0.98];
+  }
+
+  /* Outline Button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center font-semibold text-brand-navy px-6 py-3.5 rounded-xl
+           border-2 border-slate-200 hover:border-brand-navy hover:bg-slate-50
+           transition-all duration-300 ease-out active:scale-[0.98];
+  }
+
+  /* White Button */
+  .btn-white {
+    @apply inline-flex items-center justify-center font-semibold text-brand-navy px-6 py-3.5 rounded-xl
+           bg-white hover:bg-slate-100 shadow-md hover:shadow-lg
+           transition-all duration-300 ease-out active:scale-[0.98];
+  }
+
+  /* Container wrapper - Enterprise Wide Layout matching OCS (Up to 1680px) */
+  .container-custom {
+    @apply w-full max-w-[1680px] mx-auto px-4 sm:px-8 lg:px-12;
+  }
+
+  /* Section padding standard */
+  .section-padding {
+    @apply py-14 sm:py-20 lg:py-24;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+/* Continuous Marquee Ticker */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Subtle image zoom on hover for cards */
+.group:hover .card-img-zoom {
+  transform: scale(1.04);
+}
+.card-img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}

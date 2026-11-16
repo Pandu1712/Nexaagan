@@ -354,7 +354,7 @@ export default function VisionMission() {
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1200&q=80"
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
                 alt="Rope access specialist demonstrating rigorous safety best practices"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

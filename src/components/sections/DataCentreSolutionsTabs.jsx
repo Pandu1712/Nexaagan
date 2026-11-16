@@ -61,7 +61,7 @@ export default function DataCentreSolutionsTabs() {
       line2: 'Management',
       title: 'Predictive Planned Maintenance & Audit Governance',
       subtitle: 'Rigorous Standard Operating Procedures (SOPs) and Method of Procedure (MOP) execution guaranteeing zero unplanned maintenance interruptions.',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
       bullets: [
         {
           label: 'Rigorous MOP Protocols',
@@ -157,7 +157,7 @@ export default function DataCentreSolutionsTabs() {
       line2: 'Management',
       title: 'Decarbonisation, Heat Recovery & Energy Efficiency',
       subtitle: 'Empowering data center operators to hit aggressive Net Zero 2035 targets through renewable microgrids and circular waste-heat recovery.',
-      image: 'https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
       bullets: [
         {
           label: 'PUE Optimization Roadmaps',

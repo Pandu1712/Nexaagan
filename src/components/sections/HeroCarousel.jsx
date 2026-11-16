@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { heroSlides } from '../../data/heroSlides';
 
 export default function HeroCarousel() {
@@ -124,21 +124,12 @@ export default function HeroCarousel() {
                   transition={{ duration: 0.35, ease: 'easeOut' }}
                   className="space-y-4 sm:space-y-5 lg:space-y-6"
                 >
-                  {/* Top Row: Category Badge + Secondary Link */}
-                  <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+                  {/* Top Row: Category Badge */}
+                  <div>
                     {/* Small Category Badge */}
                     <span className="inline-flex items-center px-4 py-1.5 rounded-full text-white font-bold text-[11px] sm:text-xs bg-gradient-to-r from-[#FF5722] to-[#D8232A] shadow-md shadow-orange-500/20 uppercase tracking-wider">
                       {current.badge}
                     </span>
-
-                    {/* Secondary Text Link with Arrow */}
-                    <Link
-                      to={current.secondaryLink.url}
-                      className="inline-flex items-center font-semibold text-white/90 hover:text-white transition-colors group text-xs sm:text-sm"
-                    >
-                      <span>{current.secondaryLink.text}</span>
-                      <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-brand-orange group-hover:translate-x-1 transition-all" />
-                    </Link>
                   </div>
 
                   {/* Large Bold Heading */}

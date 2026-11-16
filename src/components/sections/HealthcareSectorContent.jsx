@@ -53,7 +53,7 @@ export default function HealthcareSectorContent() {
       id: 'critical-systems',
       label: 'Critical Systems Maintenance',
       title: 'Critical Systems Maintenance',
-      image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80',
       imageAlt: 'NEXAAGEN Hospital MEP Critical Systems Engineer',
       intro:
         "Reliable systems keep care moving. NEXAAGEN manages HVAC, medical gas, electrical, and automation systems to keep infrastructure running without pause; through on-site teams, real-time monitoring, and scheduled maintenance that works around clinical operations.",
@@ -110,7 +110,7 @@ export default function HealthcareSectorContent() {
       id: 'data-driven',
       label: 'Data-Driven Facilities Management',
       title: 'Data-Driven Facilities Management',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80',
       imageAlt: 'NEXAAGEN Data-Driven Hospital Facility Manager',
       intro:
         'Timely visibility leads to better and faster decisions. Our digital systems provide visibility across cleaning, maintenance, energy use, and compliance; so hospital leaders can act fast, stay audit-ready, and report with confidence.',

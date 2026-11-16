@@ -98,7 +98,7 @@ export default function CarbonEnergyManagementContent({ service }) {
     {
       id: 'hard-services',
       title: 'Hard Services',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
       description: 'Planned and preventative maintenance (PPM), minor works and capital projects.',
       link: '/services/hard-services'
     },
@@ -119,7 +119,7 @@ export default function CarbonEnergyManagementContent({ service }) {
     {
       id: 'landscaping',
       title: 'Landscaping',
-      image: 'https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80',
       description: 'Landscaping forms part of our Facilities Management offer across private and public sectors.',
       link: '/services/landscaping'
     }
@@ -168,7 +168,7 @@ export default function CarbonEnergyManagementContent({ service }) {
             {/* Background Image: Solar Technician on Commercial Rooftop (Screenshot 1) */}
             <div className="absolute inset-0 z-0">
               <img
-                src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=2400&q=85"
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=2400&q=85"
                 alt="Commercial Rooftop Solar Panel Installation with Engineer"
                 className="w-full h-full object-cover object-center scale-[1.02]"
               />

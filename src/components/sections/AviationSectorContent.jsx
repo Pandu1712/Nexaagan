@@ -147,7 +147,7 @@ export default function AviationSectorContent() {
       title: 'Achieving 28% energy reduction across regional airport hangars',
       description:
         'Deploying smart IoT lighting controls, variable frequency drives (VFD) on ventilation systems, and predictive MEP maintenance to achieve substantial carbon reduction and cost savings.',
-      image: 'https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
     },
   ];
 

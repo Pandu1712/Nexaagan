@@ -145,7 +145,7 @@ export const sectorsData = [
         tabName: "Terminal Critical Engineering",
         title: "24/7 Mechanical, Electrical & Baggage Handling Engineering",
         description: "Comprehensive planned preventative maintenance (PPM) and reactive rapid-response teams ensuring uninterrupted power, baggage conveyor reliability, escalators, and building management systems.",
-        image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80",
+        image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
         deliverables: [
           "HVAC and central chiller plant management with redundant failovers",
           "Baggage handling system (BHS) mechanical support & motor servicing",
@@ -173,7 +173,7 @@ export const sectorsData = [
         tabName: "Aircraft Turnaround Support",
         title: "Rapid Aircraft Deep-Clean & Waste Offloading",
         description: "Fast, disciplined turnaround cleaning teams adhering to tight 25-to-40 minute gate turnaround schedules without compromising security, bio-safety, or passenger comfort standards.",
-        image: "https://images.unsplash.com/photo-1519074069444-1ba4ea16e460?auto=format&fit=crop&w=1000&q=80",
+        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80",
         deliverables: [
           "Flight deck sanitization & cabin deep-cleaning protocols",
           "Hazardous waste and international food disposal compliance",
@@ -227,7 +227,7 @@ export const sectorsData = [
         title: "Airside Decarbonisation & Robotic Sanitization",
         client: "Global Hub Transit Authority",
         category: "Sustainability & Robotics",
-        image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
         description: "Fleet deployment of autonomous cleaning robots and smart energy management cutting nighttime energy consumption by 35%.",
         results: ["85% waste diversion from landfill", "Zero flight delays attributable to ground hygiene", "RoSPA Gold Safety Commendation"]
       }
@@ -457,8 +457,8 @@ export const sectorsData = [
     hiringLinkText: "Contact →",
     hiringLinkUrl: "#contact-form",
     tagline: "In manufacturing, every line has to keep running. We know your equipment has to perform, safety processes have to hold, and facilities have to be audit–ready at all times. NEXAAGEN manages these demands on site every day, so production stays steady, and targets stay on track.",
-    heroImage: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80",
-    introImage: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80",
+    introImage: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
     stats: [
       { value: "85+", label: "Heavy Industrial & Automotive Plants" },
       { value: "0", label: "Lost Time Incidents in 24 Months" },
@@ -499,7 +499,7 @@ export const sectorsData = [
         tabName: "Specialist Industrial Cleaning",
         title: "Dry-Ice Blasting, Silo Cleaning & High-Pressure Jetting",
         description: "Heavy-duty cleaning for automotive stamping presses, paint booths, overhead crane gantries, and chemical reactor vessels.",
-        image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
+        image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1000&q=80",
         deliverables: [
           "Dry-ice blast cleaning without dismantling delicate tooling",
           "High-pressure hydro-jetting up to 40,000 PSI for stubborn deposits",
@@ -631,7 +631,7 @@ export const sectorsData = [
     hiringLinkText: "NEXAAGEN Careers →",
     hiringLinkUrl: "/careers",
     tagline: "From the world's largest IKEA in the Philippines to London's Canary Wharf and outlet villages in the UK, we help create calm, safe and premium retail spaces that customers enjoy spending time in.",
-    heroImage: "https://images.unsplash.com/photo-1567449303078-57ad995bd302?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
     introImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
     stats: [
       { value: "450+", label: "Shopping Centres & Outlet Villages" },
@@ -690,7 +690,7 @@ export const sectorsData = [
         title: "Canary Wharf Retail Concourse Modernisation",
         client: "Canary Wharf Retail Estates",
         category: "Retail & Leisure",
-        image: "https://images.unsplash.com/photo-1567449303078-57ad995bd302?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
         description: "Turnkey facilities management, customer concierge, and sustainable waste segregation across 300+ stores.",
         results: ["96% waste diversion from landfill", "100% escalator uptime during Christmas peak", "RoSPA Gold Safety Commendation"]
       }

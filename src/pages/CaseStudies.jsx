@@ -191,7 +191,7 @@ export default function CaseStudies() {
       excerpt: 'Pioneering autonomous floor disinfection robots and stabilized aqueous ozone to reduce chemical footprint while exceeding hospital hygiene standards.',
       sector: 'Healthcare',
       service: 'Cleaning',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1000&q=80',
       challenge: 'Reducing chemical irritants and water consumption in high-traffic pediatric and respiratory wards without compromising pathogen kill rates.',
       solution: 'LiDAR-guided robotic scrubber scrubbers navigating hallways safely alongside human teams, paired with on-site aqueous ozone generation.',
       metrics: [

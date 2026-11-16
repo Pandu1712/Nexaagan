@@ -83,7 +83,7 @@ export const servicesData = [
     shortTitle: "Hard Services",
     category: "Technical MEP Engineering",
     tagline: "Precision mechanical, electrical, and public health (MEP) engineering ensuring continuous uptime.",
-    heroImage: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80",
     overview: "Our certified engineers safeguard the core lifeblood of your buildings. From high-voltage substations, centrifugal chillers, and HVAC air handling units to fire suppression and water hygiene, we ensure continuous statutory compliance and prolonged asset life.",
     benefits: [
       "ISO 55001 certified asset management lifecycle approach",
@@ -243,7 +243,7 @@ export const servicesData = [
     shortTitle: "Landscaping",
     category: "Grounds & Environmental",
     tagline: "Estate grounds care, biophilic indoor plants, arboriculture, and sustainable water irrigation.",
-    heroImage: "https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1920&q=80",
     overview: "Vibrant green environments elevate human well-being, improve indoor air quality, and enhance corporate property valuation. NEXAAGEN manages expansive corporate campus grounds, industrial parks, international airport green belts, and interior biophilic plant installations with eco-conscious irrigation, organic composting, and certified arboriculture care.",
     benefits: [
       "Biophilic workplace design proven to boost occupant wellness and productivity by 15%",

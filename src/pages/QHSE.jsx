@@ -74,7 +74,7 @@ export default function QHSE() {
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=1200&q=80" 
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" 
                 alt="NEXAAGEN QHSE Specialist with Safety Harness" 
                 className="w-full h-full object-cover object-top"
               />

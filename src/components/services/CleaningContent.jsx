@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ArrowUpRight, 
-  Check, 
-  ChevronLeft, 
-  ChevronRight, 
-  Plus, 
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Plus,
   Minus,
   Sparkles,
   ShieldCheck,
@@ -100,7 +100,7 @@ export default function CleaningContent({ service }) {
     {
       id: 'carbon-energy',
       title: 'Carbon & Energy',
-      image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80',
       description: 'Working with you towards Net Zero and your broader ESG goals and commitments.',
       link: '/services/carbon-energy-management'
     },
@@ -121,14 +121,14 @@ export default function CleaningContent({ service }) {
     {
       id: 'hard-services',
       title: 'Hard Services',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
       description: 'Planned and preventative maintenance (PPM), minor works and capital projects.',
       link: '/services/hard-services'
     },
     {
       id: 'landscaping',
       title: 'Landscaping',
-      image: 'https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80',
       description: 'Commercial grounds maintenance, interior plants and biodiversity enhancements.',
       link: '/services/landscaping'
     },
@@ -195,15 +195,15 @@ export default function CleaningContent({ service }) {
 
   return (
     <div className="w-full bg-white text-slate-900 overflow-hidden font-sans">
-      
+
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
       <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Background Photography with modern atrium colonnade */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80" 
-              alt="NEXAAGEN Commercial Cleaning Services" 
+            <img
+              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80"
+              alt="NEXAAGEN Commercial Cleaning Services"
               className="w-full h-full object-cover object-center"
             />
             {/* Smooth gradient overlay to ensure card readability */}
@@ -265,7 +265,7 @@ export default function CleaningContent({ service }) {
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
             return (
-              <div 
+              <div
                 key={idx}
                 className="bg-slate-50/70 hover:bg-white rounded-2xl p-6 sm:p-8 text-center transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 border border-slate-100 group"
               >
@@ -290,9 +290,9 @@ export default function CleaningContent({ service }) {
           {/* Left Column: Portrait */}
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 max-h-[580px]">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
-                alt="NEXAAGEN Cleaning Professional" 
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                alt="NEXAAGEN Cleaning Professional"
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -345,9 +345,9 @@ export default function CleaningContent({ service }) {
           {/* Right Column: 3 team members photo */}
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200/80">
-              <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80" 
-                alt="NEXAAGEN Sector Specialist Cleaning Colleagues" 
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80"
+                alt="NEXAAGEN Sector Specialist Cleaning Colleagues"
                 className="w-full h-full object-cover object-center max-h-[440px]"
               />
             </div>
@@ -361,9 +361,9 @@ export default function CleaningContent({ service }) {
           {/* Left Column: High-vis female colleague photo */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 max-h-[500px]">
-              <img 
-                src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=80" 
-                alt="NEXAAGEN Dedicated Cleaning Colleague" 
+              <img
+                src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=80"
+                alt="NEXAAGEN Dedicated Cleaning Colleague"
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -384,7 +384,7 @@ export default function CleaningContent({ service }) {
             {/* TRUE Values Badges */}
             <div className="flex flex-wrap gap-2.5">
               {['Trust', 'Respect', 'Unity', 'Empowerment'].map((val, idx) => (
-                <span 
+                <span
                   key={idx}
                   className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-800 border border-slate-200"
                 >
@@ -415,9 +415,9 @@ export default function CleaningContent({ service }) {
           {/* Right Column: Outdoor smiling colleague photo */}
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 max-h-[460px]">
-              <img 
-                src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80" 
-                alt="Frontline Training & Quality Outcomes" 
+              <img
+                src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80"
+                alt="Frontline Training & Quality Outcomes"
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -439,14 +439,14 @@ export default function CleaningContent({ service }) {
         {/* 3 Story Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {customerStories.map((story) => (
-            <div 
+            <div
               key={story.id}
               className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col group"
             >
               <div className="relative h-56 overflow-hidden">
-                <img 
-                  src={story.image} 
-                  alt={story.title} 
+                <img
+                  src={story.image}
+                  alt={story.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -517,9 +517,9 @@ export default function CleaningContent({ service }) {
           {/* Right Column: Ocean Seafoam Image */}
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 max-h-[500px]">
-              <img 
-                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=80" 
-                alt="Environmental Sustainability at NEXAAGEN" 
+              <img
+                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=80"
+                alt="Environmental Sustainability at NEXAAGEN"
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -533,9 +533,9 @@ export default function CleaningContent({ service }) {
           {/* Left Column: Business woman on tablet */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 max-h-[500px]">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80" 
-                alt="NEXAAGEN Technology & Smart Audits" 
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80"
+                alt="NEXAAGEN Technology & Smart Audits"
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -674,9 +674,9 @@ export default function CleaningContent({ service }) {
                 className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col group"
               >
                 <div className="relative h-60 overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -715,7 +715,7 @@ export default function CleaningContent({ service }) {
           {faqItems.map((item, index) => {
             const isOpen = openFaq === index;
             return (
-              <div 
+              <div
                 key={index}
                 className="bg-slate-50/70 hover:bg-slate-50 rounded-2xl border border-slate-200/70 p-5 sm:p-6 transition-all duration-200 self-start"
               >
@@ -745,8 +745,8 @@ export default function CleaningContent({ service }) {
       <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle geometric dot grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-10 pointer-events-none" 
+          <div
+            className="absolute inset-0 opacity-10 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)',
               backgroundSize: '24px 24px'

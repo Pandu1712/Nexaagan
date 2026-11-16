@@ -87,7 +87,7 @@ export default function HardServicesContent({ service }) {
     {
       id: 'ppm',
       title: 'Planned & Preventative Maintenance',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
       description: 'Planned, preventative and corrective maintenance to keep assets safe, compliant, online.'
     },
     {
@@ -111,7 +111,7 @@ export default function HardServicesContent({ service }) {
     {
       id: 'mobile-teams',
       title: 'On-Site & Mobile Engineering',
-      image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
       description: 'Dedicated on site engineers and mobile teams with 24/7 response and escalation.'
     },
     {

@@ -183,7 +183,7 @@ export default function CommercialSectorContent() {
       id: 'story-2',
       tag: 'Sustainability',
       title: "Driving sustainability goals to enhance London's natural heritage with The Royal Parks",
-      image: 'https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80',
       link: '/contact',
     },
     {

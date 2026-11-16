@@ -148,7 +148,7 @@ export default function ManufacturingSectorContent() {
       id: 'cs-fmcg',
       category: 'Manufacturing',
       title: 'FMCG Food Processing Facility: Zero-Disruption Hygiene & Cold-Chain HVAC',
-      image: 'https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
       imageAlt: 'Food & Beverage Processing Production Line',
     },
     {
@@ -230,7 +230,7 @@ export default function ManufacturingSectorContent() {
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden shadow-xl border border-slate-100 aspect-[4/3] sm:aspect-[4/3.4] group">
               <img
-                src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80"
+                src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80"
                 alt="A Partner on Your Floor Manufacturing Plant Engineer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"

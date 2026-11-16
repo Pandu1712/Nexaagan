@@ -107,3 +107,4 @@ All brand styling, colors, and content are centralized for easy replacement:
 - **Sectors & Services:** Add or edit items directly in `src/data/sectorsData.js` and `src/data/servicesData.js`.
 - **Consultation Form:** In `src/components/sections/ContactForm.jsx`, change or extend validation rules and integrate an endpoint (such as Formspree, Resend, or your own backend API) when ready.
 
+and do not disturb other functionilites

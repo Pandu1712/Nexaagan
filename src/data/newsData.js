@@ -1,3 +1,5 @@
+import worldFmDayImg from '../assets/news/world-fm-day-2026.jpg';
+
 export const newsData = [
   // ==========================================
   // PAGE 1 ARTICLES (Screenshots 1, 2, 3, 4)
@@ -91,7 +93,7 @@ export const newsData = [
     date: "13 May, 2026",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    image: worldFmDayImg,
     content: "On World FM Day 2026, NEXAAGEN celebrates the dedication, skill, and vigilance of our colleagues who ensure hospitals remain sterile, airports operate on schedule, and corporate headquarters provide magnetic workplace experiences."
   },
   {
@@ -320,7 +322,7 @@ export const newsData = [
     date: "30 Jun, 2025",
     readTime: "5 min read",
     author: "NEXAAGEN Team",
-    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
     content: "Compliance in Indian manufacturing environments requires daily toolbox talks, certified PPE standards, and zero-tolerance electrical isolation protocols."
   },
   {
@@ -444,7 +446,7 @@ export const newsData = [
     date: "15 Apr, 2024",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
     content: "Specialist mechanical and electrical engineering provider Arthur McKay completes full integration into NEXAAGEN Group, unifying technical capabilities."
   },
   {

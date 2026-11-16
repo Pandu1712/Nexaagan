@@ -382,7 +382,7 @@ export default function Governance() {
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100 group">
               <img
-                src="https://images.unsplash.com/photo-1592417817098-8f3d69109853?auto=format&fit=crop&w=1200&q=80"
+                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Community Garden Project - Social Value and Inclusion"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

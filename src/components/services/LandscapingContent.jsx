@@ -97,7 +97,7 @@ export default function LandscapingContent({ service }) {
             {/* Background Image: Lush Garden Path & Modern Pavilion (Screenshot 1) */}
             <div className="absolute inset-0 z-0">
               <img
-                src="https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=2400&q=85"
+                src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=2400&q=85"
                 alt="Commercial Architectural Landscaping Pathway and Lush Foliage"
                 className="w-full h-full object-cover object-center scale-[1.02]"
               />
@@ -407,7 +407,7 @@ export default function LandscapingContent({ service }) {
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
                 <img
-                  src="https://images.unsplash.com/photo-1592417817098-8f3d69104a47?auto=format&fit=crop&w=1200&q=85"
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Landscaping Operator on Commercial Ride-on Mower"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

@@ -49,7 +49,7 @@ export default function AboutUs() {
       />
 
       {/* Stats Counter Bar */}
-      <section className="bg-brand-navy-dark text-white py-12 border-b border-slate-800">
+      <section className="bg-brand-navy-dark text-white py-6 sm:py-8 border-b border-slate-800">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {companyData.stats.map((st, idx) => (
@@ -69,7 +69,7 @@ export default function AboutUs() {
       {/* Mission & Vision Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-orange/10 text-brand-orange border border-brand-orange/20">

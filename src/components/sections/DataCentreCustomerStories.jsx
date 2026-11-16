@@ -56,7 +56,7 @@ export default function DataCentreCustomerStories() {
   };
 
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-24 bg-[#FAF9F5] border-y border-slate-200/60 overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-[#FAF9F5] border-y border-slate-200/60 overflow-hidden">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           

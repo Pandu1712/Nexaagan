@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ShieldCheck, 
-  CheckCircle2, 
-  FileText, 
-  Users, 
-  Scale, 
-  Building2, 
-  Award, 
-  ExternalLink, 
-  HeartHandshake, 
-  Quote, 
+import {
+  ArrowRight,
+  ShieldCheck,
+  CheckCircle2,
+  FileText,
+  Users,
+  Scale,
+  Building2,
+  Award,
+  ExternalLink,
+  HeartHandshake,
+  Quote,
   Sparkles,
   Lock,
   Compass,
@@ -38,10 +38,10 @@ export default function Governance() {
       />
 
       {/* SECTION 1: HERO HEADER (Reference Image 1) */}
-      <section className="pt-8 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
-        <div className="relative rounded-[28px] sm:rounded-[36px] bg-slate-50/70 border border-slate-100/80 p-8 sm:p-14 lg:p-20 overflow-hidden shadow-sm">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+        <div className="relative rounded-3xl bg-slate-50/70 border border-slate-100/80 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot background pattern */}
-          <div 
+          <div
             className="absolute inset-0 opacity-15 pointer-events-none -z-0"
             style={{
               backgroundImage: 'radial-gradient(#FF5722 1.2px, transparent 1.2px)',
@@ -82,8 +82,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 2: TRANSPARENCY, ACCOUNTABILITY AND ETHICAL BEHAVIOUR (Reference Image 2) */}
-      <section id="transparency" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="transparency" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Text & 4 Checklist Items */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
@@ -159,8 +159,8 @@ export default function Governance() {
       </div>
 
       {/* SECTION 3: CODE OF CONDUCT (Reference Image 3) */}
-      <section id="code-of-conduct" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="code-of-conduct" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Illustrated Mission Poster Card */}
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] bg-gradient-to-br from-[#E04B26] via-[#D8232A] to-[#B01B20] p-8 sm:p-10 text-white flex flex-col justify-between border border-orange-600/30">
@@ -211,13 +211,19 @@ export default function Governance() {
               <strong className="text-slate-900 font-bold">Global Commitment:</strong> Wherever we operate, our Code of Conduct sets a universal standard that applies to all NEXAAGEN colleagues worldwide. We prioritise ethical conduct, often going above and beyond local legal requirements.
             </p>
 
-            <div className="pt-2">
-              <button
-                onClick={() => setShowCodeModal(true)}
+            <div className="pt-2 flex flex-wrap gap-3">
+              <Link
+                to="/code-of-conduct"
                 className="inline-flex items-center px-7 py-3.5 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
               >
-                <span>View Our Code of Conduct</span>
+                <span>Read Full Code of Conduct</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <button
+                onClick={() => setShowCodeModal(true)}
+                className="inline-flex items-center px-6 py-3.5 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
+              >
+                <span>Quick Summary</span>
               </button>
             </div>
           </div>
@@ -225,8 +231,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 4: GUIDING PRINCIPLES - QHSE POLICY STATEMENT (Reference Image 4) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: QHSE Policy Statement Details */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
@@ -272,8 +278,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 5: GUIDING PRINCIPLES - VISION AND VALUES (Reference Image 5) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-[32px] sm:rounded-[40px] my-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Colleague Photo with Lanyard */}
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100 group">
@@ -314,8 +320,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 6: MODERN DAY SLAVERY STATEMENT (Reference Image 6) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Modern Slavery Commitment */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
@@ -338,6 +344,16 @@ export default function Governance() {
               </a>
               , where we’ve achieved their corporate ethics mark. The mark is awarded to businesses that have taken proactive steps in the last 12 months to safeguard against unethical procurement and supply management conduct. The mark also signifies our commitment to best practice. Daniel Dickson, CEO – UK & Ireland, signed a commitment statement for best practice. NEXAAGEN UK & Ireland are listed in the Chartered Institute of Procurement & Supply's (CIPS) register.
             </p>
+
+            <div className="pt-2">
+              <Link
+                to="/modern-slavery-act"
+                className="inline-flex items-center px-6 py-3 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all group"
+              >
+                <span>Read Full Modern Slavery Act Statement</span>
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
 
           {/* Right Column: Professional Woman Photo */}
@@ -360,8 +376,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 7: DOING THE RIGHT THINGS IN THE RIGHT WAY (Reference Image 7) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Community Planting Garden Photo */}
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100 group">
@@ -388,8 +404,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 8: GENERAL COUNSEL QUOTE BANNER (Reference Image 8) */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[440px] sm:min-h-[500px] flex items-center p-6 sm:p-12 lg:p-16 shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-3xl overflow-hidden min-h-[320px] sm:min-h-[380px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
           {/* Background: Nighttime London Big Ben light trails */}
           <div className="absolute inset-0 z-0">
             <img
@@ -421,8 +437,8 @@ export default function Governance() {
       </section>
 
       {/* SECTION 9: NEWS AND MEDIA (Reference Images 9 & 10) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="space-y-10">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="space-y-6 sm:space-y-8">
           {/* Header & View All Button */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
@@ -490,10 +506,10 @@ export default function Governance() {
       </section>
 
       {/* SECTION 10: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Reference Image 11) */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-10 sm:p-14 lg:p-16 text-center shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Pattern */}
-          <div 
+          <div
             className="absolute inset-0 opacity-20 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#60A5FA 1.2px, transparent 1.2px)',

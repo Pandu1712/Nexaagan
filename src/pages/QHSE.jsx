@@ -26,7 +26,7 @@ export default function QHSE() {
       />
 
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-12 pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
         {/* Subtle decorative dot pattern */}
         <div 
           className="absolute inset-0 opacity-15 pointer-events-none -z-10"
@@ -68,8 +68,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 2: WHAT IS QHSE? (Screenshot 2) */}
-      <section id="what-is-qhse" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="what-is-qhse" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of worker in safety gear */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -109,8 +109,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 3: SAFETY FIRST APPROACH (Screenshot 3) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -140,8 +140,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 4: PHYSICAL AND MENTAL HEALTH AND WELLBEING (Screenshot 4) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of Smiling Security Officer */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -175,8 +175,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 5: CONSISTENT APPROACH TO QUALITY (Screenshot 5) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -206,8 +206,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 6: COMMITMENT TO THE ENVIRONMENT (Screenshot 6) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of Smiling Woman in Green Nature Setting */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -251,8 +251,8 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 7: CONNECT WITH YOUR TEAM BANNER (Screenshot 7) */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-8 sm:p-14 lg:p-16 overflow-hidden text-center shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-3xl bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle radial dot matrix pattern */}
           <div 
             className="absolute inset-0 opacity-15 pointer-events-none" 
@@ -263,10 +263,10 @@ export default function QHSE() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
               Connect with your NEXAAGEN team
             </h2>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <a
@@ -280,8 +280,8 @@ export default function QHSE() {
       </section>
 
       {/* SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
+      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our QHSE & Compliance Leaders"
             subtitle="Learn more about our ISO-accredited quality assurance, zero-harm safety protocols, and environmental impact audits."

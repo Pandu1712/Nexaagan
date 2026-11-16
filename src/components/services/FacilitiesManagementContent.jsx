@@ -216,7 +216,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Director Portrait Photo */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
@@ -299,7 +299,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/70 border-y border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
@@ -523,7 +523,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
@@ -594,7 +594,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Modern Expansive Atrium (Screenshot 9) */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
@@ -663,7 +663,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 8: ACCREDITATIONS & CERTIFICATIONS (Screenshot 10)      */}
       {/* ============================================================== */}
-      <section className="py-16 bg-white border-t border-slate-100">
+      <section className="py-6 sm:py-8 bg-white border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy tracking-tight">

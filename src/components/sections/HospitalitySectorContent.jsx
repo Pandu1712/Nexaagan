@@ -120,13 +120,13 @@ export default function HospitalitySectorContent() {
   ];
 
   return (
-    <div className="w-full flex flex-col space-y-16 sm:space-y-24 py-8 sm:py-14 bg-white overflow-hidden">
+    <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-white overflow-hidden">
       
       {/* ------------------------------------------------------------------ */}
       {/* SECTION 2: FACILITIES SERVICES FOR HOSPITALITY (Screenshot 2)      */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Heading, Paragraphs, 5 Checkpoints & CTA */}
           <div className="lg:col-span-6 space-y-5 sm:space-y-6">
@@ -196,7 +196,7 @@ export default function HospitalitySectorContent() {
       {/* SECTION 3A & 3B: HOSPITALITY FM (BEST) & OVERCOMING CHALLENGES     */}
       {/* (Matches User Screenshots 3 & 4)                                   */}
       {/* ------------------------------------------------------------------ */}
-      <section className="container-custom space-y-16 sm:space-y-24">
+      <section className="container-custom space-y-6 sm:space-y-8">
         
         {/* PART 3A: Hospitality FM (Card Left, 5 BEST Accordions Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
@@ -372,8 +372,8 @@ export default function HospitalitySectorContent() {
       {/* SECTION 5: FREQUENTLY ASKED QUESTIONS (Screenshot 6)               */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-14">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+        <div className="space-y-6 sm:space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
               Frequently Asked Questions
             </h2>
@@ -429,7 +429,7 @@ export default function HospitalitySectorContent() {
       {/* SECTION 6: CONNECT WITH YOUR NEXAAGEN TEAM (Screenshot 7)          */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="relative rounded-3xl sm:rounded-[36px] p-8 sm:p-12 lg:p-16 overflow-hidden bg-[#0B1B3D] text-white shadow-2xl border border-slate-700/50 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="relative rounded-3xl sm:rounded-[36px] p-6 sm:p-10 lg:p-12 overflow-hidden bg-[#0B1B3D] text-white shadow-2xl border border-slate-700/50 flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Subtle Background Glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-orange/15 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -460,7 +460,7 @@ export default function HospitalitySectorContent() {
       {/* SECTION 7: RESPONSIBILITY AND OPPORTUNITY FOR CHANGE (Screenshot 8)*/}
       {/* ------------------------------------------------------------------ */}
       <section id="esg-change" className="container-custom scroll-mt-20">
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-6 sm:space-y-8">
           
           <div className="space-y-2">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">

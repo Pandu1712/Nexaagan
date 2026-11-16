@@ -4,7 +4,7 @@ import { Home, ArrowLeft, Search, Building2, Wrench } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="min-h-[70vh] flex items-center justify-center bg-slate-50 py-20 px-4">
+    <div className="min-h-[60vh] flex items-center justify-center bg-slate-50 py-6 sm:py-8 px-4">
       <div className="max-w-xl w-full text-center bg-white p-8 sm:p-12 rounded-3xl shadow-card-subtle border border-slate-100 space-y-6">
         <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 text-brand-orange flex items-center justify-center mx-auto text-2xl font-black font-heading">
           404

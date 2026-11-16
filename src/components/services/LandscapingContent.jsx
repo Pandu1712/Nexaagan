@@ -139,7 +139,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Horticulturist Photo Holding Red Flowers */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
@@ -236,7 +236,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/70 border-y border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
@@ -332,7 +332,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
@@ -402,7 +402,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white border-t border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Operator on Ride-On Mower with Ear Defenders */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
@@ -470,9 +470,9 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 7: ACCREDITATIONS & CERTIFICATIONS (Screenshot 7)      */}
       {/* ============================================================== */}
-      <section className="py-16 bg-slate-50/70 border-t border-slate-100">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center mb-10">
+          <div className="max-w-3xl mx-auto text-center mb-5 sm:mb-6">
             <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy tracking-tight">
               Accreditations & Certifications
             </h3>
@@ -531,7 +531,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white border-t border-slate-100">
         <div className="container-custom max-w-5xl">
-          <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-8">
+          <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-4 sm:mb-6">
             Frequently asked questions for landscaping
           </h3>
 
@@ -573,9 +573,9 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 9: CONNECT WITH YOUR NEXAAGEN TEAM (Screenshot 9)       */}
       {/* ============================================================== */}
-      <section className="py-16 bg-slate-50/70 border-t border-slate-100">
+      <section className="py-3 sm:py-5 bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
-          <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden bg-gradient-to-br from-[#0B1E36] to-[#0D2E5C] text-white p-8 sm:p-14 lg:p-16 shadow-2xl text-center">
+          <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden bg-gradient-to-br from-[#0B1E36] to-[#0D2E5C] text-white p-6 sm:p-10 lg:p-12 shadow-2xl text-center">
             {/* Dotted pattern overlay */}
             <div 
               className="absolute inset-0 opacity-15 pointer-events-none"

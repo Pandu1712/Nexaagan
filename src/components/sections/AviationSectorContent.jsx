@@ -152,16 +152,16 @@ export default function AviationSectorContent() {
   ];
 
   return (
-    <div className="w-full flex flex-col space-y-16 sm:space-y-24 py-8 sm:py-14 bg-white overflow-hidden">
+    <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-white overflow-hidden">
       
       {/* ------------------------------------------------------------------ */}
       {/* SECTION 2: AVIATION SECTOR SERVICES (Matches User Screenshot 2)     */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading, Paragraph, 5 Checkpoints & CTA */}
-          <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+          <div className="lg:col-span-6 space-y-5">
+            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
               Aviation sector services
             </h2>
 
@@ -218,7 +218,7 @@ export default function AviationSectorContent() {
       {/* SECTION 3A & 3B: BEST ACCORDIONS & SERVICE ACCORDIONS               */}
       {/* (Matches User Screenshot 3)                                        */}
       {/* ------------------------------------------------------------------ */}
-      <section className="container-custom space-y-16 sm:space-y-24">
+      <section className="container-custom space-y-6 sm:space-y-8">
         
         {/* PART 3A: Aviation Facilities Management (Card Left, 5 BEST Accordions Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
@@ -503,8 +503,8 @@ export default function AviationSectorContent() {
       {/* SECTION 8: FREQUENTLY ASKED QUESTIONS (Matches User Screenshot 8)   */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-14">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+        <div className="space-y-6 sm:space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
               Frequently Asked Questions
             </h2>
@@ -560,7 +560,7 @@ export default function AviationSectorContent() {
       {/* SECTION 9: CUSTOMER STORIES (Matches User Screenshot 9)            */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-6 sm:space-y-8">
           <div className="space-y-2">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
               NEXAAGEN customer stories
@@ -623,7 +623,7 @@ export default function AviationSectorContent() {
       {/* SECTION 10: AIRLINE INDUSTRIES + ESG (Matches User Screenshot 10)   */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-6 sm:space-y-8">
           <div className="space-y-2">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
               Airline Industries + ESG

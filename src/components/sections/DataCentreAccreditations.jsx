@@ -68,7 +68,7 @@ export default function DataCentreAccreditations() {
   const marqueeItems = [...accreditations, ...accreditations];
 
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-20 bg-white overflow-hidden relative">
+    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden relative">
       <div className="container-custom">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-10 sm:mb-14">

@@ -128,12 +128,12 @@ export default function EducationSectorContent() {
   ];
 
   return (
-    <div className="w-full bg-white space-y-16 sm:space-y-24 lg:space-y-32 py-12 sm:py-16 lg:py-24 overflow-hidden">
+    <div className="w-full bg-white space-y-6 sm:space-y-8 lg:space-y-10 py-4 sm:py-6 overflow-hidden">
       
       {/* SECTION 1: Building environments that enable success */}
       <section className="w-full">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
@@ -180,7 +180,7 @@ export default function EducationSectorContent() {
       {/* SECTION 2: Education FM (Elevated Box Left, 5 BEST Accordions Right) */}
       <section className="w-full">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Elevated Card */}
             <div className="lg:col-span-5">
@@ -259,7 +259,7 @@ export default function EducationSectorContent() {
       {/* SECTION 3: Services to help students and educators be their best */}
       <section className="w-full">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Accordion Rows (4 Service items) */}
             <div className="lg:col-span-7 order-2 lg:order-1 space-y-3 sm:space-y-4">
@@ -338,7 +338,7 @@ export default function EducationSectorContent() {
       {/* SECTION 4: Using space optimally and effectively */}
       <section className="w-full">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Image Column */}
             <div className="lg:col-span-6">
@@ -374,7 +374,7 @@ export default function EducationSectorContent() {
       {/* SECTION 5: Supporting the Education sector sustainably (Matching OCS Screenshot 2) */}
       <section className="w-full">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">

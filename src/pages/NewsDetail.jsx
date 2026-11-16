@@ -25,7 +25,7 @@ export default function NewsDetail() {
       />
 
       {/* Article Header */}
-      <section className="w-full bg-brand-navy text-white py-16 sm:py-24 relative overflow-hidden">
+      <section className="w-full bg-brand-navy text-white py-6 sm:py-8 relative overflow-hidden">
         <div className="container-custom max-w-4xl mx-auto space-y-6">
           <Link
             to="/news"

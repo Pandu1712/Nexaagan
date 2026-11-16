@@ -248,7 +248,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/60 border-y border-slate-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
@@ -389,7 +389,7 @@ export default function HardServicesContent({ service }) {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Augmented Telemetry Tablet in Plant */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] sm:aspect-[16/11] max-w-lg mx-auto group">
@@ -559,7 +559,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       <section id="contact-form" className="section-padding bg-slate-900 text-white">
         <div className="container-custom max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Column: Heading, Subtitle & Live Status */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
@@ -595,7 +595,7 @@ export default function HardServicesContent({ service }) {
             <div className="lg:col-span-7">
               <div className="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl">
                 {formSubmitted ? (
-                  <div className="text-center py-10 space-y-4">
+                  <div className="text-center py-6 sm:py-8 space-y-3">
                     <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto shadow-inner">
                       <Check className="w-8 h-8 stroke-[3]" />
                     </div>

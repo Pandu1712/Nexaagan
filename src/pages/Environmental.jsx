@@ -31,8 +31,8 @@ export default function Environmental() {
       />
 
       {/* SECTION 1: HERO SECTION (Reference Image 1) */}
-      <section className="pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[460px] sm:min-h-[520px] flex items-center p-6 sm:p-12 lg:p-16 shadow-2xl">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
           {/* Background Image: Lush Green Beech Tree Foliage & Canopy */}
           <div className="absolute inset-0 z-0">
             <img
@@ -44,7 +44,7 @@ export default function Environmental() {
           </div>
 
           {/* Floating White Card on Left (Exactly as shown in screenshot) */}
-          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-[28px] sm:rounded-[32px] p-8 sm:p-12 max-w-xl shadow-2xl border border-white/60 space-y-5">
+          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 max-w-xl shadow-2xl border border-white/60 space-y-4">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide">
               <Leaf className="w-3.5 h-3.5 text-emerald-600" />
               <span>Sustainability & Climate Action</span>
@@ -78,8 +78,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 2: 2040 NET ZERO TARGET (Reference Image 2) */}
-      <section id="net-zero-2040" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="net-zero-2040" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Scope 1, 2, 3 commitments */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#FF5722]">
@@ -152,8 +152,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 3: COUNTRY COMMITMENTS & SCIENCE-BASED TARGETS (Reference Image 3) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/60 rounded-[32px] sm:rounded-[40px] my-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/60 rounded-3xl my-3 sm:my-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Forest Canopy Image looking up */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
@@ -232,8 +232,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTIONS 4 & 5: PROTECTING OUR PLANET'S NATURAL RESOURCES (Reference Images 4 & 5) */}
-      <section id="natural-resources" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="natural-resources" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Natural Resources Bullet Points */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-emerald-600">
@@ -319,8 +319,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 6: USING OUR INFLUENCE FOR GOOD (Reference Image 6) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Butterflies Image on Wildflowers */}
           <div className="lg:col-span-5">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[4/3] border border-slate-100 group">
@@ -371,8 +371,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 7: ENVIRONMENTAL ACTION AND OUTCOMES (Reference Image 7) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-[32px] sm:rounded-[40px] my-6">
-        <div className="max-w-6xl mx-auto space-y-12">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+        <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
           <div className="space-y-3">
             <span className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#FF5722]">
               <Award className="w-4 h-4" />
@@ -445,8 +445,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 8: VISIT OUR COUNTRY-SPECIFIC SITES BANNER (Reference Image 8) */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-10 sm:p-14 lg:p-16 text-center shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Pattern */}
           <div 
             className="absolute inset-0 opacity-20 pointer-events-none"
@@ -456,7 +456,7 @@ export default function Environmental() {
             }}
           />
 
-          <div className="relative z-10 max-w-3xl mx-auto space-y-5">
+          <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
               Visit our country-specific sites
             </h2>
@@ -465,7 +465,7 @@ export default function Environmental() {
               And discover more actions we are taking to have a positive impact on the communities we serve.
             </p>
 
-            <div className="pt-4">
+            <div className="pt-2">
               <Link
                 to="/a-z-of-spaces-and-places"
                 className="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/30 hover:scale-105 transition-all duration-300 group"
@@ -479,8 +479,8 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 9: INQUIRY / CONTACT SECTION */}
-      <section id="contact-form" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="max-w-4xl mx-auto space-y-10">
+      <section id="contact-form" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
           <div className="text-center space-y-3">
             <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100/80 text-[#D8232A]">
               Connect With Us

@@ -28,7 +28,16 @@ import {
   Briefcase,
   Eye,
   Heart,
-  Files
+  Files,
+  Trophy,
+  Flag,
+  MapPin,
+  Compass,
+  History,
+  Layers,
+  Globe,
+  Award,
+  Contact
 } from 'lucide-react';
 import TopBar from './TopBar';
 import SearchModal from './SearchModal';
@@ -509,7 +518,7 @@ export default function Navbar({ showTopBar = true }) {
                                 </Link>
 
                                 <Link
-                                  to="/esg#modern-slavery"
+                                  to="/modern-slavery-act"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
@@ -518,16 +527,18 @@ export default function Navbar({ showTopBar = true }) {
                                 </Link>
 
                                 <Link
-                                  to="/esg#dei"
+                                  to="/esg/diversity-equality-and-inclusion"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.startsWith('/esg/diversity') ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
                                 >
                                   <HeartHandshake className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
                                   <span className="text-xs sm:text-[13px] font-semibold">Diversity, Equity and Inclusion</span>
                                 </Link>
 
                                 <Link
-                                  to="/esg#learning"
+                                  to="/apprenticeships-funded-learning"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
@@ -539,7 +550,7 @@ export default function Navbar({ showTopBar = true }) {
                               {/* Column 2 */}
                               <div className="space-y-1">
                                 <Link
-                                  to="/esg#code-of-conduct"
+                                  to="/code-of-conduct"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
@@ -548,7 +559,7 @@ export default function Navbar({ showTopBar = true }) {
                                 </Link>
 
                                 <Link
-                                  to="/esg#social"
+                                  to="/social"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
@@ -557,7 +568,7 @@ export default function Navbar({ showTopBar = true }) {
                                 </Link>
 
                                 <Link
-                                  to="/esg#policies"
+                                  to="/policies"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
@@ -566,30 +577,25 @@ export default function Navbar({ showTopBar = true }) {
                                 </Link>
 
                                 <Link
-                                  to="/esg#foundation"
+                                  to="/about/foundation"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.includes('foundation')
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
                                 >
                                   <Heart className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
                                   <span className="text-xs sm:text-[13px] font-semibold">NEXAAGEN Foundation</span>
                                 </Link>
 
                                 <Link
-                                  to="/esg#people-into-work"
+                                  to="/people-into-work"
                                   onClick={() => setActiveDropdown(null)}
                                   className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
                                   <Briefcase className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
                                   <span className="text-xs sm:text-[13px] font-semibold">People into Work</span>
-                                </Link>
-
-                                <Link
-                                  to="/esg#vision-mission"
-                                  onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
-                                >
-                                  <Eye className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-[13px] font-semibold">Vision & Mission</span>
                                 </Link>
                               </div>
                             </div>
@@ -608,7 +614,7 @@ export default function Navbar({ showTopBar = true }) {
                 >
                   <NavLink
                     to="/about"
-                    className={`flex items-center text-sm font-semibold py-2 transition-colors ${location.pathname === '/about'
+                    className={`flex items-center text-sm font-semibold py-2 transition-colors ${location.pathname === '/about' || location.pathname === '/vision-mission' || location.pathname === '/our-colleagues' || location.pathname === '/our-frontline-colleagues' || location.pathname === '/leadership-teams' || location.pathname === '/leadership' || location.pathname === '/true-values' || location.pathname === '/values' || location.pathname === '/awards-recognition' || location.pathname === '/awards' || location.pathname === '/service-awards' || location.pathname === '/careers' || location.pathname === '/jobs' || location.pathname === '/india-office-locations' || location.pathname === '/office-locations' || location.pathname === '/history-and-heritage' || location.pathname === '/history' || location.pathname.startsWith('/about')
                         ? 'text-brand-orange'
                         : 'text-slate-800 hover:text-brand-orange'
                       }`}
@@ -621,77 +627,290 @@ export default function Navbar({ showTopBar = true }) {
                   </NavLink>
 
                   {activeDropdown === 'about' && (
-                    <div className="absolute top-full -left-10 w-72 pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                      <div className="bg-white rounded-2xl shadow-dropdown border border-slate-100 p-4 space-y-1">
-                        <Link
-                          to="/about"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors"
-                        >
-                          Company Overview & History
-                        </Link>
-                        <Link
-                          to="/about#leadership"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                        >
-                          Executive Leadership
-                        </Link>
-                        <Link
-                          to="/about#values"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                        >
-                          Mission, Vision & Core Values
-                        </Link>
-                        <Link
-                          to="/about#certifications"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                        >
-                          Accreditations & Certifications
-                        </Link>
+                    <div className="absolute top-full -right-24 xl:-right-12 w-[790px] xl:w-[850px] pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="bg-white rounded-3xl shadow-dropdown border border-slate-100 p-6 overflow-hidden">
+                        <div className="flex items-stretch gap-6">
+                          {/* Left Feature Card (Matching Screenshot) */}
+                          <Link
+                            to="/about"
+                            onClick={() => setActiveDropdown(null)}
+                            className="w-[260px] flex-shrink-0 bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 flex flex-col justify-between group hover:border-slate-200 hover:shadow-sm transition-all"
+                          >
+                            <div className="relative aspect-[4/3] overflow-hidden">
+                              <img
+                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
+                                alt="About Us - NEXAAGEN"
+                                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
+                            <div className="p-4 bg-white -mt-3 rounded-2xl relative shadow-sm border border-slate-100/80 mx-2 mb-2">
+                              <div className="flex items-center justify-between">
+                                <h4 className="text-base font-bold text-brand-navy group-hover:text-brand-orange transition-colors">
+                                  About Us
+                                </h4>
+                                <div className="w-7 h-7 rounded-full bg-[#D8232A] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                  <ArrowUpRight className="w-4 h-4" />
+                                </div>
+                              </div>
+                              <p className="text-xs text-slate-500 leading-snug mt-1.5">
+                                Click here or on the links opposite to find out more about our ethos and approach.
+                              </p>
+                            </div>
+                          </Link>
+
+                          {/* Right Area (Header + 2 Columns of Links Matching Screenshot) */}
+                          <div className="flex-1 flex flex-col justify-center">
+                            {/* Top Heading */}
+                            <div className="mb-2">
+                              <h4 className="text-lg font-heading font-extrabold text-brand-navy">
+                                We're a global facilities services business
+                              </h4>
+                              <p className="text-xs text-slate-500 mt-1">
+                                Join our mission to make people and places the best they can be
+                              </p>
+                            </div>
+
+                            <div className="h-px bg-slate-100 my-2" />
+
+                            {/* 2-Column Links Grid */}
+                            <div className="grid grid-cols-2 gap-x-4 gap-y-1 pt-1">
+                              {/* Column 1 */}
+                              <div className="space-y-0.5">
+                                <Link
+                                  to="/vision-mission"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <Eye className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Vision & Mission</span>
+                                </Link>
+
+                                <Link
+                                  to="/our-colleagues"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/our-colleagues' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Users className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Our Colleagues</span>
+                                </Link>
+
+                                <Link
+                                  to="/leadership-teams"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/leadership-teams' || location.pathname === '/leadership' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Building2 className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Leadership Team</span>
+                                </Link>
+
+                                <Link
+                                  to="/true-values"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/true-values' || location.pathname === '/values' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Award className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">TRUE Values</span>
+                                </Link>
+
+                                <Link
+                                  to="/awards-recognition"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/awards-recognition' || location.pathname === '/awards' || location.pathname === '/service-awards' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Trophy className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Awards & Recognition</span>
+                                </Link>
+
+                                <Link
+                                  to="/careers"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/careers' || location.pathname === '/jobs' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Flag className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Careers</span>
+                                </Link>
+
+                                <Link
+                                  to="/india-office-locations"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/india-office-locations' || location.pathname === '/office-locations' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <MapPin className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">NEXAAGEN India Office Locations</span>
+                                </Link>
+
+                                <Link
+                                  to="/a-z-of-spaces-and-places"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <Compass className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">NEXAAGEN A-Z of Spaces and Places</span>
+                                </Link>
+                              </div>
+
+                              {/* Column 2 */}
+                              <div className="space-y-0.5">
+                                <Link
+                                  to="/history-and-heritage"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/history-and-heritage' || location.pathname === '/history' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <History className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">History & Heritage</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/diversity-equality-and-inclusion"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.startsWith('/about/diversity') || (location.pathname.includes('diversity') && !location.pathname.startsWith('/esg'))
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <HeartHandshake className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Diversity, Equity & Inclusion</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/esg"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname === '/about/esg' ? 'text-brand-orange bg-orange-50/50' : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Leaf className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">ESG</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/our-brands"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.includes('our-brands') || location.pathname.includes('brands')
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Layers className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Our Brands</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/accreditations"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.includes('accreditations')
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <ShieldCheck className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Accreditations & Certification</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/foundation"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    location.pathname.includes('foundation')
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Heart className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">NEXAAGEN Foundation</span>
+                                </Link>
+
+                                <Link
+                                  to="/about/global-locations"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className={`flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 font-medium transition-all group ${
+                                    (location.pathname === '/about/global-locations' || location.pathname === '/global-locations' || location.pathname === '/locations' || location.pathname === '/about/locations')
+                                      ? 'text-brand-orange bg-orange-50/50'
+                                      : 'text-slate-700 hover:text-brand-orange'
+                                  }`}
+                                >
+                                  <Globe className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs sm:text-[13px] font-semibold">Global Locations</span>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   )}
                 </div>
 
-                {/* News & Media Dropdown */}
+                {/* News & Media Dropdown (Matching Screenshot media_1794641935367_f743a08b.png) */}
                 <div
                   className="relative"
                   onMouseEnter={() => setActiveDropdown('news')}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <NavLink
-                    to="/news"
-                    className={`flex items-center text-sm font-semibold py-2 transition-colors ${location.pathname.startsWith('/news')
-                        ? 'text-brand-orange'
-                        : 'text-slate-800 hover:text-brand-orange'
-                      }`}
+                  <button
+                    onClick={() => setActiveDropdown(activeDropdown === 'news' ? null : 'news')}
+                    className={`flex items-center text-sm font-semibold py-1.5 px-3 rounded-xl transition-all duration-200 ${
+                      activeDropdown === 'news'
+                        ? 'bg-orange-50/90 text-brand-orange'
+                        : location.pathname.startsWith('/news') || location.pathname.startsWith('/case-studies') || location.pathname.startsWith('/customer-stories')
+                          ? 'text-brand-orange'
+                          : 'text-slate-800 hover:text-brand-orange'
+                    }`}
                   >
                     <span>News & Media</span>
                     <ChevronDown
-                      className={`ml-1 w-4 h-4 transition-transform duration-200 ${activeDropdown === 'news' ? 'rotate-180 text-brand-orange' : 'text-slate-400'
-                        }`}
+                      className={`ml-1.5 w-4 h-4 transition-transform duration-200 ${
+                        activeDropdown === 'news' ? 'rotate-180 text-brand-orange' : 'text-slate-400'
+                      }`}
                     />
-                  </NavLink>
+                  </button>
 
                   {activeDropdown === 'news' && (
-                    <div className="absolute top-full right-0 w-72 pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                      <div className="bg-white rounded-2xl shadow-dropdown border border-slate-100 p-4 space-y-1">
+                    <div className="absolute top-full -right-2 sm:right-0 w-56 pt-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                      <div className="bg-white rounded-2xl shadow-[0_12px_36px_rgba(0,0,0,0.12)] border border-slate-100 p-2.5 space-y-1">
+                        {/* 1. News */}
                         <Link
                           to="/news"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors"
+                          onClick={() => setActiveDropdown(null)}
+                          className={`flex items-center space-x-3 px-3.5 py-2.5 rounded-xl transition-all duration-150 group ${
+                            location.pathname === '/news' || (location.pathname.startsWith('/news') && !location.pathname.includes('case-studies'))
+                              ? 'bg-orange-50/70 text-brand-orange font-semibold'
+                              : 'text-slate-800 hover:bg-slate-50 hover:text-brand-orange font-medium'
+                          }`}
                         >
-                          Latest News & Press Releases
+                          <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-brand-orange group-hover:translate-x-0.5 transition-all flex-shrink-0" />
+                          <span className="text-sm">News</span>
                         </Link>
+
+                        {/* 2. Case Studies */}
                         <Link
-                          to="/news?category=insights"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
+                          to="/case-studies"
+                          onClick={() => setActiveDropdown(null)}
+                          className={`flex items-center space-x-3 px-3.5 py-2.5 rounded-xl transition-all duration-150 group ${
+                            location.pathname.startsWith('/case-studies') || location.pathname.startsWith('/customer-stories')
+                              ? 'bg-orange-50/70 text-brand-orange font-semibold'
+                              : 'text-slate-800 hover:bg-slate-50 hover:text-brand-orange font-medium'
+                          }`}
                         >
-                          Industry Insights & Whitepapers
-                        </Link>
-                        <Link
-                          to="/sectors"
-                          className="block p-2.5 rounded-xl hover:bg-slate-50 text-sm text-slate-600 hover:text-brand-navy transition-colors"
-                        >
-                          Client Case Studies
+                          <Contact className="w-4 h-4 text-slate-500 group-hover:text-brand-orange transition-colors flex-shrink-0" />
+                          <span className="text-sm">Case Studies</span>
                         </Link>
                       </div>
                     </div>
@@ -929,60 +1148,161 @@ export default function Navbar({ showTopBar = true }) {
                             <Building2 className="w-3.5 h-3.5 text-slate-400" />
                             <span>Governance</span>
                           </Link>
-                          <Link to="/esg#modern-slavery" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/modern-slavery-act" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <FileText className="w-3.5 h-3.5 text-slate-400" />
                             <span>Modern Slavery Statement</span>
                           </Link>
-                          <Link to="/esg#dei" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/esg/diversity-equality-and-inclusion" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <HeartHandshake className="w-3.5 h-3.5 text-slate-400" />
                             <span>Diversity, Equity and Inclusion</span>
                           </Link>
-                          <Link to="/esg#learning" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/apprenticeships-funded-learning" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <GraduationCap className="w-3.5 h-3.5 text-slate-400" />
                             <span>Apprenticeships & Funded Learning</span>
                           </Link>
-                          <Link to="/esg#code-of-conduct" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/code-of-conduct" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <ClipboardCheck className="w-3.5 h-3.5 text-slate-400" />
                             <span>Code of Conduct</span>
                           </Link>
-                          <Link to="/esg#social" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/social" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <Users className="w-3.5 h-3.5 text-slate-400" />
                             <span>Social</span>
                           </Link>
-                          <Link to="/esg#policies" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/policies" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <Files className="w-3.5 h-3.5 text-slate-400" />
                             <span>Policies Library</span>
                           </Link>
-                          <Link to="/esg#foundation" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/foundation" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <Heart className="w-3.5 h-3.5 text-slate-400" />
                             <span>NEXAAGEN Foundation</span>
                           </Link>
-                          <Link to="/esg#people-into-work" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
+                          <Link to="/people-into-work" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
                             <Briefcase className="w-3.5 h-3.5 text-slate-400" />
                             <span>People into Work</span>
-                          </Link>
-                          <Link to="/esg#vision-mission" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange">
-                            <Eye className="w-3.5 h-3.5 text-slate-400" />
-                            <span>Vision & Mission</span>
                           </Link>
                         </div>
                       </div>
                     )}
                   </div>
 
-                  <Link
-                    to="/about"
-                    className="block px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
-                  >
-                    About Us
-                  </Link>
+                  {/* About Us Submenu */}
+                  <div>
+                    <button
+                      onClick={() => setMobileSubmenu(mobileSubmenu === 'about' ? null : 'about')}
+                      className="flex items-center justify-between w-full px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
+                    >
+                      <span>About Us</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${mobileSubmenu === 'about' ? 'rotate-180 text-brand-orange' : 'text-slate-400'
+                          }`}
+                      />
+                    </button>
 
-                  <Link
-                    to="/news"
-                    className="block px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
-                  >
-                    News & Media
-                  </Link>
+                    {mobileSubmenu === 'about' && (
+                      <div className="pl-4 pr-2 py-2 space-y-1 bg-slate-50/50 rounded-xl mt-1 text-sm">
+                        <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Building2 className="w-3.5 h-3.5 text-slate-400" />
+                          <span>About Us Overview</span>
+                        </Link>
+                        <Link to="/vision-mission" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Eye className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Vision & Mission</span>
+                        </Link>
+                        <Link to="/our-colleagues" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Users className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Our Colleagues</span>
+                        </Link>
+                        <Link to="/leadership-teams" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Building2 className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Leadership Team</span>
+                        </Link>
+                        <Link to="/true-values" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Sparkles className="w-3.5 h-3.5 text-slate-400" />
+                          <span>TRUE Values</span>
+                        </Link>
+                        <Link to="/awards-recognition" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Trophy className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Awards & Recognition</span>
+                        </Link>
+                        <Link to="/careers" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Flag className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Careers</span>
+                        </Link>
+                        <Link to="/history-and-heritage" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <History className="w-3.5 h-3.5 text-slate-400" />
+                          <span>History & Heritage</span>
+                        </Link>
+                        <Link to="/about/diversity-equality-and-inclusion" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <HeartHandshake className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Diversity, Equity & Inclusion</span>
+                        </Link>
+                        <Link to="/about/esg" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Leaf className="w-3.5 h-3.5 text-slate-400" />
+                          <span>ESG</span>
+                        </Link>
+                        <Link to="/about/our-brands" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Layers className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Our Brands</span>
+                        </Link>
+                        <Link to="/about/accreditations" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <ShieldCheck className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Accreditations & Certification</span>
+                        </Link>
+                        <Link to="/about/foundation" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Heart className="w-3.5 h-3.5 text-slate-400" />
+                          <span>NEXAAGEN Foundation</span>
+                        </Link>
+                        <Link to="/about/global-locations" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Globe className="w-3.5 h-3.5 text-slate-400" />
+                          <span>Global Locations</span>
+                        </Link>
+                        <Link to="/india-office-locations" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                          <span>NEXAAGEN India Office Locations</span>
+                        </Link>
+                        <Link to="/a-z-of-spaces-and-places" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2 px-3 py-1.5 text-slate-700 hover:text-brand-orange font-medium">
+                          <Compass className="w-3.5 h-3.5 text-slate-400" />
+                          <span>NEXAAGEN A-Z of Spaces and Places</span>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Mobile News & Media Submenu */}
+                  <div>
+                    <button
+                      onClick={() => setMobileSubmenu(mobileSubmenu === 'news' ? null : 'news')}
+                      className="flex items-center justify-between w-full px-3 py-2.5 text-base font-semibold text-brand-navy hover:text-brand-orange rounded-xl hover:bg-slate-50"
+                    >
+                      <span>News & Media</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          mobileSubmenu === 'news' ? 'rotate-180 text-brand-orange' : 'text-slate-400'
+                        }`}
+                      />
+                    </button>
+
+                    {mobileSubmenu === 'news' && (
+                      <div className="pl-4 pr-2 py-2 space-y-1 bg-slate-50/50 rounded-xl mt-1 text-sm">
+                        <Link
+                          to="/news"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center space-x-2.5 px-3 py-2 text-slate-700 hover:text-brand-orange font-medium"
+                        >
+                          <ArrowRight className="w-4 h-4 text-slate-400" />
+                          <span>News</span>
+                        </Link>
+                        <Link
+                          to="/case-studies"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center space-x-2.5 px-3 py-2 text-slate-700 hover:text-brand-orange font-medium"
+                        >
+                          <Contact className="w-4 h-4 text-slate-400" />
+                          <span>Case Studies</span>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 {/* Mobile CTA */}

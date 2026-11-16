@@ -51,13 +51,13 @@ export default function Sectors() {
             align="center"
           />
 
-          <div className="space-y-16">
+          <div className="space-y-6 sm:space-y-8">
             {sectorsData.map((sector, idx) => {
               const isEven = idx % 2 === 0;
               return (
                 <div
                   key={sector.id}
-                  className={`grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-100 hover:border-slate-200 hover:bg-slate-50/80 transition-all duration-300 ${
+                  className={`grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center p-5 sm:p-8 lg:p-10 rounded-3xl bg-slate-50 border border-slate-100 hover:border-slate-200 hover:bg-slate-50/80 transition-all duration-300 ${
                     isEven ? '' : 'lg:flex-row-reverse'
                   }`}
                 >

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function ConnectTeamBanner() {
   return (
-    <section className="w-full py-8 sm:py-12 lg:py-16 bg-white overflow-hidden" aria-label="Connect With Team CTA">
+    <section className="w-full py-3 sm:py-5 bg-white overflow-hidden" aria-label="Connect With Team CTA">
       <div className="container-custom">
         {/* Full-width Rounded Navy Banner with Signature Dotted Radial Wave Watermark */}
-        <div className="relative w-full rounded-3xl sm:rounded-[40px] lg:rounded-[48px] overflow-hidden bg-[#0B1B3D] py-14 sm:py-20 lg:py-24 px-6 sm:px-12 md:px-16 text-center text-white shadow-xl border border-slate-800">
+        <div className="relative w-full rounded-3xl sm:rounded-[36px] overflow-hidden bg-[#0B1B3D] py-6 sm:py-10 lg:py-12 px-6 sm:px-10 md:px-12 text-center text-white shadow-xl border border-slate-800">
           
           {/* Subtle Dotted Radial Wave SVG Watermark radiating outward */}
           <div className="absolute inset-0 pointer-events-none opacity-25 overflow-hidden flex items-center justify-center">

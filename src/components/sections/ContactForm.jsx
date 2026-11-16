@@ -130,7 +130,7 @@ export default function ContactForm({
           {/* Left Column: Form */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 shadow-card-subtle border border-slate-100">
             {submitted ? (
-              <div className="py-12 text-center space-y-5 animate-in fade-in duration-300">
+              <div className="py-6 text-center space-y-4 animate-in fade-in duration-300">
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-10 h-10" />
                 </div>

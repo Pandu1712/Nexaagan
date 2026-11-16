@@ -3,7 +3,7 @@ import { visionMetricsData } from '../../data/visionMetricsData';
 
 export default function HistoryVisionMetrics() {
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-20 bg-white overflow-hidden relative">
+    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden relative">
       {/* Subtle Dotted Matrix Watermark Background */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-40"

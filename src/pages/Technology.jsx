@@ -84,8 +84,8 @@ export default function Technology() {
       <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Digital Cyber Data Particle Grid Background */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -98,10 +98,10 @@ export default function Technology() {
           </div>
 
           {/* Floating White Card */}
-          <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-5 sm:p-8 lg:p-10 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-4">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-white/40">
               {/* Badge: "Join our Technology Team NEXAAGEN Careers ->" */}
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-4">
                 <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
                   Join our Technology Team
                 </span>
@@ -112,27 +112,27 @@ export default function Technology() {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
                 Harness technology with NEXAAGEN Advance
               </h1>
 
               {/* Description */}
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-6">
                 Deliver enhanced facilities services through innovation – driving best practice, productivity, resilience, experience and outcomes for your colleagues, customers and communities.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#advance-overview"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
                 >
                   <span>Explore NEXAAGEN Advance</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-xl font-heading font-bold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
                 >
                   <span>Contact Our Team</span>
                 </a>
@@ -143,8 +143,8 @@ export default function Technology() {
       </section>
 
       {/* SECTION 2: NEXAAGEN ADVANCE OVERVIEW */}
-      <section id="advance-overview" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section id="advance-overview" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Operations Control Center Technologist */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -188,12 +188,12 @@ export default function Technology() {
       </section>
 
       {/* SECTION 3: NEXAAGEN ADVANCE SOLUTIONS FOR CUSTOMERS */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
-        <div className="text-left mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+        <div className="text-left mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
             NEXAAGEN Advance solutions for customers
           </h2>
-          <p className="text-base text-slate-600 max-w-2xl">
+          <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
             Explore how our smart facilities management tools deliver measurable operational efficiency and intelligence.
           </p>
         </div>
@@ -230,20 +230,20 @@ export default function Technology() {
       </section>
 
       {/* SECTION 4: NEXAAGEN ADVANCE TOOLS INTRO */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-t border-slate-100">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-t border-slate-100">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             NEXAAGEN Advance Tools
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
             We're continually working on and investing in developing technology solutions for the betterment of colleagues and customers. Below are three of our launching technology tools to deliver advanced facilities management: NEXA-Q, NEXA-ABi and NEXA-Live.
           </p>
         </div>
       </section>
 
       {/* SECTION 5: TOOL 1 - NEXA-Q */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -287,8 +287,8 @@ export default function Technology() {
       </section>
 
       {/* SECTION 6: TOOL 2 - NEXA-ABI */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Data Center Server Corridor with NEXA-ABi Badge Overlay */}
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -330,8 +330,8 @@ export default function Technology() {
       </section>
 
       {/* SECTION 7: TOOL 3 - NEXA-LIVE */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -376,8 +376,8 @@ export default function Technology() {
       </section>
 
       {/* SECTION 8: EXECUTIVE QUOTE BANNER */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[440px] sm:min-h-[480px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[340px] sm:min-h-[380px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Glass architectural facade & tree canopy photography */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -390,8 +390,8 @@ export default function Technology() {
           </div>
 
           {/* Floating White Quote Card */}
-          <div className="relative z-10 p-6 sm:p-10 lg:p-12 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-6">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-5 sm:p-8 lg:p-10 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-4">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-2xl border border-white/40">
               <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-medium mb-6 italic">
                 “Technology has an pivotal role to play within facilities services and helping shape the future for NEXAAGEN customers and colleagues. Our unique proposition of 125 years experience combined with innovation and technology, gives our customers a competitive advantage.”
               </p>
@@ -417,8 +417,8 @@ export default function Technology() {
       </section>
 
       {/* SECTION 9: JOIN OUR GLOBAL TECHNOLOGY TEAMS BANNER */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-8 sm:p-14 lg:p-16 overflow-hidden text-center shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle radial dot matrix pattern */}
           <div 
             className="absolute inset-0 opacity-15 pointer-events-none" 
@@ -429,10 +429,10 @@ export default function Technology() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
               Join our global technology teams
             </h2>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
               Visit our global locations page for your region and search careers today.
             </p>
             <Link
@@ -446,8 +446,8 @@ export default function Technology() {
       </section>
 
       {/* SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
+      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our Technology & Innovation Specialists"
             subtitle="Discover how NEXAAGEN Advance, AI building intelligence, and real-time telemetry can empower your facility operations."

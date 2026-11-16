@@ -8,7 +8,7 @@ export default function TermsConditions() {
     <div className="w-full flex flex-col flex-1">
       <Breadcrumbs items={[{ label: 'Terms & Conditions' }]} />
 
-      <section className="w-full bg-brand-navy text-white py-16 sm:py-24 relative overflow-hidden">
+      <section className="w-full bg-brand-navy text-white py-6 sm:py-8 relative overflow-hidden">
         <div className="container-custom max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 text-brand-orange text-xs font-semibold">
             <FileText className="w-3.5 h-3.5" />

@@ -5,23 +5,23 @@ import { sectorServicesData } from '../../data/sectorServicesData';
 
 export default function SectorServicesGrid() {
   return (
-    <section className="w-full py-6 sm:py-10 lg:py-14 bg-white overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
       <div className="container-custom">
-        {/* Large Rounded Container Box with Soft Off-White Background matching OCS reference */}
-        <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-6 sm:p-10 md:p-12 lg:p-16 border border-slate-200/60 shadow-sm">
+        {/* Large Rounded Container Box with Soft Off-White Background matching reference */}
+        <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
           
           {/* Section Header */}
           <div className="max-w-3xl">
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
               Sector specific services – where your mission becomes our mission
             </h2>
-            <p className="text-slate-500 text-xs sm:text-sm lg:text-base mt-2.5 font-normal leading-relaxed">
+            <p className="text-slate-500 text-xs sm:text-sm lg:text-base mt-2 font-normal leading-relaxed">
               Find out more about our people, technology and ESG initiatives for your sector.
             </p>
           </div>
 
           {/* 3-Column Sector Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-5 sm:mt-6">
             {sectorServicesData.map((item) => (
               <Link
                 key={item.id}

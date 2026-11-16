@@ -175,13 +175,13 @@ export default function ManufacturingSectorContent() {
   };
 
   return (
-    <div className="w-full flex flex-col space-y-16 sm:space-y-24 py-8 sm:py-14 bg-white overflow-hidden">
+    <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-white overflow-hidden">
       
       {/* ------------------------------------------------------------------ */}
       {/* SECTION 2: A PARTNER ON YOUR FLOOR (Matches User Screenshot 2)     */}
       {/* ------------------------------------------------------------------ */}
       <section id="partner-floor" className="container-custom scroll-mt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Heading, Paragraphs, 3 Checkpoints */}
           <div className="lg:col-span-6 space-y-6">
@@ -245,10 +245,10 @@ export default function ManufacturingSectorContent() {
       {/* SECTION 3: MANUFACTURING SOLUTIONS BY NEXAAGEN (Matches Screenshot 3)*/}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-14">
+        <div className="space-y-6 sm:space-y-8">
           
           {/* Header */}
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
               Manufacturing Solutions by NEXAAGEN
             </h2>
@@ -349,7 +349,7 @@ export default function ManufacturingSectorContent() {
       {/* SECTION 4: SUSTAINABILITY IN ACTION (Matches User Screenshot 4)    */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-6 sm:space-y-8">
           
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto space-y-3">

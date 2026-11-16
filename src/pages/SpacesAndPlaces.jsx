@@ -17,8 +17,8 @@ export default function SpacesAndPlaces() {
       />
 
       {/* HERO SECTION MATCHING SCREENSHOT */}
-      <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Waterfront Skyline Background Photography */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -31,8 +31,8 @@ export default function SpacesAndPlaces() {
           </div>
 
           {/* Floating White Card (Exact replica from Screenshot) */}
-          <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-5 sm:p-8 lg:p-10 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-4">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-white/40">
               {/* Badge: "View Global Locations ->" */}
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
                 <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
@@ -82,8 +82,8 @@ export default function SpacesAndPlaces() {
       <SectorLocationsDirectory />
 
       {/* CONTACT FORM */}
-      <section id="contact-form" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
+      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Inquire About Your Facility or Sector Location"
             subtitle="Connect with our facility specialists to discuss tailored engineering, hygiene, carbon reduction, and concierge services."

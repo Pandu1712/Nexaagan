@@ -61,10 +61,10 @@ export default function DataCentreFAQ() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-20 lg:py-24 bg-white border-t border-slate-100 overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-white border-t border-slate-100 overflow-hidden">
       <div className="container-custom">
-        {/* Section Heading matching OCS Reference */}
-        <div className="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
+        {/* Section Heading matching Reference */}
+        <div className="max-w-3xl mx-auto text-center space-y-2 mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
             Frequently Asked Questions
           </h2>

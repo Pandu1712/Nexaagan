@@ -1,151 +1,466 @@
 export const newsData = [
+  // ==========================================
+  // PAGE 1 ARTICLES (Screenshots 1, 2, 3, 4)
+  // ==========================================
   {
     id: "sixty-years-aviation-services",
-    title: "Sixty Years of Global Aviation Services: One Standard, Unrivalled Reach",
-    excerpt: "Reflecting on six decades of airside engineering, passenger handling, and continuous operational excellence across the world's busiest transport hubs.",
-    category: "Aviation",
+    title: "Sixty Years of Global Aviation Services: One Standard, Wherever the Journey Starts",
+    excerpt: "With sixty years of specialist aviation ground and terminal operations, NEXAAGEN delivers synchronized airside support, PRM assistance, aircraft turnaround sanitization, and baggage logistics across tier-one international gateways.",
+    sector: "Aviation",
+    service: "Facilities Management",
+    country: "Global",
+    type: "Article",
+    category: "Aviation | Facilities Management",
     date: "24 Aug, 2026",
     readTime: "5 min read",
     author: "NEXAAGEN Team",
     featured: true,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-    content: `
-      With sixty years of specialist aviation ground and terminal operations, NEXAAGEN delivers synchronized airside support, PRM assistance, aircraft turnaround sanitization, and baggage logistics across tier-one international gateways.
-    `
+    content: "With sixty years of specialist aviation ground and terminal operations, NEXAAGEN delivers synchronized airside support, PRM assistance, aircraft turnaround sanitization, and baggage logistics across tier-one international gateways."
   },
   {
     id: "sixty-days-data-centre-life",
-    title: "The 60 Days That Decide a Data Centre’s Life: Why Pre-Commissioning Matters",
-    excerpt: "Why the final 60 days before server load-in dictate operational resilience, PUE efficiency, and cleanroom air cleanliness standards.",
-    category: "Data Centres",
+    title: "The 60 Days That Decide a Data Centre's Life: Why Pre-Commissioning FM Matters",
+    excerpt: "During the critical pre-commissioning window, hyperscale data centre facilities must transition from industrial construction zones to sub-micron particle-free operational zones.",
+    sector: "Data Centers",
+    service: "Hard Services",
+    country: "India",
+    type: "Article",
+    category: "Data Centres | Hard Services",
     date: "16 Jul, 2026",
     readTime: "6 min read",
     author: "NEXAAGEN Team",
     featured: true,
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-    content: `
-      During the critical pre-commissioning window, hyperscale data centre facilities must transition from industrial construction zones to sub-micron particle-free operational zones.
-    `
+    content: "During the critical pre-commissioning window, hyperscale data centre facilities must transition from industrial construction zones to sub-micron particle-free operational zones."
   },
   {
     id: "inside-indias-airport-transformation",
-    title: "Inside India’s Airport Transformation: Why FM is the Secret Engine of Passenger Experience",
-    excerpt: "How modernized facilities management, IoT washrooms, and automated concourse logistics support 100M+ transit passengers annually.",
-    category: "Infrastructure",
+    title: "Inside India's Airport Transformation: Why FM is the Invisible Runway",
+    excerpt: "As India's aviation network expands exponentially, NEXAAGEN's integrated facility management powers world-class terminal operations, passenger comfort, and zero-downtime maintenance.",
+    sector: "Aviation",
+    service: "Facilities Management",
+    country: "India",
+    type: "Article",
+    category: "Aviation | Facilities Management",
     date: "09 Jul, 2026",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    featured: false,
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
-    content: `
-      As India's aviation network expands exponentially, NEXAAGEN's integrated facility management powers world-class terminal operations, passenger comfort, and zero-downtime maintenance.
-    `
+    content: "As India's aviation network expands exponentially, NEXAAGEN's integrated facility management powers world-class terminal operations, passenger comfort, and zero-downtime maintenance."
   },
   {
     id: "post-construction-cleaning-data-centres",
-    title: "Why Post-Construction Cleaning Is Critical for Data Centre Projects",
-    excerpt: "Microscopic particulate control and ISO 14644 air cleanliness certification before critical hyperscale server deployment.",
-    category: "Data Centres",
+    title: "Why Post-Construction Cleaning Is Critical for Data Centres",
+    excerpt: "Post-construction cleaning is a critical milestone before sensitive server hardware is energized and commissioned in mission-critical facilities.",
+    sector: "Data Centers",
+    service: "Cleaning",
+    country: "India",
+    type: "Article",
+    category: "Data Centres | Cleaning",
     date: "06 Jul, 2026",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    featured: true,
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    content: `
-      Data centre commissioning requires an uncompromising standard of environmental cleanliness. Before delicate optical transceivers and hyperscale GPU clusters are energized, the physical room must be completely cleared of conductive sub-micron construction debris.
-    `
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+    content: "Data centre commissioning requires an uncompromising standard of environmental cleanliness. Before delicate optical transceivers and hyperscale GPU clusters are energized, the physical room must be completely cleared of conductive sub-micron construction debris."
   },
   {
-    id: "frontline-teams-human-control",
-    title: "Frontline teams are the human control centre for site resilience",
-    excerpt: "Empowering frontline colleagues with real-time IoT incident triggers and instant reporting to avert equipment downtime.",
-    category: "Workforce & Safety",
-    date: "28 Jun, 2026",
+    id: "frontline-teams-human-control-data-centres",
+    title: "Frontline teams are the human control layer in data centre resilience",
+    excerpt: "Data centre operators do not lack monitoring sensors, but true uptime depends on empowered frontline engineers who understand early anomaly detection.",
+    sector: "Data Centers",
+    service: "Facilities Management",
+    country: "India",
+    type: "Thought Leadership",
+    category: "Data Centres | Our People",
+    date: "05 Jun, 2026",
     readTime: "5 min read",
     author: "NEXAAGEN Team",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1000&q=80",
-    content: `
-      While AI algorithms and IoT sensors analyze millions of facility telemetry data points, the frontline engineering and hygiene team remains the true operational heartbeat of every complex estate.
-
-      By equipping our technicians with the NEXA-Pulse™ mobile terminal, frontline colleagues receive predictive alerts directly in the field—allowing them to investigate subtle motor harmonic vibrations, verify chilled water valve positions, and service air handling units before tenants experience any deviation in comfort.
-
-      "Technology magnifies human capability; it doesn't replace it," emphasizes Elena Rostova, Chief Operating Officer. "Our frontline teams represent the vigilant eyes and skilled hands that guarantee 99.98% statutory uptime."
-    `
+    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+    content: "While AI algorithms and IoT sensors analyze millions of facility telemetry data points, the frontline engineering and hygiene team remains the true operational heartbeat of every complex estate."
   },
   {
     id: "world-fm-day-2026-operations",
-    title: "World FM Day 2026: The Operations Excellence Standard",
-    excerpt: "Celebrating our 35,000+ facilities professionals ensuring seamless corporate, clinical, and transit operations worldwide.",
-    category: "Corporate Leadership",
-    date: "14 May, 2026",
+    title: "World FM Day 2026: The Operations Behind Workplace Excellence",
+    excerpt: "From workforce continuity to energy management, celebrating the frontline teams making places work across commercial, transport, and clinical estates.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "Global",
+    type: "News",
+    category: "Facilities Management | Corporate",
+    date: "13 May, 2026",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
-    content: `
-      On World FM Day 2026, NEXAAGEN celebrates the dedication, skill, and vigilance of our 35,000+ colleagues across 18 countries who ensure hospitals remain sterile, airports operate on schedule, and corporate headquarters provide magnetic workplace experiences.
-
-      From airside engineering crews at international transport hubs to cleanroom sanitization specialists supporting life-saving pharmaceutical production, our teams embody our core mission: making people and places the best they can be.
-
-      We reaffirm our commitment to continuous technician upskilling, apprenticeships, and social mobility across all communities where NEXAAGEN operates.
-    `
+    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    content: "On World FM Day 2026, NEXAAGEN celebrates the dedication, skill, and vigilance of our colleagues who ensure hospitals remain sterile, airports operate on schedule, and corporate headquarters provide magnetic workplace experiences."
   },
   {
-    id: "nexaagen-unveils-net-zero-2035-framework",
-    title: "NEXAAGEN Unveils Enterprise Net-Zero 2035 Decarbonisation Framework",
-    excerpt: "New science-based methodology accelerates commercial building decarbonisation across European and Asia-Pacific property portfolios.",
-    category: "ESG & Sustainability",
-    date: "24 Apr, 2026",
+    id: "evolve-2026-aligning-india-teams",
+    title: "Evolve 2026: Aligning Our India Teams for the Year Ahead",
+    excerpt: "Evolve 2026 united nearly 300 branch leaders, operations managers, and frontline supervisors across India to map our strategic roadmap and client delivery standards.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "India",
+    type: "News",
+    category: "Leadership | Our People",
+    date: "05 Feb, 2026",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+    content: "Evolve 2026 united nearly 300 branch leaders, operations managers, and frontline supervisors across India to map our strategic roadmap and client delivery standards."
+  },
+  {
+    id: "safety-starts-with-you-stop-campaign",
+    title: "Safety Starts with You. Here Is Why STOP Matters",
+    excerpt: "The STOP campaign reinforces a simple yet life-saving principle: every colleague has the unequivocal authority and duty to halt any work deemed unsafe.",
+    sector: "Corporate",
+    service: "Health & Safety",
+    country: "India",
+    type: "Article",
+    category: "Health & Safety | Our People",
+    date: "01 Feb, 2026",
+    readTime: "4 min read",
+    author: "Javed Qureshi",
+    image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80",
+    content: "The STOP campaign reinforces a simple yet life-saving principle: every colleague has the unequivocal authority and duty to halt any work deemed unsafe."
+  },
+  {
+    id: "nexaagen-india-sustainability-model-award",
+    title: "NEXAAGEN Group India Recognised for Sustainability Model in Facilities Management",
+    excerpt: "NEXAAGEN Group India has been recognised at the national FM Leadership Summit for its circular sustainability model, chemical-free sanitization, and energy reduction programmes.",
+    sector: "Corporate",
+    service: "Sustainability",
+    country: "India",
+    type: "News",
+    category: "Awards",
+    date: "20 Jan, 2026",
+    readTime: "3 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&w=800&q=80",
+    content: "NEXAAGEN Group India has been recognised at the national FM Leadership Summit for its circular sustainability model, chemical-free sanitization, and energy reduction programmes."
+  },
+  {
+    id: "integrated-fm-data-centre-resilience",
+    title: "How Integrated Facilities Management Builds Data Centre Resilience",
+    excerpt: "Integrated Facilities Management ensures mechanical cooling, emergency generators, fire suppression, and physical security operate synchronously with zero downtime.",
+    sector: "Data Centers",
+    service: "Facilities Management",
+    country: "India",
+    type: "Article",
+    category: "Data Centres | Facilities Management",
+    date: "02 Dec, 2025",
     readTime: "5 min read",
     author: "NEXAAGEN Team",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80",
-    content: `
-      NEXAAGEN today formally announced its comprehensive Net-Zero 2035 Roadmap, committing to eliminate Scope 1 and Scope 2 operational emissions across its direct operations while equipping enterprise clients to cut their built-environment carbon intensity by at least 50% before 2030.
-
-      Speaking at the Global Real Estate Decarbonisation Summit, Chief Technology & ESG Officer Dr. Tariq Al-Mansoor outlined the proprietary three-stage framework:
-      1. Digital Baselines & High-Frequency Telemetry: Deploying wireless sub-meters to expose hidden baseline waste without expensive capital equipment overhauls.
-      2. Chiller & Heat-Pump Electrification: Replacing legacy gas boilers with low-GWP industrial heat pumps coupled with thermal buffers.
-      3. Intelligent AI Dynamic Scheduling: Using real-time occupancy telemetry to prevent empty floors from being conditioned or illuminated.
-
-      NEXAAGEN has already piloted this model across 28 flagship office towers in London, Frankfurt, and Singapore, achieving an audited average 38% drop in kilowatt-hour consumption within 18 months.
-    `
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    content: "Integrated Facilities Management ensures mechanical cooling, emergency generators, fire suppression, and physical security operate synchronously with zero downtime."
   },
   {
-    id: "autonomous-robotics-fleet-expansion",
-    title: "NEXAAGEN Deploys 250+ Autonomous Cleaning Robots Across Global Transit Hubs",
-    excerpt: "Next-generation LiDAR and AI vision robotics deployed in international airports and high-speed rail concourses.",
-    category: "Technology & Innovation",
-    date: "12 Mar, 2026",
+    id: "five-energy-efficiency-strategies-data-centres",
+    title: "5 Energy Efficiency Strategies for Data Centres in India",
+    excerpt: "India's fast-growing data centre sector demands innovative chiller containment, free-cooling optimization, and power factor engineering to lower PUE below 1.25.",
+    sector: "Data Centers",
+    service: "Hard Services",
+    country: "India",
+    type: "Article",
+    category: "Data Centres",
+    date: "15 Nov, 2025",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    content: "India's fast-growing data centre sector demands innovative chiller containment, free-cooling optimization, and power factor engineering to lower PUE below 1.25."
+  },
+  {
+    id: "why-iso-standards-matter-fm",
+    title: "Why ISO Standards Matter in Facilities Management",
+    excerpt: "ISO standards form the backbone of audited quality, environmental compliance, information security, and worker occupational health across critical infrastructure.",
+    sector: "Corporate",
+    service: "Health & Safety",
+    country: "Global",
+    type: "Article",
+    category: "Health & Safety",
+    date: "12 Nov, 2025",
     readTime: "4 min read",
     author: "NEXAAGEN Team",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80",
-    content: `
-      NEXAAGEN has officially expanded its autonomous robotics fleet with the deployment of over 250 next-generation commercial scrubbing robots across five major international airport hubs and four high-speed rail terminals.
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+    content: "ISO standards form the backbone of audited quality, environmental compliance, information security, and worker occupational health across critical infrastructure."
+  },
 
-      Equipped with 3D LiDAR sensors, stereoscopic computer vision, and dynamic obstacle avoidance, the robots navigate safely among dense passenger crowds during peak operating hours. Operating quietly in tandem with human sanitation teams, the units scrub up to 25,000 square feet per hour with an 80% reduction in water usage compared to conventional machinery.
-    `
+  // ==========================================
+  // PAGE 2 ARTICLES (Screenshots 5, 6, 7)
+  // ==========================================
+  {
+    id: "driving-sustainable-transformation-apac",
+    title: "Driving Sustainable Transformation Through Integrated Facilities Management",
+    excerpt: "Roland Salameh, CEO of NEXAAGEN APAC & Middle East, discusses how unified FM contracts empower multinational occupiers to execute measurable Net Zero transitions.",
+    sector: "Corporate",
+    service: "Sustainability",
+    country: "Global",
+    type: "Thought Leadership",
+    category: "Corporate | Sustainability",
+    date: "11 Nov, 2025",
+    readTime: "6 min read",
+    author: "Roland Salameh",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+    content: "Unified FM contracts empower multinational occupiers to execute measurable Net Zero transitions with continuous carbon tracking and real-time utility telemetry."
   },
   {
-    id: "smart-workplace-experience-trends-2027",
-    title: "The Magnetic Workplace: Global Facilities & Experience Report 2027",
-    excerpt: "Comprehensive study of 1,200 enterprise occupiers reveals why premium amenities and indoor air quality drive office attendance.",
-    category: "Insights & Whitepapers",
-    date: "18 Feb, 2026",
-    readTime: "7 min read",
+    id: "smarter-manufacturing-waste-management",
+    title: "Smarter Manufacturing Waste Management Starts on the Factory Floor",
+    excerpt: "Waste management in Indian manufacturing clusters requires disciplined source segregation, hazardous scrap protocols, and zero-waste-to-landfill circular partnerships.",
+    sector: "Manufacturing",
+    service: "Cleaning",
+    country: "India",
+    type: "Article",
+    category: "Manufacturing | Waste Management",
+    date: "26 Oct, 2025",
+    readTime: "4 min read",
     author: "NEXAAGEN Team",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80",
-    content: `
-      NEXAAGEN’s Workplace Strategy Lab has published its annual benchmark report examining the evolving dynamics between commercial landlords, corporate tenants, and employees in top metropolitan markets.
+    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80",
+    content: "Waste management in Indian manufacturing clusters requires disciplined source segregation, hazardous scrap protocols, and zero-waste-to-landfill circular partnerships."
+  },
+  {
+    id: "takeaways-tech-week-singapore-2025",
+    title: "Takeaways from Tech Week Singapore 2025: What Data Centre Leaders Need",
+    excerpt: "Discover key takeaways from Tech Week Singapore on high-density liquid cooling, direct-to-chip heat extraction, and autonomous robotics for mission-critical estates.",
+    sector: "Data Centers",
+    service: "Hard Services",
+    country: "Singapore",
+    type: "Article",
+    category: "Event | Innovation",
+    date: "13 Oct, 2025",
+    readTime: "5 min read",
+    author: "Girish A Sharmaa",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+    content: "Discover key takeaways from Tech Week Singapore on high-density liquid cooling, direct-to-chip heat extraction, and autonomous robotics for mission-critical estates."
+  },
+  {
+    id: "fm-supports-audit-ready-automotive-manufacturing",
+    title: "How Facilities Management Supports Audit-Ready Operations in Automotive Manufacturing",
+    excerpt: "Facilities management in Indian automotive manufacturing hubs keeps robotic assembly lines and paint shops pristine, minimizing micro-particulate defects.",
+    sector: "Manufacturing",
+    service: "Facilities Management",
+    country: "India",
+    type: "Article",
+    category: "Automotive | Facilities Management",
+    date: "19 Sep, 2025",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80",
+    content: "Facilities management in Indian automotive manufacturing hubs keeps robotic assembly lines and paint shops pristine, minimizing micro-particulate defects."
+  },
+  {
+    id: "anand-kumar-jajoo-appointed-cfo-apac",
+    title: "NEXAAGEN Appoints Anand Kumar Jajoo as Regional CFO for APAC",
+    excerpt: "NEXAAGEN appoints Anand Kumar Jajoo as Regional CFO for APAC to lead strategic financial operations, capital allocation, and regional expansion across high-growth markets.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "India",
+    type: "News",
+    category: "Appointment | Leadership",
+    date: "16 Sep, 2025",
+    readTime: "3 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
+    content: "NEXAAGEN appoints Anand Kumar Jajoo as Regional CFO for APAC to lead strategic financial operations, capital allocation, and regional expansion across high-growth markets."
+  },
+  {
+    id: "nexaagen-india-don-bosco-iti-partnership",
+    title: "NEXAAGEN India & Don Bosco ITI Partner for Data Centre Skills Academy",
+    excerpt: "NEXAAGEN India signs MoU with Don Bosco ITI to provide specialized technical training, apprenticeships, and employment tracks for mission-critical data centre technicians.",
+    sector: "Data Centers",
+    service: "Facilities Management",
+    country: "India",
+    type: "News",
+    category: "Data Centre | Partnership",
+    date: "09 Sep, 2025",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
+    content: "NEXAAGEN India signs MoU with Don Bosco ITI to provide specialized technical training, apprenticeships, and employment tracks for mission-critical data centre technicians."
+  },
+  {
+    id: "data-led-fm-strengthens-industrial-operations",
+    title: "How Data-Led Facilities Management Strengthens Industrial Operations",
+    excerpt: "Data-led facilities management in Indian manufacturing facilities converts telemetry into preventative actions, lowering unplanned motor outages by up to 34%.",
+    sector: "Manufacturing",
+    service: "Hard Services",
+    country: "India",
+    type: "Article",
+    category: "Facilities Management | Manufacturing",
+    date: "07 Aug, 2025",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    content: "Data-led facilities management in Indian manufacturing facilities converts telemetry into preventative actions, lowering unplanned motor outages by up to 34%."
+  },
+  {
+    id: "integrated-fm-smart-workspaces",
+    title: "Integrated Facility Management Services for Smart Workspaces",
+    excerpt: "Integrated Facility Management for modern corporate headquarters merges acoustic zoning, biophilic design, and concierge services to create magnetic workplaces.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "Global",
+    type: "Article",
+    category: "Facilities Management",
+    date: "07 Jul, 2025",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+    content: "Integrated Facility Management for modern corporate headquarters merges acoustic zoning, biophilic design, and concierge services to create magnetic workplaces."
+  },
+  {
+    id: "eight-principles-strong-compliance-manufacturing",
+    title: "8 Principles That Shape Strong Compliance and Conduct in Manufacturing",
+    excerpt: "Compliance in Indian manufacturing environments requires daily toolbox talks, certified PPE standards, and zero-tolerance electrical isolation protocols.",
+    sector: "Manufacturing",
+    service: "Health & Safety",
+    country: "India",
+    type: "Article",
+    category: "Compliance | Manufacturing",
+    date: "30 Jun, 2025",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    content: "Compliance in Indian manufacturing environments requires daily toolbox talks, certified PPE standards, and zero-tolerance electrical isolation protocols."
+  },
+  {
+    id: "nexaagen-india-achieves-iso-50001",
+    title: "NEXAAGEN India Achieves ISO 50001 Energy Management Certification",
+    excerpt: "Through ISO 50001 Energy Management compliance, NEXAAGEN helps clients achieve audited energy conservation and greenhouse gas emission monitoring.",
+    sector: "Corporate",
+    service: "Sustainability",
+    country: "India",
+    type: "News",
+    category: "Environmental | ESG",
+    date: "19 Jun, 2025",
+    readTime: "3 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    content: "Through ISO 50001 Energy Management compliance, NEXAAGEN helps clients achieve audited energy conservation and greenhouse gas emission monitoring."
+  },
+  {
+    id: "carbon-emissions-dashboard-retail-spaces",
+    title: "Carbon Emissions Dashboard for Retail Spaces: Turning Data into Decarbonisation",
+    excerpt: "NEXAAGEN Carbon Emission Dashboard for commercial malls aggregates HVAC, refrigeration, and lighting consumption to reveal immediate decarbonisation opportunities.",
+    sector: "Retail",
+    service: "Sustainability",
+    country: "India",
+    type: "Article",
+    category: "ESG | Sustainability",
+    date: "12 Jun, 2025",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    content: "NEXAAGEN Carbon Emission Dashboard for commercial malls aggregates HVAC, refrigeration, and lighting consumption to reveal immediate decarbonisation opportunities."
+  },
+  {
+    id: "retail-facility-management-success",
+    title: "Retail Facility Management Success: Enhancing Shopper Experience and Footfall",
+    excerpt: "Discover how expert retail facility management drives customer satisfaction, immaculate hygiene, and seamless tenant operations across flagship commercial centres.",
+    sector: "Retail",
+    service: "Facilities Management",
+    country: "India",
+    type: "Article",
+    category: "Awards | Retail",
+    date: "05 Jun, 2025",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=800&q=80",
+    content: "Discover how expert retail facility management drives customer satisfaction, immaculate hygiene, and seamless tenant operations across flagship commercial centres."
+  },
 
-      Key Findings:
-      - 78% of workers consider indoor air purity a primary factor in their willingness to work on-site.
-      - Properties offering hotel-grade concierge and barista amenities experience 42% higher desk occupancy rates.
-      - Dynamic space reconfigurability and quiet focus pods have overtaken open-plan hot desks as the most requested workplace feature.
-    `
+  // ==========================================
+  // PAGE 3 ARTICLES (Screenshot 8)
+  // ==========================================
+  {
+    id: "airport-show-2025-dubai-aviation-fm",
+    title: "Airport Show 2025, Dubai: What's Next for Aviation FM?",
+    excerpt: "Explore insights from Airport Show Dubai on automated boarding gates, passenger baggage robotics, and sustainable airfield maintenance.",
+    sector: "Aviation",
+    service: "Facilities Management",
+    country: "Global",
+    type: "Article",
+    category: "Aviation | Facilities Management",
+    date: "27 May, 2025",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1540339832862-474599807836?auto=format&fit=crop&w=800&q=80",
+    content: "Explore insights from Airport Show Dubai on automated boarding gates, passenger baggage robotics, and sustainable airfield maintenance."
+  },
+  {
+    id: "facility-management-ai-empowered-data-centres",
+    title: "Facility Management in AI-Empowered Data Centres",
+    excerpt: "With the growth of AI in Data Centres, continuous power demand and liquid cooling management require real-time AI telemetry and precision mechanical oversight.",
+    sector: "Data Centers",
+    service: "Hard Services",
+    country: "Global",
+    type: "Thought Leadership",
+    category: "Data Center | Hard Services",
+    date: "22 May, 2025",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    content: "With the growth of AI in Data Centres, continuous power demand and liquid cooling management require real-time AI telemetry and precision mechanical oversight."
+  },
+  {
+    id: "epc-award-high-reliability-power",
+    title: "2025 Engineering, Procurement and Construction Award for High-Reliability Power",
+    excerpt: "EPC sector recognises and celebrates NEXAAGEN's critical electrical substation maintenance framework delivering 100% statutory uptime.",
+    sector: "Corporate",
+    service: "Hard Services",
+    country: "India",
+    type: "News",
+    category: "Awards | Hard Services",
+    date: "30 Apr, 2025",
+    readTime: "3 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=800&q=80",
+    content: "EPC sector recognises and celebrates NEXAAGEN's critical electrical substation maintenance framework delivering 100% statutory uptime."
+  },
+  {
+    id: "twenty-years-nexaagen-india",
+    title: "20+ Years of NEXAAGEN in India: A Journey of Innovation and Nation-Building",
+    excerpt: "Celebrating two decades of delivering world-class facility management across India's largest infrastructure hubs, smart cities, and corporate campuses.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "India",
+    type: "News",
+    category: "NEXAAGEN India",
+    date: "01 Jun, 2024",
+    readTime: "5 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    content: "Celebrating two decades of delivering world-class facility management across India's largest infrastructure hubs, smart cities, and corporate campuses."
+  },
+  {
+    id: "unity-arthur-mckay-under-nexaagen-banner",
+    title: "Unity: Arthur McKay to operate under NEXAAGEN banner",
+    excerpt: "Specialist mechanical and electrical engineering provider Arthur McKay completes full integration into NEXAAGEN Group, unifying technical capabilities.",
+    sector: "Corporate",
+    service: "Hard Services",
+    country: "United Kingdom",
+    type: "News",
+    category: "Hard Services",
+    date: "15 Apr, 2024",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
+    content: "Specialist mechanical and electrical engineering provider Arthur McKay completes full integration into NEXAAGEN Group, unifying technical capabilities."
+  },
+  {
+    id: "power-of-listening-colleague-engagement",
+    title: "The Power of Listening: Why our colleague engagement survey matters",
+    excerpt: "Group-wide colleague survey launches to gather insights from over 130,000 colleagues across 35 countries, driving continuous workplace improvements.",
+    sector: "Corporate",
+    service: "Facilities Management",
+    country: "Global",
+    type: "Article",
+    category: "Our People",
+    date: "10 Mar, 2024",
+    readTime: "4 min read",
+    author: "NEXAAGEN Team",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    content: "Group-wide colleague survey launches to gather insights from over 130,000 colleagues across 35 countries, driving continuous workplace improvements."
   }
 ];
 

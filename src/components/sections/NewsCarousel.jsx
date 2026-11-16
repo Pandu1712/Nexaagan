@@ -51,7 +51,7 @@ export default function NewsCarousel({ news = newsData }) {
   };
 
   return (
-    <section className="w-full py-12 sm:py-16 lg:py-20 bg-white overflow-hidden" aria-label="News and Insights Section">
+    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden" aria-label="News and Insights Section">
       <div className="container-custom">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center space-y-2 mb-4">
@@ -152,9 +152,8 @@ export default function NewsCarousel({ news = newsData }) {
             <button
               onClick={handleScrollLeft}
               disabled={!canScrollLeft}
-              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${
-                !canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
-              }`}
+              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
+                }`}
               aria-label="Previous insights slide"
               title="Previous articles"
             >
@@ -163,9 +162,8 @@ export default function NewsCarousel({ news = newsData }) {
             <button
               onClick={handleScrollRight}
               disabled={!canScrollRight}
-              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${
-                !canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
-              }`}
+              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
+                }`}
               aria-label="Next insights slide"
               title="Next articles"
             >

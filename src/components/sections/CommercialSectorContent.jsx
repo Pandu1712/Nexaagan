@@ -200,9 +200,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 2A: "Commercial FM" with 5 "BEST" Accordions
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-[#FAFAFA] border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Card: Commercial FM */}
             <div className="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-[#EAEAEA]">
               <h3 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-5">
@@ -268,9 +268,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 2B: "Services for commercial facilities..." with 4 Accordions
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-white">
+      <section className="py-4 sm:py-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left: 4 Service Accordions */}
             <div className="lg:col-span-7 divide-y divide-[#E2E8F0] order-2 lg:order-1">
               {serviceAccordions.map((srv, idx) => {
@@ -336,9 +336,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 3: "Memorable first and lasting impressions..."
           ========================================================================= */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-4 sm:py-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-8 sm:p-12 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Image: Grounds Maintenance */}
             <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-sm">
               <img
@@ -366,9 +366,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 4: "Fuelling your teams with nutritional, flavourful food"
           ========================================================================= */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-4 sm:py-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-8 sm:p-12 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
@@ -396,9 +396,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 5: "Keeping your commercial premises looking the part"
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-6">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
@@ -458,9 +458,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 6: "Protecting and enhancing your brand and buildings"
           ========================================================================= */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-4 sm:py-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-8 sm:p-12 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
@@ -491,18 +491,18 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 7: "Responsibility and opportunity for change" (3 ESG Cards)
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-[#FAFAFA] border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-4">
+          <div className="mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
               Responsibility and opportunity for change
             </h2>
-            <p className="text-lg text-[#64748B]">
+            <p className="text-base sm:text-lg text-[#64748B]">
               Our approach to service aligns with our customers's ESG goals and commitments.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {esgCards.map((card, idx) => (
               <div
                 key={idx}
@@ -542,9 +542,9 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 8: "Frequently Asked Questions" (10 Commercial FAQs in 2 columns)
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-14">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-4 sm:mb-6">
             Frequently Asked Questions
           </h2>
 
@@ -641,18 +641,18 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 9: "Customer stories"
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-[#FAF9F7] border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-[#FAF9F7] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="mb-14 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
+          <div className="mb-4 sm:mb-6 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
               Customer stories
             </h2>
-            <p className="text-lg text-[#64748B]">
+            <p className="text-base sm:text-lg text-[#64748B]">
               Discover how we're helping our customers be the best they can be.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {customerStories.map((story) => (
               <div
                 key={story.id}

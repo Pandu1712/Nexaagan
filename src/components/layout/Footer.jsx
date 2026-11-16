@@ -19,10 +19,10 @@ import { servicesData } from '../../data/servicesData';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-navy text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-slate-800">
+    <footer className="bg-brand-navy text-slate-300 pt-8 sm:pt-10 pb-6 sm:pb-8 border-t border-slate-800">
       <div className="container-custom">
         {/* Main Footer Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-8 sm:pb-10 border-b border-slate-800">
           {/* Column 1: Company Info */}
           <div className="lg:col-span-2 space-y-5">
             <Link to="/" className="flex items-center space-x-3">
@@ -162,6 +162,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/policies" className="hover:text-brand-orange transition-colors">
+                  Policy Download Centre
+                </Link>
+              </li>
+              <li>
                 <Link to="/news" className="hover:text-brand-orange transition-colors">
                   News, Insights & Reports
                 </Link>
@@ -192,7 +197,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} NEXAAGEN Group Limited. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-6">
             <Link to="/privacy-policy" className="hover:text-slate-300 transition-colors">
@@ -201,8 +206,11 @@ export default function Footer() {
             <Link to="/terms-conditions" className="hover:text-slate-300 transition-colors">
               Terms & Conditions
             </Link>
-            <Link to="/esg#governance" className="hover:text-slate-300 transition-colors">
+            <Link to="/modern-slavery-act" className="hover:text-slate-300 transition-colors">
               Modern Slavery Statement
+            </Link>
+            <Link to="/policies" className="hover:text-slate-300 transition-colors">
+              Policy Download Centre
             </Link>
             <span className="text-slate-600">Cookie Preferences</span>
           </div>

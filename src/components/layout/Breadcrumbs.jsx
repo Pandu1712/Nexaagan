@@ -4,7 +4,7 @@ import { ChevronRight, Home } from 'lucide-react';
 
 export default function Breadcrumbs({ items = [] }) {
   return (
-    <nav className="bg-slate-50 border-b border-slate-100 py-3 text-xs text-slate-500">
+    <nav className="bg-slate-50 border-b border-slate-100 py-1.5 sm:py-2 text-xs text-slate-500">
       <div className="container-custom flex flex-wrap items-center gap-1.5 sm:gap-2">
         <Link
           to="/"

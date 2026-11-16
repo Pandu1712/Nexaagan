@@ -257,12 +257,12 @@ export default function SectorDetail() {
 
       {/* SECTION 2: BUILT FOR PERFORMANCE (OCS Reference Screenshot 2: 4 Elevated Metric Cards) */}
       {sector.performanceHeading && (
-        <section className="w-full py-8 sm:py-12 lg:py-16 bg-white overflow-hidden">
+        <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
           <div className="container-custom">
-            <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-6 sm:p-10 md:p-12 lg:p-16 border border-slate-200/60 shadow-sm">
+            <div className="w-full bg-[#FAF9F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
               
               {/* Header */}
-              <div className="max-w-2xl mx-auto text-center space-y-2.5 mb-8 sm:mb-12">
+              <div className="max-w-2xl mx-auto text-center space-y-2.5 mb-4 sm:mb-6">
                 <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
                   {sector.performanceHeading}
                 </h2>
@@ -304,11 +304,11 @@ export default function SectorDetail() {
 
       {/* SECTION 3: WHY LEADING DATA CENTRES CHOOSE NEXAAGEN (OCS Reference Screenshot 2: Image Left + 3 Pillars Right) */}
       {sector.whyChooseHeading && (
-        <section className="w-full py-8 sm:py-12 lg:py-16 bg-white overflow-hidden">
+        <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
           <div className="container-custom">
             
             {/* Header */}
-            <div className="max-w-2xl mx-auto text-center space-y-3 mb-10 sm:mb-14">
+            <div className="max-w-2xl mx-auto text-center space-y-3 mb-4 sm:mb-6">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
                 {sector.whyChooseHeading}
               </h2>
@@ -362,7 +362,7 @@ export default function SectorDetail() {
       {!sector.performanceHeading && !isEducation && !isHealthcare && !isAviation && !isManufacturing && !isRetail && !isHospitality && (
         <section className="section-padding bg-white">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Heading, Paragraphs, Key Benefits / CTA */}
               <div className="lg:col-span-7 space-y-6">
                 {!isCommercial && (

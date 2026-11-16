@@ -280,9 +280,9 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 2: NUMBERS / STATS (Screenshot 2) */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             Pest Control division in numbers
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -297,13 +297,13 @@ export default function PestControlContent({ service }) {
             return (
               <div 
                 key={idx}
-                className="bg-slate-50/70 hover:bg-slate-50 border border-slate-200/70 rounded-3xl p-7 transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
+                className="bg-slate-50/70 hover:bg-slate-50 border border-slate-200/70 rounded-3xl p-6 transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-full bg-orange-100/80 flex items-center justify-center text-[#FF5722] mb-6">
+                  <div className="w-12 h-12 rounded-full bg-orange-100/80 flex items-center justify-center text-[#FF5722] mb-5">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <div className="text-4xl sm:text-5xl font-heading font-black text-[#D8232A] tracking-tight mb-3">
+                  <div className="text-4xl sm:text-5xl font-heading font-black text-[#D8232A] tracking-tight mb-2">
                     {stat.value}
                   </div>
                   <p className="text-sm text-slate-600 font-medium leading-relaxed">
@@ -317,8 +317,8 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 3: PEST CONTROL SERVICES CAPABILITIES (Screenshot 3) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Building Photography with trees */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -331,7 +331,7 @@ export default function PestControlContent({ service }) {
           </div>
 
           {/* Right Column: Content */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-5">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
               Pest control services
             </h2>
@@ -340,11 +340,11 @@ export default function PestControlContent({ service }) {
             </p>
 
             {/* Checklist */}
-            <div className="space-y-4 pt-2">
+            <div className="space-y-3 pt-1">
               {coreCapabilities.map((item, idx) => (
-                <div key={idx} className="flex items-center space-x-3.5">
-                  <div className="w-6 h-6 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
-                    <Check className="w-4 h-4 stroke-[3]" />
+                <div key={idx} className="flex items-center space-x-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm sm:text-base font-semibold text-slate-700">
                     {item}
@@ -354,10 +354,10 @@ export default function PestControlContent({ service }) {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-3">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
+                className="inline-flex items-center justify-center px-7 py-3 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
               >
                 <span>Contact our Pest Control Team</span>
               </a>
@@ -367,10 +367,10 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 4: PEST CONTROL + ESG (Screenshot 4) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Content */}
-          <div className="lg:col-span-6 space-y-6 order-2 lg:order-1">
+          <div className="lg:col-span-6 space-y-5 order-2 lg:order-1">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
               Pest Control + ESG
             </h2>
@@ -379,11 +379,11 @@ export default function PestControlContent({ service }) {
             </p>
 
             {/* Checklist */}
-            <div className="space-y-4 pt-2">
+            <div className="space-y-3 pt-1">
               {esgPoints.map((item, idx) => (
-                <div key={idx} className="flex items-start space-x-3.5">
-                  <div className="w-6 h-6 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
-                    <Check className="w-4 h-4 stroke-[3]" />
+                <div key={idx} className="flex items-start space-x-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm sm:text-base text-slate-700 leading-relaxed">
                     {item}
@@ -393,10 +393,10 @@ export default function PestControlContent({ service }) {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-3">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
+                className="inline-flex items-center justify-center px-7 py-3 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
               >
                 <span>Contact our team</span>
               </a>
@@ -417,8 +417,8 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 5: PEST CONTROL + TECHNOLOGY (Screenshot 5) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Modern Sleek Office */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
@@ -431,7 +431,7 @@ export default function PestControlContent({ service }) {
           </div>
 
           {/* Right Column: Content */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-5">
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
               Pest Control + Technology
             </h2>
@@ -440,10 +440,10 @@ export default function PestControlContent({ service }) {
             </p>
 
             {/* Checklist */}
-            <div className="space-y-4 pt-2">
+            <div className="space-y-3 pt-1">
               {techPoints.map((item, idx) => (
-                <div key={idx} className="flex items-start space-x-3.5">
-                  <div className="w-6 h-6 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                <div key={idx} className="flex items-start space-x-3">
+                  <div className="w-5 h-5 rounded-full bg-[#FF5722] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
                     <Check className="w-4 h-4 stroke-[3]" />
                   </div>
                   <span className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -454,7 +454,7 @@ export default function PestControlContent({ service }) {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-3">
               <a
                 href="#contact-form"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300"
@@ -467,9 +467,9 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 6: ACCREDITATIONS & CERTIFICATIONS (Screenshot 6) */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="text-center max-w-3xl mx-auto mb-5 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
             Accreditations & Certifications
           </h2>
           <p className="text-base text-slate-600">
@@ -478,12 +478,12 @@ export default function PestControlContent({ service }) {
         </div>
 
         {/* 5 Accreditations Row */}
-        <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-sm">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+        <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-5 sm:p-8 shadow-sm">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
             {accreditations.map((acc) => (
               <div 
                 key={acc.id}
-                className="flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center p-3 hover:scale-105 transition-transform duration-300"
                 title={acc.name}
               >
                 {acc.badge}
@@ -494,10 +494,10 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 7 & 8: COMPLEMENTARY SERVICES CAROUSEL (Screenshots 7 & 8) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
               Facilities services designed for your organisation
             </h2>
             <p className="text-base text-slate-600">
@@ -510,14 +510,14 @@ export default function PestControlContent({ service }) {
             <button
               onClick={prevCarousel}
               aria-label="Previous service"
-              className="w-11 h-11 rounded-full border border-slate-200 hover:border-brand-orange text-slate-700 hover:text-brand-orange bg-white flex items-center justify-center shadow-sm transition-all"
+              className="w-10 h-10 rounded-full border border-slate-200 hover:border-brand-orange text-slate-700 hover:text-brand-orange bg-white flex items-center justify-center shadow-sm transition-all"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextCarousel}
               aria-label="Next service"
-              className="w-11 h-11 rounded-full border border-slate-200 hover:border-brand-orange text-slate-700 hover:text-brand-orange bg-white flex items-center justify-center shadow-sm transition-all"
+              className="w-10 h-10 rounded-full border border-slate-200 hover:border-brand-orange text-slate-700 hover:text-brand-orange bg-white flex items-center justify-center shadow-sm transition-all"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -563,9 +563,9 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 9: FREQUENTLY ASKED QUESTIONS (Screenshot 9) */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             Frequently Asked Questions
           </h2>
           <p className="text-base text-slate-600">
@@ -605,8 +605,8 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 10: CONTACT YOUR PEST CONTROL TEAM (Screenshot 10) */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-8 sm:p-14 lg:p-16 overflow-hidden text-center shadow-2xl">
+      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle geometric dot grid pattern */}
           <div 
             className="absolute inset-0 opacity-15 pointer-events-none" 
@@ -617,10 +617,10 @@ export default function PestControlContent({ service }) {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
               Contact your Pest Control team
             </h2>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <a
@@ -634,8 +634,8 @@ export default function PestControlContent({ service }) {
       </section>
 
       {/* SECTION 11: SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="bg-slate-50/70 rounded-[32px] p-6 sm:p-12 border border-slate-200/80">
+      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="bg-slate-50/70 rounded-[32px] p-5 sm:p-8 lg:p-10 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our Pest Control Specialists"
             subtitle="Safeguard your facilities with certified Integrated Pest Management and proactive digital protection."

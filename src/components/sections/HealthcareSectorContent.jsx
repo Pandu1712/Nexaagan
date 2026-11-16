@@ -186,34 +186,34 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 1: "A Partner That Shares Your Care"
           ========================================================================= */}
-      <section id="partner-care" className="py-20 lg:py-24 bg-white">
+      <section id="partner-care" className="py-4 sm:py-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7">
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#1E293B] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1E293B] leading-tight mb-4">
                 A Partner That Shares Your Care
               </h2>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-3">
                 More than a service provider, we are a team that understands the heart of healthcare. Our in-house experts deliver reliable, compliant services, working as an extension of your staff.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
                 What makes us different is our healthcare expertise delivered with local care, offering direct, in-house services for reliable support and patient-centred, practical solutions.
               </p>
 
-              <h4 className="text-lg font-bold text-[#1E293B] mb-5">
+              <h4 className="text-lg font-bold text-[#1E293B] mb-3">
                 Our Winning Tools:
               </h4>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {[
                   'Top-tier hygiene and safety standards.',
                   'Global expertise, locally executed.',
                   'Real-time performance tracking.',
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-center space-x-3.5">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#E03A00] to-[#FF5E00] flex items-center justify-center text-white shrink-0 shadow-sm">
-                      <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <div key={idx} className="flex items-center space-x-3">
+                    <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#E03A00] to-[#FF5E00] flex items-center justify-center text-white shrink-0 shadow-sm">
+                      <Check className="w-3 h-3 stroke-[3]" />
                     </div>
                     <span className="text-base sm:text-lg text-[#334155] font-medium">
                       {item}
@@ -240,11 +240,11 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 2: "Healthcare Solutions by NEXAAGEN" (5-Tab Capsule)
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-[#FAFAFA] border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#1E293B] mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1E293B] mb-3">
               Healthcare Solutions by NEXAAGEN
             </h2>
             <p className="text-base sm:text-lg text-[#64748B]">
@@ -340,11 +340,11 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 3: "Sustainability in Action: Responsible Healthcare"
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
               Sustainability in Action: Responsible Healthcare
             </h2>
             <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
@@ -352,7 +352,7 @@ export default function HealthcareSectorContent() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Sunlit green tree canopy with modern hospital building */}
             <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-md flex justify-center">
               <img
@@ -363,8 +363,8 @@ export default function HealthcareSectorContent() {
             </div>
 
             {/* Right: 3 Pillars with Clean Typography */}
-            <div className="lg:col-span-6 space-y-8">
-              <div className="border-l-2 border-[#E03A00] pl-5 space-y-1.5">
+            <div className="lg:col-span-6 space-y-6">
+              <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
                 <h3 className="text-xl font-bold text-[#1E293B]">
                   Environmental Responsibility
                 </h3>
@@ -373,7 +373,7 @@ export default function HealthcareSectorContent() {
                 </p>
               </div>
 
-              <div className="border-l-2 border-[#E03A00] pl-5 space-y-1.5">
+              <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
                 <h3 className="text-xl font-bold text-[#1E293B]">
                   Social Impact
                 </h3>
@@ -382,7 +382,7 @@ export default function HealthcareSectorContent() {
                 </p>
               </div>
 
-              <div className="border-l-2 border-[#E03A00] pl-5 space-y-1.5">
+              <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
                 <h3 className="text-xl font-bold text-[#1E293B]">
                   Transparent Governance
                 </h3>
@@ -398,12 +398,12 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 4: "Case Studies" (Carousel)
           ========================================================================= */}
-      <section className="py-20 lg:py-24 bg-[#FAFAFA] border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header with Title left and Prev/Next buttons right */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-14">
-            <div className="max-w-2xl mb-6 md:mb-0">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
+            <div className="max-w-2xl mb-4 md:mb-0">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
                 Case Studies
               </h2>
               <p className="text-base sm:text-lg text-[#64748B]">
@@ -430,7 +430,7 @@ export default function HealthcareSectorContent() {
           </div>
 
           {/* 3 Active Cards from current story index */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[0, 1, 2].map((offset) => {
               const idx = (storyIndex + offset) % caseStudies.length;
               const story = caseStudies[idx];
@@ -472,12 +472,12 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 5: "Connect with Our Healthcare Team" (Form + Nurse Image)
           ========================================================================= */}
-      <section id="contact-form" className="py-20 lg:py-24 bg-white border-t border-[#F0F0F0]">
+      <section id="contact-form" className="py-3 sm:py-5 bg-white border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-8 sm:p-12 lg:p-14 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Column: Form */}
             <div className="lg:col-span-7">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-5">
                 Connect with Our Healthcare Team
               </h2>
 

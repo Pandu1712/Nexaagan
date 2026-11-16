@@ -179,13 +179,13 @@ export default function DataCentreSolutionsTabs() {
   const current = tabs[activeTab];
 
   return (
-    <section className="w-full py-8 sm:py-12 lg:py-16 bg-white overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
       <div className="container-custom">
-        {/* Large Rounded Container Box matching OCS Reference */}
-        <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-6 sm:p-10 md:p-12 lg:p-16 border border-slate-200/60 shadow-sm">
+        {/* Large Rounded Container Box */}
+        <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
           
           {/* Header */}
-          <div className="max-w-3xl mx-auto text-center space-y-3 mb-8 sm:mb-12">
+          <div className="max-w-3xl mx-auto text-center space-y-2 mb-5 sm:mb-6">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
               Specialist Facilities Management for Critical Environments
             </h2>

@@ -76,7 +76,7 @@ export default function AboutUs() {
                 Our Heritage & Purpose
               </span>
 
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 About Nexaagen Integrated Facility Management Services Private Limited
               </h2>
 

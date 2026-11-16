@@ -33,7 +33,7 @@ export default function ESGCommitmentCard() {
 
           {/* Section Header */}
           <div className="w-full text-left space-y-2 mb-8 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               NEXAAGEN ESG commitment
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal">

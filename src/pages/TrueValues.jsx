@@ -20,6 +20,7 @@ import {
   Eye
 } from 'lucide-react';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export default function TrueValues() {
   const [activeValueIndex, setActiveValueIndex] = useState(0);
@@ -194,7 +195,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       title: 'Sixty Years of Global Aviation Services: One Standard, Uncompromising Excellence',
       author: 'NEXAAGEN Team',
       date: '24 Aug, 2026',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      image: aviationServicesImg,
       tag: 'Aviation',
       excerpt: 'Celebrating decades of world-class terminal operations, PRM mobility assistance, and ground handling across premier international gateways.'
     },
@@ -260,11 +261,11 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN TRUE Values
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Our values are Trust, Respect, Unity and Empowerment – they're TRUE. Guided by these values and principles, we're on a mission to make people and places the best they can be.
           </p>
         </div>
@@ -277,7 +278,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our guiding principles
             </h2>
 
@@ -405,10 +406,10 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
         {/* Header with Navigation Arrows */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-4 sm:mb-6">
           <div className="max-w-3xl space-y-3">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Discover our NEXAAGEN commitments
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               Starting with safety, respect, honesty and openness – capturing our commitment to leave things better than we found them and our universal promise that we'll do the right things in the right way – the NEXAAGEN way.
             </p>
           </div>
@@ -526,7 +527,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Values: Customer alignment
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">
@@ -594,7 +595,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
             />
 
             <div className="relative z-10 space-y-3">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold tracking-tight">
                 Share our values?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm sm:text-base leading-relaxed font-normal max-w-md">
@@ -624,7 +625,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
             />
 
             <div className="relative z-10 space-y-3">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold tracking-tight">
                 Globally shared values
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm sm:text-base leading-relaxed font-normal max-w-md">
@@ -650,7 +651,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             The latest insights and updates from the team at NEXAAGEN.
           </h2>
           <p className="text-slate-500 text-xs sm:text-sm sm:text-base font-normal">

@@ -192,7 +192,7 @@ export default function CarbonEnergyManagementContent({ service }) {
                   </Link>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                   Carbon & Energy Management
                 </h1>
 
@@ -227,7 +227,7 @@ export default function CarbonEnergyManagementContent({ service }) {
 
             {/* Right Content Column */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Navigating your pathway to Net Zero and beyond
               </h2>
 
@@ -262,7 +262,7 @@ export default function CarbonEnergyManagementContent({ service }) {
             <span className="text-xs font-bold uppercase tracking-wider text-brand-orange block mb-2">
               Carbon & Energy Management Services
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Proactive approach towards Net Zero
             </h2>
             <p className="mt-2 text-slate-600 text-sm sm:text-base">
@@ -295,7 +295,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN Customer Stories
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base">
@@ -355,7 +355,7 @@ export default function CarbonEnergyManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Energy + ESG
               </h2>
 
@@ -436,7 +436,7 @@ export default function CarbonEnergyManagementContent({ service }) {
 
             {/* Right Content */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Energy + Technology
               </h2>
 
@@ -497,7 +497,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       <section className="py-4 sm:py-6 bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-5 sm:mb-6">
-            <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
               Accreditations & Certifications
             </h3>
             <p className="mt-2 text-slate-600 text-xs sm:text-sm">
@@ -553,7 +553,7 @@ export default function CarbonEnergyManagementContent({ service }) {
             {/* Left Callout Card */}
             <div className="lg:col-span-4 flex flex-col justify-between p-8 rounded-3xl bg-slate-50 border border-slate-100">
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy leading-tight">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy leading-tight">
                   Facilities services designed for your organisation
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -689,10 +689,10 @@ export default function CarbonEnergyManagementContent({ service }) {
             />
 
             <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
                 Connect with your NEXAAGEN team
               </h2>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+              <p className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto text-justify-center">
                 We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
               </p>
               <div className="pt-4">

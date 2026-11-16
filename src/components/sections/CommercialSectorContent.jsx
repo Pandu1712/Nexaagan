@@ -205,10 +205,10 @@ export default function CommercialSectorContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Card: Commercial FM */}
             <div className="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-[#EAEAEA]">
-              <h3 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-5">
+              <h3 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-5">
                 Commercial FM
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
                 Our mission's BEST strategy and ethos addresses five areas of concern highlighted by industry leaders in reference to facilities management: Experiences, Productivity, Practices, Resilience and Outcomes.
               </p>
               <Link
@@ -251,7 +251,7 @@ export default function CommercialSectorContent() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <p className="pt-4 text-base text-[#64748B] leading-relaxed">
+                          <p className="pt-4 text-base text-slate-600 leading-relaxed">
                             {acc.content}
                           </p>
                         </motion.div>
@@ -303,7 +303,7 @@ export default function CommercialSectorContent() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <p className="pt-4 text-base text-[#64748B] leading-relaxed">
+                          <p className="pt-4 text-base text-slate-600 leading-relaxed">
                             {srv.content}
                           </p>
                         </motion.div>
@@ -316,10 +316,10 @@ export default function CommercialSectorContent() {
 
             {/* Right Card */}
             <div className="lg:col-span-5 bg-[#FAFAFA] p-8 sm:p-10 rounded-3xl border border-[#EAEAEA] order-1 lg:order-2">
-              <h3 className="text-2xl sm:text-3xl font-bold text-[#1E293B] leading-tight mb-5">
+              <h3 className="text-2xl sm:text-3xl font-bold text-brand-navy leading-tight mb-5">
                 Services for commercial facilities spaces to operate at their best
               </h3>
-              <p className="text-base text-[#64748B] leading-relaxed mb-8">
+              <p className="text-base text-slate-600 leading-relaxed mb-8">
                 NEXAAGEN exists to help make people and places the best they can be through market-leading facilities services that deliver best outcomes.
               </p>
               <Link
@@ -351,13 +351,13 @@ export default function CommercialSectorContent() {
             </div>
             {/* Right Content */}
             <div className="lg:col-span-7 space-y-4">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy leading-tight">
                 Memorable first and lasting impressions for colleagues and customers
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 Creating lasting impressions and maintaining a comfortable environment are paramount in commercial facilities. Our facilities services encompass comprehensive cleaning, top-tier catering, expert hard services, and efficient pest control, all contributing to a pristine, safe, and inviting atmosphere.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 These services are crucial in upholding health and hygiene standards for employees, visitors, and guests in contemporary office spaces and commercial establishments. This focus on detail ensures that every interaction within these spaces is positive and memorable, fostering a productive and enjoyable environment for everyone.
               </p>
             </div>
@@ -373,13 +373,13 @@ export default function CommercialSectorContent() {
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-4">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy leading-tight">
                 Fuelling your teams with nutritional, flavourful food
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 Our catering services are tailored to support workplace performance through various culinary options, meeting diverse tastes and dietary needs. From unique pop-up restaurants enhancing the office atmosphere to customised catering for corporate events, we aim to impress and satisfy.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 We create environments where teams can meet and connect over meals, fostering a sense of community in the workplace. Our menus are carefully crafted to include nutritious and energising choices, helping staff maintain focus and productivity. Our catering services bring convenience and variety to your office, making each meal a pleasant and satisfying experience.
               </p>
             </div>
@@ -405,13 +405,13 @@ export default function CommercialSectorContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-6">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy leading-tight mb-6">
                 Keeping your commercial premises looking the part
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-5">
                 When you're running a business, it's imperative that everything runs like clockwork. The environment needs to bring the best out of our employees, while visitors and customers should be instantly impressed.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 Our integrated facilities management services for commercial customers help you deliver uninterrupted and hassle-free services while we keep everything in perfect working order behind the scenes.
               </p>
             </div>
@@ -421,7 +421,7 @@ export default function CommercialSectorContent() {
               {/* Badge 1: BSA */}
               <div className="h-20 w-36 bg-[#FAFAFA] rounded-xl border border-[#EAEAEA] flex flex-col items-center justify-center p-3 text-center shadow-xs hover:border-[#E03A00] transition-colors">
                 <span className="text-xs font-bold text-[#006699] tracking-wider">The BSA</span>
-                <span className="text-[9px] text-[#64748B] leading-tight mt-1">Business Services Association</span>
+                <span className="text-[9px] text-slate-600 leading-tight mt-1">Business Services Association</span>
               </div>
 
               {/* Badge 2: BESA */}
@@ -441,7 +441,7 @@ export default function CommercialSectorContent() {
               {/* Badge 4: RoSPA */}
               <div className="h-20 w-36 bg-[#FAFAFA] rounded-xl border border-[#EAEAEA] flex flex-col items-center justify-center p-3 text-center shadow-xs hover:border-[#E03A00] transition-colors">
                 <span className="text-sm font-black text-[#006699] tracking-wider">RoSPA</span>
-                <span className="text-[9px] text-[#64748B]">Accredited Safety</span>
+                <span className="text-[9px] text-slate-600">Accredited Safety</span>
               </div>
 
               {/* Badge 5: BSI */}
@@ -452,7 +452,7 @@ export default function CommercialSectorContent() {
               {/* Badge 6: IWFM */}
               <div className="h-20 w-36 bg-[#FAFAFA] rounded-xl border border-[#EAEAEA] flex flex-col items-center justify-center p-3 text-center shadow-xs hover:border-[#E03A00] transition-colors">
                 <span className="text-sm font-extrabold text-[#008080] tracking-wider">iwfm</span>
-                <span className="text-[8px] text-[#64748B] leading-tight mt-0.5">Workplace &amp; FM</span>
+                <span className="text-[8px] text-slate-600 leading-tight mt-0.5">Workplace &amp; FM</span>
               </div>
             </div>
           </div>
@@ -467,16 +467,16 @@ export default function CommercialSectorContent() {
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-4">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy leading-tight">
                 Protecting and enhancing your brand and buildings
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 As well as creating the very best workplace experience, our range of services – including cleaning, security and landscaping – ensure your facilities are safe, secure, fully operational and looking their best at all times.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 With a regular maintenance schedule, our teams make sure all of your mechanical and electrical equipment is problem-free, meaning your building keeps working as it should. And if something does go wrong, our teams are there swiftly to resume normal working order.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 Our proactive pest services teams keep your buildings safe from unwanted guests with preventative work to minimise the opportunity for pests to enter. If and when they do, we react immediately, minimising any damage to your brand.
               </p>
             </div>
@@ -500,10 +500,10 @@ export default function CommercialSectorContent() {
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="container-custom">
           <div className="mb-4 sm:mb-6">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
               Responsibility and opportunity for change
             </h2>
-            <p className="text-base sm:text-lg text-[#64748B]">
+            <p className="text-base sm:text-lg text-slate-600">
               Our approach to service aligns with our customers's ESG goals and commitments.
             </p>
           </div>
@@ -534,7 +534,7 @@ export default function CommercialSectorContent() {
                         <ArrowUpRight className="w-5 h-5" />
                       </Link>
                     </div>
-                    <p className="text-sm text-[#64748B] leading-relaxed">
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       {card.description}
                     </p>
                   </div>
@@ -550,7 +550,7 @@ export default function CommercialSectorContent() {
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
         <div className="container-custom">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
             Frequently Asked Questions
           </h2>
 
@@ -587,7 +587,7 @@ export default function CommercialSectorContent() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <p className="pt-4 text-sm sm:text-base text-[#64748B] leading-relaxed">
+                          <p className="pt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                             {faq.answer}
                           </p>
                         </motion.div>
@@ -630,7 +630,7 @@ export default function CommercialSectorContent() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <p className="pt-4 text-sm sm:text-base text-[#64748B] leading-relaxed">
+                          <p className="pt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                             {faq.answer}
                           </p>
                         </motion.div>
@@ -650,10 +650,10 @@ export default function CommercialSectorContent() {
       <section className="py-4 sm:py-6 bg-[#FAF9F7] border-t border-[#F0F0F0]">
         <div className="container-custom">
           <div className="mb-4 sm:mb-6 text-left w-full">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] mb-2 whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-2">
               Customer stories
             </h2>
-            <p className="text-base sm:text-lg text-[#64748B]">
+            <p className="text-base sm:text-lg text-slate-600">
               Discover how we're helping our customers be the best they can be.
             </p>
           </div>
@@ -673,7 +673,7 @@ export default function CommercialSectorContent() {
                 </div>
                 <div className="p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="inline-block text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-2">
+                    <span className="inline-block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">
                       {story.tag}
                     </span>
                     <h4 className="text-lg font-bold text-[#1E293B] leading-snug mb-6">

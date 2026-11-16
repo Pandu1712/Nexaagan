@@ -104,7 +104,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-4">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Careers at NEXAAGEN
           </h1>
 
@@ -143,7 +143,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
 
             {/* Right Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 We’re looking for the best people to join our team
               </h2>
 
@@ -178,7 +178,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 People Into Work programme launched by our foundation
               </h2>
 
@@ -237,7 +237,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
 
             {/* Right Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Apprenticeship and funded learning opportunities
               </h2>
 
@@ -279,7 +279,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
 
           {/* Centered Overlay Copy */}
           <div className="relative z-10 max-w-2xl text-white space-y-3">
-            <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Join the NEXAAGEN Mission
             </h2>
 
@@ -306,7 +306,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6 sm:space-y-8">
           {/* Section Header */}
           <div className="text-center space-y-2 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN team stories
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">

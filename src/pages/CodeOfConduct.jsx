@@ -50,7 +50,7 @@ export default function CodeOfConduct() {
               <span>Universal Ethical Standard</span>
             </span>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Global Code of Conduct
             </h1>
 
@@ -75,7 +75,7 @@ export default function CodeOfConduct() {
 
         {/* SECTION 2: INTRODUCTION FROM ROB LEGGE, GROUP CEO (Reference Image 2) */}
         <section id="introduction" className="space-y-6 border-b border-slate-100 pb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Introduction from Rob Legge, Group CEO
           </h2>
 
@@ -104,7 +104,7 @@ export default function CodeOfConduct() {
 
         {/* SECTION 3: NEXAAGEN CODE OF CONDUCT (Reference Images 3 & 4) */}
         <section className="space-y-8 border-b border-slate-100 pb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN Code of Conduct
           </h2>
 
@@ -183,7 +183,7 @@ export default function CodeOfConduct() {
         {/* SECTION 4: OUR VISION, MISSION AND VALUES (Reference Images 4, 5 & 6) */}
         <section className="space-y-8 border-b border-slate-100 pb-14">
           <div className="space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our vision, mission and values
             </h2>
 
@@ -204,7 +204,7 @@ export default function CodeOfConduct() {
           <div className="space-y-8 pt-4">
             {/* Trust */}
             <div className="space-y-1">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-slate-900">
                 Trust.
               </h3>
               <div className="text-sm sm:text-base font-semibold italic text-[#E65100]">
@@ -220,7 +220,7 @@ export default function CodeOfConduct() {
 
             {/* Respect */}
             <div className="space-y-1">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-slate-900">
                 Respect.
               </h3>
               <div className="text-sm sm:text-base font-semibold italic text-[#E65100]">
@@ -236,7 +236,7 @@ export default function CodeOfConduct() {
 
             {/* Unity */}
             <div className="space-y-1">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-slate-900">
                 Unity.
               </h3>
               <div className="text-sm sm:text-base font-semibold italic text-[#E65100]">
@@ -252,7 +252,7 @@ export default function CodeOfConduct() {
 
             {/* Empowerment */}
             <div className="space-y-1">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-slate-900">
                 Empowerment.
               </h3>
               <div className="text-sm sm:text-base font-semibold italic text-[#E65100]">
@@ -271,7 +271,7 @@ export default function CodeOfConduct() {
         {/* SECTION 5: RESPECT, DIGNITY AND FAIR TREATMENT (Reference Images 6, 7 & 8) */}
         <section className="space-y-8 border-b border-slate-100 pb-14">
           <div className="space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Respect, dignity and fair treatment
             </h2>
 
@@ -383,7 +383,7 @@ export default function CodeOfConduct() {
         {/* SECTION 6: HEALTH AND SAFETY (Reference Images 9, 10 & 11) */}
         <section className="space-y-8 border-b border-slate-100 pb-14">
           <div className="space-y-3">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Health and safety
             </h2>
             <h3 className="text-lg sm:text-xl font-heading font-bold text-slate-900">
@@ -485,7 +485,7 @@ export default function CodeOfConduct() {
         {/* SECTION 7: ENVIRONMENT AND SUSTAINABILITY (Reference Images 11 & 12) */}
         <section className="space-y-8 border-b border-slate-100 pb-14">
           <div className="space-y-3">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Environment and sustainability
             </h2>
             <h3 className="text-lg sm:text-xl font-heading font-bold text-slate-900">
@@ -538,7 +538,7 @@ export default function CodeOfConduct() {
 
         {/* SECTION 8: COMPLIANCE WITH LAWS (Reference Image 13) */}
         <section className="space-y-6 border-b border-slate-100 pb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Compliance with laws
           </h2>
 
@@ -571,7 +571,7 @@ export default function CodeOfConduct() {
         {/* SECTION 9: INFORMATION SECURITY AND PROTECTING PERSONAL DATA (Reference Images 14 & 15) */}
         <section className="space-y-8 pb-10">
           <div className="space-y-3">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Information security and protecting personal data
             </h2>
             <h3 className="text-lg sm:text-xl font-heading font-bold text-slate-900">

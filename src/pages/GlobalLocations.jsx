@@ -214,7 +214,7 @@ export default function GlobalLocations() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-3">
-          <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Global Locations
           </h1>
 
@@ -309,7 +309,7 @@ export default function GlobalLocations() {
                       <span className="text-2xl" role="img" aria-label={item.country}>
                         {item.flag}
                       </span>
-                      <h3 className="text-base sm:text-lg font-heading font-bold text-[#1E293B]">
+                      <h3 className="text-base sm:text-lg font-heading font-bold text-brand-navy">
                         {item.country}
                       </h3>
                     </div>
@@ -457,11 +457,11 @@ export default function GlobalLocations() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-xs sm:text-sm lg:text-base text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm lg:text-base text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team worldwide.
             </p>
 

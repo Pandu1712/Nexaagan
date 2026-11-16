@@ -33,7 +33,7 @@ export default function ModernSlaveryAct() {
               <span>ESG • Modern Slavery Act</span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Statement
             </h1>
           </div>

@@ -54,7 +54,7 @@ export default function Governance() {
               Governance Framework
             </span>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Governance (ESG)
             </h1>
 
@@ -86,7 +86,7 @@ export default function Governance() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Text & 4 Checklist Items */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Transparency, accountability and ethical behaviour
             </h2>
 
@@ -199,7 +199,7 @@ export default function Governance() {
 
           {/* Right Column: Code of Conduct Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Code of Conduct
             </h2>
 
@@ -235,7 +235,7 @@ export default function Governance() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: QHSE Policy Statement Details */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our Guiding principles
             </h2>
 
@@ -294,7 +294,7 @@ export default function Governance() {
 
           {/* Right Column: Vision & TRUE Values */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our Guiding principles
             </h2>
 
@@ -324,7 +324,7 @@ export default function Governance() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Modern Slavery Commitment */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Modern Day Slavery Statement
             </h2>
 
@@ -392,7 +392,7 @@ export default function Governance() {
 
           {/* Right Column: Social Impact & Scorecard */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Doing the right things, in the right way – the NEXAAGEN way
             </h2>
 
@@ -441,7 +441,7 @@ export default function Governance() {
         <div className="space-y-6 sm:space-y-8">
           {/* Header & View All Button */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               News and media
             </h2>
             <p className="text-base sm:text-lg text-slate-600">
@@ -518,11 +518,11 @@ export default function Governance() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base lg:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-base lg:text-lg font-normal max-w-2xl mx-auto leading-relaxed text-justify-center">
               We’re ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

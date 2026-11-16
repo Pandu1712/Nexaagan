@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, ChevronLeft, ChevronRight, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, CheckCircle2, ArrowRight, MessageCircle } from 'lucide-react';
 
 /**
  * ManufacturingSectorContent Component
@@ -168,24 +168,45 @@ export default function ManufacturingSectorContent() {
     setStoryIndex((prev) => (prev - 1 < 0 ? Math.max(0, caseStudies.length - 2) : prev - 1));
   };
 
+  const [waLink, setWaLink] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.agreed) return;
+    const lines = [
+      `*New Manufacturing Consultation Request - NEXAAGEN*`,
+      ``,
+      `*Name:* ${formData.firstName} ${formData.lastName}`.trim(),
+      `*Company:* ${formData.company}`.trim(),
+      `*Email:* ${formData.email}`.trim(),
+      `*Phone:* ${formData.phone}`.trim(),
+      `*Post Code:* ${formData.postCode}`.trim(),
+      `*Service Required:* ${formData.serviceRequired}`.trim(),
+    ];
+    if (formData.furtherDetails) {
+      lines.push(`*Further Details:* ${formData.furtherDetails}`);
+    }
+    const message = lines.filter(Boolean).join('\n');
+    const waUrl = `https://wa.me/919988331575?text=${encodeURIComponent(message)}`;
+    setWaLink(waUrl);
+    try {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    } catch (err) { }
     setFormSubmitted(true);
   };
 
   return (
     <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-white overflow-hidden">
-      
+
       {/* ------------------------------------------------------------------ */}
       {/* SECTION 2: A PARTNER ON YOUR FLOOR (Matches User Screenshot 2)     */}
       {/* ------------------------------------------------------------------ */}
       <section id="partner-floor" className="container-custom scroll-mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Column: Heading, Paragraphs, 3 Checkpoints */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               A Partner on Your Floor
             </h2>
 
@@ -246,10 +267,10 @@ export default function ManufacturingSectorContent() {
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
-          
+
           {/* Header */}
           <div className="text-left w-full space-y-2 mb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Manufacturing Solutions by NEXAAGEN
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -264,11 +285,10 @@ export default function ManufacturingSectorContent() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap flex-shrink-0 transition-all duration-300 ${
-                      isActive
+                    className={`px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap flex-shrink-0 transition-all duration-300 ${isActive
                         ? 'bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white shadow-md shadow-orange-500/25'
                         : 'bg-white text-slate-700 hover:text-brand-orange border border-slate-200/80 hover:border-orange-200'
-                    }`}
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -301,7 +321,7 @@ export default function ManufacturingSectorContent() {
 
               {/* Right Column: Title, Intro, Why NEXAAGEN? + What NEXAAGEN Delivers */}
               <div className="lg:col-span-6 space-y-6">
-                <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
                   {currentTab.title}
                 </h3>
 
@@ -350,10 +370,10 @@ export default function ManufacturingSectorContent() {
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
-          
+
           {/* Header */}
           <div className="text-left w-full space-y-3 mb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Sustainability in Action: Responsible Manufacturing
             </h2>
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
@@ -363,7 +383,7 @@ export default function ManufacturingSectorContent() {
 
           {/* 2-Column Grid: Image Left + 3 Pillars Right with green line */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-            
+
             {/* Left Column: Forklift Operator */}
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden shadow-xl border border-slate-100 aspect-[4/3] sm:aspect-[4/3.4] group">
@@ -378,10 +398,10 @@ export default function ManufacturingSectorContent() {
 
             {/* Right Column: 3 Pillars with vertical green accent border */}
             <div className="lg:col-span-6 relative pl-6 border-l-2 border-emerald-500/70 space-y-8">
-              
+
               {/* Pillar 1 */}
               <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D]">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                   Environmental Responsibility
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -396,7 +416,7 @@ export default function ManufacturingSectorContent() {
 
               {/* Pillar 2 */}
               <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D]">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                   Social Impact
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -411,7 +431,7 @@ export default function ManufacturingSectorContent() {
 
               {/* Pillar 3 */}
               <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D]">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                   Transparent Governance
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -436,11 +456,11 @@ export default function ManufacturingSectorContent() {
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
         <div className="space-y-8">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Left Header & Nav Controls */}
             <div className="lg:col-span-4 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Case Studies
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -520,11 +540,11 @@ export default function ManufacturingSectorContent() {
       {/* ------------------------------------------------------------------ */}
       <section id="contact-form" className="container-custom scroll-mt-20">
         <div className="bg-white rounded-3xl sm:rounded-[36px] overflow-hidden shadow-2xl border border-slate-200/80 grid grid-cols-1 lg:grid-cols-12">
-          
+
           {/* Left Column: Form */}
           <div className="lg:col-span-7 p-7 sm:p-10 lg:p-12 space-y-6">
             <div className="space-y-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Connect with Our Manufacturing Team
               </h2>
               <p className="text-slate-500 text-xs sm:text-sm">
@@ -533,14 +553,27 @@ export default function ManufacturingSectorContent() {
             </div>
 
             {formSubmitted ? (
-              <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
+              <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
                 <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-emerald-900">Thank You!</h3>
                 <p className="text-emerald-700 text-xs sm:text-sm">
-                  Your request has been received. Our manufacturing sector practice directors will contact you within 24 hours.
+                  Your request has been forwarded to our WhatsApp operations team (+91 99 88 33 1575).
                 </p>
+                {waLink && (
+                  <div className="pt-2">
+                    <a
+                      href={waLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      <span>Open WhatsApp Chat</span>
+                    </a>
+                  </div>
+                )}
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">

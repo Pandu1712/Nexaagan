@@ -121,11 +121,11 @@ export default function DiversityInclusion() {
           />
 
           <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Diversity, Equity and Inclusion
             </h1>
 
-            <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
               Our 130,000 colleagues represent every corner of the globe, speaking multiple languages and proudly representing many beliefs and cultures – this diversity fuels our organisation.
             </p>
           </div>
@@ -138,11 +138,11 @@ export default function DiversityInclusion() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: DE&I Philosophy & Approach */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Our DE&I starting point is that everybody counts
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 Diversity, equity, and inclusion (DE&I) intertwine with our{' '}
                 <Link to="/true-values" className="font-semibold text-slate-900 underline decoration-[#FF5722] decoration-2 underline-offset-2 hover:text-[#FF5722] transition-colors">
                   TRUE Values
@@ -150,7 +150,7 @@ export default function DiversityInclusion() {
                 , ethos and approach. We’re a global facilities services business that employs over 130,000 individuals speaking multiple languages and representing many cultures, religions and beliefs. The importance of an inclusive, non-discriminatory approach cannot be overstated. It’s a minimum expectation for a global enterprise striving to become the best in its field.
               </p>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 We have a unique opportunity and responsibility to acknowledge, respect, and leverage the richness of human differences and perspectives of our extensive team, operating across different countries and cultures. We’re taking a thorough but straightforward approach to DE&I, rooted in our commitment to respecting and including everyone as we continue to listen, learn, and lead in creating an inclusive and respectful work environment for all.
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function DiversityInclusion() {
         <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10 space-y-6 sm:space-y-8">
           {/* Header */}
           <div className="text-center space-y-2 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               DE&I Commitments
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -238,11 +238,11 @@ export default function DiversityInclusion() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Third-Party Partnerships & 5 Bullet Points */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Making change and prioritising our people
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 We proudly partner and align with a number of third-party organisations to help empower our DE&I teams, enabling them to implement the right programmes and initiatives, fulfil our commitment and work towards our vision and mission.
               </p>
 
@@ -325,7 +325,7 @@ export default function DiversityInclusion() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Heading, Subtitle, Connect Button, and Nav Arrows */}
             <div className="lg:col-span-4 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Helping deliver change with ESG
               </h2>
 
@@ -422,7 +422,7 @@ export default function DiversityInclusion() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your global team
             </h2>
 
@@ -447,7 +447,7 @@ export default function DiversityInclusion() {
         <div className="space-y-6">
           {/* Header & Button */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               News and media
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">

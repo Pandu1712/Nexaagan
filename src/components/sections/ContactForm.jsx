@@ -39,6 +39,7 @@ export default function ContactForm({
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState('');
 
   useEffect(() => {
     const sParam = searchParams.get('sector');
@@ -87,11 +88,40 @@ export default function ContactForm({
     }
 
     setLoading(true);
-    // Simulate brief processing
+
+    // Build structured WhatsApp message
+    const lines = [
+      `*New Consultation Request - NEXAAGEN*`,
+      ``,
+      `*Name:* ${formData.firstName} ${formData.lastName}`.trim(),
+      `*Company:* ${formData.company}`.trim(),
+      `*Corporate Email:* ${formData.email}`.trim(),
+      `*Phone:* ${formData.phone}`.trim(),
+      `*Post Code:* ${formData.postCode}`.trim(),
+      `*Sector:* ${formData.sector}`.trim(),
+      `*Service Required:* ${formData.serviceRequired}`.trim(),
+    ];
+
+    if (formData.furtherDetails && formData.furtherDetails.trim()) {
+      lines.push(`*Further Details:* ${formData.furtherDetails.trim()}`);
+    }
+
+    const messageText = lines.join('\n');
+    const waNumber = (companyData.headquarters.whatsapp || '+91 99 88 33 1575').replace(/[^0-9]/g, '');
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(messageText)}`;
+    setWhatsappUrl(waUrl);
+
+    // Direct redirect to WhatsApp
+    try {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    } catch (err) {
+      console.error('Failed to open WhatsApp window:', err);
+    }
+
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
-    }, 600);
+    }, 400);
   };
 
   const handleReset = () => {
@@ -107,6 +137,7 @@ export default function ContactForm({
       furtherDetails: '',
     });
     setErrors({});
+    setWhatsappUrl('');
     setSubmitted(false);
   };
 
@@ -118,7 +149,7 @@ export default function ContactForm({
           <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
             Consultation Request
           </span>
-          <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             {title}
           </h2>
           <p className="mt-3 text-slate-600 text-base sm:text-lg leading-relaxed">
@@ -140,16 +171,23 @@ export default function ContactForm({
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base max-w-md mx-auto leading-relaxed">
                   Thank you, <span className="font-semibold text-brand-navy">{formData.firstName}</span>. Your consultation request for{' '}
-                  <span className="font-semibold text-brand-navy">{formData.company}</span> has been processed.
+                  <span className="font-semibold text-brand-navy">{formData.company}</span> has been forwarded to our WhatsApp desk (+91 99 88 33 1575).
                 </p>
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-500 max-w-md mx-auto">
-                  <span className="font-semibold text-slate-700 block mb-1">Demonstration Notice:</span>
-                  This is a static frontend deployment. No backend email server or database is integrated, so inquiries are safely stored in browser demonstration state.
-                </div>
-                <div className="pt-4">
+                <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+                  {whatsappUrl && (
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-md"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      <span>Open WhatsApp Chat</span>
+                    </a>
+                  )}
                   <button
                     onClick={handleReset}
-                    className="btn-navy text-xs py-2.5 px-6"
+                    className="btn-navy text-xs py-3 px-6"
                   >
                     Submit Another Inquiry
                   </button>

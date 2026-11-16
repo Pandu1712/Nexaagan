@@ -15,6 +15,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export default function AwardsRecognition() {
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -26,7 +27,7 @@ export default function AwardsRecognition() {
       title: 'Sixty Years of Global Aviation Services: One Standard, Uncompromising Excellence',
       author: 'NEXAAGEN Team',
       date: '24 Aug, 2026',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      image: aviationServicesImg,
       tag: 'Aviation',
       excerpt: 'Celebrating decades of world-class terminal operations, PRM mobility assistance, and ground handling across premier international gateways.'
     },
@@ -83,11 +84,11 @@ export default function AwardsRecognition() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Global Awards
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Our aspiration is to become the best facilities services business in the world, making people and places the best they can be. The nominations and awards we receive are a testament to our frontline colleagues and operational teams' hard work in pursuing this goal.
           </p>
         </div>
@@ -112,7 +113,7 @@ export default function AwardsRecognition() {
 
           {/* Right Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Award-winning facilities services for best outcomes
             </h2>
 
@@ -137,7 +138,7 @@ export default function AwardsRecognition() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Checkmark Accolades */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 UK & Ireland facilities services awards
               </h2>
 
@@ -210,7 +211,7 @@ export default function AwardsRecognition() {
 
           {/* Right Column: Narrative Copy & Accolade List */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               New Zealand facilities services awards
             </h2>
 
@@ -248,7 +249,7 @@ export default function AwardsRecognition() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Multiple Accolades */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 India's facilities services awards and recognition
               </h2>
 
@@ -333,7 +334,7 @@ export default function AwardsRecognition() {
 
             {/* Right Column: Narrative Copy & Accolade List */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Thailand’s facilities services awards and recognition
               </h2>
 
@@ -378,7 +379,7 @@ export default function AwardsRecognition() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & Accolade List */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               United Arab Emirates facilities services awards
             </h2>
 
@@ -432,10 +433,10 @@ export default function AwardsRecognition() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed font-normal">
+            <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed font-normal text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <div className="pt-4">
@@ -456,7 +457,7 @@ export default function AwardsRecognition() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading & CTA */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Latest news and media
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">

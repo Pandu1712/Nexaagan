@@ -18,8 +18,8 @@ export default function PageHero({
     <section className="w-full py-2 sm:py-4 lg:py-6 bg-white overflow-hidden">
       <div className="container-custom">
         {/* Full-bleed Rounded Hero Banner Frame */}
-        <div className="relative w-full rounded-2xl sm:rounded-[32px] lg:rounded-[40px] overflow-hidden min-h-[500px] sm:min-h-[540px] lg:min-h-[620px] flex items-center shadow-lg border border-slate-200/60 bg-slate-900">
-          
+        <div className="relative w-full rounded-2xl sm:rounded-[32px] lg:rounded-[40px] overflow-hidden min-h-0 sm:min-h-[540px] lg:min-h-[620px] py-4 sm:py-0 flex items-center shadow-lg border border-slate-200/60 bg-slate-900">
+
           {/* Background Image Layer (Natural, vivid, high-resolution photography) */}
           <div className="absolute inset-0 z-0">
             <img
@@ -32,9 +32,9 @@ export default function PageHero({
           </div>
 
           {/* Floating White Card (Signature OCS Enterprise Design) */}
-          <div className="relative z-20 w-full p-2.5 sm:p-6 md:p-8 lg:p-12 flex items-center">
-            <div className="w-full max-w-[580px] lg:max-w-[620px] bg-white/98 sm:bg-white rounded-2xl sm:rounded-[28px] lg:rounded-[34px] p-5 sm:p-8 md:p-10 lg:p-12 shadow-2xl border border-white/60 relative overflow-hidden backdrop-blur-md">
-              
+          <div className="relative z-20 w-full p-3 sm:p-6 md:p-8 lg:p-12 flex items-center">
+            <div className="w-full max-w-[580px] lg:max-w-[620px] bg-white rounded-2xl sm:rounded-[28px] lg:rounded-[34px] p-5 sm:p-8 md:p-10 lg:p-12 shadow-2xl border border-white/80 relative overflow-hidden">
+
               {/* OCS Dotted Radial Wave Watermark */}
               <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-80 h-80 pointer-events-none opacity-[0.14] hidden sm:block">
                 <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ export default function PageHero({
                 </svg>
               </div>
 
-              <div className="relative z-10 space-y-4 sm:space-y-5 lg:space-y-6">
+              <div className="relative z-10 space-y-3.5 sm:space-y-5 lg:space-y-6">
                 {/* Badge + Optional Link Row */}
                 <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm">
                   {badge && (
@@ -66,7 +66,7 @@ export default function PageHero({
                 </div>
 
                 {/* Main Headline */}
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-heading font-extrabold text-[#111827] tracking-tight leading-[1.18] sm:leading-[1.14]">
+                <h1 className="text-xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                   {title}
                 </h1>
 
@@ -77,13 +77,13 @@ export default function PageHero({
 
                 {/* Optional Stats Highlights */}
                 {stats && stats.length > 0 && (
-                  <div className="pt-1 grid grid-cols-2 sm:grid-cols-3 gap-3 border-t border-slate-100">
+                  <div className="pt-2 grid grid-cols-3 gap-2 sm:gap-3 border-t border-slate-100">
                     {stats.map((s, idx) => (
                       <div key={idx} className="space-y-0.5">
-                        <div className="text-lg sm:text-xl font-heading font-extrabold text-brand-orange">
+                        <div className="text-base sm:text-xl font-heading font-extrabold text-brand-orange">
                           {s.value}
                         </div>
-                        <div className="text-[11px] sm:text-xs text-slate-500 font-medium leading-tight">
+                        <div className="text-[10px] sm:text-xs text-slate-500 font-medium leading-tight">
                           {s.label}
                         </div>
                       </div>
@@ -93,19 +93,19 @@ export default function PageHero({
 
                 {/* CTA Action Row */}
                 {(primaryCta || secondaryCta) && (
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                     {primaryCta && (
                       primaryCta.isAnchor ? (
                         <a
                           href={primaryCta.url}
-                          className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-lg transition-all duration-300 active:scale-[0.98]"
+                          className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-lg transition-all duration-300 active:scale-[0.98] text-center"
                         >
                           <span>{primaryCta.text}</span>
                         </a>
                       ) : (
                         <Link
                           to={primaryCta.url}
-                          className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-lg transition-all duration-300 active:scale-[0.98]"
+                          className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-lg transition-all duration-300 active:scale-[0.98] text-center"
                         >
                           <span>{primaryCta.text}</span>
                         </Link>
@@ -116,14 +116,14 @@ export default function PageHero({
                       secondaryCta.isAnchor ? (
                         <a
                           href={secondaryCta.url}
-                          className="inline-flex items-center justify-center font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 px-4 sm:px-6 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm border border-slate-200/80 transition-colors"
+                          className="inline-flex items-center justify-center font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 px-4 sm:px-6 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm border border-slate-200/80 transition-colors text-center"
                         >
                           <span>{secondaryCta.text}</span>
                         </a>
                       ) : (
                         <Link
                           to={secondaryCta.url}
-                          className="inline-flex items-center justify-center font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 px-4 sm:px-6 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm border border-slate-200/80 transition-colors"
+                          className="inline-flex items-center justify-center font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 px-4 sm:px-6 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm border border-slate-200/80 transition-colors text-center"
                         >
                           <span>{secondaryCta.text}</span>
                         </Link>

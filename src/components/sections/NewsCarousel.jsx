@@ -55,7 +55,7 @@ export default function NewsCarousel({ news = newsData }) {
       <div className="container-custom">
         {/* Section Header */}
         <div className="w-full text-left space-y-2 mb-4">
-          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
             NEXAAGEN Insights and Updates
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal">
@@ -84,7 +84,7 @@ export default function NewsCarousel({ news = newsData }) {
           {articles.map((item) => (
             <div
               key={item.id}
-              className="w-[280px] sm:w-[340px] md:w-[380px] lg:w-[420px] min-h-[360px] sm:min-h-[400px] lg:min-h-[420px] rounded-3xl overflow-hidden flex-shrink-0 relative group shadow-md hover:shadow-xl transition-all duration-300"
+              className="w-[calc(100vw-2.5rem)] sm:w-[340px] md:w-[380px] lg:w-[420px] min-h-[360px] sm:min-h-[400px] lg:min-h-[420px] rounded-3xl overflow-hidden flex-shrink-0 relative group shadow-md hover:shadow-xl transition-all duration-300 snap-center sm:snap-start"
               style={{ scrollSnapAlign: 'start' }}
             >
               {/* Background Photographic Image with Hover Scale */}

@@ -186,7 +186,7 @@ export default function DataCentreSolutionsTabs() {
 
           {/* Header */}
           <div className="w-full text-left space-y-2 mb-5 sm:mb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Specialist Facilities Management for Critical Environments
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">
@@ -242,7 +242,7 @@ export default function DataCentreSolutionsTabs() {
 
               {/* Right Column: Content, Bullets, and Summary */}
               <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-                <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-snug">
+                <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-heading font-extrabold text-brand-navy tracking-tight leading-snug">
                   {current.title}
                 </h3>
 

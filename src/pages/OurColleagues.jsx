@@ -16,6 +16,7 @@ import {
   Calendar
 } from 'lucide-react';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export default function OurColleagues() {
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -26,7 +27,7 @@ export default function OurColleagues() {
       title: 'Sixty Years of Global Aviation Services: One Standard, Uncompromising Excellence',
       author: 'NEXAAGEN Team',
       date: '24 Aug, 2026',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      image: aviationServicesImg,
       tag: 'Aviation',
       excerpt: 'Celebrating decades of world-class terminal operations, PRM mobility assistance, and ground handling across premier international gateways.'
     },
@@ -83,11 +84,11 @@ export default function OurColleagues() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-5">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN Frontline Colleagues
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Our 130,000-strong global team are on a mission to make people and places the best they can be and they're at the heart of everything we do and all that we're able to achieve.
           </p>
         </div>
@@ -100,7 +101,7 @@ export default function OurColleagues() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our colleagues driving our brand and business forwards
             </h2>
 
@@ -153,7 +154,7 @@ export default function OurColleagues() {
 
             {/* Right Column: Narrative Copy */}
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Dedication and hard work to make people and places the best they can be
               </h2>
 
@@ -178,7 +179,7 @@ export default function OurColleagues() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & CTA Button */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Interested in joining our team and supporting the global mission?
             </h2>
 
@@ -241,7 +242,7 @@ export default function OurColleagues() {
                 <span>Colleague Recognition</span>
               </div>
 
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Recognising the exceptional with NEXAAGEN TRUE Stars
               </h2>
 
@@ -266,7 +267,7 @@ export default function OurColleagues() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & Contact Us Button */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               What makes us NEXAAGEN
             </h2>
 
@@ -327,7 +328,7 @@ export default function OurColleagues() {
           />
 
           <div className="relative z-10 max-w-2xl text-white space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               People & Purpose
             </h2>
             <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed font-normal">
@@ -351,7 +352,7 @@ export default function OurColleagues() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Header with CTA Button */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             News
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">

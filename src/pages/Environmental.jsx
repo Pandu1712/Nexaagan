@@ -50,7 +50,7 @@ export default function Environmental() {
               <span>Sustainability & Climate Action</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Environmental (ESG)
             </h1>
 
@@ -87,7 +87,7 @@ export default function Environmental() {
               <span>Full-Scope Decarbonisation</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               2040 Net Zero target
             </h2>
 
@@ -241,7 +241,7 @@ export default function Environmental() {
               <span>Conservation & Circularity</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Protecting our planet’s natural resources
             </h2>
 
@@ -336,7 +336,7 @@ export default function Environmental() {
           {/* Right Column: Using Our Influence for Good */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-3">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Using our influence for good
               </h2>
 
@@ -378,7 +378,7 @@ export default function Environmental() {
               <Award className="w-4 h-4" />
               <span>Verified Global Achievements</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Environmental action and outcomes
             </h2>
           </div>
@@ -457,7 +457,7 @@ export default function Environmental() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Visit our country-specific sites
             </h2>
 
@@ -485,7 +485,7 @@ export default function Environmental() {
             <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100/80 text-[#D8232A]">
               Connect With Us
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Partner with NEXAAGEN for Net Zero & Sustainability
             </h2>
             <p className="text-base text-slate-600 max-w-2xl mx-auto">

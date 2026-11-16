@@ -137,7 +137,7 @@ export default function EducationSectorContent() {
             
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Building environments that enable success
               </h2>
 
@@ -185,7 +185,7 @@ export default function EducationSectorContent() {
             {/* Left Elevated Card */}
             <div className="lg:col-span-5">
               <div className="bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] p-8 sm:p-11 lg:p-12 border border-slate-200/60 shadow-sm space-y-6">
-                <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-brand-navy tracking-tight">
                   Education FM
                 </h3>
 
@@ -312,7 +312,7 @@ export default function EducationSectorContent() {
             {/* Right Elevated Card */}
             <div className="lg:col-span-5 order-1 lg:order-2">
               <div className="bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] p-8 sm:p-11 lg:p-12 border border-slate-200/60 shadow-sm space-y-6">
-                <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-snug">
+                <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-brand-navy tracking-tight leading-snug">
                   Services to help students and educators be their best
                 </h3>
 
@@ -354,7 +354,7 @@ export default function EducationSectorContent() {
 
             {/* Right Content Column */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Using space optimally and effectively
               </h2>
 
@@ -378,7 +378,7 @@ export default function EducationSectorContent() {
             
             {/* Left Content Column */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Supporting the Education sector sustainably
               </h2>
 
@@ -449,7 +449,7 @@ export default function EducationSectorContent() {
           
           {/* Header */}
           <div className="space-y-3 mb-10 sm:mb-14">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Responsibility and opportunity for change
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal max-w-2xl">
@@ -478,7 +478,7 @@ export default function EducationSectorContent() {
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D] tracking-tight">
+                      <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
                         {card.title}
                       </h3>
                       {/* Red-Orange Circular Arrow Button */}
@@ -508,7 +508,7 @@ export default function EducationSectorContent() {
         <div className="container-custom">
           
           <div className="space-y-3 mb-10 sm:mb-14">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Frequently Asked Questions
             </h2>
           </div>

@@ -11,10 +11,13 @@ import {
   Building2,
   X,
   Share2,
-  Check
+  Check,
+  SlidersHorizontal,
+  Filter
 } from 'lucide-react';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import { newsData } from '../data/newsData';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export default function NewsMedia() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -26,6 +29,18 @@ export default function NewsMedia() {
   const [selectedCountry, setSelectedCountry] = useState('Showing All');
   const [sortBy, setSortBy] = useState('Latest');
   const [searchQuery, setSearchQuery] = useState('');
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
+
+  // Active filters count for mobile indicator
+  const activeFiltersCount = useMemo(() => {
+    let count = 0;
+    if (selectedType !== 'Showing All') count++;
+    if (selectedSector !== 'Showing All') count++;
+    if (selectedService !== 'Showing All') count++;
+    if (selectedCountry !== 'Showing All') count++;
+    if (sortBy !== 'Latest') count++;
+    return count;
+  }, [selectedType, selectedSector, selectedService, selectedCountry, sortBy]);
 
   // Pagination State
   const [currentPage, setCurrentPage] = useState(1);
@@ -112,18 +127,18 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 1: HERO FEATURED ARTICLE (Screenshot 1)                           */}
       {/* ========================================================================= */}
-      <section className="pt-4 pb-2 sm:pt-5 sm:pb-3 container-custom">
+      <section className="pt-3 pb-2 sm:pt-4 sm:pb-3 container-custom">
         <div 
           onClick={() => setSelectedArticle(featuredArticle)}
-          className="bg-[#FAF7F2] rounded-[28px] sm:rounded-[32px] overflow-hidden border border-orange-100/70 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 cursor-pointer group"
+          className="bg-[#FAF7F2] rounded-[24px] sm:rounded-[28px] overflow-hidden border border-orange-100/70 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 items-center cursor-pointer group"
         >
           {/* Left Column: Article Narrative */}
-          <div className="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-center space-y-4 sm:space-y-5">
+          <div className="lg:col-span-6 p-5 sm:p-7 lg:p-8 flex flex-col justify-center space-y-3 sm:space-y-4">
             <span className="text-xs font-bold uppercase tracking-wider text-[#FF5722]">
               Latest Article
             </span>
 
-            <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-snug group-hover:text-[#FF5722] transition-colors">
+            <h1 className="text-xl sm:text-2xl lg:text-[28px] font-heading font-bold text-brand-navy tracking-tight leading-snug group-hover:text-[#FF5722] transition-colors">
               {featuredArticle.title}
             </h1>
 
@@ -131,7 +146,7 @@ export default function NewsMedia() {
               {featuredArticle.excerpt}
             </p>
 
-            <div className="flex items-center space-x-3 pt-3 border-t border-orange-200/40 text-xs text-slate-500">
+            <div className="flex items-center space-x-3 pt-2.5 border-t border-orange-200/40 text-xs text-slate-500">
               <div className="w-7 h-7 rounded-full bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-700 text-xs">
                 N
               </div>
@@ -142,12 +157,12 @@ export default function NewsMedia() {
             </div>
           </div>
 
-          {/* Right Column: Executive Photo */}
-          <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+          {/* Right Column: Aviation Hero Photo Directly Related to Content */}
+          <div className="lg:col-span-6 relative h-[240px] sm:h-[280px] lg:h-[320px] w-full overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85"
+              src={featuredArticle.image || aviationServicesImg}
               alt={featuredArticle.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
             />
           </div>
         </div>
@@ -157,7 +172,39 @@ export default function NewsMedia() {
       {/* SECTION 2: MULTI-DROPDOWN FILTER BAR (Screenshot 1)                        */}
       {/* ========================================================================= */}
       <section className="py-2 sm:py-3 container-custom">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-sm">
+        {/* Mobile Filter Toggle Button (< lg screens) */}
+        <div className="lg:hidden flex items-center justify-between gap-3 mb-3">
+          <button
+            type="button"
+            onClick={() => setIsMobileFiltersOpen((prev) => !prev)}
+            aria-expanded={isMobileFiltersOpen}
+            className={`flex-1 inline-flex items-center justify-between py-2.5 px-4 rounded-xl border text-xs font-bold transition-all shadow-sm ${
+              isMobileFiltersOpen || activeFiltersCount > 0
+                ? 'bg-brand-orange text-white border-brand-orange shadow-orange-500/20'
+                : 'bg-white text-slate-700 border-slate-200 hover:border-brand-orange/40'
+            }`}
+          >
+            <span className="flex items-center space-x-2">
+              <SlidersHorizontal className="w-4 h-4" />
+              <span>{isMobileFiltersOpen ? 'Hide Filters' : 'Filter & Sort Options'}</span>
+            </span>
+            <div className="flex items-center space-x-2">
+              {activeFiltersCount > 0 && (
+                <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                  isMobileFiltersOpen ? 'bg-white text-brand-orange' : 'bg-brand-orange text-white'
+                }`}>
+                  {activeFiltersCount} active
+                </span>
+              )}
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isMobileFiltersOpen ? 'rotate-180' : ''}`} />
+            </div>
+          </button>
+        </div>
+
+        {/* Multi-dropdown filters (collapsible on mobile, always visible on lg) */}
+        <div className={`grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-sm ${
+          isMobileFiltersOpen ? 'grid animate-in fade-in duration-200' : 'hidden lg:grid'
+        }`}>
           {/* 1. Type */}
           <div className="space-y-1">
             <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
@@ -260,10 +307,10 @@ export default function NewsMedia() {
         </div>
 
         {/* Active Filters / Reset / Search Bar row */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-4 text-xs text-slate-500">
-          <div className="flex items-center space-x-2">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-3 sm:mt-4 text-xs text-slate-500">
+          <div className="flex items-center space-x-2 w-full sm:w-auto justify-between sm:justify-start">
             <span>Showing <strong>{filteredArticles.length}</strong> articles</span>
-            {(selectedType !== 'Showing All' || selectedSector !== 'Showing All' || selectedService !== 'Showing All' || selectedCountry !== 'Showing All' || searchQuery) && (
+            {(selectedType !== 'Showing All' || selectedSector !== 'Showing All' || selectedService !== 'Showing All' || selectedCountry !== 'Showing All' || searchQuery || sortBy !== 'Latest') && (
               <button
                 type="button"
                 onClick={() => {
@@ -274,9 +321,10 @@ export default function NewsMedia() {
                   setSearchQuery('');
                   setSortBy('Latest');
                 }}
-                className="text-[#FF5722] font-semibold hover:underline ml-2"
+                className="text-[#FF5722] font-semibold hover:underline inline-flex items-center gap-1 ml-2"
               >
-                Reset Filters
+                <X className="w-3.5 h-3.5" />
+                <span>Reset Filters</span>
               </button>
             )}
           </div>
@@ -335,7 +383,7 @@ export default function NewsMedia() {
                     </span>
 
                     {/* Title */}
-                    <h3 className="text-sm sm:text-base font-heading font-bold text-[#222222] group-hover:text-[#FF5722] transition-colors line-clamp-2 leading-snug">
+                    <h3 className="text-sm sm:text-base font-heading font-bold text-brand-navy group-hover:text-[#FF5722] transition-colors line-clamp-2 leading-snug">
                       {article.title}
                     </h3>
 
@@ -489,11 +537,11 @@ export default function NewsMedia() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

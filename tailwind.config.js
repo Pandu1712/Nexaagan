@@ -33,7 +33,7 @@ export default {
       },
       fontFamily: {
         sans: ['"Inter"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
-        heading: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
+        heading: ['"Inter"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
       backgroundImage: {
         'brand-gradient': 'linear-gradient(135deg, #FF5722 0%, #E63946 100%)',

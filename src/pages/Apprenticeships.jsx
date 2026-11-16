@@ -51,7 +51,7 @@ export default function Apprenticeships() {
               <span>Career Development & Upskilling</span>
             </span>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Apprenticeships, funded learning and career pathways at NEXAAGEN
             </h1>
 
@@ -100,7 +100,7 @@ export default function Apprenticeships() {
 
           {/* Right Column: Apprenticeship Details */}
           <div className="lg:col-span-7 space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Apprenticeships at NEXAAGEN
             </h2>
 
@@ -134,7 +134,7 @@ export default function Apprenticeships() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Funded Learning Description */}
           <div className="lg:col-span-7 space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Funded learning for opportunity at NEXAAGEN
             </h2>
 
@@ -194,7 +194,7 @@ export default function Apprenticeships() {
 
           {/* Center Content */}
           <div className="relative z-20 max-w-3xl mx-auto space-y-6">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               View our Global Locations for Regional Opportunity
             </h2>
 
@@ -220,7 +220,7 @@ export default function Apprenticeships() {
         <div className="space-y-6">
           {/* Header & View All Button */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN team stories
             </h2>
             <p className="text-base sm:text-lg text-slate-600">

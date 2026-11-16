@@ -100,7 +100,7 @@ export default function SectorDetail() {
               {/* Direct Left Content */}
               <div className="relative z-20 w-full p-6 sm:p-10 md:p-14 lg:p-18 flex items-center">
                 <div className="w-full max-w-2xl space-y-5 sm:space-y-6">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-heading font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-md">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                     {sector.title}
                   </h1>
 
@@ -164,7 +164,7 @@ export default function SectorDetail() {
                   </div>
 
                   {/* Title */}
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-heading font-extrabold text-white tracking-tight leading-[1.12]">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
                     {sector.title}
                   </h1>
 
@@ -219,7 +219,7 @@ export default function SectorDetail() {
                   </div>
 
                   {/* Title */}
-                  <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                     {sector.title}
                   </h1>
 
@@ -263,7 +263,7 @@ export default function SectorDetail() {
               
               {/* Header */}
               <div className="w-full text-left space-y-2.5 mb-4 sm:mb-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
                   {sector.performanceHeading}
                 </h2>
                 <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">
@@ -309,7 +309,7 @@ export default function SectorDetail() {
             
             {/* Header */}
             <div className="w-full text-left space-y-3 mb-4 sm:mb-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
                 {sector.whyChooseHeading}
               </h2>
               <p className="text-slate-500 text-xs sm:text-sm lg:text-base font-normal">
@@ -343,7 +343,7 @@ export default function SectorDetail() {
               <div className="lg:col-span-7 space-y-6 sm:space-y-8">
                 {sector.whyChoosePillars.map((pillar) => (
                   <div key={pillar.id} className="space-y-2">
-                    <h3 className="font-heading font-bold text-[#0B1B3D] text-lg sm:text-xl leading-snug">
+                    <h3 className="font-heading font-bold text-brand-navy text-lg sm:text-xl leading-snug">
                       {pillar.title}
                     </h3>
                     <p className="text-slate-600 text-xs sm:text-sm lg:text-[15px] leading-relaxed">
@@ -371,7 +371,7 @@ export default function SectorDetail() {
                   </span>
                 )}
 
-                <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                   {sector.introHeading || `Tailored Facilities Management for ${sector.title}`}
                 </h2>
 

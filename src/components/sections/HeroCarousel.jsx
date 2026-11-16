@@ -133,7 +133,7 @@ export default function HeroCarousel() {
                   </div>
 
                   {/* Large Bold Heading */}
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-heading font-extrabold text-white tracking-tight leading-[1.15] drop-shadow-md">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                     {current.title}
                   </h1>
 

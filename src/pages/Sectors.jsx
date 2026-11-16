@@ -79,7 +79,7 @@ export default function Sectors() {
 
                   {/* Content Column */}
                   <div className={`lg:col-span-7 space-y-5 ${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
-                    <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy">
+                    <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                       {sector.title}
                     </h3>
                     <p className="text-slate-600 text-base leading-relaxed">

@@ -12,7 +12,7 @@ export default function SectorServicesGrid() {
           
           {/* Section Header */}
           <div className="max-w-3xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Sector specific services – where your mission becomes our mission
             </h2>
             <p className="text-slate-500 text-xs sm:text-sm lg:text-base mt-2 font-normal leading-relaxed">

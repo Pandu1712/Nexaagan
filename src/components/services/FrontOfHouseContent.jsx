@@ -280,7 +280,7 @@ export default function FrontOfHouseContent({ service }) {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-5">
                 Front of house and concierge services
               </h1>
 
@@ -307,7 +307,7 @@ export default function FrontOfHouseContent({ service }) {
       {/* SECTION 2: NUMBERS / STATS (Screenshot 2) */}
       <section className="py-4 sm:py-6 container-custom">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             Front of house in numbers
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -357,7 +357,7 @@ export default function FrontOfHouseContent({ service }) {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               First and lasting impressions that count for your brand
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -375,7 +375,7 @@ export default function FrontOfHouseContent({ service }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Content */}
           <div className="lg:col-span-6 space-y-5">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Front of house services
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -425,7 +425,7 @@ export default function FrontOfHouseContent({ service }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Content */}
           <div className="lg:col-span-6 space-y-5 order-2 lg:order-1">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Front of House + ESG
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -486,7 +486,7 @@ export default function FrontOfHouseContent({ service }) {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-5">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Front of House + Technology
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -523,7 +523,7 @@ export default function FrontOfHouseContent({ service }) {
       {/* SECTION 7: ACCREDITATIONS & CERTIFICATIONS (Screenshot 8) */}
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-5 sm:mb-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
             Accreditations & Certifications
           </h2>
           <p className="text-base text-slate-600">
@@ -550,7 +550,7 @@ export default function FrontOfHouseContent({ service }) {
       {/* SECTION 8: FREQUENTLY ASKED QUESTIONS (Screenshot 9) */}
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             Frequently Asked Questions
           </h2>
           <p className="text-base text-slate-600">
@@ -593,7 +593,7 @@ export default function FrontOfHouseContent({ service }) {
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
               Facilities services designed for your organisation
             </h2>
             <p className="text-base text-slate-600">
@@ -671,10 +671,10 @@ export default function FrontOfHouseContent({ service }) {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
               Connect with your Front of House team
             </h2>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6 text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <a

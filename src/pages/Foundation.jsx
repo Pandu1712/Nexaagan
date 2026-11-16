@@ -131,7 +131,7 @@ export default function Foundation() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-3">
-          <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN Foundation – a force for good
           </h1>
 
@@ -160,7 +160,7 @@ export default function Foundation() {
 
           {/* Right Column: Narrative Copy */}
           <div className="lg:col-span-6 space-y-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               About the NEXAAGEN Foundation
             </h2>
 
@@ -188,7 +188,7 @@ export default function Foundation() {
         <div className="container-custom">
           {/* Header */}
           <div className="text-center space-y-2 mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN Foundation’s impact – to date
             </h2>
             <p className="text-slate-500 text-xs sm:text-sm font-normal">
@@ -248,7 +248,7 @@ export default function Foundation() {
               <span>Regional Foundation Spotlight</span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               PCS Foundation (Thailand)
             </h2>
 
@@ -330,7 +330,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#F3F8F5] rounded-[28px] sm:rounded-[36px] p-6 sm:p-8 lg:p-10 text-center max-w-5xl mx-auto space-y-3.5 border border-emerald-100/60">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Visit our country-specific websites to learn more
           </h2>
 
@@ -355,7 +355,7 @@ export default function Foundation() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-2 mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             ESG news, updates and insight
           </h2>
           <p className="text-slate-500 text-xs sm:text-sm font-normal">
@@ -428,11 +428,11 @@ export default function Foundation() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

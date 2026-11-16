@@ -298,7 +298,7 @@ export default function CaseStudies() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-3 sm:space-y-4">
-            <h1 className="text-2xl sm:text-4xl lg:text-[46px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Customer Success Stories
             </h1>
 
@@ -328,7 +328,7 @@ export default function CaseStudies() {
               </span>
             </div>
 
-            <h2 className="text-lg sm:text-2xl lg:text-[26px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-snug group-hover:text-[#FF5722] transition-colors">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight group-hover:text-[#FF5722] transition-colors">
               {featuredStory.title}
             </h2>
 
@@ -468,7 +468,7 @@ export default function CaseStudies() {
                 {/* Left Side: Title, Badge, Link */}
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-3 sm:w-1/2">
                   <div className="space-y-2">
-                    <h3 className="text-sm sm:text-base font-heading font-medium sm:font-semibold text-[#222222] group-hover:text-[#FF5722] transition-colors leading-snug line-clamp-3">
+                    <h3 className="text-sm sm:text-base font-heading font-bold text-brand-navy group-hover:text-[#FF5722] transition-colors leading-snug line-clamp-3">
                       {story.title}
                     </h3>
 
@@ -518,7 +518,7 @@ export default function CaseStudies() {
             />
 
             <div className="relative z-10 space-y-3 my-auto">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
                 Making people and places the best they can be
               </h2>
 
@@ -549,7 +549,7 @@ export default function CaseStudies() {
             />
 
             <div className="relative z-10 space-y-3 my-auto">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
                 Local heart, global reach, community impact
               </h2>
 

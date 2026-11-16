@@ -67,7 +67,7 @@ export default function SolutionsTabs({
                 <span>{current.tabName}</span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy leading-snug">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy leading-snug">
                 {current.title}
               </h3>
 

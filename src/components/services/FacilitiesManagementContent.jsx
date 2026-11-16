@@ -198,7 +198,7 @@ export default function FacilitiesManagementContent({ service }) {
                   </Link>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                   Facilities Management
                 </h1>
 
@@ -238,7 +238,7 @@ export default function FacilitiesManagementContent({ service }) {
 
             {/* Right Column: Content + Checkpoints */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Facilities Management for private and public sectors
               </h2>
 
@@ -302,7 +302,7 @@ export default function FacilitiesManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 order-2 lg:order-1">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 It's our NEXAAGEN colleagues that make the difference
               </h2>
 
@@ -338,7 +338,7 @@ export default function FacilitiesManagementContent({ service }) {
             {/* Left Callout Card */}
             <div className="lg:col-span-4 flex flex-col justify-between p-8 rounded-3xl bg-slate-50 border border-slate-100">
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy leading-tight">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy leading-tight">
                   Private Sector Facilities Management
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -435,7 +435,7 @@ export default function FacilitiesManagementContent({ service }) {
             {/* Left Callout Card */}
             <div className="lg:col-span-4 flex flex-col justify-between p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm">
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy leading-tight">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy leading-tight">
                   Public Sector Facilities Management
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -526,7 +526,7 @@ export default function FacilitiesManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Facilities Management + ESG
               </h2>
 
@@ -608,7 +608,7 @@ export default function FacilitiesManagementContent({ service }) {
 
             {/* Right Content */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Facilities Management + Technology
               </h2>
 
@@ -666,7 +666,7 @@ export default function FacilitiesManagementContent({ service }) {
       <section className="py-6 sm:py-8 bg-white border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-10">
-            <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
               Accreditations & Certifications
             </h3>
             <p className="mt-2 text-slate-600 text-xs sm:text-sm">
@@ -780,7 +780,7 @@ export default function FacilitiesManagementContent({ service }) {
             {/* Left Callout Card */}
             <div className="lg:col-span-4 flex flex-col justify-between p-8 rounded-3xl bg-slate-50 border border-slate-100">
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-brand-navy leading-tight">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy leading-tight">
                   Facilities Services delivered as a single-line solution
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">

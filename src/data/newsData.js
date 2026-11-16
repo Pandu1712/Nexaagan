@@ -1,4 +1,5 @@
 import worldFmDayImg from '../assets/news/world-fm-day-2026.jpg';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export const newsData = [
   // ==========================================
@@ -17,7 +18,7 @@ export const newsData = [
     readTime: "5 min read",
     author: "NEXAAGEN Team",
     featured: true,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    image: aviationServicesImg,
     content: "With sixty years of specialist aviation ground and terminal operations, NEXAAGEN delivers synchronized airside support, PRM assistance, aircraft turnaround sanitization, and baggage logistics across tier-one international gateways."
   },
   {

@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
             <Lock className="w-3.5 h-3.5" />
             <span>Data Protection & Privacy</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-heading font-extrabold tracking-tight text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
             {privacyPolicyData.title}
           </h1>
           <p className="text-slate-300 text-sm">
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
         <div className="container-custom space-y-10 text-slate-700">
           {privacyPolicyData.sections.map((sec, idx) => (
             <div key={idx} className="space-y-3 pb-8 border-b border-slate-100 last:border-b-0">
-              <h2 className="text-xl font-heading font-bold text-brand-navy">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 {sec.heading}
               </h2>
               <p className="text-sm sm:text-base leading-relaxed text-slate-600">

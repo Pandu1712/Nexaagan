@@ -218,11 +218,11 @@ or by emailing compliance@nexaagen.com.
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-200/20 rounded-full blur-3xl pointer-events-none translate-x-1/2 translate-y-1/2" />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Policy Download Centre
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Essential governance policies on Quality, Health, Safety, and Environment (QHSE), Environmental, Social, and Governance (ESG) standards, Modern Slavery, Code of Conduct, and more, ensuring our colleagues, customers, partners, and the communities we serve are well-informed about our practices and standards.
           </p>
 
@@ -243,7 +243,7 @@ or by emailing compliance@nexaagen.com.
       <section className="py-4 sm:py-6 container-custom">
         {/* Section Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-normal sm:font-medium text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN Policies
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">
@@ -299,7 +299,7 @@ or by emailing compliance@nexaagen.com.
                   </span>
                   <span className="text-xs text-slate-400">Version 2026.1 • {selectedPolicy.fileSize}</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-heading font-bold text-[#0A192F]">
+                <h3 className="text-lg sm:text-xl font-heading font-bold text-brand-navy">
                   {selectedPolicy.title}
                 </h3>
               </div>
@@ -393,7 +393,7 @@ or by emailing compliance@nexaagen.com.
           />
 
           <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-            <h2 className="text-xl sm:text-3xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Have questions about our policies or certifications?
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm font-normal max-w-xl mx-auto leading-relaxed">

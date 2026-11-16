@@ -47,7 +47,8 @@ export default function DataCentreCustomerStories() {
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
-      const scrollDistance = 420;
+      const containerWidth = scrollRef.current.clientWidth;
+      const scrollDistance = containerWidth > 0 && containerWidth < 640 ? containerWidth + 16 : 380;
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -scrollDistance : scrollDistance,
         behavior: 'smooth',
@@ -62,7 +63,7 @@ export default function DataCentreCustomerStories() {
 
           {/* Left Column: Title, Subtitle, CTA Button, and Carousel Navigation Arrows */}
           <div className="lg:col-span-4 lg:sticky lg:top-32 space-y-5 sm:space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Customer Stories
             </h2>
 
@@ -101,11 +102,11 @@ export default function DataCentreCustomerStories() {
             </div>
           </div>
 
-          {/* Right Column: Scrollable Card Row (No Visible Scrollbar) */}
+          {/* Right Column: Scrollable Card Row (1 card on mobile, smooth snap) */}
           <div className="lg:col-span-8 relative">
             <div
               ref={scrollRef}
-              className="flex gap-5 sm:gap-6 overflow-x-auto scrollbar-none no-scrollbar scroll-smooth py-2 px-1"
+              className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-none no-scrollbar scroll-smooth py-2 px-1 snap-x snap-mandatory"
               style={{
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
@@ -114,7 +115,7 @@ export default function DataCentreCustomerStories() {
               {stories.map((story) => (
                 <div
                   key={story.id}
-                  className="flex-shrink-0 w-[285px] sm:w-[330px] lg:w-[360px] bg-white rounded-3xl overflow-hidden border border-slate-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                  className="flex-shrink-0 w-full min-w-full sm:min-w-0 sm:w-[330px] lg:w-[360px] snap-center sm:snap-start bg-white rounded-3xl overflow-hidden border border-slate-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   {/* Card Image */}
                   <div className="relative aspect-[16/11] overflow-hidden bg-slate-100">
@@ -137,7 +138,7 @@ export default function DataCentreCustomerStories() {
                       </div>
 
                       {/* Card Title */}
-                      <h3 className="text-base sm:text-[17px] font-heading font-bold text-[#0B1B3D] leading-snug group-hover:text-brand-orange transition-colors mt-2">
+                      <h3 className="text-base sm:text-[17px] font-heading font-bold text-brand-navy leading-snug group-hover:text-brand-orange transition-colors mt-2">
                         {story.title}
                       </h3>
                     </div>

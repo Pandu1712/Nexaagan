@@ -161,7 +161,7 @@ export default function AviationSectorContent() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading, Paragraph, 5 Checkpoints & CTA */}
           <div className="lg:col-span-6 space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Aviation sector services
             </h2>
 
@@ -225,7 +225,7 @@ export default function AviationSectorContent() {
           {/* Left Card */}
           <div className="lg:col-span-5">
             <div className="bg-[#F8F9FA] rounded-3xl sm:rounded-[36px] p-8 sm:p-10 lg:p-12 border border-slate-200/50 space-y-5">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
                 Aviation Facilities Management
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -324,7 +324,7 @@ export default function AviationSectorContent() {
           {/* Right Card */}
           <div className="lg:col-span-5 order-1 lg:order-2">
             <div className="bg-[#F8F9FA] rounded-3xl sm:rounded-[36px] p-8 sm:p-10 lg:p-12 border border-slate-200/50 space-y-5">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight leading-snug">
                 Services to help aviation spaces operate at their best
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -363,7 +363,7 @@ export default function AviationSectorContent() {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Infrastructure resilience
             </h2>
 
@@ -393,7 +393,7 @@ export default function AviationSectorContent() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Content */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Integrated facilities solutions for seamless operations
             </h2>
 
@@ -446,7 +446,7 @@ export default function AviationSectorContent() {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Using technology for Aviation
             </h2>
 
@@ -482,7 +482,7 @@ export default function AviationSectorContent() {
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h3>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-justify-center md:text-left">
               Get in touch with our aviation facilities management specialists today to explore integrated solutions for your airport or airline operations.
             </p>
           </div>
@@ -505,7 +505,7 @@ export default function AviationSectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
           <div className="w-full text-left space-y-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Frequently Asked Questions
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -562,7 +562,7 @@ export default function AviationSectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN customer stories
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -625,7 +625,7 @@ export default function AviationSectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Airline Industries + ESG
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -653,7 +653,7 @@ export default function AviationSectorContent() {
 
               <div className="p-7 sm:p-9 space-y-3 flex-1 flex flex-col justify-between">
                 <div className="space-y-2.5">
-                  <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D]">
+                  <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                     Decarbonising Aviation Ground Operations
                   </h3>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -687,7 +687,7 @@ export default function AviationSectorContent() {
 
               <div className="p-7 sm:p-9 space-y-3 flex-1 flex flex-col justify-between">
                 <div className="space-y-2.5">
-                  <h3 className="text-xl sm:text-2xl font-heading font-bold text-[#0B1B3D]">
+                  <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy">
                     Upholding Uncompromising Safety & Regulatory Integrity
                   </h3>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">

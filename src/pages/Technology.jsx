@@ -112,7 +112,7 @@ export default function Technology() {
               </div>
 
               {/* Title */}
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-4">
                 Harness technology with NEXAAGEN Advance
               </h1>
 
@@ -158,7 +158,7 @@ export default function Technology() {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN Advance
             </h2>
 
@@ -190,7 +190,7 @@ export default function Technology() {
       {/* SECTION 3: NEXAAGEN ADVANCE SOLUTIONS FOR CUSTOMERS */}
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-left mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
             NEXAAGEN Advance solutions for customers
           </h2>
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
@@ -232,7 +232,7 @@ export default function Technology() {
       {/* SECTION 4: NEXAAGEN ADVANCE TOOLS INTRO */}
       <section className="py-4 sm:py-6 container-custom text-center border-t border-slate-100">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             NEXAAGEN Advance Tools
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -429,7 +429,7 @@ export default function Technology() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
               Join our global technology teams
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">

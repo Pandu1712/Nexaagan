@@ -225,7 +225,7 @@ export default function Navbar({ showTopBar = true }) {
                                 fontWeight="bold"
                                 fill="currentColor"
                                 stroke="none"
-                                fontFamily="system-ui, -apple-system, sans-serif"
+                                fontFamily="'Inter', system-ui, -apple-system, sans-serif"
                               >
                                 A-Z
                               </text>
@@ -1033,7 +1033,7 @@ export default function Navbar({ showTopBar = true }) {
                               fontWeight="bold"
                               fill="currentColor"
                               stroke="none"
-                              fontFamily="system-ui, -apple-system, sans-serif"
+                              fontFamily="'Inter', system-ui, -apple-system, sans-serif"
                             >
                               A-Z
                             </text>
@@ -1099,7 +1099,7 @@ export default function Navbar({ showTopBar = true }) {
                               fontWeight="bold"
                               fill="currentColor"
                               stroke="none"
-                              fontFamily="system-ui, -apple-system, sans-serif"
+                              fontFamily="'Inter', system-ui, -apple-system, sans-serif"
                             >
                               A-Z
                             </text>

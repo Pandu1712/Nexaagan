@@ -20,6 +20,7 @@ import {
   Users
 } from 'lucide-react';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import aviationServicesImg from '../assets/news/aviation-global-services.jpg';
 
 export default function VisionMission() {
   const [selectedStory, setSelectedStory] = useState(null);
@@ -81,7 +82,7 @@ export default function VisionMission() {
       title: 'Sixty Years of Global Aviation Services: One Standard, Uncompromising Excellence',
       author: 'NEXAAGEN Team',
       date: '24 Aug, 2026',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      image: aviationServicesImg,
       tag: 'Aviation',
       excerpt: 'Celebrating decades of world-class terminal operations, PRM mobility assistance, and ground handling across premier international gateways.'
     },
@@ -138,11 +139,11 @@ export default function VisionMission() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-5">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Vision & Mission
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal text-justify-center">
             Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company dedicated to delivering safe, efficient, and dependable operations.
           </p>
         </div>
@@ -167,7 +168,7 @@ export default function VisionMission() {
 
           {/* Right Column: Vision Copy & Sign-off */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Vision: To become a trusted integrated facility management and engineering services partner across key industry sectors.
             </h2>
 
@@ -211,7 +212,7 @@ export default function VisionMission() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Mission: To deliver safe, efficient and dependable facility operations through skilled teams, structured processes and responsive management.
               </h2>
 
@@ -264,7 +265,7 @@ export default function VisionMission() {
           />
 
           <div className="relative z-10 max-w-2xl text-white space-y-4">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Best Strategy Mission Fuel
             </h2>
             <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed font-normal">
@@ -293,7 +294,7 @@ export default function VisionMission() {
 
           {/* Right Column: Best Experiences Copy */}
           <div className="lg:col-span-7 space-y-5">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Best Experiences
             </h2>
 
@@ -321,7 +322,7 @@ export default function VisionMission() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Productivity Copy */}
             <div className="lg:col-span-7 space-y-5">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Best Productivity
               </h2>
 
@@ -373,7 +374,7 @@ export default function VisionMission() {
 
           {/* Right Column: Best Practices Copy */}
           <div className="lg:col-span-7 space-y-5">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Best Practices
             </h2>
 
@@ -401,7 +402,7 @@ export default function VisionMission() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Resilience Copy */}
             <div className="lg:col-span-7 space-y-5">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Best Resilience
               </h2>
 
@@ -456,7 +457,7 @@ export default function VisionMission() {
 
           {/* Right Column: Best Outcomes Copy & CTA */}
           <div className="lg:col-span-7 space-y-5">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Best Outcomes
             </h2>
 
@@ -534,7 +535,7 @@ export default function VisionMission() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Vision, mission and purpose
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">
@@ -596,7 +597,7 @@ export default function VisionMission() {
             />
 
             <div className="relative z-10 space-y-3">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold tracking-tight">
                 Search by Sector
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
@@ -625,7 +626,7 @@ export default function VisionMission() {
             />
 
             <div className="relative z-10 space-y-3">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold tracking-tight">
                 Find Your Location
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
@@ -651,7 +652,7 @@ export default function VisionMission() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Header with CTA Button */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN insights, news and updates
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">

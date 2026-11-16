@@ -98,7 +98,7 @@ export default function IndustryAccreditations() {
           
           {/* Left Column: Heading, Description and Learn More Button */}
           <div className="lg:col-span-5 space-y-4">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-[1.18]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Industry Accreditations: Quality Control and Compliance
             </h2>
 

@@ -41,11 +41,11 @@ export default function QHSE() {
             QHSE Governance Framework
           </span>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN approach to Quality, Health, Safety and Environment (QHSE)
           </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-normal max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-normal max-w-4xl mx-auto text-justify-center">
             Across our global business, we achieve a benchmark Quality, Health, Safety and Environment (QHSE) performance underpinned by high-quality, consistent services, a proactive approach to health and safety, and a commitment to minimising environmental impact.
           </p>
 
@@ -83,7 +83,7 @@ export default function QHSE() {
 
           {/* Right Column: Description */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               What is QHSE?
             </h2>
 
@@ -113,7 +113,7 @@ export default function QHSE() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Safety first approach – the foundation for our operation
             </h2>
 
@@ -155,7 +155,7 @@ export default function QHSE() {
 
           {/* Right Column: Description */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Physical and mental health and wellbeing for all of our colleagues and customers
             </h2>
 
@@ -179,7 +179,7 @@ export default function QHSE() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our consistent approach to quality through the training and development
             </h2>
 
@@ -221,7 +221,7 @@ export default function QHSE() {
 
           {/* Right Column: Description */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our commitment to the Environment
             </h2>
 
@@ -263,10 +263,10 @@ export default function QHSE() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
               Connect with your NEXAAGEN team
             </h2>
-            <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <a

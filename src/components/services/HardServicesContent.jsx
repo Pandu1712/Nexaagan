@@ -17,7 +17,8 @@ import {
   CheckCircle2,
   Clock,
   Send,
-  AlertCircle
+  AlertCircle,
+  MessageCircle
 } from 'lucide-react';
 
 export default function HardServicesContent({ service }) {
@@ -45,6 +46,8 @@ export default function HardServicesContent({ service }) {
     }
   };
 
+  const [waLink, setWaLink] = useState('');
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const newErrors = {};
@@ -58,6 +61,26 @@ export default function HardServicesContent({ service }) {
       setErrors(newErrors);
       return;
     }
+
+    const lines = [
+      `*New Hard Services Consultation Request - NEXAAGEN*`,
+      ``,
+      `*Name:* ${formData.firstName} ${formData.lastName}`.trim(),
+      `*Company:* ${formData.company}`.trim(),
+      `*Email:* ${formData.email}`.trim(),
+      `*Phone:* ${formData.phone}`.trim(),
+      `*Postcode:* ${formData.postcode}`.trim(),
+      `*Services:* ${formData.services.join(', ')}`.trim(),
+      `*Square Footage:* ${formData.sqft}`.trim(),
+      `*Timeline:* ${formData.timeline}`.trim(),
+      `*Notes:* ${formData.notes}`.trim(),
+    ];
+    const message = lines.filter(Boolean).join('\n');
+    const waUrl = `https://wa.me/919988331575?text=${encodeURIComponent(message)}`;
+    setWaLink(waUrl);
+    try {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    } catch (err) {}
 
     setFormSubmitted(true);
   };
@@ -184,7 +207,7 @@ export default function HardServicesContent({ service }) {
 
             {/* Left Content */}
             <div className="relative z-20 w-full p-8 sm:p-12 md:p-16 lg:p-20 max-w-3xl space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-heading font-extrabold text-white tracking-tight leading-[1.15] drop-shadow-md">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                 Hard Services for Complex, Business-Critical Environments
               </h1>
 
@@ -211,7 +234,7 @@ export default function HardServicesContent({ service }) {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Powered by people, Enabled by tech.
             </h2>
             <p className="mt-3 text-slate-500 text-sm sm:text-base font-medium">
@@ -251,7 +274,7 @@ export default function HardServicesContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Trusted Partner for Complex Environments
               </h2>
 
@@ -330,7 +353,7 @@ export default function HardServicesContent({ service }) {
           {/* Header with Top-Right CTA */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Hard Services Capabilities
               </h2>
               <p className="mt-2.5 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -384,7 +407,7 @@ export default function HardServicesContent({ service }) {
       <section className="section-padding bg-slate-50/70 border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our Approach to Hard Services Delivery
             </h2>
           </div>
@@ -443,7 +466,7 @@ export default function HardServicesContent({ service }) {
       <section className="section-padding bg-white border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-4 mb-10">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Proven, Trusted, Accredited
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
@@ -567,7 +590,7 @@ export default function HardServicesContent({ service }) {
                 <span>Available until 5:30pm</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
                 Ready to Optimise Your Buildings with a Trusted Hard Services Partner?
               </h2>
 
@@ -595,20 +618,33 @@ export default function HardServicesContent({ service }) {
             <div className="lg:col-span-7">
               <div className="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl">
                 {formSubmitted ? (
-                  <div className="text-center py-6 sm:py-8 space-y-3">
+                  <div className="text-center py-6 sm:py-8 space-y-4">
                     <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto shadow-inner">
                       <Check className="w-8 h-8 stroke-[3]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Thank You for Reaching Out</h3>
                     <p className="text-sm text-slate-300 max-w-md mx-auto">
-                      Our Hard Services practice team has received your inquiry. A regional MEP technical director will contact you within 2 business hours.
+                      Your inquiry has been forwarded to our WhatsApp operations desk (+91 99 88 33 1575).
                     </p>
-                    <button
-                      onClick={() => setFormSubmitted(false)}
-                      className="mt-4 px-6 py-2.5 rounded-full text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-white transition-colors"
-                    >
-                      Submit Another Inquiry
-                    </button>
+                    <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+                      {waLink && (
+                        <a
+                          href={waLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm"
+                        >
+                          <MessageCircle className="w-4 h-4" />
+                          <span>Open WhatsApp Chat</span>
+                        </a>
+                      )}
+                      <button
+                        onClick={() => setFormSubmitted(false)}
+                        className="px-6 py-2.5 rounded-full text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-white transition-colors"
+                      >
+                        Submit Another Inquiry
+                      </button>
+                    </div>
                   </div>
                 ) : (
                   <form onSubmit={handleFormSubmit} className="space-y-6">

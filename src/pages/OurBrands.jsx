@@ -233,11 +233,11 @@ export default function OurBrands() {
           />
 
           <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Our Brands
             </h1>
 
-            <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
               NEXAAGEN operates several regional brands, often specialist operators with specific service and sector expertise. All NEXAAGEN brands conduct business with the same ethos and approach, incorporating the NEXAAGEN TRUE Values, Commitments and shared Code of Conduct.
             </p>
           </div>
@@ -262,11 +262,11 @@ export default function OurBrands() {
 
             {/* Right Column: Narrative & 3 Bullets */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Discover the NEXAAGEN brands
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 NEXAAGEN is our primary brand, central to our operations across various regions. In Thailand and Bangladesh, we operate under the PCS brand, catering to the specific needs of these markets. In New Zealand and Australia, we have specialized hard services brands: 1M and Midcity, respectively, focusing on specific industry requirements. Additionally, our portfolio includes several food service and catering brands. In Thailand, we operate Foodhouse, while in the UK, we have Angel Hill. Complementing these, we also have Groundhouse, our own coffee brand. These diverse brands under our umbrella allow us to offer a range of services tailored to different markets and customer needs.
               </p>
 
@@ -451,7 +451,7 @@ export default function OurBrands() {
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN Brand News
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -522,11 +522,11 @@ export default function OurBrands() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

@@ -84,7 +84,7 @@ export default function Social() {
               </Link>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Social (ESG)
             </h1>
 
@@ -116,7 +116,7 @@ export default function Social() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Recruit from the widest possible talent pool and create opportunities
             </h2>
 
@@ -165,7 +165,7 @@ export default function Social() {
 
           {/* Right Column: Careers & NEXAAGEN Academy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Providing access to valuable and sustainable careers
             </h2>
 
@@ -195,7 +195,7 @@ export default function Social() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: DE&I Principle */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Fostering diversity, equity and inclusion (DE&I)
             </h2>
 
@@ -257,7 +257,7 @@ export default function Social() {
 
           {/* Right Column: Accreditation Description */}
           <div className="lg:col-span-6 space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Accreditation & Certification
             </h2>
 
@@ -295,7 +295,7 @@ export default function Social() {
 
           {/* Right Column: Outreach Description */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Positive impact and lasting change through community outreach programmes
             </h2>
 
@@ -315,7 +315,7 @@ export default function Social() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Modern Slavery Commitment */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Standing strong together against modern slavery
             </h2>
 
@@ -365,7 +365,7 @@ export default function Social() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Contact your global people team today
             </h2>
 

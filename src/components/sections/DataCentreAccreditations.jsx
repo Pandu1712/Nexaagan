@@ -72,7 +72,7 @@ export default function DataCentreAccreditations() {
       <div className="container-custom">
         {/* Section Header */}
         <div className="w-full text-left space-y-2 mb-8 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
             Proven, Trusted, Accredited
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed max-w-4xl">
@@ -183,7 +183,7 @@ export default function DataCentreAccreditations() {
                     fill="currentColor"
                     fontSize="18"
                     fontWeight="900"
-                    fontFamily="Arial, Helvetica, sans-serif"
+                    fontFamily="'Inter', system-ui, -apple-system, sans-serif"
                     letterSpacing="1.2"
                   >
                     ISO

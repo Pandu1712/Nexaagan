@@ -33,7 +33,7 @@ export default function CaseStudiesCarousel({
             <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
               Verified Case Studies
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               {title}
             </h2>
             <p className="mt-3 text-slate-600 text-base leading-relaxed">

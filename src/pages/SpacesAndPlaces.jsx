@@ -45,7 +45,7 @@ export default function SpacesAndPlaces() {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-5">
                 Our A-Z of spaces and places
               </h1>
 

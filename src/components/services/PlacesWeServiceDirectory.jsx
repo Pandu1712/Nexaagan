@@ -263,7 +263,7 @@ export default function PlacesWeServiceDirectory() {
                 fontWeight="bold"
                 fill="currentColor"
                 stroke="none"
-                fontFamily="system-ui, -apple-system, sans-serif"
+                fontFamily="'Inter', system-ui, -apple-system, sans-serif"
               >
                 A-Z
               </text>
@@ -273,7 +273,7 @@ export default function PlacesWeServiceDirectory() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             A-Z of Places We Service
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">

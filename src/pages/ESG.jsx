@@ -122,12 +122,12 @@ export default function ESG() {
               </div>
 
               {/* Big Title */}
-              <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                 ESG
               </h1>
 
               {/* Subtitle */}
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 We’re doing the right things at the right time in business, with the highest environmental, social, and governance responsibility standards.
               </p>
             </div>
@@ -141,11 +141,11 @@ export default function ESG() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Policy Narrative */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Responsibility and opportunity for change
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 This NEXAAGEN ESG Policy outlines our commitment and approach to minimising our impact on the environment, supporting the well-being of our colleagues and communities, maintaining strong corporate governance, and our dedication to continuous improvement.
               </p>
 
@@ -202,11 +202,11 @@ export default function ESG() {
 
             {/* Right Column: Environmental Text & Bullets */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 NEXAAGEN environmental commitments
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 We prioritise environmental sustainability, pledging to reduce resource usage through technology, promote responsible procurement with like-minded suppliers, educate and motivate our colleagues to adopt sustainable practices and collaborate with NGOs, governments, and customers to drive positive change in the communities where we operate.
               </p>
 
@@ -263,11 +263,11 @@ export default function ESG() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Social Text & Bullets */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 NEXAAGEN social commitments
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 We have a strong focus on social value and mobility, as well as fostering inclusion throughout our organisation. Our commitment extends to proactively seeking talent from diverse backgrounds at all levels, from the frontline to the boardroom. We uphold our Code of Conduct to ensure inclusivity and collaborate with government programs and partners to diversify our recruitment efforts.
               </p>
 
@@ -348,11 +348,11 @@ export default function ESG() {
 
             {/* Right Column: Governance Text & Bullets */}
             <div className="lg:col-span-7 space-y-4">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-800 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 NEXAAGEN governance commitments
               </h2>
 
-              <p className="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
                 Our governance commitments include maintaining high ethical standards guided by our Code of Conduct and values, establishing transparent and accountable governance structures, nurturing a culture of continuous improvement by monitoring and reporting on our ESG performance, and ensuring compliance with all laws and industry standards through well-defined policies and independent external oversight.
               </p>
 
@@ -408,7 +408,7 @@ export default function ESG() {
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-800 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               ESG actions and outcomes
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -479,11 +479,11 @@ export default function ESG() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with our ESG team
             </h2>
 
-            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

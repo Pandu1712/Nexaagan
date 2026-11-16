@@ -225,7 +225,7 @@ export default function CleaningContent({ service }) {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-5">
                 Commercial Cleaning Services
               </h1>
 
@@ -252,7 +252,7 @@ export default function CleaningContent({ service }) {
       {/* SECTION 2: CLEANING OPERATION IN NUMBERS (Screenshot 2) */}
       <section className="py-4 sm:py-6 container-custom border-b border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             NEXAAGEN Cleaning operation in numbers
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -301,7 +301,7 @@ export default function CleaningContent({ service }) {
 
           {/* Right Column: Content & Service List */}
           <div className="lg:col-span-7">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Our cleaning services
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-3">
@@ -331,7 +331,7 @@ export default function CleaningContent({ service }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading and copy */}
           <div className="lg:col-span-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Sector-specialist cleaning and hygiene services
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-4 font-normal">
@@ -371,7 +371,7 @@ export default function CleaningContent({ service }) {
 
           {/* Right Column: Content */}
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Our colleagues at the centre of your operation
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-4">
@@ -401,7 +401,7 @@ export default function CleaningContent({ service }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading and copy */}
           <div className="lg:col-span-7">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Investing in people for best experience and outcomes
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-4 font-normal">
@@ -428,7 +428,7 @@ export default function CleaningContent({ service }) {
       {/* SECTION 7: CUSTOMER SUCCESS AND OUTCOMES (Screenshot 7) */}
       <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-[36px] my-3">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             Customer success and outcomes
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -482,7 +482,7 @@ export default function CleaningContent({ service }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: ESG Text & Checklist */}
           <div className="lg:col-span-7">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Cleaning + ESG
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-5">
@@ -543,7 +543,7 @@ export default function CleaningContent({ service }) {
 
           {/* Right Column: Tech content & points */}
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
               Cleaning + Technology
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-5">
@@ -580,7 +580,7 @@ export default function CleaningContent({ service }) {
       {/* SECTION 10: ACCREDITATIONS & CERTIFICATIONS (Screenshot 10) */}
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
             Accreditations & Certifications
           </h2>
           <p className="text-base text-slate-600">
@@ -638,7 +638,7 @@ export default function CleaningContent({ service }) {
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
           <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
               Facilities services designed for your organisation
             </h2>
             <p className="text-base text-slate-600">
@@ -702,7 +702,7 @@ export default function CleaningContent({ service }) {
       {/* SECTION 12: FREQUENTLY ASKED QUESTIONS (Screenshot 13) */}
       <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             Frequently asked questions for Cleaning
           </h2>
           <p className="text-base text-slate-600">
@@ -754,7 +754,7 @@ export default function CleaningContent({ service }) {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
               Connect with your Cleaning team
             </h2>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6">

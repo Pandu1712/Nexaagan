@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, CheckCircle2, MessageCircle } from 'lucide-react';
 
 /**
  * HealthcareSectorContent Component
@@ -176,8 +176,29 @@ export default function HealthcareSectorContent() {
     }));
   };
 
+  const [waLink, setWaLink] = useState('');
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    const lines = [
+      `*New Healthcare Consultation Request - NEXAAGEN*`,
+      ``,
+      `*Name:* ${formData.firstName} ${formData.lastName}`.trim(),
+      `*Company:* ${formData.company}`.trim(),
+      `*Email:* ${formData.email}`.trim(),
+      `*Phone:* ${formData.phone}`.trim(),
+      `*Post Code:* ${formData.postCode}`.trim(),
+      `*Service Required:* ${formData.serviceRequired}`.trim(),
+    ];
+    if (formData.furtherDetails) {
+      lines.push(`*Further Details:* ${formData.furtherDetails}`);
+    }
+    const message = lines.filter(Boolean).join('\n');
+    const waUrl = `https://wa.me/919988331575?text=${encodeURIComponent(message)}`;
+    setWaLink(waUrl);
+    try {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    } catch (err) {}
     setFormSubmitted(true);
   };
 
@@ -191,13 +212,13 @@ export default function HealthcareSectorContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7">
-              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1E293B] leading-tight mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
                 A Partner That Shares Your Care
               </h2>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-3">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-3">
                 More than a service provider, we are a team that understands the heart of healthcare. Our in-house experts deliver reliable, compliant services, working as an extension of your staff.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-5">
                 What makes us different is our healthcare expertise delivered with local care, offering direct, in-house services for reliable support and patient-centred, practical solutions.
               </p>
 
@@ -244,10 +265,10 @@ export default function HealthcareSectorContent() {
         <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-3">
               Healthcare Solutions by NEXAAGEN
             </h2>
-            <p className="text-base sm:text-lg text-[#64748B]">
+            <p className="text-base sm:text-lg text-slate-600">
               Tailored Facilities Management with Infection Prevention at the Core
             </p>
           </div>
@@ -299,10 +320,10 @@ export default function HealthcareSectorContent() {
 
               {/* Right Tab Content */}
               <div className="lg:col-span-7 space-y-6">
-                <h3 className="text-2xl sm:text-3xl font-bold text-[#1E293B]">
+                <h3 className="text-2xl sm:text-3xl font-bold text-brand-navy">
                   {currentTab.title}
                 </h3>
-                <p className="text-base text-[#64748B] leading-relaxed">
+                <p className="text-base text-slate-600 leading-relaxed">
                   {currentTab.intro}
                 </p>
 
@@ -348,10 +369,10 @@ export default function HealthcareSectorContent() {
         <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-3">
               Sustainability in Action: Responsible Healthcare
             </h2>
-            <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
               We embrace sustainability as key to better healthcare. Our facilities services optimise hospital operations while promoting environmental, social, and ethical goals, aligning with your care-focused mission.
             </p>
           </div>
@@ -369,28 +390,28 @@ export default function HealthcareSectorContent() {
             {/* Right: 3 Pillars with Clean Typography */}
             <div className="lg:col-span-6 space-y-6">
               <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
-                <h3 className="text-xl font-bold text-[#1E293B]">
+                <h3 className="text-xl font-bold text-brand-navy">
                   Environmental Responsibility
                 </h3>
-                <p className="text-sm sm:text-base text-[#64748B] leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                   We lower your ecological footprint with energy-saving systems, waste reduction, and eco-friendly cleaning meeting global standards.
                 </p>
               </div>
 
               <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
-                <h3 className="text-xl font-bold text-[#1E293B]">
+                <h3 className="text-xl font-bold text-brand-navy">
                   Social Impact
                 </h3>
-                <p className="text-sm sm:text-base text-[#64748B] leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                   We support staff and patient well-being, engage communities, and maintain ethical operations for thriving healthcare settings.
                 </p>
               </div>
 
               <div className="border-l-2 border-[#E03A00] pl-4 space-y-1">
-                <h3 className="text-xl font-bold text-[#1E293B]">
+                <h3 className="text-xl font-bold text-brand-navy">
                   Transparent Governance
                 </h3>
-                <p className="text-sm sm:text-base text-[#64748B] leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                   We ensure accountability and compliance in all services, from audits to resource management, for reliable operations.
                 </p>
               </div>
@@ -407,10 +428,10 @@ export default function HealthcareSectorContent() {
           {/* Header with Title left and Prev/Next buttons right */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
             <div className="max-w-2xl mb-4 md:mb-0">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-2">
                 Case Studies
               </h2>
-              <p className="text-base sm:text-lg text-[#64748B]">
+              <p className="text-base sm:text-lg text-slate-600">
                 Across the region, NEXAAGEN supports leading hospitals and clinics in meeting operational goals, improving patient environments, and maintaining reputational excellence.
               </p>
             </div>
@@ -452,7 +473,7 @@ export default function HealthcareSectorContent() {
                   </div>
                   <div className="p-7 flex-1 flex flex-col justify-between">
                     <div>
-                      <span className="inline-block text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-2">
+                      <span className="inline-block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">
                         {story.tag}
                       </span>
                       <h4 className="text-lg font-bold text-[#1E293B] leading-snug mb-6">
@@ -481,19 +502,32 @@ export default function HealthcareSectorContent() {
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Column: Form */}
             <div className="lg:col-span-7">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-5">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-5">
                 Connect with Our Healthcare Team
               </h2>
 
               {formSubmitted ? (
-                <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 p-8 rounded-2xl text-center space-y-3">
+                <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 p-8 rounded-2xl text-center space-y-4">
                   <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                   <h4 className="text-xl font-bold text-emerald-900">
                     Thank you for reaching out!
                   </h4>
                   <p className="text-sm text-emerald-700">
-                    Our Healthcare Practice Directors have received your details and will contact you within 2 business hours.
+                    Your details have been forwarded to our WhatsApp operations team (+91 99 88 33 1575).
                   </p>
+                  {waLink && (
+                    <div className="pt-2">
+                      <a
+                        href={waLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm"
+                      >
+                        <MessageCircle className="w-4 h-4" />
+                        <span>Open WhatsApp Chat</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <form onSubmit={handleFormSubmit} className="space-y-4">
@@ -650,7 +684,7 @@ export default function HealthcareSectorContent() {
                       onChange={handleFormChange}
                       className="mt-1 accent-[#E03A00]"
                     />
-                    <label htmlFor="agreed" className="text-xs text-[#64748B] leading-relaxed">
+                    <label htmlFor="agreed" className="text-xs text-slate-600 leading-relaxed">
                       I agree to the Terms and Conditions and Privacy Policy and I am happy for NEXAAGEN to collect my information. *
                     </label>
                   </div>

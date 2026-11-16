@@ -170,7 +170,7 @@ export default function RetailSectorContent() {
           
           {/* Left Column: Heading, Paragraphs & CTA */}
           <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               We're helping deliver the best retail experience for your customers
             </h2>
 
@@ -221,7 +221,7 @@ export default function RetailSectorContent() {
           {/* Left Card */}
           <div className="lg:col-span-5">
             <div className="bg-[#F8F9FA] rounded-3xl sm:rounded-[36px] p-8 sm:p-10 lg:p-12 border border-slate-200/50 space-y-5">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
                 Retail FM
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -320,7 +320,7 @@ export default function RetailSectorContent() {
           {/* Right Card */}
           <div className="lg:col-span-5 order-1 lg:order-2">
             <div className="bg-[#F8F9FA] rounded-3xl sm:rounded-[36px] p-8 sm:p-10 lg:p-12 border border-slate-200/50 space-y-5">
-              <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight leading-snug">
                 Services to overcome the daily challenges for retailers
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -360,7 +360,7 @@ export default function RetailSectorContent() {
 
           {/* Right Column: Title, Intro, 3 Checkpoints, More on ESG Button */}
           <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Supporting retailers with their sustainability goals
             </h2>
 
@@ -404,7 +404,7 @@ export default function RetailSectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8 text-left">
           <div className="space-y-2 text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Retail Industry Accreditations
             </h2>
             <p className="text-slate-500 text-xs sm:text-sm max-w-3xl">
@@ -437,7 +437,7 @@ export default function RetailSectorContent() {
       <section className="container-custom">
         <div className="space-y-8 sm:space-y-10">
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               NEXAAGEN customer stories
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -500,7 +500,7 @@ export default function RetailSectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
           <div className="w-full text-left space-y-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Frequently Asked Questions for Retail
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -565,7 +565,7 @@ export default function RetailSectorContent() {
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h3>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
           </div>
@@ -590,7 +590,7 @@ export default function RetailSectorContent() {
         <div className="space-y-6 sm:space-y-8">
           
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Responsibility and opportunity for change
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -613,7 +613,7 @@ export default function RetailSectorContent() {
               </div>
               <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-lg font-heading font-bold text-[#0B1B3D]">
+                  <h3 className="text-lg font-heading font-bold text-brand-navy">
                     Environmental
                   </h3>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -640,7 +640,7 @@ export default function RetailSectorContent() {
               </div>
               <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-lg font-heading font-bold text-[#0B1B3D]">
+                  <h3 className="text-lg font-heading font-bold text-brand-navy">
                     Social
                   </h3>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -667,7 +667,7 @@ export default function RetailSectorContent() {
               </div>
               <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-lg font-heading font-bold text-[#0B1B3D]">
+                  <h3 className="text-lg font-heading font-bold text-brand-navy">
                     Governance
                   </h3>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">

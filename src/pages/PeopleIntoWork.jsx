@@ -157,11 +157,11 @@ export default function PeopleIntoWork() {
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             Pioneering ‘People into Work’
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Launched by the NEXAAGEN Foundation, People into Work is a mentoring programme created for and shared with the wider facilities management industry to help deliver social value.
           </p>
         </div>
@@ -174,7 +174,7 @@ export default function PeopleIntoWork() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               People and purpose delivering on all fronts
             </h2>
 
@@ -223,7 +223,7 @@ export default function PeopleIntoWork() {
 
             {/* Right Column: Narrative Copy */}
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
                 Demonstrating the business case for People into Work
               </h2>
 
@@ -248,7 +248,7 @@ export default function PeopleIntoWork() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Meaningful social impact delivering transformation
             </h2>
 
@@ -288,7 +288,7 @@ export default function PeopleIntoWork() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
           {/* Left Column: Contact Card */}
           <div className="lg:col-span-4 bg-[#FAF8F5] rounded-3xl p-6 sm:p-8 border border-slate-200/80 space-y-4">
-            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-[#0A192F]">
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-brand-navy">
               Frequently Asked Questions
             </h3>
 
@@ -343,7 +343,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
         <div className="container-custom text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Accreditations & Certifications
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal max-w-2xl mx-auto">
@@ -384,7 +384,7 @@ export default function PeopleIntoWork() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Connect with your local team
             </h2>
 
@@ -414,7 +414,7 @@ export default function PeopleIntoWork() {
       <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
-          <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN News & Updates
           </h2>
           <p className="text-slate-500 text-sm sm:text-base font-normal">

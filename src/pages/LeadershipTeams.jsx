@@ -212,11 +212,11 @@ Gary brings decades of strategic financial stewardship across multinational indu
         />
 
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
             NEXAAGEN Leadership Teams
           </h1>
 
-          <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
             Our leadership teams are intent on making people and places the best they can be, providing colleagues, customers and communities with the best conditions and opportunities to thrive.
           </p>
 
@@ -254,7 +254,7 @@ Gary brings decades of strategic financial stewardship across multinational indu
 
               {/* Bio & Details */}
               <div className="flex-1 space-y-1.5 pt-1">
-                <h3 className="text-xl sm:text-2xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight group-hover:text-[#FF5722] transition-colors">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight group-hover:text-[#FF5722] transition-colors">
                   {leader.name}
                 </h3>
 
@@ -289,7 +289,7 @@ Gary brings decades of strategic financial stewardship across multinational indu
         <div className="bg-[#FAF8F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
           {/* Section Heading */}
           <div className="text-center space-y-3 mb-4 sm:mb-6">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Leadership team news, insights and updates
             </h2>
             <p className="text-slate-500 text-xs sm:text-sm sm:text-base font-normal">

@@ -36,11 +36,11 @@ export default function ConnectTeamBanner() {
 
           {/* Banner Content (Centered) */}
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
 
-            <p className="text-slate-200 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+            <p className="text-slate-200 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto font-normal leading-relaxed text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
 

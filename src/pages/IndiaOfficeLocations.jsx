@@ -176,7 +176,7 @@ export default function IndiaOfficeLocations() {
           />
 
           <div className="relative z-10 max-w-2xl space-y-3">
-            <h1 className="text-3xl sm:text-5xl font-heading font-extrabold tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               India Locations
             </h1>
             <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-normal">
@@ -218,7 +218,7 @@ export default function IndiaOfficeLocations() {
               <div>
                 {/* Header: City Name */}
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-lg sm:text-xl font-heading font-bold text-slate-900 group-hover:text-brand-orange transition-colors">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight group-hover:text-brand-orange transition-colors">
                     {loc.city}
                   </h2>
                   {loc.isHQ && (

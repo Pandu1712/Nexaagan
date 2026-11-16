@@ -173,7 +173,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
                 </Link>
               </div>
 
-              <h1 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                 History and heritage
               </h1>
 
@@ -202,10 +202,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
         {/* Header & Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 sm:mb-6">
           <div className="max-w-2xl space-y-1.5">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our history
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               From the beginning to present day, the NEXAAGEN story is one of dedication to people, consistency and outcomes.
             </p>
           </div>
@@ -280,10 +280,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Humble beginnings in 1900
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               Our storied history began in 1900 through the drive and vision of one person, a ladder, mop and bucket.
             </p>
           </div>
@@ -340,10 +340,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-2 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Expanding horizons & building resilience
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               As the business moved towards its major expansion phases, frontline colleagues were already demonstrating the courage and care that defines us.
             </p>
           </div>
@@ -400,10 +400,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Pioneering scientific facility methods
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               NEXAAGEN pioneered innovative and scientific methods of cleaning – including dust-removing door mat chemicals and microscopic filtration.
             </p>
           </div>
@@ -460,10 +460,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Over 100 years of innovation
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               NEXAAGEN's approach to innovative and scientific methods of service delivery has redefined standards for generations.
             </p>
           </div>
@@ -520,10 +520,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       <section className="py-4 sm:py-6 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6 sm:space-y-8">
           <div className="text-center space-y-2 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Our recent history
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               Find out more from today's world of NEXAAGEN.
             </p>
           </div>
@@ -587,10 +587,10 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
           />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-3">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
               Connect with your NEXAAGEN team
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-normal">
+            <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-normal text-justify-center">
               We're ready to deliver the best experiences, productivity, practices, resilience and outcomes and we look forward to connecting with you and your team.
             </p>
             <div className="pt-2">

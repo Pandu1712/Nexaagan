@@ -17,7 +17,7 @@ export default function SpacesAndPlaces() {
       />
 
       {/* HERO SECTION MATCHING SCREENSHOT */}
-      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Waterfront Skyline Background Photography */}
           <div className="absolute inset-0 z-0">
@@ -82,7 +82,7 @@ export default function SpacesAndPlaces() {
       <SectorLocationsDirectory />
 
       {/* CONTACT FORM */}
-      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section id="contact-form" className="py-3 sm:py-5 container-custom">
         <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Inquire About Your Facility or Sector Location"

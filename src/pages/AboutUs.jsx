@@ -25,16 +25,16 @@ export default function AboutUs() {
       {/* Signature OCS Enterprise Hero with Premium Photography & Floating Card */}
       <PageHero
         badge="About NEXAAGEN"
-        badgeLinkText="Meet Leadership"
-        badgeLinkUrl="#leadership"
-        title="An International Enterprise Partner Dedicated to Operational Excellence"
+        badgeLinkText="Our Services"
+        badgeLinkUrl="/services"
+        title="Nexaagen Integrated Facility Management Services Private Limited"
         description={companyData.description}
         image="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2400&q=85"
-        imageAlt="NEXAAGEN Global Headquarters and Executive Operations Team"
+        imageAlt="NEXAAGEN Executive Operations Team"
         stats={[
-          { value: "18+", label: "Countries" },
-          { value: "14,500+", label: "FM Professionals" },
-          { value: "20+ Yrs", label: "Heritage" }
+          { value: "10+", label: "Core Practices" },
+          { value: "100%", label: "Direct Governance" },
+          { value: "24/7/365", label: "Operations Desk" }
         ]}
         primaryCta={{
           text: "Meet Executive Leadership",
@@ -77,34 +77,51 @@ export default function AboutUs() {
               </span>
 
               <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
-                Grounded in direct self-delivery, governed by precision engineering
+                About Nexaagen Integrated Facility Management Services Private Limited
               </h2>
 
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                Founded with a mission to bring accountability back to enterprise facility services, NEXAAGEN has grown from a specialized engineering consultancy into an international provider managing over 480 million square feet of high-consequence real estate.
+              <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium">
+                Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company.
               </p>
 
-              <p className="text-slate-600 text-base leading-relaxed">
-                We believe that great facilities are the silent engines of human potential. When an operating theatre is impeccably sterile, an airport baggage system never stalls, or a data centre cooling circuit operates with clockwork precision, our clients thrive without operational friction.
-              </p>
+              {/* Core Offerings Bullets */}
+              <div className="space-y-3 pt-1">
+                {[
+                  "Integrated management of facility operations, upkeep and support services",
+                  "Specialised solutions for pharmaceutical, healthcare, hospitality, industrial and commercial facilities",
+                  "Housekeeping, hygiene, technical maintenance and engineering coordination",
+                  "Consultancy, project management and operational improvement support"
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start space-x-3 text-sm sm:text-base text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
 
               {/* Mission & Vision Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-brand-navy">
-                    Our Mission
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    To deliver resilient, tech-enabled, and sustainable built environments that safeguard people, protect assets, and accelerate corporate decarbonisation.
+                  <div className="flex items-center space-x-2 text-brand-orange">
+                    <Sparkles className="w-4 h-4" />
+                    <h4 className="text-sm font-bold uppercase tracking-wider text-brand-navy">
+                      Our Vision
+                    </h4>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    To become a trusted integrated facility management and engineering services partner across key industry sectors.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-brand-navy">
-                    Our Vision
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    To set the definitive global benchmark for integrated facilities management, where zero-harm safety, machine intelligence, and living wages operate in harmony.
+                  <div className="flex items-center space-x-2 text-brand-orange">
+                    <ShieldCheck className="w-4 h-4" />
+                    <h4 className="text-sm font-bold uppercase tracking-wider text-brand-navy">
+                      Our Mission
+                    </h4>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    To deliver safe, efficient and dependable facility operations through skilled teams, structured processes and responsive management.
                   </p>
                 </div>
               </div>
@@ -112,11 +129,11 @@ export default function AboutUs() {
 
             {/* Right Image */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/5]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/3] lg:aspect-auto lg:h-[420px] w-full">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Colleagues Collaborating"
-                  className="w-full h-full object-cover card-img-zoom"
+                  className="w-full h-full object-cover object-top card-img-zoom"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-transparent to-transparent" />
@@ -141,7 +158,7 @@ export default function AboutUs() {
             badge="Executive Leadership"
             title="Guided by Decades of Industry Experience"
             subtitle="Our executive board brings together deep technical engineering acumen, multinational operations mastery, and rigorous corporate governance."
-            align="center"
+            align="left"
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -185,7 +202,7 @@ export default function AboutUs() {
             badge="Guiding Principles"
             title="The Values That Govern Our Operations"
             subtitle="From the boardroom to the plant floor, these non-negotiable principles guide our 32,000+ team members every single day."
-            align="center"
+            align="left"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -216,10 +233,10 @@ export default function AboutUs() {
             badge="Verified Excellence"
             title="International Accreditations & Industry Certifications"
             subtitle="Our operations comply with the highest global statutory, quality, safety, and environmental standards."
-            align="center"
+            align="left"
           />
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {companyData.certifications.map((cert, idx) => (
               <div
                 key={idx}

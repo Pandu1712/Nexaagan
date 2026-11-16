@@ -197,7 +197,7 @@ export default function CleaningContent({ service }) {
     <div className="w-full bg-white text-slate-900 overflow-hidden font-sans">
 
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-6 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="relative pt-6 pb-12 sm:pb-16 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Background Photography with modern atrium colonnade */}
           <div className="absolute inset-0 z-0">
@@ -250,7 +250,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 2: CLEANING OPERATION IN NUMBERS (Screenshot 2) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-b border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             NEXAAGEN Cleaning operation in numbers
@@ -285,7 +285,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 3: OUR CLEANING SERVICES (Screenshot 3) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Portrait */}
           <div className="lg:col-span-5">
@@ -327,7 +327,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 4: SECTOR-SPECIALIST CLEANING AND HYGIENE SERVICES (Screenshot 4) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-slate-50/60 rounded-[32px] my-3">
+      <section className="py-4 sm:py-6 container-custom bg-slate-50/60 rounded-[32px] my-3">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading and copy */}
           <div className="lg:col-span-6">
@@ -356,7 +356,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 5: OUR COLLEAGUES AT THE CENTRE OF YOUR OPERATION (Screenshot 5) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: High-vis female colleague photo */}
           <div className="lg:col-span-5 order-2 lg:order-1">
@@ -397,7 +397,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 6: INVESTING IN PEOPLE FOR BEST EXPERIENCE AND OUTCOMES (Screenshot 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading and copy */}
           <div className="lg:col-span-7">
@@ -426,7 +426,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 7: CUSTOMER SUCCESS AND OUTCOMES (Screenshot 7) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-slate-50/70 rounded-[36px] my-3">
+      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-[36px] my-3">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             Customer success and outcomes
@@ -478,7 +478,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 8: CLEANING + ESG (Screenshot 8) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: ESG Text & Checklist */}
           <div className="lg:col-span-7">
@@ -528,7 +528,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 9: CLEANING + TECHNOLOGY (Screenshot 9) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Business woman on tablet */}
           <div className="lg:col-span-5 order-2 lg:order-1">
@@ -578,7 +578,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 10: ACCREDITATIONS & CERTIFICATIONS (Screenshot 10) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
             Accreditations & Certifications
@@ -635,7 +635,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 11: FACILITIES SERVICES DESIGNED FOR YOUR ORGANISATION (Screenshots 11 & 12) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
           <div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
@@ -645,20 +645,20 @@ export default function CleaningContent({ service }) {
               Need more than cleaning services? Discover more on our core services and integrated solutions.
             </p>
           </div>
-          <div className="flex items-center space-x-3 mt-4 md:mt-0">
+          <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <button
               onClick={prevCarousel}
               aria-label="Previous service"
-              className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-100 hover:text-brand-orange transition-colors"
+              className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-100 hover:text-brand-orange transition-colors"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={nextCarousel}
               aria-label="Next service"
-              className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-100 hover:text-brand-orange transition-colors"
+              className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-100 hover:text-brand-orange transition-colors"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -700,7 +700,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 12: FREQUENTLY ASKED QUESTIONS (Screenshot 13) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             Frequently asked questions for Cleaning
@@ -742,7 +742,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 13: CONNECT BANNER (Screenshot 14) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle geometric dot grid pattern */}
           <div
@@ -771,7 +771,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 14: SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section id="contact-form" className="py-3 sm:py-5 container-custom">
         <div className="bg-slate-50/70 rounded-[32px] p-5 sm:p-8 lg:p-10 border border-slate-200/80">
           <ContactForm defaultService="cleaning" />
         </div>

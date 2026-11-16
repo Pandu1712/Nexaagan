@@ -27,9 +27,9 @@ export default function SolutionsTabs({
           align="left"
         />
 
-        {/* Tab Navigation (Left-aligned Flex Wrap) */}
-        <div className="mb-10 flex justify-start">
-          <div className="flex flex-wrap items-center justify-start gap-2 p-1.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm max-w-full">
+        {/* Tab Navigation (Left-aligned Single-Line Row) */}
+        <div className="mb-10 flex justify-start w-full">
+          <div className="flex items-center justify-start gap-2 p-1.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm w-full overflow-x-auto no-scrollbar">
             {solutions.map((sol, idx) => {
               const isActive = activeTab === idx;
               return (

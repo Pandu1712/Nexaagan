@@ -84,7 +84,7 @@ export default function Technology() {
       <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Digital Cyber Data Particle Grid Background */}
           <div className="absolute inset-0 z-0">
@@ -143,7 +143,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 2: NEXAAGEN ADVANCE OVERVIEW */}
-      <section id="advance-overview" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="advance-overview" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Operations Control Center Technologist */}
           <div className="lg:col-span-6">
@@ -188,7 +188,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 3: NEXAAGEN ADVANCE SOLUTIONS FOR CUSTOMERS */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="text-left mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-2">
             NEXAAGEN Advance solutions for customers
@@ -230,7 +230,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 4: NEXAAGEN ADVANCE TOOLS INTRO */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom text-center border-t border-slate-100">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-slate-900 tracking-tight mb-3">
             NEXAAGEN Advance Tools
@@ -242,7 +242,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 5: TOOL 1 - NEXA-Q */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
@@ -287,7 +287,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 6: TOOL 2 - NEXA-ABI */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Data Center Server Corridor with NEXA-ABi Badge Overlay */}
           <div className="lg:col-span-6 order-2 lg:order-1">
@@ -330,7 +330,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 7: TOOL 3 - NEXA-LIVE */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
@@ -376,7 +376,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 8: EXECUTIVE QUOTE BANNER */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[340px] sm:min-h-[380px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Glass architectural facade & tree canopy photography */}
           <div className="absolute inset-0 z-0">
@@ -417,7 +417,7 @@ export default function Technology() {
       </section>
 
       {/* SECTION 9: JOIN OUR GLOBAL TECHNOLOGY TEAMS BANNER */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle radial dot matrix pattern */}
           <div 
@@ -446,7 +446,7 @@ export default function Technology() {
       </section>
 
       {/* SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section id="contact-form" className="py-3 sm:py-5 container-custom">
         <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our Technology & Innovation Specialists"

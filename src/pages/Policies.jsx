@@ -240,7 +240,7 @@ or by emailing compliance@nexaagen.com.
       {/* ========================================================================= */}
       {/* SECTION 2: POLICIES GRID (Matching Reference Image 2)                     */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Section Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-heading font-normal sm:font-medium text-[#222222] tracking-tight">
@@ -382,7 +382,7 @@ or by emailing compliance@nexaagen.com.
       {/* ========================================================================= */}
       {/* SECTION 3: NEED CUSTOM GOVERNANCE OR COMPLIANCE AUDITS BANNER             */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full mb-4 sm:mb-6">
+      <section className="py-3 sm:py-5 container-custom mb-4 sm:mb-6">
         <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 text-center shadow-2xl">
           <div 
             className="absolute inset-0 opacity-20 pointer-events-none"

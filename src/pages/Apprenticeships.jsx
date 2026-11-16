@@ -34,7 +34,7 @@ export default function Apprenticeships() {
       />
 
       {/* SECTION 1: HERO HEADER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-3xl bg-slate-50/70 border border-slate-100/80 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot matrix pattern */}
           <div 
@@ -79,7 +79,7 @@ export default function Apprenticeships() {
       </section>
 
       {/* SECTION 2: APPRENTICESHIPS AT NEXAAGEN (Reference Image 2) */}
-      <section id="apprenticeships" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="apprenticeships" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Colleague Photo */}
           <div className="lg:col-span-5">
@@ -130,7 +130,7 @@ export default function Apprenticeships() {
       </section>
 
       {/* SECTION 3: FUNDED LEARNING FOR OPPORTUNITY AT NEXAAGEN (Reference Image 3) */}
-      <section id="funded-learning" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section id="funded-learning" className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Funded Learning Description */}
           <div className="lg:col-span-7 space-y-5">
@@ -152,12 +152,12 @@ export default function Apprenticeships() {
           </div>
 
           {/* Right Column: Trainee / Engineer with Hi-Vis Vest Photo */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Colleague in technical high-vis vest participating in funded engineering training"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-white/80">
@@ -171,7 +171,7 @@ export default function Apprenticeships() {
       </section>
 
       {/* SECTION 4: GLOBAL LOCATIONS FOR REGIONAL OPPORTUNITY (Reference Image 4) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden min-h-[300px] sm:min-h-[340px] flex items-center justify-center p-6 sm:p-10 lg:p-12 text-center text-white shadow-2xl">
           {/* Background: Modern architectural glass atrium with colleagues */}
           <div className="absolute inset-0 z-0">
@@ -216,7 +216,7 @@ export default function Apprenticeships() {
       </section>
 
       {/* SECTION 5: TEAM STORIES (Reference Image 5) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6">
           {/* Header & View All Button */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">

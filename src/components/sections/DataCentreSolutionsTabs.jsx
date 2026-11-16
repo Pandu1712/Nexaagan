@@ -194,23 +194,23 @@ export default function DataCentreSolutionsTabs() {
             </p>
           </div>
 
-          {/* Horizontal Service Tabs (Elongated Single Pill Capsule matching User Reference) */}
+          {/* Horizontal Service Tabs (Elongated Single Pill Capsule in Single Line) */}
           <div className="w-full flex justify-start mb-8 sm:mb-10">
-            <div className="w-full max-w-6xl bg-white rounded-2xl lg:rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm">
-              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 items-center gap-1 sm:gap-1.5">
+            <div className="w-full bg-white rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm overflow-x-auto no-scrollbar">
+              <div className="flex items-center justify-start lg:justify-between gap-1.5 sm:gap-2 min-w-max w-full">
                 {tabs.map((tab, idx) => {
                   const isActive = idx === activeTab;
                   return (
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(idx)}
-                      className={`w-full py-2.5 sm:py-3 px-2 sm:px-2.5 rounded-full text-center transition-all duration-300 focus:outline-none flex flex-col items-center justify-center text-xs sm:text-[12px] lg:text-[13px] font-semibold leading-tight ${isActive
+                      className={`px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-full text-center transition-all duration-300 focus:outline-none whitespace-nowrap text-xs sm:text-[13px] lg:text-sm font-semibold flex-shrink-0 ${
+                        isActive
                           ? 'bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white shadow-md shadow-orange-500/25'
                           : 'text-[#FF5722] hover:bg-orange-50/60'
-                        }`}
+                      }`}
                     >
-                      <span className="block text-center whitespace-nowrap leading-tight">{tab.line1}</span>
-                      <span className="block text-center whitespace-nowrap leading-tight">{tab.line2}</span>
+                      <span>{tab.name}</span>
                     </button>
                   );
                 })}

@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { 
-  Heart, 
-  Users, 
-  Target, 
-  Clock, 
-  Coins, 
-  TrendingUp, 
-  Globe2, 
-  Building2, 
-  ArrowRight, 
-  ExternalLink, 
-  CheckCircle2, 
-  Quote, 
-  Calendar, 
-  MapPin, 
+import {
+  Heart,
+  Users,
+  Target,
+  Clock,
+  Coins,
+  TrendingUp,
+  Globe2,
+  Building2,
+  ArrowRight,
+  ExternalLink,
+  CheckCircle2,
+  Quote,
+  Calendar,
+  MapPin,
   Award,
   Sparkles,
   Briefcase,
@@ -32,13 +32,13 @@ export default function Foundation() {
   const isFromAbout = location.pathname.startsWith('/about') || !location.pathname.startsWith('/esg');
   const breadcrumbItems = isFromAbout
     ? [
-        { label: 'About Us', link: '/about' },
-        { label: 'NEXAAGEN Foundation' }
-      ]
+      { label: 'About Us', link: '/about' },
+      { label: 'NEXAAGEN Foundation' }
+    ]
     : [
-        { label: 'ESG', link: '/esg' },
-        { label: 'NEXAAGEN Foundation' }
-      ];
+      { label: 'ESG', link: '/esg' },
+      { label: 'NEXAAGEN Foundation' }
+    ];
 
   const stats = [
     {
@@ -122,7 +122,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-[#F3F8F5] overflow-hidden">
         {/* Curved Green Dot Pattern Watermark matching reference */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: 'radial-gradient(#059669 1.1px, transparent 1.1px)',
@@ -144,7 +144,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 2: ABOUT THE NEXAAGEN FOUNDATION (Screenshot 2)                    */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Community Volunteering Photo */}
           <div className="lg:col-span-6">
@@ -184,8 +184,8 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 3: NEXAAGEN FOUNDATION'S IMPACT - TO DATE (Screenshot 3)           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           {/* Header */}
           <div className="text-center space-y-2 mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
@@ -239,7 +239,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 4: REGIONAL FOUNDATION SPOTLIGHT - PCS FOUNDATION (Screenshot 4)   */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Text */}
           <div className="lg:col-span-7 space-y-4">
@@ -272,12 +272,12 @@ export default function Foundation() {
           </div>
 
           {/* Right Column: Young Professionals & Colleagues Photo */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
                 alt="PCS Foundation Thailand team and community volunteers"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/25 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -288,7 +288,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 5: EXECUTIVE LEADERSHIP QUOTE OVER SUNLIT CANOPY (Screenshot 5)   */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[40px] overflow-hidden shadow-xl min-h-[360px] sm:min-h-[400px] flex items-center p-6 sm:p-10 lg:p-12">
           {/* Background: Sunlight through lush green tree canopy */}
           <img
@@ -328,7 +328,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 6: VISIT OUR COUNTRY-SPECIFIC WEBSITES (Screenshot 6)              */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="bg-[#F3F8F5] rounded-[28px] sm:rounded-[36px] p-6 sm:p-8 lg:p-10 text-center max-w-5xl mx-auto space-y-3.5 border border-emerald-100/60">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
             Visit our country-specific websites to learn more
@@ -352,7 +352,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 7: ESG NEWS, UPDATES AND INSIGHT (Screenshot 6 & 7)                */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-2 mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
@@ -416,10 +416,10 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 8: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Screenshot 7)          */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
-          <div 
+          <div
             className="absolute inset-0 opacity-15 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#FFFFFF 1.2px, transparent 1.2px)',

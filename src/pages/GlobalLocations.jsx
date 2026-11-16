@@ -44,8 +44,8 @@ export default function GlobalLocations() {
       country: 'India',
       flag: '🇮🇳',
       region: 'Asia Pacific',
-      address: 'Thane One, A 502, 5th Floor, Ghodbunder Road, Majiwada, Thane (West) - 400610, Maharashtra, India',
-      phone: '+91 22 4008 1717',
+      address: '#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049, India',
+      phone: '+91 99 88 33 1575',
       displayUrl: 'nexaagen.com/in/',
       webLink: '/india-office-locations',
       hasSubBranches: true,
@@ -227,7 +227,7 @@ export default function GlobalLocations() {
       {/* ========================================================================= */}
       {/* SECTION 2: SEARCH & FILTER CONTROLS                                       */}
       {/* ========================================================================= */}
-      <section className="py-2 sm:py-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-2 sm:py-3 container-custom">
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 pb-3 sm:pb-4 border-b border-slate-100">
           {/* Region Tabs */}
           <div className="flex items-center flex-wrap gap-2 w-full md:w-auto">
@@ -274,7 +274,7 @@ export default function GlobalLocations() {
       {/* ========================================================================= */}
       {/* SECTION 3: 13 GLOBAL LOCATION CARDS (Screenshots 2, 3, 4)                  */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         {filteredLocations.length === 0 ? (
           <div className="text-center py-10 space-y-3">
             <Globe2 className="w-10 h-10 text-slate-300 mx-auto" />
@@ -418,7 +418,7 @@ export default function GlobalLocations() {
       {/* ========================================================================= */}
       {/* SECTION 4: INDIA SPECIFIC BANNER                                          */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-4 container-custom">
         <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-3xl p-6 sm:p-8 border border-orange-200/70 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 shadow-sm">
           <div className="space-y-1.5 text-center md:text-left">
             <span className="text-xs font-bold uppercase tracking-wider text-[#FF5722]">
@@ -445,7 +445,7 @@ export default function GlobalLocations() {
       {/* ========================================================================= */}
       {/* SECTION 5: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Navy)                  */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
           <div 

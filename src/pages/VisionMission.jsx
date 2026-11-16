@@ -143,7 +143,7 @@ export default function VisionMission() {
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-3xl mx-auto font-normal">
-            Our vision and mission is to become the best provider of facilities services for colleagues, customers and communities by making people and places the best they can be.
+            Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company dedicated to delivering safe, efficient, and dependable operations.
           </p>
         </div>
       </section>
@@ -151,15 +151,15 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 2: VISION - BECOMING THE BEST (Screenshot 2)                      */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Group CEO Portrait */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-start">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Group CEO"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -168,13 +168,26 @@ export default function VisionMission() {
           {/* Right Column: Vision Copy & Sign-off */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
-              Vision: Becoming the best for colleagues, customers and communities
+              Vision: To become a trusted integrated facility management and engineering services partner across key industry sectors.
             </h2>
 
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
               <p>
-                Welcome to <span className="font-semibold text-slate-800">NEXAAGEN</span>, where our vision is to become the world’s best facilities services company. Our strategy will help us deliver the best outcomes for our colleagues, customers, and the communities we engage with. At the heart of this vision are our people, advanced technology, and a commitment to Environmental, Social, and Governance (ESG) principles. We invite you to explore our website and learn more about our ethos and approach.
+                At <span className="font-semibold text-slate-800">Nexaagen Integrated Facility Management Services Private Limited</span>, our vision is to become a trusted integrated facility management and engineering services partner across key industry sectors. We combine specialized domain expertise, proactive management, and disciplined operations to elevate our clients' environments.
               </p>
+              <div className="space-y-2.5 pt-2">
+                {[
+                  "Integrated management of facility operations, upkeep and support services",
+                  "Specialised solutions for pharmaceutical, healthcare, hospitality, industrial and commercial facilities",
+                  "Housekeeping, hygiene, technical maintenance and engineering coordination",
+                  "Consultancy, project management and operational improvement support"
+                ].map((bullet, idx) => (
+                  <div key={idx} className="flex items-start space-x-3 text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base">{bullet}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="pt-4 space-y-2 border-t border-slate-100">
@@ -193,37 +206,33 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 3: MISSION - MAKE PEOPLE AND PLACES THE BEST (Screenshot 3)        */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight leading-tight">
-                Mission: Make people and places the best they can be
+                Mission: To deliver safe, efficient and dependable facility operations through skilled teams, structured processes and responsive management.
               </h2>
 
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
                 <p>
-                  As a global business with over 130,000 colleagues and a community that’s the size of a city, we have a responsibility and opportunity to positively impact the lives of those we’re connected to and society as a whole.
+                  At <span className="font-semibold text-slate-800">Nexaagen Integrated Facility Management Services Private Limited</span>, we are dedicated to delivering safe, efficient, and dependable facility operations through skilled teams, structured processes, and responsive management.
                 </p>
 
                 <p>
-                  That’s why we’re on a mission to make people and places the best they can be because we believe every person deserves the best conditions and opportunities to thrive. Whatever that thrive is.
-                </p>
-
-                <p>
-                  We aim to achieve our mission by delivering exceptional facilities and services that consistently address the details and overcome the biggest challenges, creating the best experiences, productivity, practices, resilience, and outcomes for colleagues, customers and communities.
+                  We aim to achieve our mission by delivering exceptional facilities and engineering services that consistently address the details, overcome operational challenges, and create safe, resilient, high-productivity environments for all our clients and stakeholders.
                 </p>
               </div>
             </div>
 
             {/* Right Column: Frontline Colleague Photo */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Frontline Colleague delivering excellence"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -235,7 +244,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 4: BEST STRATEGY MISSION FUEL (Screenshot 4)                      */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[280px] sm:min-h-[320px] flex items-center p-6 sm:p-8 lg:p-10">
           {/* Background: Wind Turbines and Solar Farm at sunset */}
           <img
@@ -268,15 +277,15 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 5: BEST EXPERIENCES (Screenshot 5)                                */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Young Woman with Salad Photo */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-start">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80"
                 alt="Positive workplace dining and hospitality experience"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -307,8 +316,8 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 6: BEST PRODUCTIVITY (Screenshot 6)                               */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Productivity Copy */}
             <div className="lg:col-span-7 space-y-5">
@@ -332,7 +341,7 @@ export default function VisionMission() {
 
             {/* Right Column: Robotics & Tech Photo */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
                   alt="Advanced productivity and engineering innovation"
@@ -348,11 +357,11 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 7: BEST PRACTICES (Screenshot 7)                                  */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: High-Altitude Rope-Access Window Cleaner Photo */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
                 alt="Rope access specialist demonstrating rigorous safety best practices"
@@ -387,8 +396,8 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 8: BEST RESILIENCE (Screenshot 8)                                 */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Resilience Copy */}
             <div className="lg:col-span-7 space-y-5">
@@ -414,12 +423,12 @@ export default function VisionMission() {
             </div>
 
             {/* Right Column: Professional Woman Outdoors Photo */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80"
                   alt="Operational resilience and foresight in action"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -431,15 +440,15 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 9: BEST OUTCOMES (Screenshot 9)                                   */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Children & Teacher High-Five Photo */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-start">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
                 alt="Positive community outcomes and thriving learning environments"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -482,7 +491,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 10: EXECUTIVE QUOTE WITH HEALTHCARE HAND-WASHING PHOTO (Image 10)  */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[320px] sm:min-h-[360px] flex items-center p-5 sm:p-8 lg:p-10">
           {/* Background: Healthcare Hand Hygiene Photo */}
           <img
@@ -522,7 +531,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTIONS 11 & 12: VISION, MISSION AND PURPOSE (Screenshots 11 & 12)       */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
@@ -574,7 +583,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 13: TWO DARK NAVY NAVIGATION CARDS (Screenshot 13)                */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Card 1: Search by Sector */}
           <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 text-center shadow-xl flex flex-col justify-between space-y-4">
@@ -639,7 +648,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 14: NEXAAGEN INSIGHTS, NEWS AND UPDATES (Screenshot 14)           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header with CTA Button */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">

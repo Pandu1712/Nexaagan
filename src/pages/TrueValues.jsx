@@ -273,7 +273,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 2: OUR GUIDING PRINCIPLES (Screenshot 2)                          */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
@@ -297,12 +297,12 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
           </div>
 
           {/* Right Column: Frontline Colleague with Cap & Uniform */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Frontline Colleague living our TRUE Values"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -313,12 +313,12 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 3: TRUE VALUES LIST (Screenshot 3)                                */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Portrait of Dedicated Colleague with Arms Folded */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-auto lg:h-[420px] w-full border border-slate-100 group">
                 <img
                   src={trueValues[activeValueIndex].image}
                   alt={`NEXAAGEN TRUE Value: ${trueValues[activeValueIndex].name}`}
@@ -401,7 +401,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 4: DISCOVER OUR NEXAAGEN COMMITMENTS (Screenshot 4)                */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header with Navigation Arrows */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-4 sm:mb-6">
           <div className="max-w-3xl space-y-3">
@@ -483,7 +483,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 5: LEADERSHIP QUOTE BANNER (Screenshot 5)                         */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[300px] sm:min-h-[340px] flex items-center p-5 sm:p-8 lg:p-10">
           {/* Background: People raising hands in audience */}
           <img
@@ -523,7 +523,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 6: VALUES: CUSTOMER ALIGNMENT (Screenshots 6 & 7)                 */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
@@ -580,7 +580,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 7: DUAL NAVY CTA CARDS (Screenshot 8)                             */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Card 1: Share our values? */}
           <div className="relative rounded-3xl bg-[#0A192F] p-6 sm:p-8 text-white flex flex-col justify-between overflow-hidden shadow-xl min-h-[240px]">
@@ -647,7 +647,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 8: NEWS SECTION (Screenshot 9)                                    */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">

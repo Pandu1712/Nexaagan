@@ -4,18 +4,12 @@ export default function SectionTitle({
   badge,
   title,
   subtitle,
-  align = 'left', // Default to left-aligned across all sections
+  align = 'left', // Keep all types of headings left-aligned per brand guidelines
   dark = false,
   className = '',
 }) {
-  const isCentered = align === 'center';
-
   return (
-    <div
-      className={`w-full mb-8 sm:mb-12 ${
-        isCentered ? 'max-w-3xl mx-auto text-center' : 'text-left'
-      } ${className}`}
-    >
+    <div className={`w-full mb-8 sm:mb-12 text-left ${className}`}>
       {badge && (
         <span
           className={`inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 ${
@@ -40,7 +34,7 @@ export default function SectionTitle({
 
       {subtitle && (
         <p
-          className={`mt-3 text-sm sm:text-base lg:text-lg leading-relaxed ${
+          className={`mt-3 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl ${
             dark ? 'text-slate-300' : 'text-slate-600'
           }`}
         >

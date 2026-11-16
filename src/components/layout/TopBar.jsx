@@ -7,32 +7,46 @@ export default function TopBar({ visible = true }) {
 
   return (
     <div className="bg-white text-slate-600 text-xs py-2 border-b border-slate-100 transition-all hidden md:block">
-      <div className="container-custom flex items-center justify-end space-x-6">
-        {/* Country Flag & Region */}
+      <div className="container-custom flex items-center justify-between">
+        {/* Current Location */}
         <div className="flex items-center space-x-1.5 text-slate-700">
-          <span className="text-sm">🌐</span>
-          <span className="font-medium">Global</span>
+          <MapPin className="w-3.5 h-3.5 text-brand-orange flex-shrink-0" />
+          <span className="font-semibold text-slate-900 whitespace-nowrap">Current location:</span>
+          <span className="text-slate-600 truncate max-w-md lg:max-w-xl">
+            #411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049
+          </span>
         </div>
 
-        {/* Call Us */}
-        <a
-          href="tel:+442079460982"
-          className="flex items-center text-slate-700 hover:text-brand-orange transition-colors"
-        >
-          <Phone className="w-3.5 h-3.5 text-brand-orange mr-1.5" />
-          <span>Call us on <span className="font-semibold text-slate-900">+44 (0) 20 7946 0982</span></span>
-        </a>
+        <div className="flex items-center space-x-5 flex-shrink-0">
+          {/* Call Us */}
+          <a
+            href={`tel:${companyData.headquarters.phone.replace(/[^0-9+]/g, '')}`}
+            className="flex items-center text-slate-700 hover:text-brand-orange transition-colors"
+          >
+            <Phone className="w-3.5 h-3.5 text-brand-orange mr-1.5" />
+            <span>Call us: <span className="font-semibold text-slate-900">{companyData.headquarters.phone}</span></span>
+          </a>
 
-        {/* Chat on WhatsApp */}
-        <a
-          href="https://wa.me/442079460982"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center text-slate-700 hover:text-emerald-600 transition-colors"
-        >
-          <MessageCircle className="w-3.5 h-3.5 text-emerald-500 mr-1.5" />
-          <span>Chat on <span className="font-semibold text-slate-900">WhatsApp</span></span>
-        </a>
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/919988331575"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-slate-700 hover:text-emerald-600 transition-colors"
+          >
+            <MessageCircle className="w-3.5 h-3.5 text-emerald-500 mr-1.5" />
+            <span>WhatsApp: <span className="font-semibold text-slate-900">+91 99 88 33 1575</span></span>
+          </a>
+
+          {/* Email */}
+          <a
+            href={`mailto:${companyData.headquarters.email}`}
+            className="flex items-center text-slate-700 hover:text-brand-orange transition-colors"
+          >
+            <Mail className="w-3.5 h-3.5 text-brand-orange mr-1.5" />
+            <span className="font-semibold text-slate-900">{companyData.headquarters.email}</span>
+          </a>
+        </div>
       </div>
     </div>
   );

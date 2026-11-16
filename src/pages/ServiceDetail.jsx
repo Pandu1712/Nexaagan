@@ -21,14 +21,15 @@ export default function ServiceDetail() {
   // Support both slug conventions (with or without 'and')
   const normalizedId = serviceId === 'front-of-house-and-concierge' ? 'front-of-house-concierge' : serviceId;
 
-  const service = servicesData.find((s) => s.id === normalizedId || s.id === serviceId);
+  const service = servicesData.find((s) => s.id === normalizedId || s.id === serviceId)
+    || servicesData.find((s) => s.slugAliases && s.slugAliases.includes(serviceId));
 
   if (!service) {
     return <Navigate to="/services" replace />;
   }
 
   // Specialized view for Facilities Management matching the reference sections
-  if (serviceId === 'facilities-management') {
+  if (serviceId === 'facilities-management' || serviceId === 'integrated-facility-management') {
     return (
       <div className="w-full flex flex-col flex-1">
         <Breadcrumbs
@@ -43,7 +44,7 @@ export default function ServiceDetail() {
   }
 
   // Specialized view for Hard Services matching the 8 reference sections
-  if (serviceId === 'hard-services') {
+  if (serviceId === 'hard-services' || serviceId === 'hvac-electrical-mechanical-maintenance') {
     return (
       <div className="w-full flex flex-col flex-1">
         <Breadcrumbs
@@ -88,7 +89,7 @@ export default function ServiceDetail() {
   }
 
   // Specialized view for Commercial Cleaning matching the 14 reference sections
-  if (serviceId === 'cleaning') {
+  if (serviceId === 'cleaning' || serviceId === 'cleaning-sanitisation-hygiene') {
     return (
       <div className="w-full flex flex-col flex-1">
         <Breadcrumbs
@@ -212,7 +213,7 @@ export default function ServiceDetail() {
 
             {/* Right Image */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/5]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/3] lg:aspect-auto lg:h-[420px] w-full">
                 <img
                   src={service.heroImage}
                   alt={service.title}
@@ -242,7 +243,7 @@ export default function ServiceDetail() {
               badge="Methodology & Delivery"
               title="How NEXAAGEN Executes This Service"
               subtitle="Our four-stage delivery model ensures transparent SLAs, real-time telemetry, and continuous efficiency gains."
-              align="center"
+              align="left"
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -274,7 +275,7 @@ export default function ServiceDetail() {
             badge="Applicable Sectors"
             title="Sectors That Rely on This Capability"
             subtitle="Discover how this service integrates directly into mission-critical sector environments."
-            align="center"
+            align="left"
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

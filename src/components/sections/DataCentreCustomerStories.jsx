@@ -59,7 +59,7 @@ export default function DataCentreCustomerStories() {
     <section className="w-full py-4 sm:py-6 bg-[#FAF9F5] border-y border-slate-200/60 overflow-hidden">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          
+
           {/* Left Column: Title, Subtitle, CTA Button, and Carousel Navigation Arrows */}
           <div className="lg:col-span-4 lg:sticky lg:top-32 space-y-5 sm:space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
@@ -70,31 +70,34 @@ export default function DataCentreCustomerStories() {
               Explore practical applications of predictive maintenance, energy audits, and system monitoring that enhance resilience, efficiency, and operational control across critical environments.
             </p>
 
-            <div className="pt-1">
+            {/* Action Button and Navigation Arrows Inline on the Same Row */}
+            <div className="pt-2 flex items-center gap-3 sm:gap-4 flex-wrap sm:flex-nowrap">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center font-bold text-white px-7 py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-orange-500/25 transition-all duration-300 ease-out active:scale-[0.98]"
+                className="inline-flex items-center justify-center font-bold text-white px-6 sm:px-7 py-3 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-orange-500/25 transition-all duration-300 ease-out active:scale-[0.98] flex-shrink-0"
               >
                 Connect with us
               </a>
-            </div>
 
-            {/* Circular Carousel Navigation Arrows (matching OCS screenshot) */}
-            <div className="pt-2 flex items-center space-x-3">
-              <button
-                onClick={() => handleScroll('left')}
-                className="w-11 h-11 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 focus:outline-none"
-                aria-label="Previous customer story"
-              >
-                <ArrowLeft className="w-4 h-4 text-slate-600" />
-              </button>
-              <button
-                onClick={() => handleScroll('right')}
-                className="w-11 h-11 rounded-full bg-white hover:bg-slate-100 text-[#0B1B3D] border-2 border-[#0B1B3D]/80 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 focus:outline-none"
-                aria-label="Next customer story"
-              >
-                <ArrowRight className="w-4 h-4 text-[#0B1B3D]" />
-              </button>
+              {/* Smaller Circular Carousel Navigation Arrows beside the button */}
+              <div className="flex items-center space-x-2 flex-shrink-0">
+                <button
+                  onClick={() => handleScroll('left')}
+                  className="w-8 h-8 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 focus:outline-none"
+                  aria-label="Previous customer story"
+                  title="Previous story"
+                >
+                  <ArrowLeft className="w-3.5 h-3.5 text-slate-600" />
+                </button>
+                <button
+                  onClick={() => handleScroll('right')}
+                  className="w-8 h-8 rounded-full bg-white hover:bg-slate-100 text-[#0B1B3D] border border-slate-400 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 focus:outline-none"
+                  aria-label="Next customer story"
+                  title="Next story"
+                >
+                  <ArrowRight className="w-3.5 h-3.5 text-[#0B1B3D]" />
+                </button>
+              </div>
             </div>
           </div>
 

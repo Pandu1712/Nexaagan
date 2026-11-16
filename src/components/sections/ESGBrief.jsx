@@ -34,7 +34,7 @@ export default function ESGBrief({
           badge="Sustainability in Action"
           title={title}
           subtitle={subtitle}
-          align="center"
+          align="left"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -44,7 +44,7 @@ export default function ESGBrief({
               imageOnLeft ? 'order-1' : 'order-1 lg:order-2'
             }`}
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl group aspect-[4/3] lg:aspect-[4/3] max-h-[460px] w-full">
               <img
                 src={data.image || defaultEsg.image}
                 alt="ESG Sustainability"

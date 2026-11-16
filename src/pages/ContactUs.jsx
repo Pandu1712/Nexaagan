@@ -9,8 +9,15 @@ import ContactForm from '../components/sections/ContactForm';
 export default function ContactUs() {
   const hubs = [
     {
-      city: "London (Global HQ)",
-      role: "Global Headquarters & European Operations",
+      city: "Hyderabad (Current Location & HQ)",
+      role: "Current Location & Corporate Headquarters",
+      address: "#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049",
+      phone: "+91 99 88 33 1575",
+      email: "nexaagen@gmail.com"
+    },
+    {
+      city: "London (European HQ)",
+      role: "European Operations & Strategic Desk",
       address: "One Nexaagen Plaza, Financial District, Tower 4, Level 32, London, UK",
       phone: "+44 (0) 20 7946 0982",
       email: "london@nexaagen.com"
@@ -75,10 +82,10 @@ export default function ContactUs() {
             badge="Global Footprint"
             title="Strategic Regional Headquarters"
             subtitle="Our operational hubs provide continuous coverage across time zones, managing client portfolios with localized compliance and global rigor."
-            align="center"
+            align="left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {hubs.map((hub, idx) => (
               <div
                 key={idx}

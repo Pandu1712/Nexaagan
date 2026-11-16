@@ -42,20 +42,20 @@ export default function CaseStudiesCarousel({
           </div>
 
           {/* Carousel Arrows */}
-          <div className="flex items-center space-x-3 flex-shrink-0">
+          <div className="flex items-center space-x-2 flex-shrink-0">
             <button
               onClick={handlePrev}
-              className="p-3 rounded-full bg-white hover:bg-brand-navy text-brand-navy hover:text-white border border-slate-200 shadow-sm transition-all duration-200 active:scale-95"
+              className="w-8 h-8 rounded-full bg-white hover:bg-brand-navy text-brand-navy hover:text-white border border-slate-200 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95"
               aria-label="Previous case study"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={handleNext}
-              className="p-3 rounded-full bg-white hover:bg-brand-navy text-brand-navy hover:text-white border border-slate-200 shadow-sm transition-all duration-200 active:scale-95"
+              className="w-8 h-8 rounded-full bg-white hover:bg-brand-navy text-brand-navy hover:text-white border border-slate-200 shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95"
               aria-label="Next case study"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>

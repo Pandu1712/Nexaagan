@@ -109,7 +109,7 @@ export default function DiversityInclusion() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#FAF9F6] border border-slate-200/60 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot matrix pattern */}
           <div 
@@ -133,7 +133,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 2: OUR DE&I STARTING POINT IS THAT EVERYBODY COUNTS (Reference Image 2) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: DE&I Philosophy & Approach */}
@@ -156,12 +156,12 @@ export default function DiversityInclusion() {
             </div>
 
             {/* Right Column: Frontline Colleague Photo */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Frontline Colleague"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -171,7 +171,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 3: DE&I COMMITMENTS (Reference Image 3) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10 space-y-6 sm:space-y-8">
           {/* Header */}
           <div className="text-center space-y-2 max-w-3xl mx-auto">
@@ -185,12 +185,12 @@ export default function DiversityInclusion() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Colleague Photo in Maroon Jacket */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Colleague Championing DE&I"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -233,7 +233,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 4: MAKING CHANGE AND PRIORITISING OUR PEOPLE (Reference Image 4) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Third-Party Partnerships & 5 Bullet Points */}
@@ -305,12 +305,12 @@ export default function DiversityInclusion() {
             </div>
 
             {/* Right Column: Operations Supervisor in Control Room Photo */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Operations Supervisor in Control Room"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -320,7 +320,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 5: HELPING DELIVER CHANGE WITH ESG CAROUSEL (Reference Images 5 & 6) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Heading, Subtitle, Connect Button, and Nav Arrows */}
@@ -410,7 +410,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 6: CONNECT WITH YOUR GLOBAL TEAM (Reference Image 7) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
           <div 
@@ -443,7 +443,7 @@ export default function DiversityInclusion() {
       </section>
 
       {/* SECTION 7: NEWS AND MEDIA (Reference Image 8) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6">
           {/* Header & Button */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">

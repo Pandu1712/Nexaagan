@@ -33,7 +33,7 @@ export default function CodeOfConduct() {
       />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-3xl bg-slate-50/70 border border-slate-100/80 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot matrix pattern */}
           <div 

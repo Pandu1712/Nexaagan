@@ -38,7 +38,7 @@ export default function Governance() {
       />
 
       {/* SECTION 1: HERO HEADER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-3xl bg-slate-50/70 border border-slate-100/80 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot background pattern */}
           <div
@@ -82,7 +82,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 2: TRANSPARENCY, ACCOUNTABILITY AND ETHICAL BEHAVIOUR (Reference Image 2) */}
-      <section id="transparency" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="transparency" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Text & 4 Checklist Items */}
           <div className="lg:col-span-7 space-y-6">
@@ -152,14 +152,14 @@ export default function Governance() {
       </section>
 
       {/* REGIONAL INFORMATION NOTICE BANNER (Reference Image 3 Header) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
+      <div className="container-custom py-4 text-center">
         <p className="text-base sm:text-lg text-slate-700 font-medium">
           Please find our NEXAAGEN Group governance information below – please visit our country-specific websites for regional detail and information.
         </p>
       </div>
 
       {/* SECTION 3: CODE OF CONDUCT (Reference Image 3) */}
-      <section id="code-of-conduct" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section id="code-of-conduct" className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Illustrated Mission Poster Card */}
           <div className="lg:col-span-5">
@@ -231,7 +231,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 4: GUIDING PRINCIPLES - QHSE POLICY STATEMENT (Reference Image 4) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: QHSE Policy Statement Details */}
           <div className="lg:col-span-7 space-y-6">
@@ -278,7 +278,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 5: GUIDING PRINCIPLES - VISION AND VALUES (Reference Image 5) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Colleague Photo with Lanyard */}
           <div className="lg:col-span-5">
@@ -320,7 +320,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 6: MODERN DAY SLAVERY STATEMENT (Reference Image 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Modern Slavery Commitment */}
           <div className="lg:col-span-7 space-y-6">
@@ -357,12 +357,12 @@ export default function Governance() {
           </div>
 
           {/* Right Column: Professional Woman Photo */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Procurement & Ethics Leader"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-white/80">
@@ -376,7 +376,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 7: DOING THE RIGHT THINGS IN THE RIGHT WAY (Reference Image 7) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Community Planting Garden Photo */}
           <div className="lg:col-span-5">
@@ -404,7 +404,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 8: GENERAL COUNSEL QUOTE BANNER (Reference Image 8) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden min-h-[320px] sm:min-h-[380px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
           {/* Background: Nighttime London Big Ben light trails */}
           <div className="absolute inset-0 z-0">
@@ -437,7 +437,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 9: NEWS AND MEDIA (Reference Images 9 & 10) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6 sm:space-y-8">
           {/* Header & View All Button */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
@@ -506,7 +506,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 10: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Reference Image 11) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Pattern */}
           <div

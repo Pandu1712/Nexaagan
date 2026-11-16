@@ -424,7 +424,7 @@ export default function SectorDetail() {
 
               {/* Right Column: Large Rounded Image */}
               <div className="lg:col-span-5">
-                <div className={`relative rounded-3xl sm:rounded-[36px] overflow-hidden shadow-2xl group ${isCommercial ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}>
+                <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden shadow-2xl group aspect-[4/3] max-h-[460px] w-full">
                   <img
                     src={sector.introImage || sector.heroImage}
                     alt={sector.title}

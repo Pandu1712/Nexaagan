@@ -1,6 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Wrench, Building2, Droplets, Bug, Cloud, Bell, Sprout, CheckCircle2 } from 'lucide-react';
+import { 
+  ArrowRight, 
+  Wrench, 
+  Building2, 
+  Droplets, 
+  Bug, 
+  Cloud, 
+  Bell, 
+  Sprout, 
+  CheckCircle2,
+  ShieldCheck,
+  HeartHandshake,
+  Layers,
+  Sparkles,
+  ClipboardCheck,
+  FileText
+} from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import PageHero from '../components/layout/PageHero';
@@ -10,20 +26,29 @@ import PlacesWeServiceDirectory from '../components/services/PlacesWeServiceDire
 
 const getServiceIcon = (id) => {
   switch (id) {
+    case 'integrated-facility-management':
     case 'facilities-management':
       return Building2;
-    case 'cleaning':
-      return Droplets;
+    case 'pharmaceutical-facility-management':
+      return ShieldCheck;
+    case 'hospital-facility-management':
+      return HeartHandshake;
+    case 'hotel-facility-management':
+      return Bell;
+    case 'industrial-commercial-facility-management':
+      return Layers;
+    case 'housekeeping-technical-maintenance':
+      return Sparkles;
+    case 'hvac-electrical-mechanical-maintenance':
     case 'hard-services':
       return Wrench;
-    case 'pest-control':
-      return Bug;
-    case 'carbon-energy-management':
-      return Cloud;
-    case 'front-of-house-concierge':
-      return Bell;
-    case 'landscaping':
-      return Sprout;
+    case 'engineering-services-project-management':
+      return ClipboardCheck;
+    case 'cleaning-sanitisation-hygiene':
+    case 'cleaning':
+      return Droplets;
+    case 'consultancy-facility-operations':
+      return FileText;
     default:
       return Wrench;
   }
@@ -44,7 +69,7 @@ export default function Services() {
         image="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2400&q=85"
         imageAlt="Integrated Facilities Management and Technical Engineering"
         stats={[
-          { value: "7", label: "Core Practices" },
+          { value: "10", label: "Core Practices" },
           { value: "85%", label: "Self-Delivered" },
           { value: "24/7/365", label: "Operations Desk" }
         ]}
@@ -66,7 +91,7 @@ export default function Services() {
             badge="Full Service Spectrum"
             title="Explore Our Core Facilities Services"
             subtitle="From single-service specialist technical engineering to turnkey multi-site Integrated Facilities Management contracts."
-            align="center"
+            align="left"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

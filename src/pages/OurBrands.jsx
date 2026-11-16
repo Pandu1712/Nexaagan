@@ -221,7 +221,7 @@ export default function OurBrands() {
       />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#FAF9F6] border border-slate-200/60 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot matrix pattern */}
           <div
@@ -245,12 +245,12 @@ export default function OurBrands() {
       </section>
 
       {/* SECTION 2: DISCOVER THE NEXAAGEN BRANDS (Reference Image 2) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-7 lg:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Modern Architecture / Skyscrapers Image */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80"
                   alt="Modern NEXAAGEN Corporate Infrastructure & Brands"
@@ -305,7 +305,7 @@ export default function OurBrands() {
       </section>
 
       {/* SECTION 3: BRANDS DIRECTORY & FILTERS (Reference Images 3, 4, 5) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="space-y-8">
           {/* Filter Bar with Region and Service Selectors (Matching Screenshot 3) */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 bg-slate-50/70 p-4 sm:p-6 rounded-2xl border border-slate-200/70">
@@ -447,7 +447,7 @@ export default function OurBrands() {
       </section>
 
       {/* SECTION 4: NEXAAGEN BRAND NEWS (Reference Image 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
@@ -510,7 +510,7 @@ export default function OurBrands() {
       </section>
 
       {/* SECTION 5: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Reference Image 7) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
           <div

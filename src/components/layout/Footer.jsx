@@ -11,7 +11,8 @@ import {
   Linkedin, 
   Twitter, 
   Youtube,
-  Award
+  Award,
+  MessageCircle
 } from 'lucide-react';
 import { companyData } from '../../data/companyData';
 import { sectorsData } from '../../data/sectorsData';
@@ -34,7 +35,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              International enterprise facilities management, mission-critical engineering, smart IoT building telemetry, and sustainable decarbonisation.
+              Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company delivering safe, efficient and dependable facility operations.
             </p>
 
             <div className="space-y-2.5 text-xs text-slate-300">
@@ -44,11 +45,26 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-brand-orange flex-shrink-0" />
-                <span>{companyData.headquarters.phone}</span>
+                <a href={`tel:${companyData.headquarters.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-white transition-colors">
+                  {companyData.headquarters.phone}
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MessageCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <a
+                  href="https://wa.me/919988331575"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-300 transition-colors"
+                >
+                  WhatsApp: +91 99 88 33 1575
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-brand-orange flex-shrink-0" />
-                <span>{companyData.headquarters.email}</span>
+                <a href={`mailto:${companyData.headquarters.email}`} className="hover:text-white transition-colors">
+                  {companyData.headquarters.email}
+                </a>
               </div>
             </div>
 
@@ -118,7 +134,7 @@ export default function Footer() {
               Enterprise Services
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
-              {servicesData.map((svc) => (
+              {servicesData.slice(0, 6).map((svc) => (
                 <li key={svc.id}>
                   <Link
                     to={`/services/${svc.id}`}
@@ -131,8 +147,16 @@ export default function Footer() {
               ))}
               <li>
                 <Link
-                  to="/services#places-we-service"
+                  to="/services"
                   className="text-brand-orange font-semibold hover:underline inline-block pt-1"
+                >
+                  View All 10 Services →
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/a-z-of-spaces-and-places"
+                  className="text-slate-400 hover:text-brand-orange hover:underline inline-block text-[11px]"
                 >
                   A-Z Places We Service →
                 </Link>
@@ -198,7 +222,7 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} NEXAAGEN Group Limited. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nexaagen Integrated Facility Management Services Private Limited. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-6">
             <Link to="/privacy-policy" className="hover:text-slate-300 transition-colors">
               Privacy Policy

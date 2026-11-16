@@ -286,7 +286,7 @@ export default function CaseStudies() {
       {/* ========================================================================= */}
       {/* SECTION 1: HERO CONTAINER (Screenshot 1)                                   */}
       {/* ========================================================================= */}
-      <section className="relative pt-4 pb-2 sm:pt-6 sm:pb-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="relative pt-4 pb-2 sm:pt-6 sm:pb-3 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#FFF7F2] p-6 sm:p-8 lg:p-10 text-center overflow-hidden border border-orange-100/70 shadow-sm">
           {/* Subtle Orange Dot Pattern Watermark */}
           <div
@@ -312,7 +312,7 @@ export default function CaseStudies() {
       {/* ========================================================================= */}
       {/* SECTION 2: FEATURED STORY CARD (Screenshot 2)                              */}
       {/* ========================================================================= */}
-      <section className="py-2 sm:py-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-2 sm:py-3 container-custom">
         <div
           onClick={() => setActiveStory(featuredStory)}
           className="bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/90 shadow-[0_2px_16px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 cursor-pointer group"
@@ -360,7 +360,7 @@ export default function CaseStudies() {
       {/* ========================================================================= */}
       {/* SECTION 3: 3-DROPDOWN FILTER BAR (Screenshot 2)                            */}
       {/* ========================================================================= */}
-      <section className="py-2 sm:py-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-2 sm:py-3 container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-sm">
           {/* 1. Sector */}
           <div className="space-y-1">
@@ -446,7 +446,7 @@ export default function CaseStudies() {
       {/* ========================================================================= */}
       {/* SECTION 4: 2-COLUMN SPLIT STORY CARDS (Screenshots 3, 4, 5)                */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         {filteredStories.length === 0 ? (
           <div className="text-center py-6 sm:py-8 space-y-3">
             <Building2 className="w-10 h-10 text-slate-300 mx-auto" />
@@ -504,7 +504,7 @@ export default function CaseStudies() {
       {/* ========================================================================= */}
       {/* SECTION 5: TWO SIGNATURE NAVY CARDS (Screenshot 6)                         */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-6 container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Card 1: Making people and places the best they can be */}
           <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl flex flex-col justify-between min-h-[260px] sm:min-h-[290px]">

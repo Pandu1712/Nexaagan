@@ -9,7 +9,8 @@ import {
   MapPin, 
   ShieldCheck, 
   Clock, 
-  Building2 
+  Building2,
+  MessageCircle 
 } from 'lucide-react';
 import { sectorsData } from '../../data/sectorsData';
 import { servicesData } from '../../data/servicesData';
@@ -451,12 +452,36 @@ export default function ContactForm({
               <div className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start space-x-3">
                   <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-xs">Current Location</span>
+                    <span className="font-semibold text-brand-navy">
+                      #411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="text-slate-400 block text-xs">Direct Telephone</span>
                     <a href={`tel:${companyData.headquarters.phone.replace(/\s+/g, '')}`} className="font-semibold text-brand-navy hover:text-brand-orange transition-colors">
                       {companyData.headquarters.phone}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600 mt-0.5">
+                    <MessageCircle className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-xs">WhatsApp Number</span>
+                    <a href="https://wa.me/919988331575" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-navy hover:text-emerald-600 transition-colors">
+                      +91 99 88 33 1575
                     </a>
                   </div>
                 </div>

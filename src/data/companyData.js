@@ -1,17 +1,30 @@
 export const companyData = {
   name: "NEXAAGEN",
-  tagline: "Integrated Enterprise Facilities, Technology & Sector Solutions",
-  description: "NEXAAGEN is an international enterprise partner delivering world-class integrated facilities management, critical engineering, smart digital transformation, and sustainable ESG solutions to mission-critical organizations worldwide.",
+  legalName: "Nexaagen Integrated Facility Management Services Private Limited",
+  tagline: "Integrated Facility Management Services & Engineering Solutions",
+  description: "Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company delivering safe, efficient and dependable facility operations.",
+  aboutUs: "Nexaagen Integrated Facility Management Services Private Limited is proposed as a multi-sector facility management and engineering services company.",
+  aboutBullets: [
+    "Integrated management of facility operations, upkeep and support services",
+    "Specialised solutions for pharmaceutical, healthcare, hospitality, industrial and commercial facilities",
+    "Housekeeping, hygiene, technical maintenance and engineering coordination",
+    "Consultancy, project management and operational improvement support"
+  ],
+  vision: "To become a trusted integrated facility management and engineering services partner across key industry sectors.",
+  mission: "To deliver safe, efficient and dependable facility operations through skilled teams, structured processes and responsive management.",
   foundedYear: 2008,
   headquarters: {
-    address: "One Nexaagen Plaza, Financial District, Tower 4, Level 32",
-    city: "London & Singapore",
-    country: "Global Operations",
-    phone: "+44 (0) 20 7946 0982",
-    email: "contact@nexaagen.com",
-    pressEmail: "media@nexaagen.com",
-    careersEmail: "careers@nexaagen.com"
+    address: "#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur",
+    city: "Hyderabad, 500 049",
+    country: "India",
+    phone: "+91 99 88 33 1575",
+    whatsapp: "+91 99 88 33 1575",
+    whatsappLink: "https://wa.me/919988331575",
+    email: "nexaagen@gmail.com",
+    pressEmail: "nexaagen@gmail.com",
+    careersEmail: "nexaagen@gmail.com"
   },
+  currentLocation: "#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049",
   stats: [
     { value: "35+", label: "Countries Served", description: "Global operational footprint across 4 continents" },
     { value: "32,000+", label: "Specialist Colleagues", description: "Engineers, facility directors, and sector technicians" },

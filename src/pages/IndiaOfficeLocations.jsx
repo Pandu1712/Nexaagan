@@ -23,11 +23,11 @@ export default function IndiaOfficeLocations() {
   const locations = [
     {
       id: 'head-office',
-      city: 'Head Office',
-      state: 'Maharashtra',
-      address: 'Thane One, A 502, 5th Floor, Ghodbunder Road, Majiwada, Thane (West), Maharashtra 400610',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com',
+      city: 'Current Location - Head Office (Hyderabad)',
+      state: 'Telangana',
+      address: '#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad 500 049',
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com',
       isHQ: true
     },
     {
@@ -35,104 +35,104 @@ export default function IndiaOfficeLocations() {
       city: 'Gujarat',
       state: 'Gujarat',
       address: 'Ratnakar 9 Square, 9th Floor, B- Block, 904, Opp Keshavbaug, Mansi Circle Road, Vastrapur, Ahmedabad, Gujarat 380015',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'bengaluru',
       city: 'Bengaluru',
       state: 'Karnataka',
       address: 'Genesis Building, 41, 10th Main, Sector 11, J.B. Nagar, Bengaluru Urban, Bengaluru 560075',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'chennai',
       city: 'Chennai',
       state: 'Tamil Nadu',
       address: 'No 1, 6th Street, Nandanam Extension, Nandanam, Chennai 600035',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'kochi',
       city: 'Kochi',
       state: 'Kerala',
       address: 'Krishna Complex, 2nd Floor, Door No. 40/9590-C, Pullepady, Chittoor Road, Ernakulam, Kerala 682018',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'goa',
       city: 'Goa',
       state: 'Goa',
       address: 'L&L Correias, Shop No B-SH-31, Landmark: Madgaon KTC, Margao, South Goa, Goa 403601',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'mumbai',
       city: 'Mumbai',
       state: 'Maharashtra',
       address: 'Atlanta Estate, 4th Floor, Office No.420, Goregaon East, Mumbai 400063',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'telangana',
       city: 'Telangana',
       state: 'Telangana',
-      address: 'Raj Narsimha Enclave, 1st floor, Flat No.3-6-3/2/1, D. No 101, Flat No.8/2, Vivekananda Nagar Colony, Opp. Metplus, Kukatpally, Hyderabad, Telangana 500072',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      address: '#411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad 500 049',
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'indore',
       city: 'Indore',
       state: 'Madhya Pradesh',
       address: 'Sterling Tower, 2nd Floor, Office No. 111, M.G. Road, Indore 452007',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'kolkata',
       city: 'Kolkata',
       state: 'West Bengal',
       address: 'DLF Galleria, 13th Floor, DK-1412, New Town, Action Area-1, Kolkata 700156',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'lucknow',
       city: 'Lucknow',
       state: 'Uttar Pradesh',
       address: 'G-125, Kanpur Road, Transport Nagar, Lucknow 226023',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'new-delhi',
       city: 'New Delhi',
       state: 'Delhi NCR',
       address: 'DLF Tower - B, Jasola, South East Delhi, New Delhi 110025',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'pune',
       city: 'Pune',
       state: 'Maharashtra',
       address: 'Tara Icon, 3rd floor, Office no 5, Before Mariai Police Station, Behind SBI Bank, Wakdewadi, Shivajinagar, Pune 411003',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     },
     {
       id: 'thiruvananthapuram',
       city: 'Thiruvananthapuram',
       state: 'Kerala',
       address: 'Asiatic Business Centre, Block A, 2nd Floor, T.C.2/2408(4), Near Toyota, Attinkuzhi, Kazhakuttom, Thiruvananthapuram 695582',
-      phone: '+91 88288 04422',
-      email: 'expertcare@nexaagan.com'
+      phone: '+91 99 88 33 1575',
+      email: 'nexaagen@gmail.com'
     }
   ];
 
@@ -164,7 +164,7 @@ export default function IndiaOfficeLocations() {
       {/* ========================================================================= */}
       {/* SECTION 1: HERO - INDIA LOCATIONS BANNER (Screenshot 1)                   */}
       {/* ========================================================================= */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[36px] bg-[#0A192F] p-6 sm:p-8 lg:p-10 text-white overflow-hidden shadow-xl">
           {/* Subtle World / India Map Dot Matrix Graphic */}
           <div 
@@ -189,7 +189,7 @@ export default function IndiaOfficeLocations() {
       {/* ========================================================================= */}
       {/* SECTION 2: 14 LOCATIONS GRID (Screenshots 1, 2, 3, 4)                     */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         {/* Quick Search & Count Filter */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mb-4 sm:mb-6">
           <div className="relative w-full sm:w-80">
@@ -306,7 +306,7 @@ export default function IndiaOfficeLocations() {
       {/* ========================================================================= */}
       {/* SECTION 3: NATIONWIDE OPERATIONS SUPPORT BANNER                           */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[36px] bg-gradient-to-r from-slate-900 to-[#0A192F] p-6 sm:p-8 lg:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 max-w-xl">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold tracking-tight">

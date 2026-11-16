@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Trophy, 
-  Award, 
-  CheckCircle2, 
-  ArrowRight, 
-  ChevronRight, 
-  ShieldCheck, 
-  Globe2, 
-  Building2, 
-  Star, 
-  Sparkles, 
+import {
+  Trophy,
+  Award,
+  CheckCircle2,
+  ArrowRight,
+  ChevronRight,
+  ShieldCheck,
+  Globe2,
+  Building2,
+  Star,
+  Sparkles,
   X,
   ExternalLink
 } from 'lucide-react';
@@ -74,7 +74,7 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FDFBF9] via-[#FAF7F2] to-white overflow-hidden">
         {/* Soft Coral/Orange Dotted Pattern Watermark */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: 'radial-gradient(#EA580C 1.1px, transparent 1.1px)',
@@ -96,15 +96,15 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 2: AWARD-WINNING FACILITIES SERVICES FOR BEST OUTCOMES (Photo 2)  */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Frontline Colleague in Safety Vest with Arms Folded */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-start">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80"
                 alt="Award-winning frontline colleague at NEXAAGEN"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -132,8 +132,8 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 3: UK & IRELAND FACILITIES SERVICES AWARDS (Screenshot 3)         */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Checkmark Accolades */}
             <div className="lg:col-span-7 space-y-6">
@@ -177,12 +177,12 @@ export default function AwardsRecognition() {
             </div>
 
             {/* Right Column: Smiling Professional in Orange Lanyard & Vest */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
                   alt="UK and Ireland Facilities Services Award Winner"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -194,11 +194,11 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 4: NEW ZEALAND FACILITIES SERVICES AWARDS (Screenshot 4)          */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Airport Runway / Aviation Jet at Sunset */}
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80"
                 alt="New Zealand Airport Facilities Services at Sunset"
@@ -243,8 +243,8 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 5: INDIA'S FACILITIES SERVICES AWARDS (Screenshot 5)              */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Multiple Accolades */}
             <div className="lg:col-span-7 space-y-6">
@@ -299,7 +299,7 @@ export default function AwardsRecognition() {
 
             {/* Right Column: High-tech Data Centre Server Corridor */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Award-Winning Data Centre Operations in India"
@@ -315,17 +315,17 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 6: THAILAND'S FACILITIES SERVICES AWARDS (Screenshot 6)           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Soft Container Card */}
-        <div className="bg-[#FAF8F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
+        <div className="bg-[#FAF8F5] rounded-3xl p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Thai Schoolgirl at Desk */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-lg aspect-[4/3] lg:aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-lg aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
                   alt="CSR Educational and School Support in Thailand"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -374,7 +374,7 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 7: UNITED ARAB EMIRATES FACILITIES SERVICES AWARDS (Screenshot 7) */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & Accolade List */}
           <div className="lg:col-span-7 space-y-6">
@@ -405,7 +405,7 @@ export default function AwardsRecognition() {
 
           {/* Right Column: UAE Modern Cityscape with Supertall Towers at Sunset */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Award-Winning Facilities Services Across UAE and Dubai"
@@ -420,10 +420,10 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 8: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Screenshot 8)          */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl bg-[#0A192F] p-6 sm:p-8 lg:p-10 text-white text-center overflow-hidden shadow-2xl space-y-6">
           {/* Subtle Dot Matrix Graphic on the Left */}
-          <div 
+          <div
             className="absolute left-0 top-0 bottom-0 w-1/3 opacity-25 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#FFFFFF 1.2px, transparent 1.2px)',
@@ -453,7 +453,7 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 9: LATEST NEWS AND MEDIA (Screenshot 9)                           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Section Heading & CTA */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">

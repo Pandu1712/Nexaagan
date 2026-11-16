@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ArrowUpRight, 
-  CheckCircle2, 
-  Leaf, 
-  Users, 
-  Building2, 
-  ShieldCheck, 
-  FileText, 
-  X, 
-  Download, 
+import {
+  ArrowRight,
+  ArrowUpRight,
+  CheckCircle2,
+  Leaf,
+  Users,
+  Building2,
+  ShieldCheck,
+  FileText,
+  X,
+  Download,
   Award,
   Globe2
 } from 'lucide-react';
@@ -24,12 +24,12 @@ export default function ESG() {
   const isFromAbout = location.pathname.startsWith('/about');
   const breadcrumbItems = isFromAbout
     ? [
-        { label: 'About Us', link: '/about' },
-        { label: 'ESG' }
-      ]
+      { label: 'About Us', link: '/about' },
+      { label: 'ESG' }
+    ]
     : [
-        { label: 'ESG' }
-      ];
+      { label: 'ESG' }
+    ];
 
   const esgActions = [
     {
@@ -80,7 +80,7 @@ export default function ESG() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[340px] sm:min-h-[380px] flex items-center p-5 sm:p-8 lg:p-10 shadow-lg border border-slate-100">
           {/* Full-bleed Background Image of Lush Green Forest Canopy */}
           <img
@@ -94,7 +94,7 @@ export default function ESG() {
           {/* Floating White Card on the Left (Exactly matching Screenshot 1) */}
           <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 lg:p-10 max-w-lg shadow-2xl border border-white/80 space-y-3.5">
             {/* Subtle dot-matrix pattern on card */}
-            <div 
+            <div
               className="absolute inset-0 opacity-15 pointer-events-none rounded-[24px] sm:rounded-[32px] overflow-hidden"
               style={{
                 backgroundImage: 'radial-gradient(#FF5722 1.2px, transparent 1.2px)',
@@ -136,8 +136,8 @@ export default function ESG() {
       </section>
 
       {/* SECTION 2: RESPONSIBILITY AND OPPORTUNITY FOR CHANGE (Reference Image 2) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-7 lg:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Policy Narrative */}
             <div className="lg:col-span-7 space-y-4">
@@ -170,12 +170,12 @@ export default function ESG() {
             </div>
 
             {/* Right Column: Colleague Photo with Bokeh Lights */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Colleague - Responsibility and Opportunity for Change"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -185,16 +185,16 @@ export default function ESG() {
       </section>
 
       {/* SECTION 3: NEXAAGEN ENVIRONMENTAL COMMITMENTS (Reference Image 3) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-7 lg:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Churning Blue Ocean Waves Image */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Environmental Commitments"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -258,8 +258,8 @@ export default function ESG() {
       </section>
 
       {/* SECTION 4: NEXAAGEN SOCIAL COMMITMENTS (Reference Image 4) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-7 lg:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Social Text & Bullets */}
             <div className="lg:col-span-7 space-y-4">
@@ -316,12 +316,12 @@ export default function ESG() {
             </div>
 
             {/* Right Column: Family/Community Image */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Social Commitments & Community"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -331,16 +331,16 @@ export default function ESG() {
       </section>
 
       {/* SECTION 5: NEXAAGEN GOVERNANCE COMMITMENTS (Reference Image 5) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-8 lg:p-10">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="rounded-[32px] sm:rounded-[40px] bg-[#FAF9F6] border border-slate-200/60 p-5 sm:p-7 lg:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Senior Leader Image */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] sm:aspect-square lg:aspect-[4/5] border border-slate-200/60 group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-200/60 group">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Governance Commitments"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -404,7 +404,7 @@ export default function ESG() {
       </section>
 
       {/* SECTION 6: ESG ACTIONS AND OUTCOMES (Reference Image 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
@@ -467,10 +467,10 @@ export default function ESG() {
       </section>
 
       {/* SECTION 7: CONNECT WITH OUR ESG TEAM (Reference Image 7) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
-          <div 
+          <div
             className="absolute inset-0 opacity-15 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#FFFFFF 1.2px, transparent 1.2px)',

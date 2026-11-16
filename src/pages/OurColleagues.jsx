@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Users, 
-  Heart, 
-  Sparkles, 
-  Star, 
-  Award, 
-  ArrowRight, 
-  CheckCircle2, 
-  Briefcase, 
-  GraduationCap, 
-  Compass, 
-  ShieldCheck, 
+import {
+  Users,
+  Heart,
+  Sparkles,
+  Star,
+  Award,
+  ArrowRight,
+  CheckCircle2,
+  Briefcase,
+  GraduationCap,
+  Compass,
+  ShieldCheck,
   Building2,
   Calendar
 } from 'lucide-react';
@@ -74,7 +74,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FDFBF9] via-[#FAF7F2] to-white overflow-hidden">
         {/* Soft Coral/Orange Dotted Pattern Watermark */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: 'radial-gradient(#EA580C 1.1px, transparent 1.1px)',
@@ -96,7 +96,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 2: COLLEAGUES DRIVING BRAND & BUSINESS FORWARDS (Screenshot 2)    */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
@@ -120,12 +120,12 @@ export default function OurColleagues() {
           </div>
 
           {/* Right Column: Senior Colleague with Glasses */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Frontline Colleague with unwavering dedication"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -136,16 +136,16 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 3: DEDICATION AND HARD WORK (Screenshot 3)                        */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Young Female Colleague with Lanyard */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"
                   alt="Young enthusiastic apprentice and colleague at NEXAAGEN"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -174,7 +174,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 4: JOINING OUR TEAM & GLOBAL MISSION (Screenshot 4)               */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & CTA Button */}
           <div className="lg:col-span-7 space-y-6">
@@ -203,12 +203,12 @@ export default function OurColleagues() {
           </div>
 
           {/* Right Column: Culinary/Chef Colleague in Uniform */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Professional Culinary and Catering Colleague"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -219,16 +219,16 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 5: RECOGNISING THE EXCEPTIONAL WITH TRUE STARS (Screenshot 5)     */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Two Colleagues in Caps and Uniforms */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN TRUE Stars colleagues in technical plant room"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -262,7 +262,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 6: WHAT MAKES US NEXAAGEN (Screenshot 6)                          */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy & Contact Us Button */}
           <div className="lg:col-span-7 space-y-6">
@@ -291,12 +291,12 @@ export default function OurColleagues() {
           </div>
 
           {/* Right Column: Smiling Professional with Lanyard */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Colleague radiating pride, warmth and safety leadership"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -307,7 +307,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 7: PEOPLE & PURPOSE BANNER (Screenshot 7)                         */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[280px] sm:min-h-[320px] flex items-center p-6 sm:p-8 lg:p-10">
           {/* Background: Professional Colleague Looking Forward */}
           <img
@@ -318,7 +318,7 @@ export default function OurColleagues() {
           <div className="absolute inset-0 bg-slate-950/60 backdrop-brightness-90" />
 
           {/* Dot Matrix Graphic on the Left */}
-          <div 
+          <div
             className="absolute left-0 top-0 bottom-0 w-1/3 opacity-30 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#FFFFFF 1.5px, transparent 1.5px)',
@@ -348,7 +348,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 8: NEWS & MEDIA SECTION (Screenshot 8)                            */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header with CTA Button */}
         <div className="text-center space-y-4 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">

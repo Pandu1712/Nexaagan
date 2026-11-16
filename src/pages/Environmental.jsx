@@ -31,7 +31,7 @@ export default function Environmental() {
       />
 
       {/* SECTION 1: HERO SECTION (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
           {/* Background Image: Lush Green Beech Tree Foliage & Canopy */}
           <div className="absolute inset-0 z-0">
@@ -78,7 +78,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 2: 2040 NET ZERO TARGET (Reference Image 2) */}
-      <section id="net-zero-2040" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="net-zero-2040" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Scope 1, 2, 3 commitments */}
           <div className="lg:col-span-7 space-y-6">
@@ -152,11 +152,11 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 3: COUNTRY COMMITMENTS & SCIENCE-BASED TARGETS (Reference Image 3) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/60 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-slate-50/60 rounded-3xl my-3 sm:my-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Forest Canopy Image looking up */}
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80"
                 alt="Looking up at sunny green tree canopy in forest - NEXAAGEN Net Zero"
@@ -232,7 +232,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTIONS 4 & 5: PROTECTING OUR PLANET'S NATURAL RESOURCES (Reference Images 4 & 5) */}
-      <section id="natural-resources" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section id="natural-resources" className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Natural Resources Bullet Points */}
           <div className="lg:col-span-7 space-y-6">
@@ -303,7 +303,7 @@ export default function Environmental() {
 
           {/* Right Column: Scuba Diver & Vibrant Coral Reef Image */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/5] border border-slate-100 group">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80"
                 alt="Scuba diver by vibrant coral reef with tropical orange fish - Protecting marine biodiversity"
@@ -319,7 +319,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 6: USING OUR INFLUENCE FOR GOOD (Reference Image 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Butterflies Image on Wildflowers */}
           <div className="lg:col-span-5">
@@ -371,7 +371,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 7: ENVIRONMENTAL ACTION AND OUTCOMES (Reference Image 7) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
         <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
           <div className="space-y-3">
             <span className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#FF5722]">
@@ -445,7 +445,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 8: VISIT OUR COUNTRY-SPECIFIC SITES BANNER (Reference Image 8) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Pattern */}
           <div 
@@ -479,7 +479,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 9: INQUIRY / CONTACT SECTION */}
-      <section id="contact-form" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="contact-form" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
           <div className="text-center space-y-3">
             <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100/80 text-[#D8232A]">

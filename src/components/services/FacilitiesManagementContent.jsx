@@ -219,7 +219,7 @@ export default function FacilitiesManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Director Portrait Photo */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Senior Facilities Operations Director"
@@ -317,7 +317,7 @@ export default function FacilitiesManagementContent({ service }) {
 
             {/* Right Photo: Smiling Female Colleague */}
             <div className="lg:col-span-5 order-1 lg:order-2">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Colleague Facilities Specialist"
@@ -597,7 +597,7 @@ export default function FacilitiesManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Modern Expansive Atrium (Screenshot 9) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
                   alt="Modern Glass Atrium with Smart Building Infrastructure"
@@ -731,7 +731,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* SECTION 9: FREQUENTLY ASKED QUESTIONS (Screenshot 11)           */}
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/60 border-t border-slate-100">
-        <div className="container-custom max-w-5xl">
+        <div className="container-custom">
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-8">
             Frequently asked questions for FM
           </h3>

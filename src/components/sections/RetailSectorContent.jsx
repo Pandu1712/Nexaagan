@@ -402,18 +402,18 @@ export default function RetailSectorContent() {
       {/* SECTION 5: RETAIL INDUSTRY ACCREDITATIONS (Matches Screenshot 6)    */}
       {/* ------------------------------------------------------------------ */}
       <section className="container-custom">
-        <div className="space-y-8 sm:space-y-10 text-center">
-          <div className="max-w-2xl mx-auto space-y-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+        <div className="space-y-6 sm:space-y-8 text-left">
+          <div className="space-y-2 text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
               Retail Industry Accreditations
             </h2>
-            <p className="text-slate-500 text-xs sm:text-sm">
+            <p className="text-slate-500 text-xs sm:text-sm max-w-3xl">
               Strategic partnerships, alliances and certifications that drive best practice for the best experiences and outcomes.
             </p>
           </div>
 
           {/* 6 Logo Badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 items-center justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 items-center">
             {accreditations.map((item, idx) => (
               <div
                 key={idx}

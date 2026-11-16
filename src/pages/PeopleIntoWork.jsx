@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Users, 
-  Briefcase, 
-  HeartHandshake, 
-  CheckCircle2, 
-  ChevronDown, 
-  ChevronUp, 
-  ArrowRight, 
-  Sparkles, 
-  Building2, 
-  Award, 
-  Target, 
-  ShieldCheck, 
+import {
+  Users,
+  Briefcase,
+  HeartHandshake,
+  CheckCircle2,
+  ChevronDown,
+  ChevronUp,
+  ArrowRight,
+  Sparkles,
+  Building2,
+  Award,
+  Target,
+  ShieldCheck,
   ExternalLink,
   Phone,
   MessageSquare
@@ -148,7 +148,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FDFBF9] via-[#FAF7F2] to-white overflow-hidden">
         {/* Soft Coral/Orange Dotted Pattern Watermark */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: 'radial-gradient(#EA580C 1.1px, transparent 1.1px)',
@@ -170,7 +170,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 2: PEOPLE AND PURPOSE DELIVERING ON ALL FRONTS (Screenshot 2)     */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
@@ -190,12 +190,12 @@ export default function PeopleIntoWork() {
           </div>
 
           {/* Right Column: Colleague Photo in Orange Top */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"
                 alt="NEXAAGEN Colleague thriving through People into Work programme"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -206,16 +206,16 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 3: DEMONSTRATING THE BUSINESS CASE (Screenshot 3)                  */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Colleagues Mentoring Photo */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+            <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center lg:justify-start">
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
                 <img
                   src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Mentorship and group coaching session"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/25 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -244,7 +244,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 4: MEANINGFUL SOCIAL IMPACT (Screenshot 4)                         */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-6">
@@ -268,12 +268,12 @@ export default function PeopleIntoWork() {
           </div>
 
           {/* Right Column: Outdoor smiling worker */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/3] lg:aspect-[4/5] border border-slate-100 group">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 group">
               <img
                 src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80"
                 alt="Empowered colleague thriving in career"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -284,7 +284,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 5: FREQUENTLY ASKED QUESTIONS (Screenshot 5)                      */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
           {/* Left Column: Contact Card */}
           <div className="lg:col-span-4 bg-[#FAF8F5] rounded-3xl p-6 sm:p-8 border border-slate-200/80 space-y-4">
@@ -341,8 +341,8 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 6: ACCREDITATIONS & CERTIFICATIONS (Screenshot 6)                 */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto w-full text-center space-y-3 mb-4 sm:mb-6">
+      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+        <div className="container-custom text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
             Accreditations & Certifications
           </h2>
@@ -372,10 +372,10 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 7: CONNECT WITH YOUR LOCAL TEAM BANNER (Screenshot 7)             */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Watermark */}
-          <div 
+          <div
             className="absolute inset-0 opacity-20 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#60A5FA 1.2px, transparent 1.2px)',
@@ -411,7 +411,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 8: NEXAAGEN NEWS & UPDATES (Screenshots 8 & 9)                    */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Header */}
         <div className="text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-4xl lg:text-[40px] font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">

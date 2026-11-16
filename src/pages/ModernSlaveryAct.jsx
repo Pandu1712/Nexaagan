@@ -24,7 +24,7 @@ export default function ModernSlaveryAct() {
       />
 
       {/* Main Statement Content Section (Exactly as shown in screenshot) */}
-      <section className="py-6 sm:py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+      <section className="py-6 sm:py-8 container-custom">
         <div className="space-y-10">
           {/* Header Title */}
           <div className="space-y-4">

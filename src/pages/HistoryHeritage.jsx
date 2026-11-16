@@ -155,7 +155,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 1: HERO - HISTORY AND HERITAGE (Screenshot 1)                     */}
       {/* ========================================================================= */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[36px] bg-[#104856] text-white overflow-hidden shadow-2xl flex flex-col lg:flex-row items-center">
           {/* Left Hero Card */}
           <div className="p-6 sm:p-10 lg:p-12 lg:w-3/5 z-10">
@@ -198,7 +198,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 2: OUR HISTORY TIMELINE STRIP (Screenshot 2)                      */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         {/* Header & Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 sm:mb-6">
           <div className="max-w-2xl space-y-1.5">
@@ -277,8 +277,8 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 3: HUMBLE BEGINNINGS IN 1900 (Screenshot 3)                       */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
               Humble beginnings in 1900
@@ -290,12 +290,12 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Heritage Founder Portrait */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80"
                   alt="Founder of NEXAAGEN at Heritage Work Desk"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 sepia-[0.3]"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 sepia-[0.3]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -337,8 +337,8 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 4: EVOLUTION & REBRANDING (Screenshot 4)                          */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-2 max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
               Expanding horizons & building resilience
@@ -350,12 +350,12 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Heritage Van Driver Colleague */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Heritage Service Driver Colleague"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 grayscale"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -397,8 +397,8 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 5: 1960S INNOVATION & SCIENTIFIC METHODS (Screenshot 5)           */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
               Pioneering scientific facility methods
@@ -411,7 +411,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Vintage Street / Headquarters Archival Photo */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl h-[260px] sm:h-[300px] lg:h-[340px] w-full border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Mid-Century Archival Street Scene"
@@ -457,8 +457,8 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 6: OVER 100 YEARS OF INNOVATION (Screenshot 6)                    */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm space-y-6">
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
               Over 100 years of innovation
@@ -470,12 +470,12 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Vintage Newsletter & Supervisor Portraits */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80"
                   alt="Archival Newsletter and Senior Female Supervisors at NEXAAGEN"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 grayscale"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -517,7 +517,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 7: OUR RECENT HISTORY (Screenshot 7)                              */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6 sm:space-y-8">
           <div className="text-center space-y-2 max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-heading font-medium sm:font-semibold text-[#222222] tracking-tight">
@@ -576,7 +576,7 @@ With combined operational revenues exceeding £1.7 billion and a workforce surpa
       {/* ========================================================================= */}
       {/* SECTION 8: CONNECT WITH YOUR NEXAAGEN TEAM (Screenshot 8)                 */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[40px] bg-[#0A192F] p-6 sm:p-8 lg:p-10 text-white text-center overflow-hidden shadow-2xl space-y-4">
           <div
             className="absolute left-0 top-0 bottom-0 w-1/3 opacity-25 pointer-events-none"

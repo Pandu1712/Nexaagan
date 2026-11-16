@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ArrowUpRight, 
-  Check, 
-  Plus, 
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  Plus,
   Minus,
-  Sprout, 
-  Leaf, 
-  TreePine, 
-  Flower2, 
-  Droplets, 
-  Sun, 
-  ShieldCheck, 
-  Award, 
+  Sprout,
+  Leaf,
+  TreePine,
+  Flower2,
+  Droplets,
+  Sun,
+  ShieldCheck,
+  Award,
   Sparkles,
   MapPin,
   Clock,
@@ -142,7 +142,7 @@ export default function LandscapingContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Horticulturist Photo Holding Red Flowers */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Professional Horticulturist in Branded Uniform"
@@ -258,7 +258,7 @@ export default function LandscapingContent({ service }) {
 
             {/* Right Photo: Woman Misting Indoor Biophilic Plants */}
             <div className="lg:col-span-5 order-1 lg:order-2">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=85"
                   alt="Specialist Care for Indoor Biophilic Plants"
@@ -385,11 +385,11 @@ export default function LandscapingContent({ service }) {
 
             {/* Right Photo: Landscape Maintenance Manager in Cap */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Landscaping Operations Leader"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
@@ -405,7 +405,7 @@ export default function LandscapingContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Operator on Ride-On Mower with Ear Defenders */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Landscaping Operator on Commercial Ride-on Mower"
@@ -530,7 +530,7 @@ export default function LandscapingContent({ service }) {
       {/* SECTION 8: FREQUENTLY ASKED QUESTIONS (Screenshot 8)           */}
       {/* ============================================================== */}
       <section className="section-padding bg-white border-t border-slate-100">
-        <div className="container-custom max-w-5xl">
+        <div className="container-custom">
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-4 sm:mb-6">
             Frequently asked questions for landscaping
           </h3>
@@ -577,7 +577,7 @@ export default function LandscapingContent({ service }) {
         <div className="container-custom">
           <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden bg-gradient-to-br from-[#0B1E36] to-[#0D2E5C] text-white p-6 sm:p-10 lg:p-12 shadow-2xl text-center">
             {/* Dotted pattern overlay */}
-            <div 
+            <div
               className="absolute inset-0 opacity-15 pointer-events-none"
               style={{
                 backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)',

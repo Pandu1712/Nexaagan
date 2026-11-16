@@ -153,22 +153,22 @@ export default function HeroCarousel() {
                     </Link>
 
                     {/* Previous and Next Navigation Buttons (Frosted Glass on Dark Image) */}
-                    <div className="flex items-center space-x-2.5 flex-shrink-0">
+                    <div className="flex items-center space-x-2 flex-shrink-0">
                       <button
                         onClick={handlePrev}
-                        className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
+                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
                         aria-label="Previous slide"
                         title="Previous slide"
                       >
-                        <ChevronLeft className="w-5 h-5" />
+                        <ChevronLeft className="w-4 h-4" />
                       </button>
                       <button
                         onClick={handleNext}
-                        className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
+                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
                         aria-label="Next slide"
                         title="Next slide"
                       >
-                        <ChevronRight className="w-5 h-5" />
+                        <ChevronRight className="w-4 h-4" />
                       </button>
                     </div>
                   </div>

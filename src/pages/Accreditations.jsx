@@ -852,7 +852,7 @@ export default function Accreditations() {
       />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#FAF9F6] border border-slate-200/60 p-6 sm:p-8 lg:p-10 overflow-hidden shadow-sm">
           {/* Subtle dot matrix pattern */}
           <div 
@@ -876,7 +876,7 @@ export default function Accreditations() {
       </section>
 
       {/* SECTION 2: FILTER & SEARCH BAR (Reference Images 1 & 2) */}
-      <section className="py-2 sm:py-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-2 sm:py-3 container-custom">
         <div className="bg-[#FAF9F6] p-3.5 sm:p-4 rounded-2xl border border-slate-200/70 shadow-xs">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
             {/* Type Selector */}
@@ -980,7 +980,7 @@ export default function Accreditations() {
       </section>
 
       {/* SECTION 3: ACCREDITATION LOGOS DIRECTORY (Reference Images 2, 3, 4, 5, 6) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="space-y-6">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 px-1">
             <span>Showing {filteredAccreditations.length} accreditations and certifications</span>
@@ -1051,7 +1051,7 @@ export default function Accreditations() {
       </section>
 
       {/* SECTION 4: NEXAAGEN GROUP IN NUMBERS (Reference Images 6 & 7) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: 2x2 Grid of 4 Stat Cards */}
           <div className="lg:col-span-5">
@@ -1148,7 +1148,7 @@ export default function Accreditations() {
       </section>
 
       {/* SECTION 5: NEWS AND MEDIA (Reference Image 8) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="space-y-6">
           {/* Header */}
           <div className="text-center space-y-2.5 max-w-2xl mx-auto">
@@ -1214,7 +1214,7 @@ export default function Accreditations() {
       </section>
 
       {/* SECTION 6: CONNECT WITH YOUR NEXAAGEN TEAM BANNER (Reference Image 9) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           {/* Subtle dotted matrix globe aesthetic */}
           <div 

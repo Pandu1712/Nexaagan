@@ -201,7 +201,7 @@ export default function CommercialSectorContent() {
           SECTION 2A: "Commercial FM" with 5 "BEST" Accordions
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Card: Commercial FM */}
             <div className="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-[#EAEAEA]">
@@ -269,7 +269,7 @@ export default function CommercialSectorContent() {
           SECTION 2B: "Services for commercial facilities..." with 4 Accordions
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left: 4 Service Accordions */}
             <div className="lg:col-span-7 divide-y divide-[#E2E8F0] order-2 lg:order-1">
@@ -337,22 +337,24 @@ export default function CommercialSectorContent() {
           SECTION 3: "Memorable first and lasting impressions..."
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="container-custom">
+          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Image: Grounds Maintenance */}
-            <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-sm">
-              <img
-                src="/assets/sectors/commercial-grounds-maintenance.jpg"
-                alt="NEXAAGEN Commercial Grounds Maintenance Technician"
-                className="w-full h-auto object-cover max-h-[440px] rounded-2xl"
-              />
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] max-h-[300px] w-full max-w-[420px]">
+                <img
+                  src="/assets/sectors/commercial-grounds-maintenance.jpg"
+                  alt="NEXAAGEN Commercial Grounds Maintenance Technician"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
             </div>
             {/* Right Content */}
-            <div className="lg:col-span-6">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
+            <div className="lg:col-span-7 space-y-4">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
                 Memorable first and lasting impressions for colleagues and customers
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
                 Creating lasting impressions and maintaining a comfortable environment are paramount in commercial facilities. Our facilities services encompass comprehensive cleaning, top-tier catering, expert hard services, and efficient pest control, all contributing to a pristine, safe, and inviting atmosphere.
               </p>
               <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
@@ -367,14 +369,14 @@ export default function CommercialSectorContent() {
           SECTION 4: "Fuelling your teams with nutritional, flavourful food"
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="container-custom">
+          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-7">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
+            <div className="lg:col-span-7 space-y-4">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
                 Fuelling your teams with nutritional, flavourful food
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
                 Our catering services are tailored to support workplace performance through various culinary options, meeting diverse tastes and dietary needs. From unique pop-up restaurants enhancing the office atmosphere to customised catering for corporate events, we aim to impress and satisfy.
               </p>
               <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
@@ -382,12 +384,14 @@ export default function CommercialSectorContent() {
               </p>
             </div>
             {/* Right Image: Catering Chefs */}
-            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-sm flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
-                alt="NEXAAGEN Commercial Catering Team"
-                className="w-full max-w-md h-auto object-cover rounded-2xl shadow-sm"
-              />
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] max-h-[300px] w-full max-w-[420px]">
+                <img
+                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
+                  alt="NEXAAGEN Commercial Catering Team"
+                  className="w-full h-full object-cover object-center rounded-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -397,7 +401,7 @@ export default function CommercialSectorContent() {
           SECTION 5: "Keeping your commercial premises looking the part"
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-6">
@@ -459,17 +463,17 @@ export default function CommercialSectorContent() {
           SECTION 6: "Protecting and enhancing your brand and buildings"
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="container-custom">
+          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-7">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight mb-6">
+            <div className="lg:col-span-7 space-y-4">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] leading-tight">
                 Protecting and enhancing your brand and buildings
               </h3>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
                 As well as creating the very best workplace experience, our range of services – including cleaning, security and landscaping – ensure your facilities are safe, secure, fully operational and looking their best at all times.
               </p>
-              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed mb-5">
+              <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
                 With a regular maintenance schedule, our teams make sure all of your mechanical and electrical equipment is problem-free, meaning your building keeps working as it should. And if something does go wrong, our teams are there swiftly to resume normal working order.
               </p>
               <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">
@@ -477,12 +481,14 @@ export default function CommercialSectorContent() {
               </p>
             </div>
             {/* Right Image: High-tech Facilities Maintenance Engineering */}
-            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-sm flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
-                alt="NEXAAGEN Facilities Engineering & Maintenance Services"
-                className="w-full max-w-md h-auto object-cover rounded-2xl shadow-sm border border-[#E5E7EB]"
-              />
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] max-h-[340px] w-full max-w-[420px]">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
+                  alt="NEXAAGEN Facilities Engineering & Maintenance Services"
+                  className="w-full h-full object-cover object-center rounded-2xl border border-[#E5E7EB]"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -492,7 +498,7 @@ export default function CommercialSectorContent() {
           SECTION 7: "Responsibility and opportunity for change" (3 ESG Cards)
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="mb-4 sm:mb-6">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
               Responsibility and opportunity for change
@@ -543,7 +549,7 @@ export default function CommercialSectorContent() {
           SECTION 8: "Frequently Asked Questions" (10 Commercial FAQs in 2 columns)
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-4 sm:mb-6">
             Frequently Asked Questions
           </h2>
@@ -642,7 +648,7 @@ export default function CommercialSectorContent() {
           SECTION 9: "Customer stories"
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAF9F7] border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="mb-4 sm:mb-6 text-left w-full">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] mb-2 whitespace-normal sm:whitespace-nowrap">
               Customer stories

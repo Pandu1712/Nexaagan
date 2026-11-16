@@ -26,7 +26,7 @@ export default function NewsDetail() {
 
       {/* Article Header */}
       <section className="w-full bg-brand-navy text-white py-6 sm:py-8 relative overflow-hidden">
-        <div className="container-custom max-w-4xl mx-auto space-y-6">
+        <div className="container-custom space-y-6">
           <Link
             to="/news"
             className="inline-flex items-center text-xs font-semibold text-slate-300 hover:text-brand-orange transition-colors"
@@ -67,7 +67,7 @@ export default function NewsDetail() {
 
       {/* Article Body */}
       <section className="section-padding bg-white">
-        <div className="container-custom max-w-4xl mx-auto">
+        <div className="container-custom">
           {/* Main Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-12 aspect-[16/9]">
             <img
@@ -123,7 +123,7 @@ export default function NewsDetail() {
       {/* Related News Carousel */}
       {related.length > 0 && (
         <section className="section-padding bg-slate-50 border-t border-slate-100">
-          <div className="container-custom max-w-6xl">
+          <div className="container-custom">
             <h3 className="text-2xl font-heading font-bold text-brand-navy mb-8">
               Related Articles & Press
             </h3>

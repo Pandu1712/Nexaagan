@@ -148,26 +148,26 @@ export default function NewsCarousel({ news = newsData }) {
           </div>
 
           {/* Previous / Next Circular Buttons */}
-          <div className="flex items-center space-x-2.5 flex-shrink-0">
+          <div className="flex items-center space-x-2 flex-shrink-0">
             <button
               onClick={handleScrollLeft}
               disabled={!canScrollLeft}
-              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
+              className={`w-8 h-8 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
                 }`}
               aria-label="Previous insights slide"
               title="Previous articles"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={handleScrollRight}
               disabled={!canScrollRight}
-              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
+              className={`w-8 h-8 rounded-full border border-orange-200 bg-orange-50/80 hover:bg-orange-100 text-[#D8232A] flex items-center justify-center transition-all duration-200 active:scale-95 shadow-sm ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:scale-105'
                 }`}
               aria-label="Next insights slide"
               title="Next articles"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>

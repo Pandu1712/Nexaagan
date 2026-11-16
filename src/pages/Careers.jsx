@@ -126,16 +126,16 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       {/* SECTION 2: LOOKING FOR THE BEST PEOPLE (Screenshot 2)                     */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Young Smiling Barista / Catering Professional */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Hospitality and Catering Colleague"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -173,8 +173,8 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       {/* SECTION 3: PEOPLE INTO WORK PROGRAMME (Screenshot 3)                      */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
@@ -203,12 +203,12 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
             </div>
 
             {/* Right Column: Mature Professional with Glasses */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Foundation Colleague Beneficiary"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -220,16 +220,16 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       {/* SECTION 4: APPRENTICESHIP AND FUNDED LEARNING (Screenshot 4)              */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
+      <section className="py-3 sm:py-5 container-custom">
+        <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-7 lg:p-8 border border-slate-100/80 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Smiling Frontline Colleague in Navy Polo */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] border border-slate-100 bg-white group">
+            <div className="lg:col-span-5 flex justify-center lg:justify-start">
+              <div className="relative rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-xl aspect-[4/5] max-h-[440px] w-full max-w-[360px] sm:max-w-[380px] border border-slate-100 bg-white group">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
                   alt="NEXAAGEN Frontline Colleague in Bright Atrium"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
               </div>
@@ -267,7 +267,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       {/* SECTION 5: JOIN THE NEXAAGEN MISSION BANNER (Screenshot 5)                */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[32px] sm:rounded-[40px] overflow-hidden shadow-2xl min-h-[280px] sm:min-h-[320px] flex items-center justify-center text-center p-6 sm:p-10 lg:p-14">
           {/* Background: Frontline Team with High-Vis Vests and Hard Hats */}
           <img
@@ -302,7 +302,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       {/* SECTION 6: NEXAAGEN TEAM STORIES (Screenshot 6)                           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="bg-[#FAF8F5] rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm space-y-6 sm:space-y-8">
           {/* Section Header */}
           <div className="text-center space-y-2 max-w-3xl mx-auto">

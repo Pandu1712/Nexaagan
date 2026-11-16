@@ -48,7 +48,7 @@ export default function Sectors() {
             badge="Global Verticals"
             title="Explore Our Core Sector Capabilities"
             subtitle="Select a sector below to explore tailored engineering solutions, specialized hygiene protocols, ESG roadmaps, and verified case studies."
-            align="center"
+            align="left"
           />
 
           <div className="space-y-6 sm:space-y-8">

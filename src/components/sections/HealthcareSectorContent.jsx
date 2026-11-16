@@ -187,7 +187,7 @@ export default function HealthcareSectorContent() {
           SECTION 1: "A Partner That Shares Your Care"
           ========================================================================= */}
       <section id="partner-care" className="py-4 sm:py-6 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7">
@@ -241,7 +241,7 @@ export default function HealthcareSectorContent() {
           SECTION 2: "Healthcare Solutions by NEXAAGEN" (5-Tab Capsule)
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
@@ -252,24 +252,27 @@ export default function HealthcareSectorContent() {
             </p>
           </div>
 
-          {/* Elongated Pill Tab Container (matches user reference screenshots) */}
+          {/* Elongated Pill Tab Container (matches user reference screenshots in single line) */}
           <div className="flex justify-start mb-8 sm:mb-12">
-            <div className="w-full max-w-5xl bg-white rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm flex flex-wrap sm:flex-nowrap items-center justify-between gap-1">
-              {solutionsTabs.map((tab) => {
-                const isActive = activeTab === tab.id;
-                return (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 text-center leading-tight whitespace-normal ${isActive
-                        ? 'bg-gradient-to-r from-[#E03A00] to-[#FF5E00] text-white shadow-md'
-                        : 'text-[#E03A00] hover:bg-[#FFF5F2]'
+            <div className="w-full bg-white rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm overflow-x-auto no-scrollbar">
+              <div className="flex items-center justify-start lg:justify-between gap-1.5 sm:gap-2 min-w-max w-full">
+                {solutionsTabs.map((tab) => {
+                  const isActive = activeTab === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 text-center whitespace-nowrap flex-shrink-0 ${
+                        isActive
+                          ? 'bg-gradient-to-r from-[#E03A00] to-[#FF5E00] text-white shadow-md'
+                          : 'text-[#E03A00] hover:bg-[#FFF5F2]'
                       }`}
-                  >
-                    {tab.label}
-                  </button>
-                );
-              })}
+                    >
+                      {tab.label}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
@@ -281,15 +284,17 @@ export default function HealthcareSectorContent() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center bg-white p-8 sm:p-12 rounded-3xl border border-[#EAEAEA] shadow-sm"
+              className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white p-6 sm:p-8 lg:p-10 rounded-3xl border border-[#EAEAEA] shadow-sm"
             >
               {/* Left Tab Image */}
-              <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-sm flex justify-center">
-                <img
-                  src={currentTab.image}
-                  alt={currentTab.imageAlt}
-                  className="w-full max-w-md h-auto object-cover rounded-2xl border border-[#EFEFEF]"
-                />
+              <div className="lg:col-span-5 flex justify-center lg:justify-start">
+                <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] max-h-[360px] w-full max-w-[420px]">
+                  <img
+                    src={currentTab.image}
+                    alt={currentTab.imageAlt}
+                    className="w-full h-full object-cover object-center rounded-2xl border border-[#EFEFEF]"
+                  />
+                </div>
               </div>
 
               {/* Right Tab Content */}
@@ -340,7 +345,7 @@ export default function HealthcareSectorContent() {
           SECTION 3: "Sustainability in Action: Responsible Healthcare"
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
@@ -398,7 +403,7 @@ export default function HealthcareSectorContent() {
           SECTION 4: "Case Studies" (Carousel)
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="container-custom">
           {/* Header with Title left and Prev/Next buttons right */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
             <div className="max-w-2xl mb-4 md:mb-0">
@@ -410,20 +415,20 @@ export default function HealthcareSectorContent() {
               </p>
             </div>
             {/* Navigation Arrows */}
-            <div className="flex items-center space-x-3 shrink-0">
+            <div className="flex items-center space-x-2 shrink-0">
               <button
                 onClick={prevStory}
                 aria-label="Previous case study"
-                className="w-10 h-10 rounded-full border border-[#CBD5E1] bg-white flex items-center justify-center text-[#475569] hover:border-[#E03A00] hover:text-[#E03A00] transition-colors"
+                className="w-8 h-8 rounded-full border border-[#CBD5E1] bg-white flex items-center justify-center text-[#475569] hover:border-[#E03A00] hover:text-[#E03A00] transition-colors"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={nextStory}
                 aria-label="Next case study"
-                className="w-10 h-10 rounded-full border border-[#0B1B3D] bg-white flex items-center justify-center text-[#0B1B3D] hover:bg-[#0B1B3D] hover:text-white transition-colors"
+                className="w-8 h-8 rounded-full border border-[#0B1B3D] bg-white flex items-center justify-center text-[#0B1B3D] hover:bg-[#0B1B3D] hover:text-white transition-colors"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -472,8 +477,8 @@ export default function HealthcareSectorContent() {
           SECTION 5: "Connect with Our Healthcare Team" (Form + Nurse Image)
           ========================================================================= */}
       <section id="contact-form" className="py-3 sm:py-5 bg-white border-t border-[#F0F0F0]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-8 lg:p-10 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="container-custom">
+          <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Column: Form */}
             <div className="lg:col-span-7">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-5">
@@ -664,12 +669,14 @@ export default function HealthcareSectorContent() {
             </div>
 
             {/* Right Column: Nurse pushing patient gurney */}
-            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-sm flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80"
-                alt="NEXAAGEN Healthcare Clinical Support"
-                className="w-full max-w-md h-auto object-cover rounded-2xl border border-[#E5E7EB]"
-              />
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] max-h-[380px] w-full max-w-[420px]">
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80"
+                  alt="NEXAAGEN Healthcare Clinical Support"
+                  className="w-full h-full object-cover object-center rounded-2xl border border-[#E5E7EB]"
+                />
+              </div>
             </div>
           </div>
         </div>

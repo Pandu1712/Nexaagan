@@ -256,15 +256,15 @@ export default function ManufacturingSectorContent() {
               Facilities management designed to keep production lines stable, safe, and compliant.
             </p>
 
-            {/* Pill Capsule Navigation Tabs */}
-            <div className="pt-4 flex flex-wrap items-center justify-start gap-2 sm:gap-3">
+            {/* Pill Capsule Navigation Tabs in Single Line */}
+            <div className="pt-4 flex items-center justify-start gap-2 sm:gap-3 overflow-x-auto no-scrollbar pb-1 w-full">
               {solutionsTabs.map((tab) => {
                 const isActive = activeTab === tab.id;
                 return (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                    className={`px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap flex-shrink-0 transition-all duration-300 ${
                       isActive
                         ? 'bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white shadow-md shadow-orange-500/25'
                         : 'bg-white text-slate-700 hover:text-brand-orange border border-slate-200/80 hover:border-orange-200'

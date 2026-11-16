@@ -425,7 +425,7 @@ export default function CarbonEnergyManagementContent({ service }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: High-Tech Glowing Server Room (Screenshot 6) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85"
                   alt="High-Tech Energy Telemetry in Hyperscale Data Centre"
@@ -633,7 +633,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* SECTION 9: FREQUENTLY ASKED QUESTIONS (Screenshot 10)           */}
       {/* ============================================================== */}
       <section className="section-padding bg-slate-50/60 border-t border-slate-100">
-        <div className="container-custom max-w-5xl">
+        <div className="container-custom">
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-8">
             Frequently Asked Questions
           </h3>

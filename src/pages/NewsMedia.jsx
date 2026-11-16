@@ -112,7 +112,7 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 1: HERO FEATURED ARTICLE (Screenshot 1)                           */}
       {/* ========================================================================= */}
-      <section className="pt-4 pb-2 sm:pt-5 sm:pb-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-4 pb-2 sm:pt-5 sm:pb-3 container-custom">
         <div 
           onClick={() => setSelectedArticle(featuredArticle)}
           className="bg-[#FAF7F2] rounded-[28px] sm:rounded-[32px] overflow-hidden border border-orange-100/70 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 cursor-pointer group"
@@ -156,7 +156,7 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 2: MULTI-DROPDOWN FILTER BAR (Screenshot 1)                        */}
       {/* ========================================================================= */}
-      <section className="py-2 sm:py-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-2 sm:py-3 container-custom">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 p-4 sm:p-5 bg-white border border-slate-200/90 rounded-2xl shadow-sm">
           {/* 1. Type */}
           <div className="space-y-1">
@@ -297,7 +297,7 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 3: 2-COLUMN ARTICLE GRID (Screenshots 2, 3, 5, 6, 7, 8)            */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         {paginatedArticles.length === 0 ? (
           <div className="text-center py-10 space-y-3">
             <Building2 className="w-10 h-10 text-slate-300 mx-auto" />
@@ -427,7 +427,7 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 5: BROWSE NEWS BY SECTOR & SERVICE (Screenshot 4)                  */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-3 sm:py-5 container-custom border-t border-slate-100">
         <div className="space-y-4">
           {/* Browse by Sector */}
           <div className="space-y-1.5">
@@ -478,7 +478,7 @@ export default function NewsMedia() {
       {/* ========================================================================= */}
       {/* SECTION 6: CONNECT BANNER                                                 */}
       {/* ========================================================================= */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden bg-[#0A192F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           <div 
             className="absolute inset-0 opacity-15 pointer-events-none"

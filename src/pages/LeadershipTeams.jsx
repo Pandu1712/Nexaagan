@@ -235,7 +235,7 @@ Gary brings decades of strategic financial stewardship across multinational indu
       {/* ========================================================================= */}
       {/* SECTION 2: LEADERS GRID (Screenshots 2 & 3)                               */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-6 sm:gap-y-8">
           {groupLeaders.map((leader) => (
             <div 
@@ -284,7 +284,7 @@ Gary brings decades of strategic financial stewardship across multinational indu
       {/* ========================================================================= */}
       {/* SECTION 3: LEADERSHIP NEWS, INSIGHTS & UPDATES (Screenshots 3 & 4)        */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-4 sm:py-6 container-custom">
         {/* Soft Container Card */}
         <div className="bg-[#FAF8F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-100/80 shadow-sm">
           {/* Section Heading */}

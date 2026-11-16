@@ -262,7 +262,7 @@ export default function Navbar({ showTopBar = true }) {
 
                   {/* Services Dropdown Menu - Signature Mega-Menu */}
                   {activeDropdown === 'services' && (
-                    <div className="absolute top-full -left-52 xl:-left-40 w-[780px] xl:w-[840px] pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                    <div className="absolute top-full -left-52 xl:-left-32 w-[860px] xl:w-[940px] pt-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                       <div className="bg-white rounded-3xl shadow-dropdown border border-slate-100 p-6 overflow-hidden">
                         <div className="flex items-stretch gap-6">
                           {/* Left Feature Card (with photo of executive & Our Services callout) */}
@@ -288,7 +288,7 @@ export default function Navbar({ showTopBar = true }) {
                                 </div>
                               </div>
                               <p className="text-xs text-slate-500 leading-snug mt-1.5">
-                                Click here or on the links to find out more about our facilities services.
+                                Explore all 10 specialized facility management and technical engineering practices.
                               </p>
                             </div>
                           </Link>
@@ -296,117 +296,132 @@ export default function Navbar({ showTopBar = true }) {
                           {/* Right Area (Header + 2 Columns of Services) */}
                           <div className="flex-1 flex flex-col justify-center">
                             {/* Top Heading */}
-                            <div className="mb-3">
-                              <h4 className="text-lg font-heading font-extrabold text-brand-navy">
+                            <div className="mb-2">
+                              <h4 className="text-base sm:text-lg font-heading font-extrabold text-brand-navy">
                                 Best practice services for best customer outcomes
                               </h4>
-                              <p className="text-xs text-slate-500 mt-1">
+                              <p className="text-xs text-slate-500 mt-0.5">
                                 We're on a mission to make your people and places the best they can be.
                               </p>
                             </div>
 
-                            <div className="h-px bg-slate-100 my-2" />
+                            <div className="h-px bg-slate-100 my-1.5" />
 
-                            {/* 2-Column Services Grid */}
-                            <div className="grid grid-cols-2 gap-x-4 gap-y-1 pt-1">
+                            {/* 2-Column Services Grid (5 services in Column 1, 5 in Column 2) */}
+                            <div className="grid grid-cols-2 gap-x-3 gap-y-1 pt-1">
                               {/* Column 1 */}
-                              <div className="space-y-1">
+                              <div className="space-y-0.5">
                                 <Link
-                                  to="/services/facilities-management"
+                                  to="/services/integrated-facility-management"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
                                   <Building2 className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Facilities Management</span>
+                                  <span className="text-xs font-semibold leading-tight">Integrated Facility Management Services</span>
                                 </Link>
 
                                 <Link
-                                  to="/services/hard-services"
+                                  to="/services/pharmaceutical-facility-management"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
-                                  <Wrench className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Hard Services</span>
+                                  <ShieldCheck className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Pharmaceutical Facility Management</span>
                                 </Link>
 
                                 <Link
-                                  to="/services/carbon-energy-management"
+                                  to="/services/hospital-facility-management"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
-                                  <Cloud className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Carbon & Energy Management</span>
+                                  <HeartHandshake className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Hospital Facility Management</span>
                                 </Link>
 
                                 <Link
-                                  to="/services/landscaping"
+                                  to="/services/hotel-facility-management"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
-                                  <Sprout className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Landscaping</span>
+                                  <Bell className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Hotel Facility Management</span>
+                                </Link>
+
+                                <Link
+                                  to="/services/industrial-commercial-facility-management"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <Layers className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Industrial and Commercial Facility Management</span>
                                 </Link>
                               </div>
 
                               {/* Column 2 */}
-                              <div className="space-y-1">
+                              <div className="space-y-0.5">
                                 <Link
-                                  to="/services/cleaning"
+                                  to="/services/housekeeping-technical-maintenance"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <Sparkles className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Housekeeping and Technical Maintenance</span>
+                                </Link>
+
+                                <Link
+                                  to="/services/hvac-electrical-mechanical-maintenance"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <Wrench className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">HVAC, Electrical and Mechanical Maintenance</span>
+                                </Link>
+
+                                <Link
+                                  to="/services/engineering-services-project-management"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                >
+                                  <ClipboardCheck className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Engineering Services and Project Management</span>
+                                </Link>
+
+                                <Link
+                                  to="/services/cleaning-sanitisation-hygiene"
+                                  onClick={() => setActiveDropdown(null)}
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
                                   <Droplets className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Cleaning</span>
+                                  <span className="text-xs font-semibold leading-tight">Cleaning, Sanitisation and Hygiene Services</span>
                                 </Link>
 
                                 <Link
-                                  to="/services/pest-control"
+                                  to="/services/consultancy-facility-operations"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
+                                  className="flex items-center space-x-2 p-1.5 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
                                 >
-                                  <Bug className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Pest Control</span>
-                                </Link>
-
-                                <Link
-                                  to="/services/front-of-house-concierge"
-                                  onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-slate-50 text-slate-700 hover:text-brand-orange font-medium transition-all group"
-                                >
-                                  <Bell className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
-                                  <span className="text-xs sm:text-sm font-semibold">Front of House & Concierge</span>
-                                </Link>
-
-                                <Link
-                                  to="/a-z-of-spaces-and-places"
-                                  onClick={() => setActiveDropdown(null)}
-                                  className="flex items-center space-x-2.5 p-2 rounded-xl hover:bg-orange-50/70 text-brand-orange font-semibold transition-all group"
-                                >
-                                  <svg
-                                    className="w-4 h-4 flex-shrink-0 text-brand-orange"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="1.8"
-                                  >
-                                    <circle cx="10" cy="10" r="7.5" stroke="currentColor" />
-                                    <path d="M15.5 15.5L20.5 20.5" stroke="currentColor" strokeLinecap="round" />
-                                    <text
-                                      x="10"
-                                      y="12.5"
-                                      textAnchor="middle"
-                                      fontSize="6"
-                                      fontWeight="bold"
-                                      fill="currentColor"
-                                      stroke="none"
-                                      fontFamily="system-ui, -apple-system, sans-serif"
-                                    >
-                                      A-Z
-                                    </text>
-                                  </svg>
-                                  <span className="text-xs sm:text-sm">A-Z of Places We Service</span>
+                                  <FileText className="w-4 h-4 flex-shrink-0 text-slate-500 group-hover:text-brand-orange transition-colors" />
+                                  <span className="text-xs font-semibold leading-tight">Consultancy and Facility Operations Management</span>
                                 </Link>
                               </div>
+                            </div>
+
+                            {/* Bottom Link: A-Z of Places We Service */}
+                            <div className="pt-2 mt-1 border-t border-slate-100 flex items-center justify-between">
+                              <Link
+                                to="/a-z-of-spaces-and-places"
+                                onClick={() => setActiveDropdown(null)}
+                                className="inline-flex items-center text-xs font-semibold text-brand-orange hover:underline"
+                              >
+                                <span>A-Z of Places We Service →</span>
+                              </Link>
+                              <Link
+                                to="/services"
+                                onClick={() => setActiveDropdown(null)}
+                                className="inline-flex items-center text-xs font-bold text-brand-navy hover:text-brand-orange"
+                              >
+                                <span>View All 10 Services →</span>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1315,8 +1330,8 @@ export default function Navbar({ showTopBar = true }) {
                   </Link>
                   <div className="text-center text-xs text-slate-500">
                     <span>24/7 Operations Helpdesk: </span>
-                    <a href="tel:+442079460982" className="text-brand-navy font-semibold">
-                      +44 (0) 20 7946 0982
+                    <a href="tel:+919988331575" className="text-brand-navy font-semibold">
+                      +91 99 88 33 1575
                     </a>
                   </div>
                 </div>

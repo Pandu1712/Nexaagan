@@ -302,7 +302,7 @@ export default function HardServicesContent({ service }) {
 
             {/* Right Photo Column: Hard Hat Engineer (Screenshot 3) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] max-w-md mx-auto group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] max-w-md mx-auto group">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85"
                   alt="NEXAAGEN Certified Hard Services Lead Engineer"
@@ -494,7 +494,7 @@ export default function HardServicesContent({ service }) {
           </div>
 
           {/* 2 Featured News Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             {newsItems.map((news) => (
               <Link
                 key={news.id}
@@ -558,7 +558,7 @@ export default function HardServicesContent({ service }) {
       {/* SECTION 8: 2-COLUMN SIGNATURE DARK BLUE CONTACT FORM (Screen 9) */}
       {/* ============================================================== */}
       <section id="contact-form" className="section-padding bg-slate-900 text-white">
-        <div className="container-custom max-w-6xl">
+        <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Column: Heading, Subtitle & Live Status */}
             <div className="lg:col-span-5 space-y-6">

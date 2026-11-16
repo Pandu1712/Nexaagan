@@ -26,7 +26,7 @@ export default function QHSE() {
       />
 
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
         {/* Subtle decorative dot pattern */}
         <div 
           className="absolute inset-0 opacity-15 pointer-events-none -z-10"
@@ -68,7 +68,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 2: WHAT IS QHSE? (Screenshot 2) */}
-      <section id="what-is-qhse" className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section id="what-is-qhse" className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of worker in safety gear */}
           <div className="lg:col-span-6">
@@ -109,7 +109,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 3: SAFETY FIRST APPROACH (Screenshot 3) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
@@ -140,7 +140,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 4: PHYSICAL AND MENTAL HEALTH AND WELLBEING (Screenshot 4) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of Smiling Security Officer */}
           <div className="lg:col-span-6">
@@ -175,7 +175,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 5: CONSISTENT APPROACH TO QUALITY (Screenshot 5) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
@@ -206,7 +206,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 6: COMMITMENT TO THE ENVIRONMENT (Screenshot 6) */}
-      <section className="py-4 sm:py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-t border-slate-100">
+      <section className="py-4 sm:py-6 container-custom border-t border-slate-100">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of Smiling Woman in Green Nature Setting */}
           <div className="lg:col-span-6">
@@ -251,7 +251,7 @@ export default function QHSE() {
       </section>
 
       {/* SECTION 7: CONNECT WITH YOUR TEAM BANNER (Screenshot 7) */}
-      <section className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle radial dot matrix pattern */}
           <div 
@@ -280,7 +280,7 @@ export default function QHSE() {
       </section>
 
       {/* SIGNATURE CONTACT FORM */}
-      <section id="contact-form" className="py-3 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section id="contact-form" className="py-3 sm:py-5 container-custom">
         <div className="bg-slate-50/70 rounded-3xl p-5 sm:p-8 border border-slate-200/80">
           <ContactForm 
             title="Connect With Our QHSE & Compliance Leaders"

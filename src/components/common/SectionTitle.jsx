@@ -4,7 +4,7 @@ export default function SectionTitle({
   badge,
   title,
   subtitle,
-  align = 'center', // 'center' | 'left'
+  align = 'left', // Default to left-aligned across all sections
   dark = false,
   className = '',
 }) {
@@ -12,8 +12,8 @@ export default function SectionTitle({
 
   return (
     <div
-      className={`max-w-3xl mb-12 sm:mb-16 ${
-        isCentered ? 'mx-auto text-center' : 'text-left'
+      className={`w-full mb-8 sm:mb-12 ${
+        isCentered ? 'max-w-3xl mx-auto text-center' : 'text-left'
       } ${className}`}
     >
       {badge && (
@@ -30,7 +30,7 @@ export default function SectionTitle({
 
       {title && (
         <h2
-          className={`text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight leading-tight ${
+          className={`text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap ${
             dark ? 'text-white' : 'text-brand-navy'
           }`}
         >
@@ -40,7 +40,7 @@ export default function SectionTitle({
 
       {subtitle && (
         <p
-          className={`mt-4 text-base sm:text-lg leading-relaxed ${
+          className={`mt-3 text-sm sm:text-base lg:text-lg leading-relaxed ${
             dark ? 'text-slate-300' : 'text-slate-600'
           }`}
         >

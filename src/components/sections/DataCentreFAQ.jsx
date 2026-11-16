@@ -64,8 +64,8 @@ export default function DataCentreFAQ() {
     <section className="w-full py-4 sm:py-6 bg-white border-t border-slate-100 overflow-hidden">
       <div className="container-custom">
         {/* Section Heading matching Reference */}
-        <div className="max-w-3xl mx-auto text-center space-y-2 mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+        <div className="w-full text-left space-y-2 mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
             Frequently Asked Questions
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">
@@ -75,7 +75,7 @@ export default function DataCentreFAQ() {
 
         {/* 2-Column FAQ Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-6 sm:gap-y-8">
-          
+
           {/* Left Column (Items 1-4) */}
           <div className="space-y-4 sm:space-y-6">
             {leftColumnFAQs.map((faq, idx) => {
@@ -95,11 +95,10 @@ export default function DataCentreFAQ() {
                       {faq.question}
                     </span>
                     <span
-                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                        isOpen
+                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen
                           ? 'border-brand-orange bg-brand-orange text-white rotate-45'
                           : 'border-orange-200/90 text-brand-orange bg-orange-50/40 group-hover:border-brand-orange'
-                      }`}
+                        }`}
                     >
                       <Plus className="w-4 h-4" />
                     </span>
@@ -144,11 +143,10 @@ export default function DataCentreFAQ() {
                       {faq.question}
                     </span>
                     <span
-                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                        isOpen
+                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen
                           ? 'border-brand-orange bg-brand-orange text-white rotate-45'
                           : 'border-orange-200/90 text-brand-orange bg-orange-50/40 group-hover:border-brand-orange'
-                      }`}
+                        }`}
                     >
                       <Plus className="w-4 h-4" />
                     </span>

@@ -183,10 +183,10 @@ export default function DataCentreSolutionsTabs() {
       <div className="container-custom">
         {/* Large Rounded Container Box */}
         <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
-          
+
           {/* Header */}
-          <div className="max-w-3xl mx-auto text-center space-y-2 mb-5 sm:mb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+          <div className="w-full text-left space-y-2 mb-5 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               Specialist Facilities Management for Critical Environments
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">
@@ -195,7 +195,7 @@ export default function DataCentreSolutionsTabs() {
           </div>
 
           {/* Horizontal Service Tabs (Elongated Single Pill Capsule matching User Reference) */}
-          <div className="w-full flex justify-center mb-10 sm:mb-14">
+          <div className="w-full flex justify-start mb-8 sm:mb-10">
             <div className="w-full max-w-6xl bg-white rounded-2xl lg:rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm">
               <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 items-center gap-1 sm:gap-1.5">
                 {tabs.map((tab, idx) => {
@@ -204,11 +204,10 @@ export default function DataCentreSolutionsTabs() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(idx)}
-                      className={`w-full py-2.5 sm:py-3 px-2 sm:px-2.5 rounded-full text-center transition-all duration-300 focus:outline-none flex flex-col items-center justify-center text-xs sm:text-[12px] lg:text-[13px] font-semibold leading-tight ${
-                        isActive
+                      className={`w-full py-2.5 sm:py-3 px-2 sm:px-2.5 rounded-full text-center transition-all duration-300 focus:outline-none flex flex-col items-center justify-center text-xs sm:text-[12px] lg:text-[13px] font-semibold leading-tight ${isActive
                           ? 'bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white shadow-md shadow-orange-500/25'
                           : 'text-[#FF5722] hover:bg-orange-50/60'
-                      }`}
+                        }`}
                     >
                       <span className="block text-center whitespace-nowrap leading-tight">{tab.line1}</span>
                       <span className="block text-center whitespace-nowrap leading-tight">{tab.line2}</span>

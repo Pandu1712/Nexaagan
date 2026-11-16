@@ -71,11 +71,11 @@ export default function DataCentreAccreditations() {
     <section className="w-full py-4 sm:py-6 bg-white overflow-hidden relative">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-10 sm:mb-14">
-          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+        <div className="w-full text-left space-y-2 mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
             Proven, Trusted, Accredited
           </h2>
-          <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed max-w-2xl mx-auto">
+          <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed max-w-4xl">
             Certified to the highest international standards, our teams deliver consistent, safe, and compliant operations across all data centre environments. Every process is verified through independent audits and governed by accredited management systems.
           </p>
         </div>

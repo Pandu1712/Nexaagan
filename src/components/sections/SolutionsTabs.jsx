@@ -24,12 +24,12 @@ export default function SolutionsTabs({
           badge="Tailored Solutions"
           title={title}
           subtitle={subtitle}
-          align="center"
+          align="left"
         />
 
-        {/* Tab Navigation (Centered Flex Wrap - Zero Horizontal Scrollbar) */}
-        <div className="mb-12 flex justify-center">
-          <div className="flex flex-wrap items-center justify-center gap-2 p-1.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm mx-auto max-w-full">
+        {/* Tab Navigation (Left-aligned Flex Wrap) */}
+        <div className="mb-10 flex justify-start">
+          <div className="flex flex-wrap items-center justify-start gap-2 p-1.5 bg-white rounded-2xl border border-slate-200/80 shadow-sm max-w-full">
             {solutions.map((sol, idx) => {
               const isActive = activeTab === idx;
               return (

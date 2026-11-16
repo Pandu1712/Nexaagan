@@ -248,8 +248,8 @@ export default function ManufacturingSectorContent() {
         <div className="space-y-6 sm:space-y-8">
           
           {/* Header */}
-          <div className="text-center max-w-2xl mx-auto space-y-2">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+          <div className="text-left w-full space-y-2 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
               Manufacturing Solutions by NEXAAGEN
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -257,7 +257,7 @@ export default function ManufacturingSectorContent() {
             </p>
 
             {/* Pill Capsule Navigation Tabs */}
-            <div className="pt-4 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <div className="pt-4 flex flex-wrap items-center justify-start gap-2 sm:gap-3">
               {solutionsTabs.map((tab) => {
                 const isActive = activeTab === tab.id;
                 return (
@@ -352,8 +352,8 @@ export default function ManufacturingSectorContent() {
         <div className="space-y-6 sm:space-y-8">
           
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-heading font-extrabold text-[#0B1B3D] tracking-tight">
+          <div className="text-left w-full space-y-3 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B1B3D] tracking-tight whitespace-normal sm:whitespace-nowrap">
               Sustainability in Action: Responsible Manufacturing
             </h2>
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed">

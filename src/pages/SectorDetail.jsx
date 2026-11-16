@@ -262,8 +262,8 @@ export default function SectorDetail() {
             <div className="w-full bg-[#FAF9F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
               
               {/* Header */}
-              <div className="max-w-2xl mx-auto text-center space-y-2.5 mb-4 sm:mb-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+              <div className="w-full text-left space-y-2.5 mb-4 sm:mb-6">
+                <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
                   {sector.performanceHeading}
                 </h2>
                 <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">
@@ -308,14 +308,14 @@ export default function SectorDetail() {
           <div className="container-custom">
             
             {/* Header */}
-            <div className="max-w-2xl mx-auto text-center space-y-3 mb-4 sm:mb-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+            <div className="w-full text-left space-y-3 mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
                 {sector.whyChooseHeading}
               </h2>
               <p className="text-slate-500 text-xs sm:text-sm lg:text-base font-normal">
                 {sector.whyChooseSubtitle}
               </p>
-              <div className="pt-2">
+              <div className="pt-2 flex justify-start">
                 <a
                   href="#contact-form"
                   className="inline-flex items-center justify-center font-bold text-white px-7 py-3 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-orange-500/25 transition-all duration-300"

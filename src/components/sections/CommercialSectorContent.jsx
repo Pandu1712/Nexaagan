@@ -643,8 +643,8 @@ export default function CommercialSectorContent() {
           ========================================================================= */}
       <section className="py-4 sm:py-6 bg-[#FAF9F7] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="mb-4 sm:mb-6 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-2">
+          <div className="mb-4 sm:mb-6 text-left w-full">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E293B] mb-2 whitespace-normal sm:whitespace-nowrap">
               Customer stories
             </h2>
             <p className="text-base sm:text-lg text-[#64748B]">

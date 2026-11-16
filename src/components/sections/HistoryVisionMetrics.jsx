@@ -15,11 +15,11 @@ export default function HistoryVisionMetrics() {
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-3">
-          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+        <div className="w-full text-left space-y-2 mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
             History, colleagues, customers and vision
           </h2>
-          <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-2xl mx-auto">
+          <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-3xl">
             We share a group-wide vision and mission to become the best provider of facilities services for colleagues, customers and communities by making people and places the best they can be.
           </p>
         </div>

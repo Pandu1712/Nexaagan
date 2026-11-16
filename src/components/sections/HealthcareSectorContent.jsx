@@ -243,8 +243,8 @@ export default function HealthcareSectorContent() {
       <section className="py-4 sm:py-6 bg-[#FAFAFA] border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1E293B] mb-3">
+          <div className="text-left w-full mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
               Healthcare Solutions by NEXAAGEN
             </h2>
             <p className="text-base sm:text-lg text-[#64748B]">
@@ -253,7 +253,7 @@ export default function HealthcareSectorContent() {
           </div>
 
           {/* Elongated Pill Tab Container (matches user reference screenshots) */}
-          <div className="flex justify-center mb-12 sm:mb-16">
+          <div className="flex justify-start mb-8 sm:mb-12">
             <div className="w-full max-w-5xl bg-white rounded-full p-1.5 sm:p-2 border border-[#FDDAD0] shadow-sm flex flex-wrap sm:flex-nowrap items-center justify-between gap-1">
               {solutionsTabs.map((tab) => {
                 const isActive = activeTab === tab.id;
@@ -261,11 +261,10 @@ export default function HealthcareSectorContent() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 text-center leading-tight whitespace-normal ${
-                      isActive
+                    className={`flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 text-center leading-tight whitespace-normal ${isActive
                         ? 'bg-gradient-to-r from-[#E03A00] to-[#FF5E00] text-white shadow-md'
                         : 'text-[#E03A00] hover:bg-[#FFF5F2]'
-                    }`}
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -343,8 +342,8 @@ export default function HealthcareSectorContent() {
       <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
+          <div className="text-left w-full mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-[#1E293B] mb-3 whitespace-normal sm:whitespace-nowrap">
               Sustainability in Action: Responsible Healthcare
             </h2>
             <p className="text-base sm:text-lg text-[#64748B] leading-relaxed">

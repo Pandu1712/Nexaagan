@@ -30,10 +30,10 @@ export default function ESGCommitmentCard() {
       <div className="container-custom">
         {/* Large Rounded Container with Soft Sage/Off-White Background matching OCS reference */}
         <div className="w-full bg-[#F4F7F4] rounded-3xl sm:rounded-[40px] lg:rounded-[48px] p-6 sm:p-10 md:p-12 lg:p-16 border border-slate-200/60 shadow-sm">
-          
+
           {/* Section Header */}
-          <div className="max-w-2xl mx-auto text-center space-y-2 mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight">
+          <div className="w-full text-left space-y-2 mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-heading font-extrabold text-[#0B1B3D] tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
               NEXAAGEN ESG commitment
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal">

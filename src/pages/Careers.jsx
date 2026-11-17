@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Briefcase, 
-  Users, 
-  GraduationCap, 
-  Heart, 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle2, 
-  MapPin, 
-  Calendar, 
-  Building2, 
-  Compass, 
+import {
+  Briefcase,
+  Users,
+  GraduationCap,
+  Heart,
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  MapPin,
+  Calendar,
+  Building2,
+  Compass,
   X,
   Award
 } from 'lucide-react';
@@ -95,7 +95,7 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
       {/* ========================================================================= */}
       <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FDFBF9] via-[#FAF7F2] to-white overflow-hidden">
         {/* Soft Coral/Orange Dotted Pattern Watermark */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: 'radial-gradient(#EA580C 1.1px, transparent 1.1px)',
@@ -144,7 +144,8 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
             {/* Right Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                We’re looking for the best people to join our team
+                We’re looking for the best people <br className="hidden sm:inline" />
+                to join our team
               </h2>
 
               <div className="space-y-3.5 text-slate-600 text-xs sm:text-sm lg:text-[15px] leading-relaxed font-normal">
@@ -179,7 +180,8 @@ Sean joined our business over two decades ago as an evening janitorial cleaner. 
             {/* Left Column: Narrative Copy & CTA */}
             <div className="lg:col-span-7 space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                People Into Work programme launched by our foundation
+                People Into Work programme <br className="hidden sm:inline" />
+                launched by our foundation
               </h2>
 
               <div className="space-y-3.5 text-slate-600 text-xs sm:text-sm lg:text-[15px] leading-relaxed font-normal">

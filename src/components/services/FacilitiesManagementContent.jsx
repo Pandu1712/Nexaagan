@@ -168,9 +168,9 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 1: HERO SECTION (Screenshot 1)                          */}
       {/* ============================================================== */}
-      <section className="w-full py-2 sm:py-4 lg:py-6 bg-white overflow-hidden">
+      <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
         <div className="container-custom">
-          <div className="relative w-full rounded-2xl sm:rounded-[32px] lg:rounded-[40px] overflow-hidden min-h-[480px] sm:min-h-[540px] lg:min-h-[600px] flex items-center shadow-xl border border-slate-200/60">
+          <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60">
             {/* Background Image: Spiral Staircase with Motion Blur (Screenshot 1) */}
             <div className="absolute inset-0 z-0">
               <img
@@ -182,27 +182,27 @@ export default function FacilitiesManagementContent({ service }) {
             </div>
 
             {/* Left Floating White Card (Screenshot 1) */}
-            <div className="relative z-20 p-6 sm:p-10 md:p-12 lg:p-16 max-w-xl">
-              <div className="bg-white/95 backdrop-blur-md p-8 sm:p-10 rounded-3xl shadow-2xl border border-slate-100 space-y-4">
+            <div className="relative z-20 p-3 sm:p-5 md:p-6 lg:p-7 max-w-lg">
+              <div className="bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-xl border border-slate-100 space-y-2 sm:space-y-2.5">
                 {/* Red "We're hiring | Careers" Badge */}
                 <div className="inline-flex items-center space-x-2 text-xs font-semibold">
-                  <span className="bg-[#D8232A] text-white px-3 py-1 rounded-full text-[11px] font-bold tracking-wide">
+                  <span className="bg-[#D8232A] text-white px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide">
                     We're hiring
                   </span>
                   <Link
                     to="/contact"
-                    className="text-slate-700 hover:text-brand-orange transition-colors flex items-center"
+                    className="text-slate-700 hover:text-brand-orange transition-colors flex items-center text-xs"
                   >
                     <span>NEXAAGEN Careers</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-1" />
                   </Link>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                   Facilities Management
                 </h1>
 
-                <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal pt-1">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
                   Integrated service solutions to optimise your industry, workplace, destination or venue for private and public sector customers.
                 </p>
               </div>
@@ -239,7 +239,8 @@ export default function FacilitiesManagementContent({ service }) {
             {/* Right Column: Content + Checkpoints */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                Facilities Management for private and public sectors
+                Facilities Management for <br className="hidden sm:inline" />
+                private and public sectors
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -303,7 +304,8 @@ export default function FacilitiesManagementContent({ service }) {
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 order-2 lg:order-1">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                It's our NEXAAGEN colleagues that make the difference
+                It's our NEXAAGEN colleagues <br className="hidden sm:inline" />
+                that make the difference
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">

@@ -75,7 +75,7 @@ export default function HeroCarousel() {
 
   return (
     <section
-      className="w-full py-2 sm:py-3 lg:py-4 bg-white overflow-hidden"
+      className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={onTouchStart}
@@ -85,7 +85,7 @@ export default function HeroCarousel() {
     >
       <div className="container-custom">
         {/* Full-width Rounded Hero Frame with Shadow & Border */}
-        <div className="relative w-full rounded-2xl sm:rounded-[28px] lg:rounded-[36px] overflow-hidden min-h-[440px] sm:min-h-[480px] lg:min-h-[520px] flex items-center shadow-xl border border-slate-200/60 bg-brand-navy">
+        <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[260px] sm:min-h-[300px] lg:min-h-[340px] flex items-center shadow-lg border border-slate-200/60 bg-brand-navy">
           
           {/* Background Images Layer with Smooth Framer Motion Crossfade */}
           <div className="absolute inset-0 z-0 overflow-hidden">
@@ -111,7 +111,7 @@ export default function HeroCarousel() {
           </div>
 
           {/* Content Positioned on the Left (Directly on Image, No White Box) */}
-          <div className="relative z-20 w-full p-5 sm:p-7 md:p-9 lg:p-12 flex items-center">
+          <div className="relative z-20 w-full p-4 sm:p-6 md:p-8 lg:p-10 flex items-center">
             <div className="w-full max-w-[680px] lg:max-w-[720px]">
 
               {/* Framer Motion Animated Slide Content */}
@@ -122,32 +122,32 @@ export default function HeroCarousel() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -14 }}
                   transition={{ duration: 0.35, ease: 'easeOut' }}
-                  className="space-y-3.5 sm:space-y-4 lg:space-y-5"
+                  className="space-y-2.5 sm:space-y-3"
                 >
                   {/* Top Row: Category Badge */}
                   <div>
                     {/* Small Category Badge */}
-                    <span className="inline-flex items-center px-3.5 sm:px-4 py-1 rounded-full text-white font-bold text-[11px] sm:text-xs bg-gradient-to-r from-[#FF5722] to-[#D8232A] shadow-md shadow-orange-500/20 uppercase tracking-wider">
+                    <span className="inline-flex items-center px-3 sm:px-3.5 py-0.5 rounded-full text-white font-bold text-[10px] sm:text-xs bg-gradient-to-r from-[#FF5722] to-[#D8232A] shadow-md shadow-orange-500/20 uppercase tracking-wider">
                       {current.badge}
                     </span>
                   </div>
 
                   {/* Large Bold Heading */}
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                     {current.title}
                   </h1>
 
                   {/* Description Paragraph */}
-                  <p className="text-slate-200 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-xl drop-shadow-sm">
+                  <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-normal max-w-xl drop-shadow-sm">
                     {current.description}
                   </p>
 
                   {/* Action Row: Primary CTA Button + Circular Navigation Arrows */}
-                  <div className="pt-2 sm:pt-3 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4">
+                  <div className="pt-1.5 sm:pt-2 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4">
                     {/* Primary CTA Button */}
                     <Link
                       to={current.primaryCta.url}
-                      className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-xl hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98] whitespace-nowrap flex-shrink-0"
+                      className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98] whitespace-nowrap flex-shrink-0"
                     >
                       <span>{current.primaryCta.text}</span>
                     </Link>
@@ -156,25 +156,25 @@ export default function HeroCarousel() {
                     <div className="flex items-center space-x-2 flex-shrink-0">
                       <button
                         onClick={handlePrev}
-                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
+                        className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
                         aria-label="Previous slide"
                         title="Previous slide"
                       >
-                        <ChevronLeft className="w-4 h-4" />
+                        <ChevronLeft className="w-3.5 h-3.5" />
                       </button>
                       <button
                         onClick={handleNext}
-                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
+                        className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/20 bg-white/10 hover:bg-white/25 text-white flex items-center justify-center shadow-lg backdrop-blur-md transition-all duration-200 active:scale-95 focus:outline-none"
                         aria-label="Next slide"
                         title="Next slide"
                       >
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="w-3.5 h-3.5" />
                       </button>
                     </div>
                   </div>
 
                   {/* Slide Indicators & Current Slide Counter (01/04) */}
-                  <div className="flex items-center justify-between pt-4 border-t border-white/15">
+                  <div className="flex items-center justify-between pt-2.5 border-t border-white/15">
                     {/* Four Slide Indicators */}
                     <div className="flex items-center space-x-2.5" role="tablist" aria-label="Slide indicators">
                       {heroSlides.map((s, dotIdx) => (

@@ -84,8 +84,8 @@ export default function Technology() {
       <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative pt-3 pb-2 sm:pt-4 sm:pb-3 container-custom">
-        <div className="relative rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-[340px] sm:min-h-[380px] lg:min-h-[420px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg bg-slate-950 border border-slate-800">
           {/* Digital Cyber Data Particle Grid Background */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -98,11 +98,11 @@ export default function Technology() {
           </div>
 
           {/* Floating White Card */}
-          <div className="relative z-10 p-5 sm:p-8 lg:p-10 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-4">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-3 sm:p-5 max-w-lg ml-2 sm:ml-4 my-1">
+            <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-xl border border-white/40">
               {/* Badge: "Join our Technology Team NEXAAGEN Careers ->" */}
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-4">
-                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-2.5 py-0.5 mb-2">
+                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
                   Join our Technology Team
                 </span>
                 <Link to="/about" className="text-xs font-semibold text-slate-800 hover:text-brand-orange transition-colors flex items-center">
@@ -112,12 +112,12 @@ export default function Technology() {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-4">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-2">
                 Harness technology with NEXAAGEN Advance
               </h1>
 
               {/* Description */}
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mb-6">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-3">
                 Deliver enhanced facilities services through innovation – driving best practice, productivity, resilience, experience and outcomes for your colleagues, customers and communities.
               </p>
 
@@ -125,14 +125,14 @@ export default function Technology() {
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#advance-overview"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                  className="inline-flex items-center justify-center px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-heading font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
                 >
                   <span>Explore NEXAAGEN Advance</span>
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-xl font-heading font-bold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg font-heading font-bold text-xs sm:text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
                 >
                   <span>Contact Our Team</span>
                 </a>

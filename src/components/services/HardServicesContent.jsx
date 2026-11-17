@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ArrowUpRight, 
-  Check, 
-  ChevronLeft, 
-  ChevronRight, 
-  Wrench, 
-  ShieldCheck, 
-  Zap, 
-  Building2, 
-  Cpu, 
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Wrench,
+  ShieldCheck,
+  Zap,
+  Building2,
+  Cpu,
   Layers,
   Award,
   Sparkles,
@@ -80,7 +80,7 @@ export default function HardServicesContent({ service }) {
     setWaLink(waUrl);
     try {
       window.open(waUrl, '_blank', 'noopener,noreferrer');
-    } catch (err) {}
+    } catch (err) { }
 
     setFormSubmitted(true);
   };
@@ -187,10 +187,10 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 1: HERO SECTION (Screenshot 1)                          */}
       {/* ============================================================== */}
-      <section className="w-full py-2 sm:py-4 lg:py-6 bg-white overflow-hidden">
+      <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
         <div className="container-custom">
-          <div className="relative w-full rounded-2xl sm:rounded-[32px] lg:rounded-[40px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[620px] flex items-center shadow-xl border border-slate-200/60 bg-[#0A192F]">
-            
+          <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-[#0A192F]">
+
             {/* Background Industrial MEP Infrastructure with Blue Cyan Overlay */}
             <div className="absolute inset-0 z-0">
               <img
@@ -199,26 +199,26 @@ export default function HardServicesContent({ service }) {
                 className="w-full h-full object-cover object-center scale-[1.03]"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#06182C]/95 via-[#0A2540]/80 to-[#0A2540]/50" />
-              
+
               {/* Geometric Technical Accent Outlines (as shown in Screenshot 1) */}
-              <div className="absolute right-10 top-1/2 -translate-y-1/2 w-[340px] h-[340px] border border-cyan-400/20 rounded-3xl rotate-12 hidden lg:block pointer-events-none" />
-              <div className="absolute right-20 top-1/2 -translate-y-1/2 w-[300px] h-[300px] border border-orange-500/25 rounded-3xl -rotate-6 hidden lg:block pointer-events-none" />
+              <div className="absolute right-10 top-1/2 -translate-y-1/2 w-[240px] h-[240px] border border-cyan-400/20 rounded-3xl rotate-12 hidden lg:block pointer-events-none" />
+              <div className="absolute right-20 top-1/2 -translate-y-1/2 w-[200px] h-[200px] border border-orange-500/25 rounded-3xl -rotate-6 hidden lg:block pointer-events-none" />
             </div>
 
             {/* Left Content */}
-            <div className="relative z-20 w-full p-8 sm:p-12 md:p-16 lg:p-20 max-w-3xl space-y-6">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+            <div className="relative z-20 w-full p-4 sm:p-6 md:p-8 max-w-2xl space-y-2.5 sm:space-y-3">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                 Hard Services for Complex, Business-Critical Environments
               </h1>
 
-              <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-2xl drop-shadow-sm">
+              <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-normal max-w-xl drop-shadow-sm">
                 Our team keeps essential buildings and infrastructure safe, compliant and performing, through self-delivered engineering, real-time asset insight and deep sector expertise across India and the region.
               </p>
 
-              <div className="pt-2">
+              <div className="pt-1 sm:pt-2">
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center justify-center font-bold text-white px-8 sm:px-10 py-4 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-xl hover:shadow-orange-500/30 transition-all duration-300"
+                  className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-lg hover:shadow-orange-500/30 transition-all duration-300"
                 >
                   Speak to a Hard Services expert
                 </a>
@@ -465,18 +465,21 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       <section className="section-padding bg-white border-t border-slate-100">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Proven, Trusted, Accredited
-            </h2>
-            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-              Statutory compliance managed and evidenced through documented procedures, permits and service records. Independent audits and recognised accreditations with audit-ready, site-level reporting and clear governance.
-            </p>
+          {/* Header Row: Left-aligned Heading + Subtitle, Right-aligned QHSE Button */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
+            <div className="max-w-2xl text-left space-y-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
+                Proven, Trusted, Accredited
+              </h2>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Statutory compliance managed and evidenced through documented procedures, permits and service records. Independent audits and recognised accreditations with audit-ready, site-level reporting and clear governance.
+              </p>
+            </div>
 
-            <div className="pt-2">
+            <div className="flex-shrink-0">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center px-7 py-3 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md transition-all"
+                className="inline-flex items-center justify-center px-7 py-3 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-md hover:shadow-lg transition-all whitespace-nowrap"
               >
                 NEXAAGEN QHSE Policy
               </a>

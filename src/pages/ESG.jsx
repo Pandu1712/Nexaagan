@@ -80,8 +80,8 @@ export default function ESG() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[340px] sm:min-h-[380px] flex items-center p-5 sm:p-8 lg:p-10 shadow-lg border border-slate-100">
+      <section className="py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center p-3 sm:p-5 shadow-lg border border-slate-100">
           {/* Full-bleed Background Image of Lush Green Forest Canopy */}
           <img
             src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80"
@@ -92,29 +92,29 @@ export default function ESG() {
           <div className="absolute inset-0 bg-slate-950/20" />
 
           {/* Floating White Card on the Left (Exactly matching Screenshot 1) */}
-          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 lg:p-10 max-w-lg shadow-2xl border border-white/80 space-y-3.5">
+          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 max-w-lg shadow-xl border border-white/80 space-y-2.5">
             {/* Subtle dot-matrix pattern on card */}
             <div
-              className="absolute inset-0 opacity-15 pointer-events-none rounded-[24px] sm:rounded-[32px] overflow-hidden"
+              className="absolute inset-0 opacity-15 pointer-events-none rounded-xl sm:rounded-2xl overflow-hidden"
               style={{
                 backgroundImage: 'radial-gradient(#FF5722 1.2px, transparent 1.2px)',
                 backgroundSize: '20px 20px'
               }}
             />
 
-            <div className="relative z-10 space-y-3">
+            <div className="relative z-10 space-y-2 sm:space-y-2.5">
               {/* Badge + Policy Link */}
               <div className="flex items-center space-x-3">
                 <button
                   type="button"
                   onClick={() => setShowPolicyModal(true)}
-                  className="px-3 py-1 rounded-full text-[11px] font-heading font-bold text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-md transition-all cursor-pointer"
+                  className="px-2.5 py-0.5 rounded-full text-[11px] font-heading font-bold text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-md transition-all cursor-pointer"
                 >
                   View ESG Policy
                 </button>
                 <Link
                   to="/policies"
-                  className="text-xs sm:text-sm font-semibold text-slate-700 hover:text-brand-orange transition-colors flex items-center group"
+                  className="text-xs font-semibold text-slate-700 hover:text-brand-orange transition-colors flex items-center group"
                 >
                   <span>NEXAAGEN Policies</span>
                   <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-0.5 transition-transform" />
@@ -122,12 +122,12 @@ export default function ESG() {
               </div>
 
               {/* Big Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                 ESG
               </h1>
 
               {/* Subtitle */}
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                 We’re doing the right things at the right time in business, with the highest environmental, social, and governance responsibility standards.
               </p>
             </div>

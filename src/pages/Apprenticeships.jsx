@@ -135,7 +135,8 @@ export default function Apprenticeships() {
           {/* Left Column: Funded Learning Description */}
           <div className="lg:col-span-7 space-y-5">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Funded learning for opportunity at NEXAAGEN
+              Funded learning for opportunity <br className="hidden sm:inline" />
+              at NEXAAGEN
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -194,8 +195,9 @@ export default function Apprenticeships() {
 
           {/* Center Content */}
           <div className="relative z-20 max-w-3xl mx-auto space-y-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              View our Global Locations for Regional Opportunity
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
+              View our Global Locations <br className="hidden sm:inline" />
+              for Regional Opportunity
             </h2>
 
             <p className="text-slate-200 text-sm sm:text-base lg:text-lg font-normal max-w-2xl mx-auto leading-relaxed">

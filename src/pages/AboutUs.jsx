@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ShieldCheck, 
-  Users, 
-  Globe2, 
-  Award, 
-  CheckCircle2, 
-  ArrowRight, 
-  Building2, 
+import {
+  ShieldCheck,
+  Users,
+  Globe2,
+  Award,
+  CheckCircle2,
+  ArrowRight,
+  Building2,
   HeartHandshake,
   Sparkles
 } from 'lucide-react';
@@ -77,7 +77,8 @@ export default function AboutUs() {
               </span>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                About Nexaagen Integrated Facility Management Services Private Limited
+                About Nexaagen Integrated Facility <br className="hidden sm:inline" />
+                Management Services Private Limited
               </h2>
 
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium">

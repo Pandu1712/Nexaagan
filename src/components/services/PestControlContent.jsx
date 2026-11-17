@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  ArrowUpRight, 
-  Check, 
-  ChevronLeft, 
-  ChevronRight, 
-  Plus, 
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Plus,
   Minus,
   ShieldCheck,
   Users,
@@ -225,10 +225,10 @@ export default function PestControlContent({ service }) {
 
   return (
     <div className="w-full bg-white text-slate-900 overflow-hidden font-sans">
-      
+
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-6 pb-12 sm:pb-16 container-custom">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg bg-slate-950 border border-slate-800">
           {/* Background Photography: Technician in protective suit with sprayer */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -241,11 +241,11 @@ export default function PestControlContent({ service }) {
           </div>
 
           {/* Floating White Card */}
-          <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-3 sm:p-5 max-w-lg ml-2 sm:ml-4 my-1">
+            <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-xl border border-white/40">
               {/* Hiring Badge */}
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
-                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-2.5 py-0.5 mb-2">
+                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
                   We're hiring
                 </span>
                 <Link to="/about" className="text-xs font-semibold text-slate-800 hover:text-brand-orange transition-colors flex items-center">
@@ -255,12 +255,12 @@ export default function PestControlContent({ service }) {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-5">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-2">
                 Pest Control
               </h1>
 
               {/* Description */}
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-3">
                 Pest control services offer proactive solutions, ensuring your premises are safeguarded against infestations, maintaining a hygienic environment.
               </p>
 
@@ -268,7 +268,7 @@ export default function PestControlContent({ service }) {
               <div className="flex flex-wrap items-center gap-4">
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                  className="inline-flex items-center justify-center px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-heading font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
                 >
                   <span>Contact our Pest Control Team</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -295,7 +295,7 @@ export default function PestControlContent({ service }) {
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
             return (
-              <div 
+              <div
                 key={idx}
                 className="bg-slate-50/70 hover:bg-slate-50 border border-slate-200/70 rounded-3xl p-6 transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
               >
@@ -322,9 +322,9 @@ export default function PestControlContent({ service }) {
           {/* Left Column: Building Photography with trees */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
-                alt="Pest Control Services for Corporate Buildings" 
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                alt="Pest Control Services for Corporate Buildings"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -406,9 +406,9 @@ export default function PestControlContent({ service }) {
           {/* Right Column: Lush Sunlit Green Leaves */}
           <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80" 
-                alt="Sustainable Pest Control with ESG Environmental Stewardship" 
+              <img
+                src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
+                alt="Sustainable Pest Control with ESG Environmental Stewardship"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -422,9 +422,9 @@ export default function PestControlContent({ service }) {
           {/* Left Column: Modern Sleek Office */}
           <div className="lg:col-span-6">
             <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[5/4] border border-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
-                alt="Digital Smart Pest Control Technology" 
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                alt="Digital Smart Pest Control Technology"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -481,7 +481,7 @@ export default function PestControlContent({ service }) {
         <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-5 sm:p-8 shadow-sm">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
             {accreditations.map((acc) => (
-              <div 
+              <div
                 key={acc.id}
                 className="flex items-center justify-center p-3 hover:scale-105 transition-transform duration-300"
                 title={acc.name}
@@ -536,9 +536,9 @@ export default function PestControlContent({ service }) {
               >
                 <div>
                   <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                    <img 
-                      src={item.image} 
-                      alt={item.title} 
+                    <img
+                      src={item.image}
+                      alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -578,7 +578,7 @@ export default function PestControlContent({ service }) {
           {faqItems.map((item, index) => {
             const isOpen = openFaq === index;
             return (
-              <div 
+              <div
                 key={index}
                 className="bg-slate-50/70 hover:bg-slate-50 rounded-2xl border border-slate-200/70 p-5 sm:p-6 transition-all duration-200 self-start"
               >
@@ -608,8 +608,8 @@ export default function PestControlContent({ service }) {
       <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-[28px] sm:rounded-[36px] bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 overflow-hidden text-center shadow-2xl">
           {/* Subtle geometric dot grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-15 pointer-events-none" 
+          <div
+            className="absolute inset-0 opacity-15 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#ffffff 1.2px, transparent 1.2px)',
               backgroundSize: '22px 22px'
@@ -636,10 +636,10 @@ export default function PestControlContent({ service }) {
       {/* SECTION 11: SIGNATURE CONTACT FORM */}
       <section id="contact-form" className="py-3 sm:py-5 container-custom">
         <div className="bg-slate-50/70 rounded-[32px] p-5 sm:p-8 lg:p-10 border border-slate-200/80">
-          <ContactForm 
+          <ContactForm
             title="Connect With Our Pest Control Specialists"
             subtitle="Safeguard your facilities with certified Integrated Pest Management and proactive digital protection."
-            defaultService="pest-control" 
+            defaultService="pest-control"
           />
         </div>
       </section>

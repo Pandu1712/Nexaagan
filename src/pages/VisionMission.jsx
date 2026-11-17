@@ -169,7 +169,8 @@ export default function VisionMission() {
           {/* Right Column: Vision Copy & Sign-off */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Vision: To become a trusted integrated facility management and engineering services partner across key industry sectors.
+              Vision: To become a trusted integrated partner <br className="hidden sm:inline" />
+              across key industry sectors
             </h2>
 
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
@@ -213,7 +214,8 @@ export default function VisionMission() {
             {/* Left Column: Narrative Copy */}
             <div className="lg:col-span-7 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-                Mission: To deliver safe, efficient and dependable facility operations through skilled teams, structured processes and responsive management.
+                Mission: Delivering safe, efficient and dependable <br className="hidden sm:inline" />
+                facility operations across sectors
               </h2>
 
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal">

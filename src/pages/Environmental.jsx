@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  Leaf, 
-  Globe2, 
-  Zap, 
-  CheckCircle2, 
-  Award, 
-  Recycle, 
-  Droplets, 
+import {
+  ArrowRight,
+  Leaf,
+  Globe2,
+  Zap,
+  CheckCircle2,
+  Award,
+  Recycle,
+  Droplets,
   Sun,
   ShieldCheck,
   Building2,
@@ -31,8 +31,8 @@ export default function Environmental() {
       />
 
       {/* SECTION 1: HERO SECTION (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
-        <div className="relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
+      <section className="py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center p-3 sm:p-5 shadow-lg">
           {/* Background Image: Lush Green Beech Tree Foliage & Canopy */}
           <div className="absolute inset-0 z-0">
             <img
@@ -44,31 +44,31 @@ export default function Environmental() {
           </div>
 
           {/* Floating White Card on Left (Exactly as shown in screenshot) */}
-          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 max-w-xl shadow-2xl border border-white/60 space-y-4">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide">
+          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 max-w-lg shadow-xl border border-white/60 space-y-2 sm:space-y-2.5">
+            <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold tracking-wide">
               <Leaf className="w-3.5 h-3.5 text-emerald-600" />
               <span>Sustainability & Climate Action</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Environmental (ESG)
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               As a provider of essential services with more than 130,000 employees across 26 countries, we have a duty to bring about positive change in the communities we serve.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-3">
+            <div className="pt-1 flex flex-wrap gap-2.5">
               <a
                 href="#net-zero-2040"
-                className="inline-flex items-center px-6 py-3 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                className="inline-flex items-center px-4 sm:px-5 py-2 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
               >
                 <span>2040 Net Zero Target</span>
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#natural-resources"
-                className="inline-flex items-center px-6 py-3 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
+                className="inline-flex items-center px-4 sm:px-5 py-2 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
               >
                 <span>Protecting Resources</span>
               </a>
@@ -448,7 +448,7 @@ export default function Environmental() {
       <section className="py-3 sm:py-5 container-custom">
         <div className="relative rounded-3xl overflow-hidden bg-[#0A192F] text-white p-6 sm:p-10 lg:p-12 text-center shadow-2xl">
           {/* Subtle Dot Grid Pattern */}
-          <div 
+          <div
             className="absolute inset-0 opacity-20 pointer-events-none"
             style={{
               backgroundImage: 'radial-gradient(#60A5FA 1.2px, transparent 1.2px)',

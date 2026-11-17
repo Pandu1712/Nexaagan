@@ -61,8 +61,8 @@ export default function Social() {
       />
 
       {/* SECTION 1: HERO BANNER (Reference Image 1) */}
-      <section className="pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
-        <div className="relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[420px] flex items-center p-5 sm:p-8 lg:p-10 shadow-2xl">
+      <section className="py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center p-3 sm:p-5 shadow-lg">
           {/* Background Image: Smiling Colleague in nature framing camera */}
           <div className="absolute inset-0 z-0">
             <img
@@ -74,9 +74,9 @@ export default function Social() {
           </div>
 
           {/* Floating White Card on the Left */}
-          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 max-w-xl shadow-2xl border border-white/60 space-y-4">
+          <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 max-w-lg shadow-xl border border-white/60 space-y-2 sm:space-y-2.5">
             <div className="flex items-center space-x-2">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100 text-[#D8232A]">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-orange-100 text-[#D8232A]">
                 View Global Sites
               </span>
               <Link to="/contact" className="text-xs font-bold text-slate-700 hover:text-[#FF5722] transition-colors">
@@ -84,18 +84,18 @@ export default function Social() {
               </Link>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
               Social (ESG)
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               With our team of 130,000 colleagues we have the opportunity to bring about positive and lasting change within the communities that we operate.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-3">
+            <div className="pt-1 flex flex-wrap gap-2.5">
               <a
                 href="#talent-pool"
-                className="inline-flex items-center px-6 py-3 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                className="inline-flex items-center px-4 sm:px-5 py-2 rounded-full font-heading font-bold text-xs uppercase tracking-wider text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
               >
                 <span>Widest Talent Pool</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -117,7 +117,8 @@ export default function Social() {
           {/* Left Column: Description */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Recruit from the widest possible talent pool and create opportunities
+              Recruit from the widest possible talent pool <br className="hidden sm:inline" />
+              and create opportunities
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -166,7 +167,8 @@ export default function Social() {
           {/* Right Column: Careers & NEXAAGEN Academy */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Providing access to valuable and sustainable careers
+              Providing access to valuable <br className="hidden sm:inline" />
+              and sustainable careers
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">

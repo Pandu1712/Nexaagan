@@ -83,9 +83,9 @@ export default function SectorDetail() {
       {/* SECTION 1: HERO */}
       {isDataCentres ? (
         /* OCS Signature Data Centre Hero: Full-Bleed Dark Server Banner with Direct Typography */
-        <section className="w-full py-2 sm:py-3 lg:py-4 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
           <div className="container-custom">
-            <div className="relative w-full rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-[360px] sm:min-h-[400px] lg:min-h-[440px] flex items-center shadow-xl border border-slate-200/60 bg-brand-navy">
+            <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-brand-navy">
               
               {/* Background Image: Dark Server Racks */}
               <div className="absolute inset-0 z-0 overflow-hidden">
@@ -98,20 +98,20 @@ export default function SectorDetail() {
               </div>
 
               {/* Direct Left Content */}
-              <div className="relative z-20 w-full p-5 sm:p-8 md:p-10 lg:p-12 flex items-center">
-                <div className="w-full max-w-2xl space-y-3.5 sm:space-y-4">
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+              <div className="relative z-20 w-full p-4 sm:p-6 md:p-8 flex items-center">
+                <div className="w-full max-w-2xl space-y-2.5 sm:space-y-3">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
                     {sector.title}
                   </h1>
 
-                  <p className="text-slate-200 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-xl drop-shadow-sm">
+                  <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-normal max-w-xl drop-shadow-sm">
                     {sector.tagline}
                   </p>
 
-                  <div className="pt-2 sm:pt-3 flex flex-wrap items-center gap-4">
+                  <div className="pt-1 sm:pt-2 flex flex-wrap items-center gap-4">
                     <a
                       href="#contact-form"
-                      className="inline-flex items-center justify-center font-bold text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-xl hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98]"
+                      className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98]"
                     >
                       <span>{sector.heroCtaText || "Connect with Our Data Centre Experts"}</span>
                     </a>
@@ -134,9 +134,9 @@ export default function SectorDetail() {
         </section>
       ) : (isHealthcare || isManufacturing) ? (
         /* OCS Signature Dark Card Hero: Dark Card with background image positioned right matching User Screenshot 1 */
-        <section className="w-full py-2 sm:py-3 lg:py-4 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
           <div className="container-custom">
-            <div className="relative w-full rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-[360px] sm:min-h-[400px] lg:min-h-[440px] flex items-center shadow-xl border border-slate-200/60 bg-[#0B1528]">
+            <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-[#0B1528]">
               {/* Background Image positioned right */}
               <div className="absolute inset-0 z-0 overflow-hidden flex justify-end">
                 <img
@@ -148,11 +148,11 @@ export default function SectorDetail() {
               </div>
 
               {/* Direct Left Content */}
-              <div className="relative z-20 w-full p-5 sm:p-8 md:p-10 lg:p-12 flex items-center">
-                <div className="w-full max-w-xl space-y-3.5 sm:space-y-4">
+              <div className="relative z-20 w-full p-4 sm:p-6 md:p-8 flex items-center">
+                <div className="w-full max-w-xl space-y-2.5 sm:space-y-3">
                   {/* Connect with Our Team Contact -> Capsule */}
                   <div className="inline-flex items-center rounded-full bg-white p-1 pr-4 shadow-sm border border-slate-100/20">
-                    <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] sm:text-xs font-bold px-3.5 py-1 rounded-full shadow-sm">
+                    <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[10px] sm:text-[11px] font-bold px-3 py-0.5 rounded-full shadow-sm">
                       {sector.hiringBadge || "Connect with Our Team"}
                     </span>
                     <a
@@ -164,20 +164,20 @@ export default function SectorDetail() {
                   </div>
 
                   {/* Title */}
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-tight">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-white tracking-tight leading-tight">
                     {sector.title}
                   </h1>
 
                   {/* Tagline */}
-                  <p className="text-slate-200 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-lg">
+                  <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-normal max-w-lg">
                     {sector.tagline}
                   </p>
 
                   {/* "Why Choose NEXAAGEN?" Button */}
-                  <div className="pt-2 sm:pt-3">
+                  <div className="pt-1 sm:pt-2">
                     <a
                       href={isHealthcare ? "#partner-care" : "#partner-floor"}
-                      className="inline-flex items-center justify-center font-bold text-white px-6 sm:px-7 py-3 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98]"
+                      className="inline-flex items-center justify-center font-bold text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-lg hover:shadow-orange-500/30 transition-all duration-300 ease-out active:scale-[0.98]"
                     >
                       Why Choose NEXAAGEN?
                     </a>
@@ -189,9 +189,9 @@ export default function SectorDetail() {
         </section>
       ) : (isEducation || isCommercial || isAviation || isRetail || isHospitality) ? (
         /* OCS Signature Hero: Photo with Left Floating White Card matching User Screenshot */
-        <section className="w-full py-2 sm:py-3 lg:py-4 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
           <div className="container-custom">
-            <div className="relative w-full rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-[360px] sm:min-h-[400px] lg:min-h-[440px] flex items-center shadow-xl border border-slate-200/60 bg-slate-100">
+            <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-slate-100">
               
               {/* Background Image: Corporate Atrium for Commercial, Cafeteria for Education */}
               <div className="absolute inset-0 z-0 overflow-hidden">
@@ -203,11 +203,11 @@ export default function SectorDetail() {
               </div>
 
               {/* Left Elevated White Card (matching OCS Reference Screenshot) */}
-              <div className="relative z-20 w-full p-5 sm:p-8 lg:p-10">
-                <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-8 max-w-lg lg:max-w-xl shadow-2xl border border-slate-100/90 space-y-3.5 sm:space-y-4">
+              <div className="relative z-20 w-full p-3 sm:p-5 max-w-lg">
+                <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-xl border border-slate-100/90 space-y-2 sm:space-y-2.5">
                   {/* We're hiring + NEXAAGEN Careers link */}
                   <div className="flex items-center space-x-2">
-                    <span className="bg-[#D8232A] text-white text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                    <span className="bg-[#D8232A] text-white text-[10px] sm:text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-sm">
                       {sector.hiringBadge || "We're hiring"}
                     </span>
                     <Link
@@ -219,7 +219,7 @@ export default function SectorDetail() {
                   </div>
 
                   {/* Title */}
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
                     {sector.title}
                   </h1>
 

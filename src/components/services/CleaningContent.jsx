@@ -197,8 +197,8 @@ export default function CleaningContent({ service }) {
     <div className="w-full bg-white text-slate-900 overflow-hidden font-sans">
 
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-6 pb-12 sm:pb-16 container-custom">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[500px] sm:min-h-[560px] lg:min-h-[600px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative py-1.5 sm:py-2.5 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg bg-slate-950 border border-slate-800">
           {/* Background Photography with modern atrium colonnade */}
           <div className="absolute inset-0 z-0">
             <img
@@ -211,11 +211,11 @@ export default function CleaningContent({ service }) {
           </div>
 
           {/* Floating White Card */}
-          <div className="relative z-10 p-6 sm:p-10 lg:p-14 max-w-2xl ml-4 sm:ml-8 lg:ml-12 my-8">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/40">
+          <div className="relative z-10 p-3 sm:p-5 max-w-lg ml-2 sm:ml-4 my-1">
+            <div className="bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-xl border border-white/40">
               {/* Hiring Badge */}
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-3 py-1 mb-5">
-                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF5722]/10 to-[#D8232A]/10 border border-[#FF5722]/20 rounded-full px-2.5 py-0.5 mb-2">
+                <span className="bg-gradient-to-r from-[#FF5722] to-[#D8232A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
                   We're hiring
                 </span>
                 <Link to="/careers" className="text-xs font-semibold text-slate-800 hover:text-brand-orange transition-colors flex items-center">
@@ -225,12 +225,12 @@ export default function CleaningContent({ service }) {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-5">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight mb-2">
                 Commercial Cleaning Services
               </h1>
 
               {/* Description */}
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-3">
                 Our detailed, data-driven commercial cleaning plans work around your business leaving you safe in the knowledge your facility is fit-for-purpose and best prepared to deliver the best outcomes.
               </p>
 
@@ -238,7 +238,7 @@ export default function CleaningContent({ service }) {
               <div className="flex flex-wrap items-center gap-4">
                 <a
                   href="#contact-form"
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 rounded-xl font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
+                  className="inline-flex items-center justify-center px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-heading font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
                 >
                   <span>Connect with Our Team</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

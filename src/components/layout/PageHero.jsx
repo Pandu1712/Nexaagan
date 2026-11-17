@@ -15,10 +15,10 @@ export default function PageHero({
   stats,
 }) {
   return (
-    <section className="w-full py-2 sm:py-3 lg:py-4 bg-white overflow-hidden">
+    <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
       <div className="container-custom">
         {/* Full-bleed Rounded Hero Banner Frame with Reduced Height */}
-        <div className="relative w-full rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-0 sm:min-h-[380px] lg:min-h-[420px] py-4 sm:py-0 flex items-center shadow-lg border border-slate-200/60 bg-slate-900">
+        <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-0 sm:min-h-[240px] lg:min-h-[270px] py-3 sm:py-0 flex items-center shadow-lg border border-slate-200/60 bg-slate-900">
 
           {/* Background Image Layer (Natural, vivid, high-resolution photography) */}
           <div className="absolute inset-0 z-0">
@@ -32,8 +32,8 @@ export default function PageHero({
           </div>
 
           {/* Floating White Card (Signature OCS Enterprise Design - Compact Proportions) */}
-          <div className="relative z-20 w-full p-3 sm:p-5 md:p-6 lg:p-8 flex items-center">
-            <div className="w-full max-w-[560px] lg:max-w-[580px] bg-white rounded-2xl sm:rounded-[24px] lg:rounded-[28px] p-5 sm:p-7 md:p-8 lg:p-9 shadow-2xl border border-white/80 relative overflow-hidden">
+          <div className="relative z-20 w-full p-2.5 sm:p-4 md:p-5 lg:p-6 flex items-center">
+            <div className="w-full max-w-[500px] lg:max-w-[520px] bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl border border-white/80 relative overflow-hidden">
 
               {/* OCS Dotted Radial Wave Watermark */}
               <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-80 h-80 pointer-events-none opacity-[0.14] hidden sm:block">
@@ -46,7 +46,7 @@ export default function PageHero({
                 </svg>
               </div>
 
-              <div className="relative z-10 space-y-3 sm:space-y-4 lg:space-y-4">
+              <div className="relative z-10 space-y-2 sm:space-y-2.5">
                 {/* Badge + Optional Link Row */}
                 <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm">
                   {badge && (

@@ -482,83 +482,39 @@ export default function ContactForm({
             </div>
 
             {/* Direct Contact Info Card */}
-            <div className="p-6 sm:p-7 rounded-3xl bg-white border border-slate-100 shadow-card-subtle space-y-4">
+            <div className="p-6 sm:p-7 rounded-2xl bg-white border border-slate-100 shadow-card-subtle space-y-4">
               <h4 className="text-sm font-bold uppercase tracking-wider text-brand-navy border-b border-slate-100 pb-3">
                 Headquarters & Rapid Response
               </h4>
 
-              <div className="space-y-3 text-xs sm:text-sm text-slate-700">
+              <div className="space-y-3.5 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start space-x-3">
-                  <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-xs">Current Location</span>
-                    <span className="font-semibold text-brand-navy">
-                      #411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049
-                    </span>
-                  </div>
+                  <MapPin className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
+                  <span className="font-semibold text-brand-navy leading-relaxed">
+                    #411, Flat No:201, Shree Nivasam, Mathrusri Nagar, Near Miyapur Metro Station, Miyapur, Hyderabad, 500 049
+                  </span>
                 </div>
 
-                <div className="flex items-start space-x-3">
-                  <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
-                    <Phone className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-xs">Direct Telephone</span>
-                    <a href={`tel:${companyData.headquarters.phone.replace(/\s+/g, '')}`} className="font-semibold text-brand-navy hover:text-brand-orange transition-colors">
-                      {companyData.headquarters.phone}
-                    </a>
-                  </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-brand-orange flex-shrink-0" />
+                  <a href={`tel:${companyData.headquarters.phone.replace(/\s+/g, '')}`} className="font-semibold text-brand-navy hover:text-brand-orange transition-colors">
+                    {companyData.headquarters.phone}
+                  </a>
                 </div>
 
-                <div className="flex items-start space-x-3">
-                  <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600 mt-0.5">
-                    <MessageCircle className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-xs">WhatsApp Number</span>
-                    <a href="https://wa.me/919988331575" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-navy hover:text-emerald-600 transition-colors">
-                      +91 99 88 33 1575
-                    </a>
-                  </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-brand-orange flex-shrink-0" />
+                  <a href={`mailto:${companyData.headquarters.email}`} className="font-semibold text-brand-navy hover:text-brand-orange transition-colors">
+                    {companyData.headquarters.email}
+                  </a>
                 </div>
 
-                <div className="flex items-start space-x-3">
-                  <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
-                    <Mail className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-xs">Advisory & Tender Desk</span>
-                    <a href={`mailto:${companyData.headquarters.email}`} className="font-semibold text-brand-navy hover:text-brand-orange transition-colors">
-                      {companyData.headquarters.email}
-                    </a>
-                  </div>
+                <div className="flex items-center space-x-3">
+                  <Clock className="w-5 h-5 text-brand-orange flex-shrink-0" />
+                  <span className="font-semibold text-brand-navy">
+                    24 Hours / 7 Days / 365 Days
+                  </span>
                 </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="p-2 rounded-lg bg-brand-orange/10 text-brand-orange mt-0.5">
-                    <Clock className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-xs">Helpdesk Availability</span>
-                    <span className="font-semibold text-brand-navy">
-                      24 Hours / 7 Days / 365 Days
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Trust Badges */}
-              <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-medium">
-                <span className="flex items-center">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 mr-1" />
-                  ISO 9001 & 45001
-                </span>
-                <span>•</span>
-                <span>RoSPA Gold Accredited</span>
-                <span>•</span>
-                <span>Zero Harm Policy</span>
               </div>
             </div>
           </div>

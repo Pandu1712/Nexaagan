@@ -25,8 +25,8 @@ export default function NewsDetail() {
       />
 
       {/* Article Header */}
-      <section className="w-full bg-brand-navy text-white py-6 sm:py-8 relative overflow-hidden">
-        <div className="container-custom space-y-6">
+      <section className="w-full bg-brand-navy text-white py-5 sm:py-6 relative overflow-hidden">
+        <div className="container-custom space-y-3.5 sm:space-y-4">
           <Link
             to="/news"
             className="inline-flex items-center text-xs font-semibold text-slate-300 hover:text-brand-orange transition-colors"
@@ -35,7 +35,7 @@ export default function NewsDetail() {
             <span>Back to All News</span>
           </Link>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs">
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs">
             <span className="bg-brand-orange text-white font-bold px-3 py-1 rounded-full uppercase tracking-wider text-[11px]">
               {article.category}
             </span>
@@ -55,21 +55,21 @@ export default function NewsDetail() {
             </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white tracking-tight leading-snug">
             {article.title}
           </h1>
 
-          <p className="text-slate-300 text-lg leading-relaxed font-normal">
+          <p className="text-slate-200 text-sm sm:text-base leading-relaxed font-normal max-w-4xl">
             {article.excerpt}
           </p>
         </div>
       </section>
 
       {/* Article Body */}
-      <section className="section-padding bg-white">
+      <section className="py-6 sm:py-8 lg:py-10 bg-white">
         <div className="container-custom">
           {/* Main Hero Image */}
-          <div className="rounded-3xl overflow-hidden shadow-2xl mb-12 aspect-[16/9]">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl mb-8 sm:mb-10 aspect-[16/9] max-h-[480px]">
             <img
               src={article.image}
               alt={article.title}

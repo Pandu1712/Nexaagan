@@ -54,19 +54,21 @@ export default function NewsCarousel({ news = newsData }) {
     <section className="w-full py-4 sm:py-6 bg-white overflow-hidden" aria-label="News and Insights Section">
       <div className="container-custom">
         {/* Section Header */}
-        <div className="w-full text-left space-y-2 mb-4">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
-            NEXAAGEN Insights and Updates
-          </h2>
-          <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal">
-            Learn more about our people, innovation and ESG actions.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 sm:mb-6">
+          <div className="space-y-1.5 sm:space-y-2 max-w-2xl">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
+              NEXAAGEN Insights and Updates
+            </h2>
+            <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal">
+              Learn more about our people, innovation and ESG actions.
+            </p>
+          </div>
 
-          {/* Red-Orange Pill Button: "View all News and Updates" */}
-          <div className="pt-2 sm:pt-3 flex justify-start">
+          {/* Red-Orange Pill Button: Aligned to the Right */}
+          <div className="flex-shrink-0">
             <Link
               to="/news"
-              className="inline-flex items-center justify-center font-bold text-white text-xs sm:text-sm px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-sm hover:shadow-md transition-all active:scale-[0.98]"
+              className="inline-flex items-center justify-center font-bold text-white text-xs sm:text-sm px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:from-[#F4511E] hover:to-[#B71C1C] shadow-sm hover:shadow-md transition-all active:scale-[0.98] whitespace-nowrap"
             >
               <span>View all News and Updates</span>
             </Link>

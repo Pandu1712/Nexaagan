@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  ArrowRight, 
   ShieldCheck, 
   CheckCircle2, 
   Heart, 
@@ -25,50 +24,8 @@ export default function QHSE() {
         ]}
       />
 
-      {/* SECTION 1: HERO HEADER (Screenshot 1) */}
-      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom text-center">
-        {/* Subtle decorative dot pattern */}
-        <div 
-          className="absolute inset-0 opacity-15 pointer-events-none -z-10"
-          style={{
-            backgroundImage: 'radial-gradient(#FF5722 1.2px, transparent 1.2px)',
-            backgroundSize: '24px 24px'
-          }}
-        />
-
-        <div className="space-y-6">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100/80 text-[#D8232A] border border-orange-200">
-            QHSE Governance Framework
-          </span>
-
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-brand-navy tracking-tight leading-tight">
-            NEXAAGEN approach to Quality, Health, Safety and Environment (QHSE)
-          </h1>
-
-          <p className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-normal max-w-4xl mx-auto text-justify-center">
-            Across our global business, we achieve a benchmark Quality, Health, Safety and Environment (QHSE) performance underpinned by high-quality, consistent services, a proactive approach to health and safety, and a commitment to minimising environmental impact.
-          </p>
-
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#what-is-qhse"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-white bg-gradient-to-r from-[#FF5722] to-[#D8232A] hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 group"
-            >
-              <span>Explore Our Framework</span>
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#contact-form"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-heading font-bold text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all duration-300"
-            >
-              <span>Contact Our QHSE Team</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2: WHAT IS QHSE? (Screenshot 2) */}
-      <section id="what-is-qhse" className="py-4 sm:py-6 container-custom border-t border-slate-100">
+      {/* SECTION: WHAT IS QHSE? */}
+      <section id="what-is-qhse" className="py-6 sm:py-8 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Photo of worker in safety gear */}
           <div className="lg:col-span-6">
@@ -114,7 +71,8 @@ export default function QHSE() {
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Safety first approach – the foundation for our operation
+              Safety first approach – <br className="hidden sm:inline" />
+              the foundation for our operation
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -156,7 +114,8 @@ export default function QHSE() {
           {/* Right Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Physical and mental health and wellbeing for all of our colleagues and customers
+              Physical and mental health and wellbeing <br className="hidden sm:inline" />
+              for all of our colleagues and customers
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -180,7 +139,8 @@ export default function QHSE() {
           {/* Left Column: Description */}
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
-              Our consistent approach to quality through the training and development
+              Our consistent approach to quality <br className="hidden sm:inline" />
+              through the training and development
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -263,7 +223,7 @@ export default function QHSE() {
           />
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight leading-tight mb-3">
               Connect with your NEXAAGEN team
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 text-justify-center">

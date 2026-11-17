@@ -40,7 +40,7 @@ import {
   Contact
 } from 'lucide-react';
 import TopBar from './TopBar';
-import SearchModal from './SearchModal';
+import NavbarSearch from './NavbarSearch';
 import { sectorsData } from '../../data/sectorsData';
 import { servicesData } from '../../data/servicesData';
 
@@ -935,15 +935,12 @@ export default function Navbar({ showTopBar = true }) {
 
               {/* Desktop Right Actions: Search & Contact CTA */}
               <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
-                {/* Search Trigger */}
-                <button
-                  onClick={() => setSearchOpen(true)}
-                  className="p-2 xl:p-2.5 text-slate-600 hover:text-brand-navy hover:bg-slate-100 rounded-xl transition-colors"
-                  title="Search website"
-                  aria-label="Search"
-                >
-                  <Search className="w-5 h-5" />
-                </button>
+                {/* Desktop Search Trigger & Compact Popover (Akkade Chinnaga) */}
+                <NavbarSearch
+                  isOpen={searchOpen}
+                  onToggle={() => setSearchOpen(!searchOpen)}
+                  onClose={() => setSearchOpen(false)}
+                />
 
                 {/* Contact Us CTA Button (Orange-to-red gradient) */}
                 <Link
@@ -958,15 +955,25 @@ export default function Navbar({ showTopBar = true }) {
               {/* Mobile Controls (Search & Hamburger) */}
               <div className="flex lg:hidden items-center space-x-2">
                 <button
-                  onClick={() => setSearchOpen(true)}
-                  className="p-2 text-slate-600 hover:text-brand-navy rounded-lg"
+                  onClick={() => {
+                    setSearchOpen(!searchOpen);
+                    if (mobileMenuOpen) setMobileMenuOpen(false);
+                  }}
+                  className={`p-2 rounded-lg transition-colors ${
+                    searchOpen
+                      ? 'text-brand-orange bg-orange-50'
+                      : 'text-slate-600 hover:text-brand-navy'
+                  }`}
                   aria-label="Search"
                 >
-                  <Search className="w-5 h-5" />
+                  {searchOpen ? <X className="w-5 h-5" /> : <Search className="w-5 h-5" />}
                 </button>
 
                 <button
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  onClick={() => {
+                    setMobileMenuOpen(!mobileMenuOpen);
+                    if (searchOpen) setSearchOpen(false);
+                  }}
                   className="p-2 text-brand-navy hover:text-brand-orange rounded-lg focus:outline-none"
                   aria-label="Toggle mobile menu"
                 >
@@ -974,6 +981,15 @@ export default function Navbar({ showTopBar = true }) {
                 </button>
               </div>
             </div>
+          </div>
+
+          {/* Mobile Inline Search Dropdown (Akkade Chinnaga - No dark popup) */}
+          <div className="lg:hidden">
+            <NavbarSearch
+              isOpen={searchOpen}
+              onClose={() => setSearchOpen(false)}
+              isMobile={true}
+            />
           </div>
 
           {/* Mobile Slide-down Drawer */}
@@ -1339,9 +1355,6 @@ export default function Navbar({ showTopBar = true }) {
             </div>
           )}
         </header>
-
-        {/* Global Search Modal */}
-        <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
       </div>
 
       {/* Natural document spacer so page content does not jump or hide under the fixed navbar */}

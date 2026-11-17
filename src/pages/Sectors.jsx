@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Building2, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Building2, CheckCircle2, ShieldCheck, Search, X } from 'lucide-react';
 import { sectorsData } from '../data/sectorsData';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import PageHero from '../components/layout/PageHero';
@@ -9,7 +9,24 @@ import ContactForm from '../components/sections/ContactForm';
 import SectorLocationsDirectory from '../components/sectors/SectorLocationsDirectory';
 
 export default function Sectors() {
-  const [filter, setFilter] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredSectors = useMemo(() => {
+    if (!searchQuery.trim()) return sectorsData;
+    const q = searchQuery.toLowerCase().trim();
+    return sectorsData.filter((sec) => {
+      const matchText = [
+        sec.title,
+        sec.shortTitle,
+        sec.tagline,
+        sec.overview,
+        sec.id,
+        ...(sec.keyBenefits || []),
+        ...(sec.solutions ? sec.solutions.map(s => `${s.title} ${s.description}`) : [])
+      ].join(' ').toLowerCase();
+      return matchText.includes(q);
+    });
+  }, [searchQuery]);
 
   return (
     <div className="w-full flex flex-col flex-1">
@@ -51,8 +68,60 @@ export default function Sectors() {
             align="left"
           />
 
-          <div className="space-y-6 sm:space-y-8">
-            {sectorsData.map((sector, idx) => {
+          {/* Real-time Sectors Filter Bar */}
+          <div className="mb-8 max-w-xl">
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Filter sectors (e.g. Aviation, Data Centres, Healthcare, Commercial)..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-11 pr-10 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-brand-navy placeholder:text-slate-400 focus:outline-none focus:border-brand-orange focus:bg-white transition-all shadow-xs"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+                  title="Clear filter"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+            {searchQuery && (
+              <div className="mt-2 text-xs text-slate-500 flex items-center justify-between px-1">
+                <span>
+                  Showing <strong className="text-brand-navy">{filteredSectors.length}</strong> of {sectorsData.length} sectors
+                </span>
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="text-brand-orange font-semibold hover:underline"
+                >
+                  Clear filter
+                </button>
+              </div>
+            )}
+          </div>
+
+          {filteredSectors.length === 0 ? (
+            <div className="text-center py-12 px-4 bg-slate-50 rounded-3xl border border-slate-100 mb-8">
+              <p className="text-brand-navy font-semibold text-base mb-1">
+                No sectors found matching "{searchQuery}"
+              </p>
+              <p className="text-xs text-slate-500 mb-4">
+                Try searching for "Aviation", "Data Centres", "Hospitality", "Manufacturing", or "Healthcare".
+              </p>
+              <button
+                onClick={() => setSearchQuery('')}
+                className="text-xs bg-brand-orange text-white px-4 py-2 rounded-xl font-bold hover:bg-brand-orange-light transition-all shadow-sm"
+              >
+                Reset filter to view all 8 sectors
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-6 sm:space-y-8">
+              {filteredSectors.map((sector, idx) => {
               const isEven = idx % 2 === 0;
               return (
                 <div
@@ -118,6 +187,7 @@ export default function Sectors() {
               );
             })}
           </div>
+          )}
         </div>
       </section>
 

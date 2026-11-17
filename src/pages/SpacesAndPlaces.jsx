@@ -17,8 +17,8 @@ export default function SpacesAndPlaces() {
       />
 
       {/* HERO SECTION MATCHING SCREENSHOT */}
-      <section className="relative pt-4 pb-3 sm:pt-6 sm:pb-4 container-custom">
-        <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
+      <section className="relative pt-3 pb-2 sm:pt-4 sm:pb-3 container-custom">
+        <div className="relative rounded-2xl sm:rounded-[28px] lg:rounded-[32px] overflow-hidden min-h-[340px] sm:min-h-[380px] lg:min-h-[420px] flex items-center shadow-2xl bg-slate-950 border border-slate-800">
           {/* Waterfront Skyline Background Photography */}
           <div className="absolute inset-0 z-0">
             <img 

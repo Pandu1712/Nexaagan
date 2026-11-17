@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, 
-  Wrench, 
-  Building2, 
-  Droplets, 
-  Bug, 
-  Cloud, 
-  Bell, 
-  Sprout, 
+import {
+  ArrowRight,
+  Wrench,
+  Building2,
+  Droplets,
+  Bug,
+  Cloud,
+  Bell,
+  Sprout,
   CheckCircle2,
   ShieldCheck,
   HeartHandshake,
   Layers,
   Sparkles,
   ClipboardCheck,
-  FileText
+  FileText,
+  Search,
+  X
 } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
@@ -55,6 +57,27 @@ const getServiceIcon = (id) => {
 };
 
 export default function Services() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredServices = useMemo(() => {
+    if (!searchQuery.trim()) return servicesData;
+    const q = searchQuery.toLowerCase().trim();
+    return servicesData.filter((svc) => {
+      const matchText = [
+        svc.title,
+        svc.shortTitle,
+        svc.category,
+        svc.tagline,
+        svc.overview,
+        ...(svc.slugAliases || []),
+        ...(svc.benefits || []),
+        ...(svc.subServices || []),
+        ...(svc.features ? svc.features.map(f => `${f.title} ${f.desc}`) : [])
+      ].join(' ').toLowerCase();
+      return matchText.includes(q);
+    });
+  }, [searchQuery]);
+
   return (
     <div className="w-full flex flex-col flex-1">
       <Breadcrumbs items={[{ label: 'Our Services' }]} />
@@ -94,58 +117,111 @@ export default function Services() {
             align="left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesData.map((svc) => {
-              const ServiceIcon = getServiceIcon(svc.id);
-              return (
-                <div
-                  key={svc.id}
-                  className="bg-white rounded-3xl p-8 border border-slate-100 hover:border-slate-200 shadow-card-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
+          {/* Real-time Services Filter Bar */}
+          <div className="mb-8 max-w-xl">
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Filter services (e.g. MEP, HVAC, cleaning, pharma, engineering)..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-11 pr-10 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-brand-navy placeholder:text-slate-400 focus:outline-none focus:border-brand-orange focus:bg-white transition-all shadow-xs"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+                  title="Clear filter"
                 >
-                  <div>
-                    <div className="w-14 h-14 rounded-2xl bg-brand-orange/10 text-brand-orange flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all shadow-sm">
-                      <ServiceIcon className="w-7 h-7" />
-                    </div>
-
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-brand-orange">
-                      {svc.category}
-                    </span>
-
-                    <h3 className="text-2xl font-heading font-bold text-brand-navy group-hover:text-brand-orange transition-colors mt-1 mb-3">
-                      {svc.title}
-                    </h3>
-
-                    <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                      {svc.overview}
-                    </p>
-
-                    <div className="space-y-2.5 pt-4 border-t border-slate-100 mb-6">
-                      <span className="text-xs font-bold uppercase tracking-wider text-brand-navy block">
-                        Core Advantages:
-                      </span>
-                      {svc.benefits.slice(0, 3).map((ben, bIdx) => (
-                        <div key={bIdx} className="flex items-start text-xs text-slate-700">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                          <span>{ben}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="pt-4 border-t border-slate-50 flex items-center justify-between">
-                    <Link
-                      to={`/services/${svc.id}`}
-                      className="inline-flex items-center text-xs font-bold text-brand-navy group-hover:text-brand-orange transition-colors"
-                    >
-                      <span>View Service Breakdown</span>
-                      <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                    <span className="text-xs text-slate-400 font-medium">Self-Delivered</span>
-                  </div>
-                </div>
-              );
-            })}
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+            {searchQuery && (
+              <div className="mt-2 text-xs text-slate-500 flex items-center justify-between px-1">
+                <span>
+                  Showing <strong className="text-brand-navy">{filteredServices.length}</strong> of {servicesData.length} services
+                </span>
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="text-brand-orange font-semibold hover:underline"
+                >
+                  Clear filter
+                </button>
+              </div>
+            )}
           </div>
+
+          {filteredServices.length === 0 ? (
+            <div className="text-center py-12 px-4 bg-slate-50 rounded-3xl border border-slate-100 mb-8">
+              <p className="text-brand-navy font-semibold text-base mb-1">
+                No services found matching "{searchQuery}"
+              </p>
+              <p className="text-xs text-slate-500 mb-4">
+                Try searching for keywords like "HVAC", "Hygiene", "MEP", "Hospital", or "Pharma".
+              </p>
+              <button
+                onClick={() => setSearchQuery('')}
+                className="text-xs bg-brand-orange text-white px-4 py-2 rounded-xl font-bold hover:bg-brand-orange-light transition-all shadow-sm"
+              >
+                Reset filter to view all 10 services
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredServices.map((svc) => {
+                const ServiceIcon = getServiceIcon(svc.id);
+                return (
+                  <div
+                    key={svc.id}
+                    className="bg-white rounded-3xl p-8 border border-slate-100 hover:border-slate-200 shadow-card-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="w-14 h-14 rounded-2xl bg-brand-orange/10 text-brand-orange flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all shadow-sm">
+                        <ServiceIcon className="w-7 h-7" />
+                      </div>
+
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-brand-orange">
+                        {svc.category}
+                      </span>
+
+                      <h3 className="text-2xl font-heading font-bold text-brand-navy group-hover:text-brand-orange transition-colors mt-1 mb-3">
+                        {svc.title}
+                      </h3>
+
+                      <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                        {svc.overview}
+                      </p>
+
+                      <div className="space-y-2.5 pt-4 border-t border-slate-100 mb-6">
+                        <span className="text-xs font-bold uppercase tracking-wider text-brand-navy block">
+                          Core Advantages:
+                        </span>
+                        {svc.benefits.slice(0, 3).map((ben, bIdx) => (
+                          <div key={bIdx} className="flex items-start text-xs text-slate-700">
+                            <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
+                            <span>{ben}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-slate-50 flex items-center justify-between">
+                      <Link
+                        to={`/services/${svc.id}`}
+                        className="inline-flex items-center text-xs font-bold text-brand-navy group-hover:text-brand-orange transition-colors"
+                      >
+                        <span>View Service Breakdown</span>
+                        <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                      <span className="text-xs text-slate-400 font-medium">Self-Delivered</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import BackToTop from './components/layout/BackToTop';
+import StickyWhatsApp from './components/common/StickyWhatsApp';
 import ScrollToTop from './components/common/ScrollToTop';
 
 // Pages
@@ -197,6 +198,9 @@ export default function App() {
 
         {/* Footer */}
         <Footer />
+
+        {/* Floating Sticky WhatsApp Button */}
+        <StickyWhatsApp />
 
         {/* Floating Back To Top Button */}
         <BackToTop />

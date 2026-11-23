@@ -92,7 +92,7 @@ export default function IndustryAccreditations() {
   ];
 
   return (
-    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden" aria-label="Industry Accreditations and Compliance">
+    <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden" aria-label="Industry Accreditations and Compliance">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           

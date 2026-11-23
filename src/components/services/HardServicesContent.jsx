@@ -183,11 +183,11 @@ export default function HardServicesContent({ service }) {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-white">
+    <div className="w-full flex flex-col bg-transparent">
       {/* ============================================================== */}
       {/* SECTION 1: HERO SECTION (Screenshot 1)                          */}
       {/* ============================================================== */}
-      <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+      <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
         <div className="container-custom">
           <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-[#0A192F]">
 
@@ -231,7 +231,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 2: POWERED BY PEOPLE, ENABLED BY TECH (Screenshot 2)   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
@@ -269,7 +269,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 3: TRUSTED PARTNER FOR COMPLEX ENVIRONMENTS (Screen 3)  */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/60 border-y border-slate-100">
+      <section className="section-padding bg-transparent border-y border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
@@ -348,7 +348,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 4: HARD SERVICES CAPABILITIES (Screenshots 4 & 5)       */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           {/* Header with Top-Right CTA */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -404,7 +404,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 5: OUR APPROACH TO HARD SERVICES DELIVERY (Screen 6)   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/70 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-14">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
@@ -463,7 +463,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 6: PROVEN, TRUSTED, ACCREDITED (Screenshot 7)           */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           {/* Header Row: Left-aligned Heading + Subtitle, Right-aligned QHSE Button */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
@@ -507,7 +507,7 @@ export default function HardServicesContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 7: HARD FM NEWS & INSIGHTS (Screenshot 8)               */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/60 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           {/* Top Center Pill Button */}
           <div className="text-center mb-10">

@@ -80,7 +80,7 @@ export default function Technology() {
   ];
 
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans overflow-hidden">
       <Breadcrumbs items={[{ label: 'Technology and Innovation' }]} />
 
       {/* SECTION 1: HERO HEADER */}

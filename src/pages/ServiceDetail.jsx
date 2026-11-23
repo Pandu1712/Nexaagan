@@ -163,7 +163,7 @@ export default function ServiceDetail() {
       />
 
       {/* Overview & Key Benefits Section */}
-      <section id="overview" className="section-padding bg-white">
+      <section id="overview" className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -269,7 +269,7 @@ export default function ServiceDetail() {
       )}
 
       {/* Sectors that benefit */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <SectionTitle
             badge="Applicable Sectors"

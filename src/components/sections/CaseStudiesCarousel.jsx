@@ -25,7 +25,7 @@ export default function CaseStudiesCarousel({
   };
 
   return (
-    <section className="section-padding bg-slate-50/70 border-y border-slate-100">
+    <section className="section-padding bg-transparent border-y border-slate-200/60">
       <div className="container-custom">
         {/* Section Title with Navigation Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">

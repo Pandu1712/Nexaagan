@@ -108,7 +108,7 @@ export default function Services() {
       />
 
       {/* Services Grid */}
-      <section id="services-grid" className="section-padding bg-white">
+      <section id="services-grid" className="section-padding bg-transparent">
         <div className="container-custom">
           <SectionTitle
             badge="Full Service Spectrum"

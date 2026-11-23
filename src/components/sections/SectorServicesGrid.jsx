@@ -5,10 +5,10 @@ import { sectorServicesData } from '../../data/sectorServicesData';
 
 export default function SectorServicesGrid() {
   return (
-    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden">
       <div className="container-custom">
         {/* Large Rounded Container Box with Soft Off-White Background matching reference */}
-        <div className="w-full bg-[#FAF9F5] rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
+        <div className="w-full bg-white/90 rounded-3xl sm:rounded-[36px] lg:rounded-[44px] p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
           
           {/* Section Header */}
           <div className="max-w-3xl">

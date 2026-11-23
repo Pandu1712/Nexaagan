@@ -67,7 +67,7 @@ export default function AboutUs() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -197,7 +197,7 @@ export default function AboutUs() {
       </section>
 
       {/* Core Values Section */}
-      <section id="values" className="section-padding bg-white">
+      <section id="values" className="section-padding bg-transparent">
         <div className="container-custom">
           <SectionTitle
             badge="Guiding Principles"

@@ -274,7 +274,7 @@ export default function CaseStudies() {
   };
 
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans overflow-hidden">
       {/* Dynamic Breadcrumbs */}
       <Breadcrumbs
         items={[

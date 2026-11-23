@@ -25,7 +25,7 @@ export default function Apprenticeships() {
   const teamStories = newsData.slice(0, 4);
 
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans overflow-hidden">
       <Breadcrumbs
         items={[
           { label: 'ESG', link: '/esg' },

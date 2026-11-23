@@ -158,11 +158,11 @@ export default function CarbonEnergyManagementContent({ service }) {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-white">
+    <div className="w-full flex flex-col bg-transparent">
       {/* ============================================================== */}
       {/* SECTION 1: HERO (Screenshot 1)                                  */}
       {/* ============================================================== */}
-      <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+      <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
         <div className="container-custom">
           <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60">
             {/* Background Image: Solar Technician on Commercial Rooftop (Screenshot 1) */}
@@ -208,7 +208,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 2: NAVIGATING PATHWAY TO NET ZERO (Screenshot 2)        */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo Column: Zero-Emissions Fleet Van (Screenshot 2) */}
@@ -256,7 +256,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 3: PROACTIVE APPROACH TOWARDS NET ZERO (Screenshot 3)   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/70 border-y border-slate-100">
+      <section className="section-padding bg-transparent border-y border-slate-200/60">
         <div className="container-custom">
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-orange block mb-2">
@@ -292,7 +292,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 4: NEXAAGEN CUSTOMER STORIES (Screenshot 4)             */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
@@ -350,7 +350,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 5: ENERGY + ESG (Screenshot 5)                          */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/70 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
@@ -420,7 +420,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 6: ENERGY + TECHNOLOGY (Screenshot 6)                   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: High-Tech Glowing Server Room (Screenshot 6) */}
@@ -547,7 +547,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 8: FACILITIES SERVICES DESIGNED (Screenshots 8 & 9)    */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white border-t border-slate-100 overflow-hidden">
+      <section className="section-padding bg-transparent border-t border-slate-200/60 overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left Callout Card */}
@@ -632,7 +632,7 @@ export default function CarbonEnergyManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 9: FREQUENTLY ASKED QUESTIONS (Screenshot 10)           */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/60 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-8">
             Frequently Asked Questions

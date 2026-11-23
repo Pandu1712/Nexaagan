@@ -142,7 +142,7 @@ export default function ContactForm({
   };
 
   return (
-    <section id="contact-form" className="section-padding bg-slate-50 border-t border-slate-100">
+    <section id="contact-form" className="section-padding bg-transparent border-t border-slate-200/60">
       <div className="container-custom">
         {/* Section Heading */}
         <div className="max-w-3xl mb-12">

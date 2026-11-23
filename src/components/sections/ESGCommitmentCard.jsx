@@ -26,7 +26,7 @@ export default function ESGCommitmentCard() {
   ];
 
   return (
-    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden">
       <div className="container-custom">
         {/* Large Rounded Container with Soft Sage/Off-White Background matching OCS reference */}
         <div className="w-full bg-[#F4F7F4] rounded-3xl sm:rounded-[40px] lg:rounded-[48px] p-6 sm:p-10 md:p-12 lg:p-16 border border-slate-200/60 shadow-sm">

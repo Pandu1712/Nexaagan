@@ -14,7 +14,7 @@ import Breadcrumbs from '../components/layout/Breadcrumbs';
 
 export default function ModernSlaveryAct() {
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans">
       <Breadcrumbs
         items={[
           { label: 'ESG', link: '/esg' },

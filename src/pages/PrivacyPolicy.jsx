@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom space-y-10 text-slate-700">
           {privacyPolicyData.sections.map((sec, idx) => (
             <div key={idx} className="space-y-3 pb-8 border-b border-slate-100 last:border-b-0">

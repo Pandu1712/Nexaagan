@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import BackToTop from './components/layout/BackToTop';
 import StickyWhatsApp from './components/common/StickyWhatsApp';
+import ThemeSwitcher from './components/common/ThemeSwitcher';
 import ScrollToTop from './components/common/ScrollToTop';
 
 // Pages
@@ -50,7 +51,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="w-full min-h-screen flex flex-col bg-white text-slate-800 font-sans selection:bg-brand-orange selection:text-white">
+      <div className="w-full min-h-screen flex flex-col bg-[var(--app-bg)] text-slate-800 font-sans selection:bg-brand-orange selection:text-white transition-colors duration-250">
         {/* Navigation Bar */}
         <Navbar showTopBar={true} />
 
@@ -204,6 +205,9 @@ export default function App() {
 
         {/* Floating Back To Top Button */}
         <BackToTop />
+
+        {/* Floating Theme Switcher (Sky Blue / Butter Yellow / Pure White) */}
+        <ThemeSwitcher />
       </div>
     </Router>
   );

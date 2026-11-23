@@ -83,7 +83,7 @@ export default function SectorDetail() {
       {/* SECTION 1: HERO */}
       {isDataCentres ? (
         /* OCS Signature Data Centre Hero: Full-Bleed Dark Server Banner with Direct Typography */
-        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
           <div className="container-custom">
             <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-brand-navy">
               
@@ -134,7 +134,7 @@ export default function SectorDetail() {
         </section>
       ) : (isHealthcare || isManufacturing) ? (
         /* OCS Signature Dark Card Hero: Dark Card with background image positioned right matching User Screenshot 1 */
-        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
           <div className="container-custom">
             <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-[#0B1528]">
               {/* Background Image positioned right */}
@@ -189,7 +189,7 @@ export default function SectorDetail() {
         </section>
       ) : (isEducation || isCommercial || isAviation || isRetail || isHospitality) ? (
         /* OCS Signature Hero: Photo with Left Floating White Card matching User Screenshot */
-        <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+        <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
           <div className="container-custom">
             <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60 bg-slate-100">
               
@@ -257,7 +257,7 @@ export default function SectorDetail() {
 
       {/* SECTION 2: BUILT FOR PERFORMANCE (OCS Reference Screenshot 2: 4 Elevated Metric Cards) */}
       {sector.performanceHeading && (
-        <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
+        <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden">
           <div className="container-custom">
             <div className="w-full bg-[#FAF9F5] rounded-3xl p-5 sm:p-8 lg:p-10 border border-slate-200/60 shadow-sm">
               
@@ -304,7 +304,7 @@ export default function SectorDetail() {
 
       {/* SECTION 3: WHY LEADING DATA CENTRES CHOOSE NEXAAGEN (OCS Reference Screenshot 2: Image Left + 3 Pillars Right) */}
       {sector.whyChooseHeading && (
-        <section className="w-full py-4 sm:py-6 bg-white overflow-hidden">
+        <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden">
           <div className="container-custom">
             
             {/* Header */}
@@ -360,7 +360,7 @@ export default function SectorDetail() {
 
       {/* SECTION 4: STANDARD INTRODUCTION (For sectors without the OCS custom layout) */}
       {!sector.performanceHeading && !isEducation && !isHealthcare && !isAviation && !isManufacturing && !isRetail && !isHospitality && (
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-transparent">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Heading, Paragraphs, Key Benefits / CTA */}

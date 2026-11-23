@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ========================================================
+   GLOBAL APP BACKGROUND COLOR THEMES
+   Supports Light Sky Blue (#F0F7FD), Butter Yellow (#FEF9E7) & Pure White (#FFFFFF)
+   ======================================================== */
+:root {
+  --app-bg: #F0F7FD; /* Default Light Sky Blue */
+  --app-bg-blue: #F0F7FD;
+  --app-bg-yellow: #FEF9E7;
+  --app-bg-white: #FFFFFF;
+}
+
+html[data-theme="blue"],
+body[data-theme="blue"],
+[data-theme="blue"] {
+  --app-bg: #F0F7FD;
+}
+
+html[data-theme="yellow"],
+body[data-theme="yellow"],
+[data-theme="yellow"] {
+  --app-bg: #FEF9E7;
+}
+
+html[data-theme="white"],
+body[data-theme="white"],
+[data-theme="white"] {
+  --app-bg: #FFFFFF;
+}
+
 @layer base {
 
   *,
@@ -23,6 +52,7 @@
     margin: 0;
     padding: 0;
     overflow-x: clip;
+    background-color: var(--app-bg);
   }
 
   #root {
@@ -30,6 +60,7 @@
     min-width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--app-bg);
   }
 
   html {
@@ -38,7 +69,9 @@
   }
 
   body {
-    @apply text-slate-700 bg-white;
+    background-color: var(--app-bg) !important;
+    color: #334155;
+    transition: background-color 0.25s ease-in-out;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 

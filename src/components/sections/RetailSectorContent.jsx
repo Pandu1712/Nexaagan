@@ -160,7 +160,7 @@ export default function RetailSectorContent() {
   ];
 
   return (
-    <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-white overflow-hidden">
+    <div className="w-full flex flex-col space-y-6 sm:space-y-8 py-4 sm:py-6 bg-transparent overflow-hidden">
       
       {/* ------------------------------------------------------------------ */}
       {/* SECTION 2: DELIVERING BEST RETAIL EXPERIENCE (Matches Screenshot 2) */}

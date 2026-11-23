@@ -203,7 +203,7 @@ export default function HealthcareSectorContent() {
   };
 
   return (
-    <div className="w-full bg-white text-[#2B3A41] overflow-hidden">
+    <div className="w-full bg-transparent text-[#2B3A41] overflow-hidden">
       {/* =========================================================================
           SECTION 1: "A Partner That Shares Your Care"
           ========================================================================= */}
@@ -365,7 +365,7 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 3: "Sustainability in Action: Responsible Healthcare"
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">

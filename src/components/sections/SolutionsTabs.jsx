@@ -17,7 +17,7 @@ export default function SolutionsTabs({
   const isImageRight = activeTab % 2 === 0; // Alternating layout per tab
 
   return (
-    <section className="section-padding bg-slate-50/60 border-y border-slate-100">
+    <section className="section-padding bg-transparent border-y border-slate-200/60">
       <div className="container-custom">
         {/* Section Header */}
         <SectionTitle

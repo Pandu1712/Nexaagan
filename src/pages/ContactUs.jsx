@@ -76,7 +76,7 @@ export default function ContactUs() {
       />
 
       {/* Global Regional Hubs */}
-      <section id="hubs" className="section-padding bg-white">
+      <section id="hubs" className="section-padding bg-transparent">
         <div className="container-custom">
           <SectionTitle
             badge="Global Footprint"

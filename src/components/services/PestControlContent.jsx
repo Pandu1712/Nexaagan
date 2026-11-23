@@ -224,7 +224,7 @@ export default function PestControlContent({ service }) {
   ];
 
   return (
-    <div className="w-full bg-white text-slate-900 overflow-hidden font-sans">
+    <div className="w-full bg-transparent text-slate-900 overflow-hidden font-sans">
 
       {/* SECTION 1: HERO HEADER (Screenshot 1) */}
       <section className="relative py-1.5 sm:py-2.5 container-custom">

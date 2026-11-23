@@ -59,7 +59,7 @@ export default function Sectors() {
       />
 
       {/* Sectors Showcase Grid */}
-      <section id="sectors-grid" className="section-padding bg-white">
+      <section id="sectors-grid" className="section-padding bg-transparent">
         <div className="container-custom">
           <SectionTitle
             badge="Global Verticals"

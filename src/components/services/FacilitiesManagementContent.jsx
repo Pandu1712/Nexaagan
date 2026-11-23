@@ -164,11 +164,11 @@ export default function FacilitiesManagementContent({ service }) {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-white">
+    <div className="w-full flex flex-col bg-transparent">
       {/* ============================================================== */}
       {/* SECTION 1: HERO SECTION (Screenshot 1)                          */}
       {/* ============================================================== */}
-      <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+      <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
         <div className="container-custom">
           <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-[220px] sm:min-h-[250px] lg:min-h-[280px] flex items-center shadow-lg border border-slate-200/60">
             {/* Background Image: Spiral Staircase with Motion Blur (Screenshot 1) */}
@@ -214,7 +214,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 2: FOR PRIVATE AND PUBLIC SECTORS (Screenshots 2 & 3)   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Director Portrait Photo */}
@@ -298,7 +298,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 3: COLLEAGUES THAT MAKE THE DIFFERENCE (Screenshot 4)   */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/70 border-y border-slate-100">
+      <section className="section-padding bg-transparent border-y border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -334,7 +334,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 4: PRIVATE SECTOR FM CAROUSEL (Screenshots 5 & 6)       */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white overflow-hidden">
+      <section className="section-padding bg-transparent overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left Callout Card */}
@@ -523,7 +523,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 6: FACILITIES MANAGEMENT + ESG (Screenshot 8)           */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -594,7 +594,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 7: FACILITIES MANAGEMENT + TECHNOLOGY (Screenshot 9)    */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/70 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Photo: Modern Expansive Atrium (Screenshot 9) */}
@@ -732,7 +732,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 9: FREQUENTLY ASKED QUESTIONS (Screenshot 11)           */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/60 border-t border-slate-100">
+      <section className="section-padding bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy mb-8">
             Frequently asked questions for FM
@@ -776,7 +776,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 10: SINGLE-LINE SOLUTIONS (Screenshots 12, 13, 14)      */}
       {/* ============================================================== */}
-      <section className="section-padding bg-white border-t border-slate-100 overflow-hidden">
+      <section className="section-padding bg-transparent border-t border-slate-200/60 overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left Callout Card */}

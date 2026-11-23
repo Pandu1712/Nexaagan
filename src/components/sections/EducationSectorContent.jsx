@@ -128,7 +128,7 @@ export default function EducationSectorContent() {
   ];
 
   return (
-    <div className="w-full bg-white space-y-6 sm:space-y-8 lg:space-y-10 py-4 sm:py-6 overflow-hidden">
+    <div className="w-full bg-transparent space-y-6 sm:space-y-8 lg:space-y-10 py-4 sm:py-6 overflow-hidden">
       
       {/* SECTION 1: Building environments that enable success */}
       <section className="w-full">

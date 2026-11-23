@@ -15,7 +15,7 @@ export default function PageHero({
   stats,
 }) {
   return (
-    <section className="w-full py-1.5 sm:py-2.5 bg-white overflow-hidden">
+    <section className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden">
       <div className="container-custom">
         {/* Full-bleed Rounded Hero Banner Frame with Reduced Height */}
         <div className="relative w-full rounded-2xl sm:rounded-[24px] lg:rounded-[28px] overflow-hidden min-h-0 sm:min-h-[240px] lg:min-h-[270px] py-3 sm:py-0 flex items-center shadow-lg border border-slate-200/60 bg-slate-900">

@@ -28,7 +28,7 @@ export default function ESGBrief({
   const data = esgData || defaultEsg;
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-transparent">
       <div className="container-custom">
         <SectionTitle
           badge="Sustainability in Action"

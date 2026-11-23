@@ -51,7 +51,7 @@ export default function NewsCarousel({ news = newsData }) {
   };
 
   return (
-    <section className="w-full py-4 sm:py-6 bg-white overflow-hidden" aria-label="News and Insights Section">
+    <section className="w-full py-4 sm:py-6 bg-transparent overflow-hidden" aria-label="News and Insights Section">
       <div className="container-custom">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 sm:mb-6">

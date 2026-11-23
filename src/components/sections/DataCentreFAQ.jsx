@@ -61,7 +61,7 @@ export default function DataCentreFAQ() {
   ];
 
   return (
-    <section className="w-full py-4 sm:py-6 bg-white border-t border-slate-100 overflow-hidden">
+    <section className="w-full py-4 sm:py-6 bg-transparent border-t border-slate-200/60 overflow-hidden">
       <div className="container-custom">
         {/* Section Heading matching Reference */}
         <div className="w-full text-left space-y-2 mb-6 sm:mb-8">

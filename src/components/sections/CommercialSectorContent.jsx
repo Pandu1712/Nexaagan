@@ -196,7 +196,7 @@ export default function CommercialSectorContent() {
   ];
 
   return (
-    <div className="w-full bg-white text-[#2B3A41] overflow-hidden">
+    <div className="w-full bg-transparent text-[#2B3A41] overflow-hidden">
       {/* =========================================================================
           SECTION 2A: "Commercial FM" with 5 "BEST" Accordions
           ========================================================================= */}
@@ -268,7 +268,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 2B: "Services for commercial facilities..." with 4 Accordions
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white">
+      <section className="py-4 sm:py-6 bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left: 4 Service Accordions */}
@@ -336,7 +336,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 3: "Memorable first and lasting impressions..."
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white">
+      <section className="py-4 sm:py-6 bg-transparent">
         <div className="container-custom">
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Image: Grounds Maintenance */}
@@ -368,7 +368,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 4: "Fuelling your teams with nutritional, flavourful food"
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white">
+      <section className="py-4 sm:py-6 bg-transparent">
         <div className="container-custom">
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
@@ -400,7 +400,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 5: "Keeping your commercial premises looking the part"
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -462,7 +462,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 6: "Protecting and enhancing your brand and buildings"
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white">
+      <section className="py-4 sm:py-6 bg-transparent">
         <div className="container-custom">
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
@@ -548,7 +548,7 @@ export default function CommercialSectorContent() {
       {/* =========================================================================
           SECTION 8: "Frequently Asked Questions" (10 Commercial FAQs in 2 columns)
           ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-white border-t border-[#F0F0F0]">
+      <section className="py-4 sm:py-6 bg-transparent border-t border-slate-200/60">
         <div className="container-custom">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-4">
             Frequently Asked Questions

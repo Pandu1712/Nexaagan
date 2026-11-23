@@ -178,7 +178,7 @@ or by emailing compliance@nexaagen.com.
   };
 
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans overflow-hidden">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans overflow-hidden">
       {/* Toast Notification */}
       {downloadSuccess && (
         <div className="fixed bottom-6 right-6 z-50 bg-[#0A192F] text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3 border border-slate-700 animate-slide-in">

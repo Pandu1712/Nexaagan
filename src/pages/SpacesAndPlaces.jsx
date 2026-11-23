@@ -8,7 +8,7 @@ import ContactForm from '../components/sections/ContactForm';
 
 export default function SpacesAndPlaces() {
   return (
-    <div className="w-full flex flex-col flex-1 bg-white text-slate-900 font-sans">
+    <div className="w-full flex flex-col flex-1 bg-transparent text-slate-900 font-sans">
       <Breadcrumbs
         items={[
           { label: 'Our Services', link: '/services' },

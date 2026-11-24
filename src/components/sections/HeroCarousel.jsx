@@ -75,7 +75,7 @@ export default function HeroCarousel() {
 
   return (
     <section
-      className="w-full py-1.5 sm:py-2.5 bg-transparent overflow-hidden"
+      className="w-full py-0.5 sm:py-1 bg-transparent overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={onTouchStart}

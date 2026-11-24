@@ -207,7 +207,7 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 1: "A Partner That Shares Your Care"
           ========================================================================= */}
-      <section id="partner-care" className="py-4 sm:py-6 bg-white">
+      <section id="partner-care" className="py-4 sm:py-6 bg-transparent">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -497,7 +497,7 @@ export default function HealthcareSectorContent() {
       {/* =========================================================================
           SECTION 5: "Connect with Our Healthcare Team" (Form + Nurse Image)
           ========================================================================= */}
-      <section id="contact-form" className="py-3 sm:py-5 bg-white border-t border-[#F0F0F0]">
+      <section id="contact-form" className="py-3 sm:py-5 bg-transparent border-t border-[#F0F0F0]">
         <div className="container-custom">
           <div className="bg-[#FAF9F7] rounded-3xl p-5 sm:p-7 lg:p-8 border border-[#EFECE6] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Column: Form */}

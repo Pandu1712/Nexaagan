@@ -152,7 +152,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 3: COUNTRY COMMITMENTS & SCIENCE-BASED TARGETS (Reference Image 3) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/60 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Forest Canopy Image looking up */}
           <div className="lg:col-span-5 order-2 lg:order-1">
@@ -371,7 +371,7 @@ export default function Environmental() {
       </section>
 
       {/* SECTION 7: ENVIRONMENTAL ACTION AND OUTCOMES (Reference Image 7) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
           <div className="space-y-3">
             <span className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#FF5722]">

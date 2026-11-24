@@ -431,7 +431,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 5: PUBLIC SECTOR FM CAROUSEL (Screenshot 7)             */}
       {/* ============================================================== */}
-      <section className="section-padding bg-slate-50/60 border-y border-slate-100 overflow-hidden">
+      <section className="section-padding bg-transparent border-y border-slate-100 overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left Callout Card */}
@@ -665,7 +665,7 @@ export default function FacilitiesManagementContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 8: ACCREDITATIONS & CERTIFICATIONS (Screenshot 10)      */}
       {/* ============================================================== */}
-      <section className="py-6 sm:py-8 bg-white border-t border-slate-100">
+      <section className="py-6 sm:py-8 bg-transparent border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">

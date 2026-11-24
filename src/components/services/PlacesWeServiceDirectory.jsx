@@ -241,7 +241,7 @@ export default function PlacesWeServiceDirectory() {
   const sortedLetters = Object.keys(groupedByLetter).sort();
 
   return (
-    <section id="places-we-service" className="section-padding bg-slate-50/70 border-t border-slate-200/80">
+    <section id="places-we-service" className="section-padding bg-transparent border-t border-slate-200/80">
       <div className="container-custom">
         {/* Header with A-Z Magnifying Glass Badge */}
         <div className="max-w-3xl mx-auto text-center mb-10">

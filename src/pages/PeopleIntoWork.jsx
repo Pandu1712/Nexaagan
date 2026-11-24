@@ -206,7 +206,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 3: DEMONSTRATING THE BUSINESS CASE (Screenshot 3)                  */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Colleagues Mentoring Photo */}
@@ -341,7 +341,7 @@ export default function PeopleIntoWork() {
       {/* ========================================================================= */}
       {/* SECTION 6: ACCREDITATIONS & CERTIFICATIONS (Screenshot 6)                 */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom text-center space-y-3 mb-4 sm:mb-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight">
             Accreditations & Certifications

@@ -208,9 +208,86 @@ body[data-theme="white"],
     @apply w-full max-w-[1680px] mx-auto px-4 sm:px-8 lg:px-12;
   }
 
-  /* Section padding standard - Compact & seamless layout without excessive whitespace */
+  /* Section padding standard - Ultra-compact & seamless layout without gaps or white spaces */
   .section-padding {
-    @apply py-6 sm:py-8 lg:py-10;
+    @apply py-2 sm:py-3 lg:py-3.5;
+  }
+}
+
+/* ========================================================
+   SEAMLESS ZERO-GAP FLOW: SECTION TO SECTION, PAGE TO PAGE
+   Removes excessive vertical gaps, margins & white spaces.
+   ======================================================== */
+section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Global compact padding across all sections */
+section.w-full,
+section.section-padding,
+section.py-4,
+section.py-3,
+section.py-5,
+section.py-6,
+section.py-8,
+section.py-10,
+section.py-1\.5,
+section.py-2\.5 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+@media (min-width: 640px) {
+  section.w-full,
+  section.section-padding,
+  section.py-4,
+  section.py-3,
+  section.py-5,
+  section.py-6,
+  section.py-8,
+  section.py-10,
+  section.py-1\.5,
+  section.py-2\.5 {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+}
+
+/* Eliminate empty margin gaps between consecutive sections */
+section + section {
+  margin-top: 0 !important;
+}
+
+/* Eliminate excessive space-y gaps between stacked components */
+.space-y-6 > :not([hidden]) ~ :not([hidden]),
+.space-y-8 > :not([hidden]) ~ :not([hidden]),
+.space-y-10 > :not([hidden]) ~ :not([hidden]),
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.75rem !important;
+}
+
+@media (min-width: 640px) {
+  .space-y-6 > :not([hidden]) ~ :not([hidden]),
+  .space-y-8 > :not([hidden]) ~ :not([hidden]),
+  .space-y-10 > :not([hidden]) ~ :not([hidden]),
+  .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem !important;
+  }
+}
+
+/* Compact section header bottom margins to eliminate internal white voids */
+section .mb-12,
+section .mb-10,
+section .mb-8 {
+  margin-bottom: 1rem !important;
+}
+
+@media (min-width: 640px) {
+  section .mb-12,
+  section .mb-10,
+  section .mb-8 {
+    margin-bottom: 1.25rem !important;
   }
 }
 

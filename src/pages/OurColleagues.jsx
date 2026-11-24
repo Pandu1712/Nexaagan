@@ -137,7 +137,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 3: DEDICATION AND HARD WORK (Screenshot 3)                        */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Young Female Colleague with Lanyard */}
@@ -220,7 +220,7 @@ export default function OurColleagues() {
       {/* ========================================================================= */}
       {/* SECTION 5: RECOGNISING THE EXCEPTIONAL WITH TRUE STARS (Screenshot 5)     */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Two Colleagues in Caps and Uniforms */}

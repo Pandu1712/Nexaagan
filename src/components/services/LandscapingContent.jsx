@@ -470,7 +470,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 7: ACCREDITATIONS & CERTIFICATIONS (Screenshot 7)      */}
       {/* ============================================================== */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-t border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-t border-slate-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-5 sm:mb-6">
             <h3 className="text-xl sm:text-2xl font-heading font-bold text-brand-navy tracking-tight">
@@ -573,7 +573,7 @@ export default function LandscapingContent({ service }) {
       {/* ============================================================== */}
       {/* SECTION 9: CONNECT WITH YOUR NEXAAGEN TEAM (Screenshot 9)       */}
       {/* ============================================================== */}
-      <section className="py-3 sm:py-5 bg-slate-50/70 border-t border-slate-100">
+      <section className="py-3 sm:py-5 bg-transparent border-t border-slate-100">
         <div className="container-custom">
           <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden bg-gradient-to-br from-[#0B1E36] to-[#0D2E5C] text-white p-6 sm:p-10 lg:p-12 shadow-2xl text-center">
             {/* Dotted pattern overlay */}

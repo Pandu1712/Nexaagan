@@ -471,7 +471,7 @@ export default function SectorLocationsDirectory() {
   };
 
   return (
-    <section id="a-z-locations" className="section-padding bg-slate-50/70 border-t border-slate-200/80">
+    <section id="a-z-locations" className="section-padding bg-transparent border-t border-slate-200/80">
       <div className="container-custom">
         {/* Header with authentic A-Z Search icon badge */}
         <div className="max-w-3xl mx-auto text-center mb-10">

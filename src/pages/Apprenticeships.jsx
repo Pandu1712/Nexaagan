@@ -130,7 +130,7 @@ export default function Apprenticeships() {
       </section>
 
       {/* SECTION 3: FUNDED LEARNING FOR OPPORTUNITY AT NEXAAGEN (Reference Image 3) */}
-      <section id="funded-learning" className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section id="funded-learning" className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Funded Learning Description */}
           <div className="lg:col-span-7 space-y-5">

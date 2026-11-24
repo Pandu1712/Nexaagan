@@ -66,7 +66,7 @@ export default function NewsDetail() {
       </section>
 
       {/* Article Body */}
-      <section className="py-6 sm:py-8 lg:py-10 bg-white">
+      <section className="py-6 sm:py-8 lg:py-10 bg-transparent">
         <div className="container-custom">
           {/* Main Hero Image */}
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl mb-8 sm:mb-10 aspect-[16/9] max-h-[480px]">
@@ -122,7 +122,7 @@ export default function NewsDetail() {
 
       {/* Related News Carousel */}
       {related.length > 0 && (
-        <section className="section-padding bg-slate-50 border-t border-slate-100">
+        <section className="section-padding bg-transparent border-t border-slate-100">
           <div className="container-custom">
             <h3 className="text-2xl font-heading font-bold text-brand-navy mb-8">
               Related Articles & Press

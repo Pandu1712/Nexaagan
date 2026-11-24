@@ -184,7 +184,7 @@ export default function Foundation() {
       {/* ========================================================================= */}
       {/* SECTION 3: NEXAAGEN FOUNDATION'S IMPACT - TO DATE (Screenshot 3)           */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           {/* Header */}
           <div className="text-center space-y-2 mb-6 sm:mb-8">

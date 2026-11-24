@@ -314,7 +314,7 @@ NEXAAGEN installed building IoT telemetry sensors that automatically regulate ve
       {/* ========================================================================= */}
       {/* SECTION 3: TRUE VALUES LIST (Screenshot 3)                                */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Portrait of Dedicated Colleague with Arms Folded */}

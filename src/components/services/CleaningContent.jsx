@@ -327,7 +327,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 4: SECTOR-SPECIALIST CLEANING AND HYGIENE SERVICES (Screenshot 4) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/60 rounded-[32px] my-3">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-[32px] ">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Heading and copy */}
           <div className="lg:col-span-6">
@@ -426,7 +426,7 @@ export default function CleaningContent({ service }) {
       </section>
 
       {/* SECTION 7: CUSTOMER SUCCESS AND OUTCOMES (Screenshot 7) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-[36px] my-3">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-[36px] ">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight mb-3">
             Customer success and outcomes

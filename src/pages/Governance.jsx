@@ -278,7 +278,7 @@ export default function Governance() {
       </section>
 
       {/* SECTION 5: GUIDING PRINCIPLES - VISION AND VALUES (Reference Image 5) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Colleague Photo with Lanyard */}
           <div className="lg:col-span-5">

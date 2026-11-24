@@ -237,7 +237,7 @@ export default function ServiceDetail() {
 
       {/* Service Pillar Deep-Dive */}
       {service.features && (
-        <section className="section-padding bg-slate-50 border-y border-slate-100">
+        <section className="section-padding bg-transparent border-y border-slate-100">
           <div className="container-custom">
             <SectionTitle
               badge="Methodology & Delivery"

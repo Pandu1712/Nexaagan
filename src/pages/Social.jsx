@@ -150,7 +150,7 @@ export default function Social() {
       </section>
 
       {/* SECTION 3: PROVIDING ACCESS TO VALUABLE AND SUSTAINABLE CAREERS (Reference Image 3) */}
-      <section className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Colleagues Photo */}
           <div className="lg:col-span-5">
@@ -281,7 +281,7 @@ export default function Social() {
       </section>
 
       {/* SECTION 6: POSITIVE IMPACT THROUGH COMMUNITY OUTREACH (Reference Image 6) */}
-      <section id="community-outreach" className="py-4 sm:py-6 container-custom bg-slate-50/70 rounded-3xl my-3 sm:my-4">
+      <section id="community-outreach" className="py-4 sm:py-6 container-custom bg-transparent rounded-3xl my-3 sm:">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Community Planting Photo */}
           <div className="lg:col-span-5">

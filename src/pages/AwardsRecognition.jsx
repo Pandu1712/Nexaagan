@@ -133,7 +133,7 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 3: UK & IRELAND FACILITIES SERVICES AWARDS (Screenshot 3)         */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Checkmark Accolades */}
@@ -244,7 +244,7 @@ export default function AwardsRecognition() {
       {/* ========================================================================= */}
       {/* SECTION 5: INDIA'S FACILITIES SERVICES AWARDS (Screenshot 5)              */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy & Multiple Accolades */}

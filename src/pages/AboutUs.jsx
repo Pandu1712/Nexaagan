@@ -153,7 +153,7 @@ export default function AboutUs() {
       </section>
 
       {/* Leadership Team Section */}
-      <section id="leadership" className="section-padding bg-slate-50 border-y border-slate-100">
+      <section id="leadership" className="section-padding bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <SectionTitle
             badge="Executive Leadership"
@@ -228,7 +228,7 @@ export default function AboutUs() {
       </section>
 
       {/* Accreditations & Certifications */}
-      <section id="certifications" className="section-padding bg-slate-50 border-t border-slate-100">
+      <section id="certifications" className="section-padding bg-transparent border-t border-slate-100">
         <div className="container-custom">
           <SectionTitle
             badge="Verified Excellence"

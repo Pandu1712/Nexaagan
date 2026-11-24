@@ -208,7 +208,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 3: MISSION - MAKE PEOPLE AND PLACES THE BEST (Screenshot 3)        */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Narrative Copy */}
@@ -319,7 +319,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 6: BEST PRODUCTIVITY (Screenshot 6)                               */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Productivity Copy */}
@@ -399,7 +399,7 @@ export default function VisionMission() {
       {/* ========================================================================= */}
       {/* SECTION 8: BEST RESILIENCE (Screenshot 8)                                 */}
       {/* ========================================================================= */}
-      <section className="py-4 sm:py-6 bg-slate-50/70 border-y border-slate-100">
+      <section className="py-4 sm:py-6 bg-transparent border-y border-slate-100">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Best Resilience Copy */}

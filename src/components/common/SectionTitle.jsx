@@ -24,7 +24,7 @@ export default function SectionTitle({
 
       {title && (
         <h2
-          className={`text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap ${
+          className={`text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap ${
             dark ? 'text-white' : 'text-brand-navy'
           }`}
         >

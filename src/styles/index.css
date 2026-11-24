@@ -102,17 +102,18 @@ body[data-theme="white"],
     @apply font-semibold;
   }
 
-  /* Section headings single-line responsiveness */
+  /* Section headings responsive text wrapping - prevent horizontal blowout across all screens */
   .section-heading-single,
-  .section-header h2 {
+  .section-header h2,
+  h1, h2, h3, h4 {
     text-align: left;
     white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
-  @media (min-width: 640px) {
-
-    .section-heading-single,
-    .section-header h2 {
+  @media (min-width: 1280px) {
+    .section-heading-single {
       white-space: nowrap;
     }
   }
@@ -125,6 +126,7 @@ body[data-theme="white"],
     @apply text-base sm:text-lg text-slate-600 font-normal leading-relaxed;
     text-align: justify;
     text-justify: inter-word;
+    overflow-wrap: break-word;
   }
 
   /* Justify text content across all sections */
@@ -132,6 +134,7 @@ body[data-theme="white"],
     @apply leading-relaxed;
     text-align: justify;
     text-justify: inter-word;
+    overflow-wrap: break-word;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   }
 

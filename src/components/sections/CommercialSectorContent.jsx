@@ -650,7 +650,7 @@ export default function CommercialSectorContent() {
       <section className="py-4 sm:py-6 bg-[#FAF9F7] border-t border-[#F0F0F0]">
         <div className="container-custom">
           <div className="mb-4 sm:mb-6 text-left w-full">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap mb-2">
               Customer stories
             </h2>
             <p className="text-base sm:text-lg text-slate-600">

@@ -186,7 +186,7 @@ export default function DataCentreSolutionsTabs() {
 
           {/* Header */}
           <div className="w-full text-left space-y-2 mb-5 sm:mb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap">
               Specialist Facilities Management for Critical Environments
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm lg:text-base font-normal leading-relaxed">

@@ -270,7 +270,7 @@ export default function ManufacturingSectorContent() {
 
           {/* Header */}
           <div className="text-left w-full space-y-2 mb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap">
               Manufacturing Solutions by NEXAAGEN
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
@@ -373,7 +373,7 @@ export default function ManufacturingSectorContent() {
 
           {/* Header */}
           <div className="text-left w-full space-y-3 mb-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap">
               Sustainability in Action: Responsible Manufacturing
             </h2>
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed">

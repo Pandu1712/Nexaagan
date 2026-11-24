@@ -53,7 +53,7 @@ export default function ThemeSwitcher() {
     <div className="fixed bottom-6 left-6 z-40 flex flex-col items-start select-none">
       {/* Expanded Theme Selection Menu */}
       {isOpen && (
-        <div className="mb-3 w-72 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-slate-200/90 animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="mb-3 w-72 max-w-[calc(100vw-3rem)] bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-slate-200/90 animate-in fade-in slide-in-from-bottom-2 duration-200">
           <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100">
             <div className="flex items-center space-x-2">
               <Sparkles className="w-4 h-4 text-brand-orange" />

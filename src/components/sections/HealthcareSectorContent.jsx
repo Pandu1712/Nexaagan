@@ -265,7 +265,7 @@ export default function HealthcareSectorContent() {
         <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap mb-3">
               Healthcare Solutions by NEXAAGEN
             </h2>
             <p className="text-base sm:text-lg text-slate-600">
@@ -369,7 +369,7 @@ export default function HealthcareSectorContent() {
         <div className="container-custom">
           {/* Header */}
           <div className="text-left w-full mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap mb-3">
               Sustainability in Action: Responsible Healthcare
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">

@@ -374,7 +374,7 @@ export default function HospitalitySectorContent() {
       <section className="container-custom">
         <div className="space-y-6 sm:space-y-8">
           <div className="w-full text-left space-y-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal sm:whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-brand-navy tracking-tight leading-tight whitespace-normal break-words xl:whitespace-nowrap">
               Frequently Asked Questions
             </h2>
             <p className="text-slate-500 text-sm sm:text-base">
